@@ -5,6 +5,9 @@ core        = 7.x
 ;Stylesheets
 stylesheets[all][] = css/style.css
 
+;Scripts
+scripts[] = node_modules/bootstrap/dist/js/bootstrap.min.js
+
 ;Regions
 regions[header]            = Header
 regions[navigation]        = Navigation
