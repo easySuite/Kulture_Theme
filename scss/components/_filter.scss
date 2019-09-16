@@ -1,0 +1,10 @@
+.form-checkboxes {
+    ul li .form-type-bef-checkbox,
+    div.bef-checkboxes .form-item {
+      @include checkbox();
+    }
+  }
+
+//   .views-exposed-form .views-widget {
+//       @include search();
+//   }

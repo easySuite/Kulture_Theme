@@ -1,0 +1,22 @@
+@mixin search() {
+   // & form {
+      width: 400px;
+      box-shadow: 0 10px 35px 0 rgba(9,0,38,0.1);
+      padding: 20px;  
+
+      .form-item {
+         margin: 0;
+
+         input[type="text"] {
+            width: 100%;
+            margin: 0;
+            border: none;
+            outline: none;
+         }
+      }
+
+      .form-actions {
+         display: none;
+      }
+   // }
+}

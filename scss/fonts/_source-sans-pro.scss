@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'SourceSansPro-Regular';
+ // src: url('../fonts/Fortuna Regular.eot');
+  src:
+  //  url('../fonts/SourceSansPro-Regular?#iefix') format('embedded-opentype'),
+ //   url('../fonts/SourceSansPro-Regular.woff') format('woff'),
+    url('../fonts/SourceSansPro-Regular.ttf')  format('truetype');
+ //   url('../fonts/SourceSansPro-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
