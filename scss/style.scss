@@ -1,5 +1,18 @@
-// Default variables.
-@import 'default-variables';
-
 // Bootstrap Framework.
 @import '../node_modules/bootstrap/scss/bootstrap';
+
+// Default variables.
+@import 'base/default-variables';
+
+@import 'fonts/rubik';
+@import 'fonts/fortuna';
+@import 'fonts/source-sans-pro';
+
+@import 'mixins/button';
+@import 'mixins/checkbox';
+@import 'mixins/search';
+
+@import 'base/general';
+
+@import 'components/header';
+@import 'components/filter';

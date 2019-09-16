@@ -36,3 +36,33 @@ function kulture_theme_preprocess_panels_pane(&$vars) {
     }
   }
 }
+
+/**
+ * Implements theme_menu_tree().
+ */
+function kulture_theme_menu_tree__menu_block__1($vars) {
+  return '<ul class="main-menu navbar-nav mr-auto">' . $vars['tree'] . '</ul>';
+}
+
+/**
+ * Implements hook_process_html().
+ *
+ * Process variables for html.tpl.php.
+ */
+function kulture_theme_process_html(&$vars) {
+
+  // Hook into color.module.
+  if (module_exists('color')) {
+    _color_html_alter($vars);
+  }
+}
+
+/**
+ * Implements hook_process_page().
+ */
+function kulture_theme_process_page(&$vars) {
+  // Hook into color.module.
+  if (module_exists('color')) {
+    _color_page_alter($vars);
+  }
+}
