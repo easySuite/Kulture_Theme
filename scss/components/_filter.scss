@@ -1,10 +1,68 @@
-.form-checkboxes {
-    ul li .form-type-bef-checkbox,
-    div.bef-checkboxes .form-item {
-      @include checkbox();
+.secondary-content {
+  padding: 0;
+
+  // hide search input from filter
+  #edit-title-wrapper {
+    display: none;
+  }
+
+  .views-exposed-form .views-exposed-widget {
+    float: none;
+    padding: 0;;
+  }
+
+  .filter-dates-wrapper {
+    margin-bottom: 20px;
+    @include clearfix();
+
+    .dates-filter-from {
+      margin-right: 26px;
+    }
+
+    .dates-filter-from, .dates-filter-to {
+      float: left;
+      max-width: calc(50% - 13px);
+      
+      & > div .container-inline-date .description {
+        display: none;
+      }
     }
   }
 
-//   .views-exposed-form .views-widget {
-//       @include search();
-//   }
+  .accordion-wrapper {
+    margin-bottom: 20px;
+
+    .accordion-filter-header .accordion-control {
+      display: block;
+      cursor: pointer;
+      padding: 10px 0;
+      @include clearfix();
+
+      h2 {
+        float: left;
+        color: #01032E;
+        font-family: "Rubik-Regular";
+        font-size: 14px;
+        margin: 0 30px 0 0;
+      }
+
+      span.arrow {
+        float: left;
+        margin-top: 5px;
+        @include arrow(bottom, 5px, 6px, #01032E);
+      }
+    }
+
+    .accordion-filter-body {
+      padding-top: 15px;
+
+      ul.sub-menu {
+        padding: 0;
+
+        li {
+          @include checkbox();
+        }
+      }
+    }
+  }
+}
