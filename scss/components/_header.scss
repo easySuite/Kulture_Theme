@@ -1,8 +1,9 @@
-
 header.site-header {
 	nav.main-menu-wrapper.navbar {
 		width: 100%;
 		min-height: 140px;
+		// max-width: 1440px;
+		margin: 0 auto;
 
 		.pane-search-form form {
 			@include search();
@@ -44,6 +45,25 @@ header.site-header {
 	}
 }
 
-.not-front header.site-header nav.navbar {
+.not-front header.site-header {
 	box-shadow: 0 10px 30px 0 rgba(0,0,0,0.1);
+
+	nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li {
+		position: relative;
+
+		&.active:after {
+			display: none;
+			content: '';
+			position: absolute;
+			width: 40px;
+			height: 5px;
+			left: calc(50% - 20px);
+			bottom: -58px;
+			background-color: #1E0195;
+		
+			@include media-breakpoint-up(md) {
+				display: block;
+			}
+		}
+	}
 }
