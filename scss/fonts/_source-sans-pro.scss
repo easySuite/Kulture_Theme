@@ -9,3 +9,15 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: 'SourceSansPro-Bold';
+ // src: url('../fonts/Fortuna Regular.eot');
+  src:
+  //  url('../fonts/SourceSansPro-Regular?#iefix') format('embedded-opentype'),
+ //   url('../fonts/SourceSansPro-Regular.woff') format('woff'),
+    // url('../fonts/SourceSansPro-Regular.ttf')  format('truetype');
+   url('../fonts/SourceSansPro-Bold.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
