@@ -1,4 +1,12 @@
 <?php
+
+/**
+ * @file
+ * Preprocessors.
+ */
+
+require_once __DIR__ . '/template.node.php';
+
 /**
  * Implements hook_preprocess_panels_pane().
  */
