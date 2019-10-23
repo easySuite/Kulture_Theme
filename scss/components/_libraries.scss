@@ -1,0 +1,208 @@
+
+.page-taxonomy.page-taxonomy-term .content-wrapper {
+  max-width: 762px;
+  margin: 0 auto;
+}
+
+.page-libraries #ding-library-page,
+.page-taxonomy.page-taxonomy-term .content-wrapper .pane-content {
+  margin-top: 70px;
+
+  .primary-content, .secondary-content {
+    h2.pane-title {
+      color: #01032E;
+      font-family: 'Rubik-Regular';
+      font-size: 16px;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    ul, ul li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+  .secondary-content {
+    .views-exposed-form {
+      display: none;
+    }
+
+    ul.sub-menu {
+      margin-top: 32px;
+      
+      li {
+        margin-bottom: 10px;
+
+        a {
+          position: relative;
+          color: #01032E;
+          font-family: 'Rubik-Regular';
+          font-size: 14px;
+          letter-spacing: 0.3px;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &:before {
+            content: '';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: 1px solid map-get($theme-colors, blue);
+            border-radius: 2px;
+            box-shadow: map-get($shadows, level-2);
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 20px;
+          }
+
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 3px;
+            left: 11px;
+            width: 18px;
+            height: 11px;
+            border: solid white;
+            border-width: 1px 1px 0 0;
+            transform: rotate(133deg);
+            box-shadow: none;
+          }
+
+          &.active:before {
+            background-color: map-get($theme-colors, blue);
+          }
+        }
+      }
+    }
+  }
+
+ // .primary-content {
+
+    ul.library-list {
+      margin-top: 32px;
+    }
+
+    .library-item-wrapper {
+      margin-bottom: 50px;
+
+      h2.page-title {
+        margin-bottom: 12px;
+      }
+
+      h2.page-title > a {
+        color: #000119;
+        font-family: 'SourceSansPro-Bold';
+        font-size: 57px;
+        text-decoration: none;
+        
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .field .field-label,
+      .field.field-name-field-ding-library-title-image,
+      .field.field-name-field-ding-library-links {
+        display: none;
+      }
+
+      .field-name-field-ding-library-addresse {
+        @include clearfix();
+        padding-right: 80px;
+
+        .field-items, .field-item, .street-block {
+          @include clearfix();
+        }
+
+        .street-block, .street-block > div, .locality-block, .country {
+          float: left;
+          margin-right: 5px;
+          color: #000119;
+          font-family: 'SourceSansPro-Regular';
+          font-size: 16px;
+          font-weight: 600;
+        }
+
+        .street-block {
+          margin: 0;
+        }
+      }
+
+      .field-name-field-ding-library-phone-number {
+        margin-bottom: 15px;
+      }
+
+      .field-name-field-ding-library-addresse,
+      .field-name-field-ding-library-mail {
+        margin-bottom: 40px;
+      }
+
+      .field-name-field-ding-library-phone-number,
+      .field-name-field-ding-library-mail a {
+        color: #1E0195;
+        font-family: 'Rubik-Regular';
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0.45px;
+        line-height: 22px;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .order-redirect {
+        display: block;
+        margin-bottom: 40px;
+
+        a {
+          position: relative;
+          color: #01032E;
+          font-family: 'Rubik-Light';
+          font-size: 20px;
+          letter-spacing: 0.46px;
+          padding-right: 50px;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &:after {
+            content: '';
+            width: 25px;
+            height: 8px;
+            position: absolute;
+            right: 0;
+            top: calc(50% - 3px);
+            background: url('../images/nav-arrow-right.png') no-repeat right center;
+          }
+        }
+      }
+
+      .libraries {
+        position: relative;
+
+        .maps-link {
+          position: absolute;
+          right: 0;
+          color: #000119;
+          font-family: "SourceSansPro-Regular";
+          font-size: 16px;
+          font-weight: 600;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+ // }
+}

@@ -99,20 +99,23 @@ if ($view_mode == 'teaser') {
 // Check if library list image present.
 $image_exist_class = (!empty($content['group_ding_library_left_column'])) ? ' library-cover-exist' : '';
 ?>
-<div class="card <?php print $classes; ?> clearfix">
+<div class="<?php print $classes; ?> library-item-wrapper clearfix">
   <?php if ($view_mode != 'teaser'): ?>
-    <h2 class="card-title page-title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
+    <h2 class="page-title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h2>
   <?php endif ?>
-  <div class="content card-body"<?php print $content_attributes; ?>>
+  <div class="content"<?php print $content_attributes; ?>>
     <div class="libraries <?php print $image_exist_class; ?>">
       <?php print render($content); ?>
+	    <div class="order-redirect"><?php print l('Se kommende arrangementer ', 'node/' . $nid . '/arrangementer'); ?></div>
     </div>
     <?php if (!empty($opening_hours)) : ?>
-    <div class="libraries-opening-hours js-opening-hours-toggle-element"<?php if (variable_get('ding_kulture_theme_opening_hours_extended_title', FALSE)): print ' data-extended-title="1"';
-   endif; ?>>
-      <?php print $opening_hours;  ?>
+    <div class="accordion-wrapper">
+      <a class="accordion-control collapsed" data-toggle="collapse" role="button" aria-expanded="false" data-target="#library-<?php print $nid;?>" aria-controls="library-<?php print $nid;?>">Abningtider</a>
+      <div id="library-<?php print $nid;?>" class="libraries-opening-hours js-opening-hours-toggle-element collapse"<?php if (variable_get('ding_kulture_theme_opening_hours_extended_title', FALSE)): print ' data-extended-title="1"';
+      endif; ?>>
+        <?php print $opening_hours;  ?>
+      </div>
     </div>
-
     <?php endif; ?>
   </div>
 </div>
