@@ -96,7 +96,7 @@
             position: relative;
             margin-right: 20px;
 
-            &:not(:last-child) {
+            &:not(:last-child):not(.info-item-group) {
                 &:after {
                     content: '';
                     position: absolute;
@@ -121,32 +121,13 @@
             text-decoration: none;
         }
 
-        // & > div, & > a, & .field-type-taxonomy-term-reference, & .field-type-addressfield {
-        //     float: left;
-            // color: #000119;
-            // font-size: 14px;
-            // font-weight: 600;
-        // }
-
-        // a {
-        //     text-decoration: none;
-        //     color: #000119;
-        //     font-size: 14px;
-        //     font-weight: 600;
-        // }
-
-        // & > * {
-        //     padding: 0 5px;
-        //     &:after {
-        //         content: '';
-        //         position: relative;
-        //         border-right: 1px solid #000119;
-
-        //         &:last-child {
-        //             border-right: none;
-        //         }
-        //     }
-        // }
+        .price {
+            color: #00A878;
+            font-family: "Rubik-Regular";
+            font-size: 14px;
+            letter-spacing: 0.47px;
+            text-transform: uppercase;
+        }
 
     }
 }

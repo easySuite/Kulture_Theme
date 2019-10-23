@@ -90,7 +90,7 @@
  * @see template_preprocess_node()
  * @see template_process()
  */
-
+unset($content['field_ding_event_ticket_link']);
  ?>
 <article class="event-details-wrapper <?php print $classes; ?>"<?php print $attributes; ?>>
   <div class="container inner">
@@ -129,19 +129,7 @@
           <!-- insert time-field markup -->
           <?php if ($event_time): ?>
             <div class="field-item even info-item"><?php print $event_time; ?></div>
-          <?php endif; ?>
-
-          <div class="info-item-group">
-            <?php print render($content['group_left']); ?>
-          </div>
-          
-          <div class="info-item">
-            <?php
-              if (!empty($book_button)):
-                print render($book_button);
-              endif;
-            ?>
-          </div>
+          <?php endif; ?> 
           
           <div class="info-item">
             <?php if (!empty($campaigns)): ?>
@@ -150,8 +138,18 @@
           </div>
 
           <!-- insert price-field markup -->
-          <div class="field-item even info-item"><?php print $event_price; ?></div>
-        </div>    
+          <div class="field-item even info-item price"><?php print $event_price; ?></div>
+          <div class="info-item-group">
+            <?php print render($content['group_left']['field_ding_event_target']); ?>
+          </div>
+        </div> 
+        <div class="info-item">
+            <?php
+              if (!empty($book_button)):
+                print render($book_button);
+              endif;
+            ?>
+          </div>   
 
       </div>
       <?php // Render MKWS results set. ?>
@@ -159,9 +157,8 @@
         <?php print render($content['field_mkws_node_widget']); ?>
       <?php endif; ?>
     </div>
-
-    <!-- <div class="test"> -->
-    <?php print render($content); ?>
-    <!-- </div> -->
+    <div>
+     <?php print render($content['field_culture_lists_control']); ?>
+    </div>
   </div>
 </article>

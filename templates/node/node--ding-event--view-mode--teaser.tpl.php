@@ -114,6 +114,7 @@
           <div class="price"><?php print $event_price; ?></div>
         </div>
       </div>
+      <div class="price-tag"><?php print $event_price; ?></div>
     </div>
   </a>
 </article>
