@@ -1,0 +1,26 @@
+@mixin datepicker() {
+    label {
+        color: #01032E;
+        font-family: 'Rubik-Regular';
+        font-size: 15px;
+        margin-bottom: 25px;
+        font-weight: normal;
+    }
+
+    input {
+        width: 100%;
+        color: #8F8F8F;
+        font-family: 'Rubik-Regular';
+        font-size: 14px;
+        padding: 24px 23px 23px 64px;
+        box-shadow: 0 10px 35px 0 rgba(9,0,38,0.1);
+        border: none;
+        background: white url('../images/calendar-gray.png') no-repeat 20px center;
+
+
+        &:not([value='']) {
+            color: white;
+            background: #1E0195 url('../images/calendar-white.png') no-repeat 20px center;
+        }
+    }
+}
