@@ -86,20 +86,28 @@
  * @see template_process()
  */
 ?>
-<article class="<?php print $classes; ?>"<?php print $attributes; ?>>
+<article class="card news-item <?php print $classes; ?>"<?php print $attributes; ?>>
   <a href="<?php print $node_url; ?>">
-    <div class="inner">
-      <?php print $news_teaser_image; ?>
-      <div class="news-text">
-        <h3 class="title"><?php print $title; ?></h3>
-        <div class="category-and-submitted">
+    <div class="card-body inner">
+    <?php
+      if (!empty($news_teaser_image)):
+        print '<div class="image-wrapper card-img-top">' . $news_teaser_image . '</div>';
+      endif;
+    ?>
+      <div class="card-text news-text">
+      <div class="category-and-submitted">
+        <div class="news-category">
+          <div class="category-label">Nyhed: </div>
           <?php print render($content['field_ding_news_category']); ?>
+        </div>
           <?php if (isset($content['field_editorial_base'])) : ?>
             <?php print render($content['field_editorial_base']); ?>
           <?php endif; ?>
           <div class="info-dash">-</div>
           <div class="submitted"><?php print $news_submitted; ?></div>
         </div>
+        <h3 class="title"><?php print $title; ?></h3>
+
         <?php print render($content['field_ding_news_lead']); ?>
       </div>
     </div>

@@ -50,16 +50,15 @@
 
   <?php if (!empty($content['footer'])): ?>
     <footer class="footer">
+      <?php if (!empty($content['bottom'])): ?>
+      <div class="bottom btn">
+        <?php print render($content['bottom']); ?>
+      </div>
+      <?php endif; ?> 
+
       <div class="footer-inner">
         <?php print render($content['footer']); ?>
       </div>
     </footer>
   <?php endif; ?>
-
-  <?php if (!empty($content['bottom'])): ?>
-    <div class="bottom btn">
-      <?php print render($content['bottom']); ?>
-    </div>
-  <?php endif; ?>
-
 </div>
