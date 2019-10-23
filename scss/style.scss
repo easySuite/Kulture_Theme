@@ -12,10 +12,19 @@
 @import 'mixins/button';
 @import 'mixins/checkbox';
 @import 'mixins/search';
+@import 'mixins/datepicker';
 
 @import 'base/general';
 
 @import 'components/header';
+@import 'components/footer';
 @import 'components/filter';
+@import 'components/pagination';
+@import 'components/opening-hours';
 @import 'components/events';
 @import 'components/event-details';
+@import 'components/libraries';
+@import 'components/library-details';
+@import 'components/news';
+@import 'components/news-details';
+//@import 'components/news';

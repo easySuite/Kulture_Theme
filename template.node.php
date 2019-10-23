@@ -273,10 +273,10 @@ function kulture_theme_preprocess__node__ding_news(&$variables) {
           $img_url = image_style_url('ding_panorama_list_large', $uri);
         }
         if (!empty($image_title)) {
-          $variables['news_teaser_image'] = '<div class="ding-news-list-image background-image-styling-16-9" style="background-image:url(' . $img_url . ')" title="' . $image_title . '"></div>';
+          $variables['news_teaser_image'] = '<img class="ding-news-list-image background-image-styling-16-9" src="' . $img_url . '"</img>';
         }
         else {
-          $variables['news_teaser_image'] = '<div class="ding-news-list-image background-image-styling-16-9" style="background-image:url(' . $img_url . ')"></div>';
+          $variables['news_teaser_image'] = '<img class="ding-news-list-image background-image-styling-16-9" src="' . $img_url . '"</img>';
         }
 
         $variables['news_image_url'] = $img_url;
