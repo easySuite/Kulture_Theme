@@ -90,7 +90,7 @@
         &, .info-item-group {
             @include clearfix();
         }
-        
+
         .info-item, .info-item-group, .info-item-group .group-left > div {
             float: left;
             position: relative;
@@ -130,4 +130,13 @@
         }
 
     }
+}
+
+.separator {
+  &:after {
+    content: '|';
+    margin: 0 5px;
+    font-size: 0.8em;
+    vertical-align: text-top;
+  }
 }

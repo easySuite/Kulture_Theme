@@ -100,6 +100,23 @@ function kulture_theme_preprocess__node__ding_campaign(&$variables) {
 function kulture_theme_preprocess__node__ding_event(&$variables) {
   $date = field_get_items('node', $variables['node'], 'field_ding_event_date');
 
+  // Search same event times.
+  $event_time = [];
+  $title = html_entity_decode($variables['title']);
+  $date_object = new DateTime($date[0]['value'], new DateTimeZone($date[0]['timezone_db']));
+
+  $query = db_select('node', 'n');
+  $query->fields('n', ['nid']);
+  $query->join('field_data_field_ding_event_date', 'fed', 'n.nid=fed.entity_id');
+  $query->where(
+    "DATE_FORMAT(fed.field_ding_event_date_value, '%Y-%m-%d') = :date",
+    array(
+      ':date' => $date_object->format('Y-m-d')
+    )
+  );
+  $query->condition('n.title', $title);
+  $results = $query->execute()->fetchCol();
+
   $price = field_get_items('node', $variables['node'], 'field_ding_event_price');
   if (!empty($price)) {
     $variables['event_price'] = $price[0]['value'] . ' ' . variable_get('ding_event_currency_type', 'Kr');
@@ -165,27 +182,33 @@ function kulture_theme_preprocess__node__ding_event(&$variables) {
           $event_time_view_settings['settings']['fromto'] = 'both';
         }
 
-        $event_time_ra = field_view_field('node', $variables['node'], 'field_ding_event_date', $event_time_view_settings);
-        $variables['event_time'] = $event_time_ra[0]['#markup'];
+        // Search for same event.
+        foreach ($results as $nid) {
+          // Add event time to variables. A render array is created based on the
+          // date format "time_only".
+          $separate_event_time = field_view_field('node', node_load($nid), 'field_ding_event_date', $event_time_view_settings);
+          $event_time[] = $separate_event_time[0]['#markup'];
+        }
       }
-
       break;
 
     case 'full':
       if (!empty($date)) {
         array_push($variables['classes_array'], 'node-full');
 
-        // Add event time to variables. A render array is created based on the
-        // date format "time_only".
-        $event_time_ra = field_view_field('node', $variables['node'], 'field_ding_event_date', array(
-          'label' => 'hidden',
-          'type' => 'date_default',
-          'settings' => array(
-            'format_type' => 'ding_time_only',
-            'fromto' => 'both',
-          ),
-        ));
-        $variables['event_time'] = $event_time_ra[0]['#markup'];
+        foreach ($results as $nid) {
+          // Add event time to variables. A render array is created based on the
+          // date format "time_only".
+          $separate_event_time = field_view_field('node', node_load($nid), 'field_ding_event_date', array(
+            'label' => 'hidden',
+            'type' => 'date_default',
+            'settings' => array(
+              'format_type' => 'ding_time_only',
+              'fromto' => 'both',
+            ),
+          ));
+          $event_time[] = $separate_event_time[0]['#markup'];
+        }
 
         // Make social-share button.
         $variables['share_button'] = array(
@@ -222,6 +245,8 @@ function kulture_theme_preprocess__node__ding_event(&$variables) {
       }
       break;
   }
+
+  $variables['event_time'] = implode('<span class="separator"></span>', $event_time);
 }
 
 

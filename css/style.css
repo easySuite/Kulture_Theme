@@ -8568,6 +8568,12 @@ header.site-header nav.main-menu-wrapper.navbar {
     letter-spacing: 0.47px;
     text-transform: uppercase; }
 
+.separator:after {
+  content: '|';
+  margin: 0 5px;
+  font-size: 0.8em;
+  vertical-align: text-top; }
+
 .page-taxonomy.page-taxonomy-term .content-wrapper {
   max-width: 762px;
   margin: 0 auto; }
