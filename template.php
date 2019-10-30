@@ -66,6 +66,14 @@ function kulture_theme_process_html(&$vars) {
 }
 
 /**
+ * Implements hook_preprocess_html().
+ */
+function kulture_theme_preprocess_html(&$vars) {
+  // Include the libraries.
+  libraries_load('slick');
+}
+
+/**
  * Implements hook_process_page().
  */
 function kulture_theme_process_page(&$vars) {
