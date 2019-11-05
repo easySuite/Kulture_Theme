@@ -1,4 +1,101 @@
 .news-details-wrapper {
     max-width: 726px;
     margin: 70px auto 0;
+
+    .ding-news-right {
+        .category-tag {
+            @include clearfix();
+            color: #4D4E6C;
+            font-size: 10px;
+            font-weight: bold;
+            position: relative;
+            margin-top: 30px;
+            text-transform: uppercase;
+            padding: 0 0 20px 20px;
+            letter-spacing: 1px;
+
+            &:after {
+                position: absolute;
+                top: 1px;
+                left: 0;
+                height: 13px;
+                width: 10px;
+                background: url('../images/tag.png') no-repeat center center;
+            }
+
+            & > div {
+                float: left;
+            }
+
+            a {
+                text-decoration: none;
+                color: #4D4E6C;
+            }
+        }
+
+        .category-info {
+            @include clearfix();
+            color: #000119;
+            font-family: 'SourceSansPro-Regular';
+            font-size: 12px;
+            font-weight: 600;
+            margin-top: 20px;
+
+            .author, .created {
+                float: left;
+            }
+        }
+
+        h1 {
+            color: #000119;
+            font-family: "SourceSansPro-Bold";
+            font-size: 57px;
+            line-height: 62px;
+            margin: 0 0 10px;
+        }
+
+        .category-links {
+            display: none;
+        }
+
+        .category-text {
+            color: #414256;
+            font-family: "SourceSansPro-Regular";
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .field-label-above {
+            @include clearfix();
+            color: #01032E;
+            font-family: 'Rubik-Regular';
+            font-size: 14px;
+            letter-spacing: 0.3px;
+            margin-top: 30px;
+            border-top: 1px solid #DBD9D9;
+            border-bottom: 1px solid #DBD9D9;
+            padding-top: 16px;
+            padding-bottom: 16px;
+
+            .field-label, .field-item {
+                float: left;
+                font-weight: normal;
+            }
+
+            .field-item {
+                color: #1E0195;
+                padding-left: 20px;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+.node-type-ding-news {
+    .panel-pane.pane-ding-related-content-news-events {
+        @extend .container;
+    }
 }
