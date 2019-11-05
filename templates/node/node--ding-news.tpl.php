@@ -94,16 +94,22 @@
           <?php endif; ?>
       </div>
       <div class="ding-news-right">
-          <h1><?php print $title; ?></h1>
+        <div class="category-tag">
+          <div class="category-label">Nyhed: </div>
+          <?php print render($content['group_right']['field_ding_news_category']); ?>
+        </div>
+        <?php print render($content['group_right']['field_ding_section']); ?>
+        <div class="category-info section meta">
+          <div class="created"><?php print $news_submitted ?>&nbsp;</div>
+          <div class="author"><?php print t("By"); ?> <?php print $name; ?></div>
+        </div>
+        <h1><?php print $title; ?></h1>
+        <div class="category-links">
           <?php print render($content['group_right']['og_group_ref']); ?>
-          <span> Nyhed: <?php print render($content['group_right']['field_ding_news_category']); ?> </span>
-          <?php print render($content['group_right']['field_ding_section']); ?>
-          <div class="section meta">
-              <div class="author"><?php print t("By"); ?> <?php print $name; ?></div>
-              <div class="created"><?php print $news_submitted ?>
-              </div>
-          </div>
+        </div>
+        <div class="category-text">
           <?php print render($content['group_right']); ?>
+        </div>
       </div>
     <?php print render($content); ?>
   </div>
