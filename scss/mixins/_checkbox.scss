@@ -10,11 +10,13 @@
     display: none;
     cursor: pointer;
 
-    &:checked + label:before {
+    &:checked + label:before,
+    &:checked + .element-label:before {
       background-color: map-get($theme-colors, blue);
     }
 
-    &:checked + label:after {
+    &:checked + label:after,
+    &:checked + .element-label:after {
       content: '';
       display: block;
       position: absolute;
@@ -29,7 +31,8 @@
     }
   }
 
-  & > label {
+  & > label,
+  & > .element-label {
     position: relative;
     cursor: pointer;
 

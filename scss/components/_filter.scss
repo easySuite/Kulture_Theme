@@ -28,6 +28,18 @@
 
     .filters-group {
 
+      & > .events-tomorrow {
+        padding-right: 0;
+      }
+
+      & > .events-next_weekend {
+        padding: 0;
+      }
+
+      & > .top_events {
+        padding-left: 0;
+      }
+
       .label {
         @extend .col-md-12;
         color: #01032E;	
@@ -36,6 +48,27 @@
         font-size: 16px;
         letter-spacing: 0.6px;
         margin-bottom: 30px;
+      }
+
+      .form-type-checkbox {
+        color: #01032E;
+        font-family: 'Rubik-Regular';
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        
+        label {
+          font-weight: normal;
+          @include clearfix();
+          @include checkbox();
+
+          input, .element-label {
+            float: left;
+          }
+
+          .element-label:before {
+            margin-right: 10px;
+          }
+        }
       }
     }
   }
