@@ -53,5 +53,255 @@
             font-family: 'SourceSansPro-Regular';
             font-size: 14px;
         }
+
+        .pane-node-title {
+            margin-top: 70px;
+
+            h2 {
+                color: #000119;
+                font-family: 'SourceSansPro-Bold';
+                font-size: 57px;
+                line-height: 42px;
+                margin: 0;
+                margin-bottom: 17px;
+            }
+        }
+
+        .ding-library-address .library-address {
+            @include clearfix();
+            margin-bottom: 40px;
+
+            & .library-address-street,
+            & .library-address-city-wrapper {
+                color: #000119;
+                font-family: "SourceSansPro-Regular";
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 20px;
+                float: left;
+            }
+
+            & .library-address-city-wrapper {
+                @include clearfix();
+
+                & .library-address-postal-code,
+                & .library-address-city {
+                    float: left;
+                }
+            }
+
+            .library-address-street:after {
+                content: ',\00a0 ';
+            }
+
+            .library-address-postal-code:after {
+                content: '\00a0 ';
+            }
+        }
+
+        .ding-library-contact {
+            margin-bottom: 40px;
+
+            .library-contact-phone-label,
+            .library-contact-email-label {
+                display: none;
+            }
+
+            .library-contact-phone,
+            .library-contact-phone a {
+                color: #1E0195;
+                font-family: 'Rubik-Regular';
+                font-size: 18px;
+                font-weight: 300;
+                letter-spacing: 0.45px;
+                line-height: 22px;
+                text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            .library-contact > .library-contact-phone {
+                margin-bottom: 15px;
+            }
+        }
+
+
+        .pane-weekly-opening-hours {
+            margin-bottom: 70px;
+        }
+        
+    }
+
+    .attachments-wrapper {
+        .pane-title {
+            @extend .container;
+
+            color: #01032E;
+            font-family: 'Rubik-Regular';
+            font-size: 16px;
+            letter-spacing: 0.6px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+        }
+
+        .view-ding-event,
+        .view-ding-news {
+            position: relative;
+
+            .more-link {
+                position: absolute;
+                top: -50px;
+                right: 28px;
+
+                a {
+                    color: #1E0195;
+                    font-family: 'Rubik-Regular';
+                    font-size: 16px;
+                    letter-spacing: 0.6px;
+                    line-height: 19px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+
+                    &:hover {
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .card {
+            border: none;
+            border-radius: 2px;
+            margin-bottom: 57px;
+    
+            .node-ding-event,
+            .node-ding-news {
+                height: 100%;
+                box-shadow: 0 10px 35px 0 rgba(9,0,38,0.1);
+            }
+    
+            a, a:active, a:visited, a:hover, a:focus {
+                color: #000119;
+                text-decoration: none;
+            }
+    
+            .inner {
+                position: relative;
+            }
+    
+            .price-tag {
+                position: absolute;
+                top: 10px;
+                right: -5px;
+                background-color: #00A878;
+                box-shadow: -4px 4px 10px 0 rgba(0,0,0,0.1);
+                color: white;
+                width: 90px;
+                font-family: 'Rubik-Medium';
+                font-size: 12px;
+                // font-weight: 500;
+                letter-spacing: 0.4px;
+                text-transform: uppercase;
+                text-align: center;
+                padding: 9px 20px;
+    
+                &:after {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    bottom: -5px;
+                    height: 0;
+                    width: 0;
+                    display: block;
+                    border-top: 5px solid #007352;
+                    border-right: 5px solid transparent;
+                    -moz-transform: scale(.9999);
+                }
+            }
+    
+            .image-wrapper {
+                position: relative;
+                overflow: hidden;
+                height: 206px;
+    
+                img {
+                    top: calc(50% - 103px);
+                    position: absolute;
+                }
+            }
+    
+            .card-body {
+                color: #000119;
+                font-family: "SourceSansPro-Regular";
+                padding: 30px;
+    
+                .info-top {
+                    color: #4D4E6C;
+                    font-size: 10px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    position: relative;
+                    padding-bottom: 20px;
+                    letter-spacing: 1px;
+    
+                    i.tag-icon {
+                        position: absolute;
+                        top: 1px;
+                        height: 13px;
+                        width: 10px;
+                        background: url('../images/tag.png') no-repeat center center;
+                    }
+    
+                    .field {
+                        padding-left: 20px;
+                    }
+                }
+    
+                .date {
+                    font-size: 12px;
+                    font-weight: 600;
+                    padding-bottom: 15px;
+                }
+    
+                .card-title {
+                    font-size: 21px;
+                    font-weight: 900;
+                    padding-bottom: 8px;
+                    margin: 0;
+                    font-family: "SourceSansPro-Bold";
+                    text-transform: none;
+                }
+    
+                .card-description {
+                    color: #414256;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding-bottom: 23px;
+                    // @include elipsis()
+                }
+    
+                .library, .date-time {
+                    font-size: 12px;
+                    font-weight: 600;
+                    padding-bottom: 10px;
+                }
+    
+                .price {
+                    color: #00A878;
+                    font-family: "Rubik-Medium";
+                    font-size: 12px;
+                    // font-weight: 500;
+                    text-transform: uppercase;
+                }
+            }
+            
+    
+            .card-img-top {
+                border-radius: 2px 2px 0 0;
+                background-color: #DBD9D9;
+            }
+        }
     }
 }
