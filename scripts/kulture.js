@@ -11,6 +11,34 @@
             expectedElem.css({top: finalPosition + 'px'});
         });
     }
+
+    function tranformLibraryToAccordion(pageElemRef) {
+        var libraryAccordion = pageElemRef.find('.layout-wrapper .primary-content .pane-weekly-opening-hours');
+
+        libraryAccordion.find('h2.pane-title').replaceWith(function() {
+            return $("<a/>", {html: $(this).html()});
+        });
+
+        libraryAccordion.find('.panel-pane-inner').attr("class", "accordion-wrapper");
+
+        var link = libraryAccordion.find('.accordion-wrapper > a');
+        link.attr("class", "accordion-control collapsed");
+        link.attr("data-toggle", "collapse");
+        link.attr("role", "button");
+        link.attr("data-target", "#library-details-accordion");
+        link.attr("aria-controls", "#library-details-accordion");
+
+        var accordionBody = libraryAccordion.find('.accordion-wrapper > .pane-content');
+        accordionBody.attr("id", "library-details-accordion");
+        accordionBody.attr("class", "collapse");
+    }
+
+    function replaceCarousel(carousel) {
+        console.log(carousel)
+        carousel.parents('.container').prepend('<div class="carousel-front-wrapper row"></div>');
+        $('.carousel-front-wrapper').prepend('<div class="carousel-front-inner col-md-12"></div>')
+        $('.carousel-front-inner').prepend(carousel);
+    }
   
     $(document).ready(function () {
       
@@ -24,6 +52,10 @@
 
         if ($('.page-taxonomy.page-taxonomy-term').length) {
             detectMapsLinkPosition($('.page-taxonomy.page-taxonomy-term'));
+        }
+
+        if ($('#ding-library-front').length) {
+            tranformLibraryToAccordion($('#ding-library-front'));
         }
     });
   
