@@ -8661,6 +8661,12 @@ header.site-header nav.main-menu-wrapper.navbar {
     text-transform: uppercase;
     margin-bottom: 30px; }
 
+.separator:after {
+  content: '|';
+  margin: 0 5px;
+  font-size: 0.8em;
+  vertical-align: text-top; }
+
 .page-libraries #ding-library-page,
 .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content {
   margin-top: 70px; }
