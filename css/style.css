@@ -461,13 +461,13 @@ pre {
   margin-left: auto; }
   @media (min-width: 576px) {
     .container, #ding-library-front .attachments-wrapper .pane-title, .node-type-ding-news .panel-pane.pane-ding-related-content-news-events {
-      max-width: 540px; } }
+      max-width: 767px; } }
   @media (min-width: 768px) {
     .container, #ding-library-front .attachments-wrapper .pane-title, .node-type-ding-news .panel-pane.pane-ding-related-content-news-events {
-      max-width: 720px; } }
+      max-width: 992px; } }
   @media (min-width: 992px) {
     .container, #ding-library-front .attachments-wrapper .pane-title, .node-type-ding-news .panel-pane.pane-ding-related-content-news-events {
-      max-width: 960px; } }
+      max-width: 1024px; } }
   @media (min-width: 1200px) {
     .container, #ding-library-front .attachments-wrapper .pane-title, .node-type-ding-news .panel-pane.pane-ding-related-content-news-events {
       max-width: 1252px; } }
@@ -485,11 +485,16 @@ pre {
   margin-right: -28.5px;
   margin-left: -28.5px; }
 
-.no-gutters {
+.no-gutters, .front.page-culture-frontpage .content-wrapper .container .content-container, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .content-container, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container {
   margin-right: 0;
   margin-left: 0; }
-  .no-gutters > .col,
-  .no-gutters > [class*="col-"] {
+  .no-gutters > .col, .front.page-culture-frontpage .content-wrapper .container .content-container > .col, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container > .col, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container > .col, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .content-container > .col, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container > .col,
+  .no-gutters > [class*="col-"],
+  .front.page-culture-frontpage .content-wrapper .container .content-container > [class*="col-"],
+  .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container > [class*="col-"],
+  #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container > [class*="col-"],
+  .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .content-container > [class*="col-"],
+  .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container > [class*="col-"] {
     padding-right: 0;
     padding-left: 0; }
 
@@ -7902,6 +7907,12 @@ a.text-light-gray:hover, a.text-light-gray:focus {
   font-style: normal; }
 
 @font-face {
+  font-family: 'Rubik-Bold';
+  src: url("../fonts/Rubik-Bold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Rubik-Medium';
   src: url("../fonts/Rubik-Medium.ttf") format("truetype");
   font-weight: normal;
@@ -7931,6 +7942,12 @@ a.text-light-gray:hover, a.text-light-gray:focus {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'SourceSansPro-Semibold';
+  src: url("../fonts/SourceSansPro-Semibold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 ul li.leaf {
   list-style-image: none; }
 
@@ -7944,14 +7961,88 @@ ul li.leaf {
 .layout-wrapper {
   width: 100%; }
 
+.row {
+  margin: 0;
+  padding: 0; }
+
+.content-wrapper .col-lg-12,
+.content-wrapper .col-md-12,
+.content-wrapper .secondary-content .pane-quick-buttons .filters-group .label,
+.secondary-content .pane-quick-buttons .filters-group .content-wrapper .label,
+.content-wrapper .col-sm-12,
+.content-wrapper .col-md-8,
+.content-wrapper .col-lg-8,
+.content-wrapper .col-lg-7,
+.content-wrapper .col-md-6,
+.content-wrapper .col-lg-6,
+.content-wrapper .col-md-5,
+.content-wrapper .col-lg-5,
+.content-wrapper .col-md-5,
+.content-wrapper .col-lg-4,
+.content-wrapper .col-md-4 {
+  margin: 0;
+  padding: 0; }
+  @media (min-width: 992px) {
+    .content-wrapper .col-lg-12,
+    .content-wrapper .col-md-12,
+    .content-wrapper .secondary-content .pane-quick-buttons .filters-group .label,
+    .secondary-content .pane-quick-buttons .filters-group .content-wrapper .label,
+    .content-wrapper .col-sm-12,
+    .content-wrapper .col-md-8,
+    .content-wrapper .col-lg-8,
+    .content-wrapper .col-lg-7,
+    .content-wrapper .col-md-6,
+    .content-wrapper .col-lg-6,
+    .content-wrapper .col-md-5,
+    .content-wrapper .col-lg-5,
+    .content-wrapper .col-md-5,
+    .content-wrapper .col-lg-4,
+    .content-wrapper .col-md-4 {
+      padding-right: 28.5px;
+      padding-left: 28.5px; } }
+
+.content-wrapper .col-sm-12 {
+  width: auto;
+  flex: auto; }
+
+#page .content-inner .container, #page .content-inner #ding-library-front .attachments-wrapper .pane-title, #ding-library-front .attachments-wrapper #page .content-inner .pane-title, #page .content-inner .node-type-ding-news .panel-pane.pane-ding-related-content-news-events, .node-type-ding-news #page .content-inner .panel-pane.pane-ding-related-content-news-events {
+  padding: 0; }
+  @media (min-width: 992px) {
+    #page .content-inner .container, #page .content-inner #ding-library-front .attachments-wrapper .pane-title, #ding-library-front .attachments-wrapper #page .content-inner .pane-title, #page .content-inner .node-type-ding-news .panel-pane.pane-ding-related-content-news-events, .node-type-ding-news #page .content-inner .panel-pane.pane-ding-related-content-news-events {
+      padding-right: 28.5px;
+      padding-left: 28.5px; } }
+
+.not-front .layout-wrapper {
+  padding: 0 10px; }
+  @media (min-width: 992px) {
+    .not-front .layout-wrapper {
+      padding: 0; } }
+
+.container, #ding-library-front .attachments-wrapper .pane-title, .node-type-ding-news .panel-pane.pane-ding-related-content-news-events {
+  padding: 0 10px; }
+  @media (min-width: 992px) {
+    .container, #ding-library-front .attachments-wrapper .pane-title, .node-type-ding-news .panel-pane.pane-ding-related-content-news-events {
+      padding-right: 28.5px;
+      padding-left: 28.5px;
+      margin: 0 auto; } }
+
 header.site-header nav.main-menu-wrapper.navbar {
   width: 100%;
   min-height: 140px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px; }
+  @media (min-width: 768px) {
+    header.site-header nav.main-menu-wrapper.navbar {
+      padding-left: 20px;
+      padding-right: 20px; } }
   header.site-header nav.main-menu-wrapper.navbar .pane-search-form form {
-    width: 400px;
-    box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
-    padding: 20px; }
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
+    @media (min-width: 992px) {
+      header.site-header nav.main-menu-wrapper.navbar .pane-search-form form {
+        width: 400px; } }
     header.site-header nav.main-menu-wrapper.navbar .pane-search-form form .form-item {
       margin: 0; }
       header.site-header nav.main-menu-wrapper.navbar .pane-search-form form .form-item input[type="text"] {
@@ -7959,26 +8050,46 @@ header.site-header nav.main-menu-wrapper.navbar {
         margin: 0;
         border: none;
         outline: none;
-        background-image: url(../images/search.png);
+        background-image: url("../images/search.png");
         background-position: 100% center;
         background-repeat: no-repeat; }
     header.site-header nav.main-menu-wrapper.navbar .pane-search-form form .form-actions {
       display: none; }
   header.site-header nav.main-menu-wrapper.navbar .logo .navbar-brand {
     margin: 0; }
+  header.site-header nav.main-menu-wrapper.navbar .navbar-collapse {
+    padding-bottom: 20px; }
+    @media (min-width: 992px) {
+      header.site-header nav.main-menu-wrapper.navbar .navbar-collapse {
+        padding-bottom: 0; } }
   header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav {
-    margin-left: 10px; }
+    margin-left: 0;
+    margin-top: 32px; }
+    @media (min-width: 992px) {
+      header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav {
+        margin-top: 0;
+        margin-left: 10px; } }
     header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li {
-      margin-left: 40px;
-      text-align: center;
+      margin-left: 0;
+      text-align: left;
       list-style-type: none;
       text-transform: uppercase;
-      padding: 0;
+      padding: 0 0 15px;
       position: relative; }
+      @media (min-width: 992px) {
+        header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li {
+          margin-left: 40px;
+          text-align: center;
+          padding-bottom: 0; } }
       header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li a {
         color: #000119;
-        font-family: Rubik-Regular;
-        font-size: 14px; }
+        font-family: 'Rubik-Regular';
+        font-size: 14px;
+        margin-bottom: 25px;
+        text-align: left; }
+        @media (min-width: 992px) {
+          header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li a {
+            margin-bottom: 0; } }
         header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li a:hover {
           text-decoration: none; }
 
@@ -7995,16 +8106,19 @@ header.site-header nav.main-menu-wrapper.navbar {
       left: calc(50% - 20px);
       bottom: -58px;
       background-color: #1E0195; }
-      @media (min-width: 768px) {
+      @media (min-width: 992px) {
         .not-front header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li.active:after {
           display: block; } }
 
 .footer {
   display: block;
   background-color: #000119;
-  padding: 100px 60px;
+  padding: 100px 10px;
   text-align: center;
   color: #ffffff; }
+  @media (min-width: 768px) {
+    .footer {
+      padding: 100px 60px; } }
   .footer .contextual-links-wrapper .pane-title,
   .footer .bottom.btn .pane-title {
     display: none; }
@@ -8019,17 +8133,22 @@ header.site-header nav.main-menu-wrapper.navbar {
       letter-spacing: 1px;
       text-transform: uppercase;
       padding-bottom: 18px; }
-    .footer .company-info .email-cp, .footer .company-info .phone-cp {
+    .footer .company-info .email-cp,
+    .footer .company-info .phone-cp {
       font-family: 'Rubik-Light';
       font-size: 26px;
       font-weight: 300;
       letter-spacing: 0.6px; }
-      .footer .company-info .email-cp a, .footer .company-info .email-cp a:hover, .footer .company-info .phone-cp a, .footer .company-info .phone-cp a:hover {
+      .footer .company-info .email-cp a,
+      .footer .company-info .email-cp a:hover,
+      .footer .company-info .phone-cp a,
+      .footer .company-info .phone-cp a:hover {
         color: #ffffff;
         text-decoration: none; }
     .footer .company-info .phone-cp {
       padding: 20px 0 30px; }
-    .footer .company-info .address-cp, .footer .company-info .location-cp {
+    .footer .company-info .address-cp,
+    .footer .company-info .location-cp {
       font-family: 'Rubik-Light';
       font-size: 18px;
       font-weight: 300;
@@ -8037,10 +8156,15 @@ header.site-header nav.main-menu-wrapper.navbar {
     .footer .company-info .address-cp {
       padding-bottom: 10px; }
   .footer .footer-inner {
-    display: flex;
-    justify-content: space-around;
+    display: block;
     border-top: 1px solid rgba(255, 255, 255, 0.11);
-    padding-top: 50px; }
+    padding: 50px 27px 0;
+    height: max-content; }
+    @media (min-width: 768px) {
+      .footer .footer-inner {
+        display: flex;
+        justify-content: space-around;
+        padding: 50px 0 0; } }
     .footer .footer-inner .panel-pane .panel-pane-inner .pane-title {
       font-family: 'Rubik-Medium';
       font-size: 12px;
@@ -8058,7 +8182,8 @@ header.site-header nav.main-menu-wrapper.navbar {
         font-size: 14px;
         letter-spacing: 0.32px;
         padding: 0 0 10px 0;
-        line-height: 28px; }
+        line-height: 28px;
+        text-align: left; }
         .footer .footer-inner .panel-pane .panel-pane-inner ul.menu li a {
           color: white; }
 
@@ -8082,18 +8207,34 @@ header.site-header nav.main-menu-wrapper.navbar {
       padding-left: 0;
       padding-right: 0; }
     .secondary-content .pane-quick-buttons .filters-group > .events-tomorrow {
-      padding-right: 0; }
+      padding-right: 5px;
+      padding-left: 0px;
+      width: auto;
+      float: left;
+      display: inline-block; }
     .secondary-content .pane-quick-buttons .filters-group > .events-next_weekend {
-      padding: 0; }
+      padding-right: 5px;
+      padding-left: 0px;
+      width: auto;
+      float: left;
+      display: inline-block; }
+      @media (min-width: 768px) {
+        .secondary-content .pane-quick-buttons .filters-group > .events-next_weekend {
+          padding-right: 0; } }
     .secondary-content .pane-quick-buttons .filters-group > .top_events {
-      padding-left: 0; }
+      padding-left: 0;
+      padding-right: 0;
+      width: auto;
+      float: left;
+      display: inline-block; }
     .secondary-content .pane-quick-buttons .filters-group .label {
       color: #01032E;
       font-family: 'Rubik-Regular';
       text-transform: uppercase;
       font-size: 16px;
       letter-spacing: 0.6px;
-      margin-bottom: 30px; }
+      margin-bottom: 30px;
+      padding: 0; }
     .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox {
       color: #01032E;
       font-family: 'Rubik-Regular';
@@ -8141,15 +8282,19 @@ header.site-header nav.main-menu-wrapper.navbar {
             background-color: transparent;
             border: 1px solid #1E0195;
             border-radius: 2px;
-            box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
             width: 40px;
             height: 40px;
             display: inline-block;
             position: relative;
             vertical-align: middle;
             cursor: pointer;
-            margin-right: 20px; }
-        .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label input, .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label .element-label {
+            margin-right: 20px;
+            transition: box-shadow 0.2s linear; }
+            .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > label:before:hover,
+            .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > .element-label:before:hover {
+              box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
+        .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label input,
+        .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label .element-label {
           float: left; }
         .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label .element-label:before {
           margin-right: 10px; }
@@ -8164,16 +8309,19 @@ header.site-header nav.main-menu-wrapper.navbar {
       content: ""; }
     .secondary-content .filter-dates-wrapper .dates-filter-from {
       margin-right: 26px; }
-    .secondary-content .filter-dates-wrapper .dates-filter-from, .secondary-content .filter-dates-wrapper .dates-filter-to {
+    .secondary-content .filter-dates-wrapper .dates-filter-from,
+    .secondary-content .filter-dates-wrapper .dates-filter-to {
       float: left;
       max-width: calc(50% - 13px); }
-      .secondary-content .filter-dates-wrapper .dates-filter-from label, .secondary-content .filter-dates-wrapper .dates-filter-to label {
+      .secondary-content .filter-dates-wrapper .dates-filter-from label,
+      .secondary-content .filter-dates-wrapper .dates-filter-to label {
         color: #01032E;
         font-family: 'Rubik-Regular';
         font-size: 15px;
         margin-bottom: 25px;
         font-weight: normal; }
-      .secondary-content .filter-dates-wrapper .dates-filter-from input, .secondary-content .filter-dates-wrapper .dates-filter-to input {
+      .secondary-content .filter-dates-wrapper .dates-filter-from input,
+      .secondary-content .filter-dates-wrapper .dates-filter-to input {
         width: 100%;
         color: #8F8F8F;
         font-family: 'Rubik-Regular';
@@ -8182,12 +8330,15 @@ header.site-header nav.main-menu-wrapper.navbar {
         box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
         border: none;
         background: white url("../images/calendar-gray.png") no-repeat 20px center; }
-        .secondary-content .filter-dates-wrapper .dates-filter-from input:not([value='']), .secondary-content .filter-dates-wrapper .dates-filter-to input:not([value='']) {
+        .secondary-content .filter-dates-wrapper .dates-filter-from input:not([value='']),
+        .secondary-content .filter-dates-wrapper .dates-filter-to input:not([value='']) {
           color: white;
           background: #1E0195 url("../images/calendar-white.png") no-repeat 20px center; }
-      .secondary-content .filter-dates-wrapper .dates-filter-from input, .secondary-content .filter-dates-wrapper .dates-filter-to input {
+      .secondary-content .filter-dates-wrapper .dates-filter-from input,
+      .secondary-content .filter-dates-wrapper .dates-filter-to input {
         max-width: 200px; }
-      .secondary-content .filter-dates-wrapper .dates-filter-from > div .container-inline-date .description, .secondary-content .filter-dates-wrapper .dates-filter-to > div .container-inline-date .description {
+      .secondary-content .filter-dates-wrapper .dates-filter-from > div .container-inline-date .description,
+      .secondary-content .filter-dates-wrapper .dates-filter-to > div .container-inline-date .description {
         display: none; }
   .secondary-content .accordion-wrapper {
     margin-bottom: 20px; }
@@ -8257,21 +8408,30 @@ header.site-header nav.main-menu-wrapper.navbar {
               background-color: transparent;
               border: 1px solid #1E0195;
               border-radius: 2px;
-              box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
               width: 40px;
               height: 40px;
               display: inline-block;
               position: relative;
               vertical-align: middle;
               cursor: pointer;
-              margin-right: 20px; }
+              margin-right: 20px;
+              transition: box-shadow 0.2s linear; }
+              .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > label:before:hover,
+              .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label:before:hover {
+                box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
+
+@media (min-width: 992px) {
+  .page-arrangementer .filters-group .label {
+    padding: 0; } }
 
 .item-list ul.pager::after {
   display: block;
   clear: both;
   content: ""; }
 
-.item-list ul.pager li.pager-item, .item-list ul.pager li.pager-current, .item-list ul.pager li.pager-ellipsis {
+.item-list ul.pager li.pager-item,
+.item-list ul.pager li.pager-current,
+.item-list ul.pager li.pager-ellipsis {
   opacity: 0.6;
   color: #4D4E6C;
   font-family: 'Rubik-Light';
@@ -8280,7 +8440,9 @@ header.site-header nav.main-menu-wrapper.navbar {
   margin-left: 15px;
   position: relative;
   padding: 0; }
-  .item-list ul.pager li.pager-item a:hover, .item-list ul.pager li.pager-current a:hover, .item-list ul.pager li.pager-ellipsis a:hover {
+  .item-list ul.pager li.pager-item a:hover,
+  .item-list ul.pager li.pager-current a:hover,
+  .item-list ul.pager li.pager-ellipsis a:hover {
     text-decoration: none; }
 
 .item-list ul.pager li.pager-current {
@@ -8295,7 +8457,8 @@ header.site-header nav.main-menu-wrapper.navbar {
     left: 0;
     bottom: 0; }
 
-.item-list ul.pager li.pager-next a, .item-list ul.pager li.pager-previous a {
+.item-list ul.pager li.pager-next a,
+.item-list ul.pager li.pager-previous a {
   color: transparent;
   padding: 0;
   width: 25px;
@@ -8380,7 +8543,8 @@ header.site-header nav.main-menu-wrapper.navbar {
 .content-wrapper .library-item-wrapper .opening-hours-table {
   width: 100%; }
 
-.primary-content .library-item-wrapper .button-next, .primary-content .library-item-wrapper .button-previous,
+.primary-content .library-item-wrapper .button-next,
+.primary-content .library-item-wrapper .button-previous,
 .primary-content .pane-weekly-opening-hours .button-next,
 .primary-content .pane-weekly-opening-hours .button-previous,
 .content-wrapper .library-item-wrapper .button-next,
@@ -8444,7 +8608,8 @@ header.site-header nav.main-menu-wrapper.navbar {
   font-family: Rubik-Regular;
   font-size: 16px;
   text-transform: uppercase;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  padding-right: 0; }
 
 .page-arrangementer .card,
 .node-type-ding-event .card {
@@ -8455,7 +8620,11 @@ header.site-header nav.main-menu-wrapper.navbar {
   .node-type-ding-event .card .node-ding-event {
     height: 100%;
     box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
-  .page-arrangementer .card a, .page-arrangementer .card a:active, .page-arrangementer .card a:visited, .page-arrangementer .card a:hover, .page-arrangementer .card a:focus,
+  .page-arrangementer .card a,
+  .page-arrangementer .card a:active,
+  .page-arrangementer .card a:visited,
+  .page-arrangementer .card a:hover,
+  .page-arrangementer .card a:focus,
   .node-type-ding-event .card a,
   .node-type-ding-event .card a:active,
   .node-type-ding-event .card a:visited,
@@ -8500,7 +8669,6 @@ header.site-header nav.main-menu-wrapper.navbar {
     height: 206px; }
     .page-arrangementer .card .image-wrapper img,
     .node-type-ding-event .card .image-wrapper img {
-      top: calc(-50% - 103px);
       position: absolute; }
   .page-arrangementer .card .card-body,
   .node-type-ding-event .card .card-body {
@@ -8545,7 +8713,8 @@ header.site-header nav.main-menu-wrapper.navbar {
       font-size: 14px;
       font-weight: 600;
       padding-bottom: 23px; }
-    .page-arrangementer .card .card-body .library, .page-arrangementer .card .card-body .date-time,
+    .page-arrangementer .card .card-body .library,
+    .page-arrangementer .card .card-body .date-time,
     .node-type-ding-event .card .card-body .library,
     .node-type-ding-event .card .card-body .date-time {
       font-size: 12px;
@@ -8562,16 +8731,61 @@ header.site-header nav.main-menu-wrapper.navbar {
     border-radius: 2px 2px 0 0;
     background-color: #DBD9D9; }
 
+@media (min-width: 992px) {
+  .page-arrangementer .view-id-ding_event.container, .page-arrangementer #ding-library-front .attachments-wrapper .view-id-ding_event.pane-title, #ding-library-front .attachments-wrapper .page-arrangementer .view-id-ding_event.pane-title, .page-arrangementer .node-type-ding-news .view-id-ding_event.panel-pane.pane-ding-related-content-news-events, .node-type-ding-news .page-arrangementer .view-id-ding_event.panel-pane.pane-ding-related-content-news-events,
+  .node-type-ding-event .view-id-ding_event.container,
+  .node-type-ding-event #ding-library-front .attachments-wrapper .view-id-ding_event.pane-title,
+  #ding-library-front .attachments-wrapper .node-type-ding-event .view-id-ding_event.pane-title,
+  .node-type-ding-event .node-type-ding-news .view-id-ding_event.panel-pane.pane-ding-related-content-news-events,
+  .node-type-ding-news .node-type-ding-event .view-id-ding_event.panel-pane.pane-ding-related-content-news-events {
+    padding: 0;
+    margin: 0; } }
+
+.page-arrangementer .view-id-ding_event.container .secondary-content, .page-arrangementer #ding-library-front .attachments-wrapper .view-id-ding_event.pane-title .secondary-content, #ding-library-front .attachments-wrapper .page-arrangementer .view-id-ding_event.pane-title .secondary-content, .page-arrangementer .node-type-ding-news .view-id-ding_event.panel-pane.pane-ding-related-content-news-events .secondary-content, .node-type-ding-news .page-arrangementer .view-id-ding_event.panel-pane.pane-ding-related-content-news-events .secondary-content,
+.node-type-ding-event .view-id-ding_event.container .secondary-content,
+.node-type-ding-event #ding-library-front .attachments-wrapper .view-id-ding_event.pane-title .secondary-content,
+#ding-library-front .attachments-wrapper .node-type-ding-event .view-id-ding_event.pane-title .secondary-content,
+.node-type-ding-event .node-type-ding-news .view-id-ding_event.panel-pane.pane-ding-related-content-news-events .secondary-content,
+.node-type-ding-news .node-type-ding-event .view-id-ding_event.panel-pane.pane-ding-related-content-news-events .secondary-content {
+  padding-left: 10px; }
+  @media (min-width: 992px) {
+    .page-arrangementer .view-id-ding_event.container .secondary-content, .page-arrangementer #ding-library-front .attachments-wrapper .view-id-ding_event.pane-title .secondary-content, #ding-library-front .attachments-wrapper .page-arrangementer .view-id-ding_event.pane-title .secondary-content, .page-arrangementer .node-type-ding-news .view-id-ding_event.panel-pane.pane-ding-related-content-news-events .secondary-content, .node-type-ding-news .page-arrangementer .view-id-ding_event.panel-pane.pane-ding-related-content-news-events .secondary-content,
+    .node-type-ding-event .view-id-ding_event.container .secondary-content,
+    .node-type-ding-event #ding-library-front .attachments-wrapper .view-id-ding_event.pane-title .secondary-content,
+    #ding-library-front .attachments-wrapper .node-type-ding-event .view-id-ding_event.pane-title .secondary-content,
+    .node-type-ding-event .node-type-ding-news .view-id-ding_event.panel-pane.pane-ding-related-content-news-events .secondary-content,
+    .node-type-ding-news .node-type-ding-event .view-id-ding_event.panel-pane.pane-ding-related-content-news-events .secondary-content {
+      padding-left: 0; } }
+
+@media (min-width: 992px) {
+  .not-front.page-arrangementer #page .view-display-id-ding_event_list.container, .not-front.page-arrangementer #page #ding-library-front .attachments-wrapper .view-display-id-ding_event_list.pane-title, #ding-library-front .attachments-wrapper .not-front.page-arrangementer #page .view-display-id-ding_event_list.pane-title, .not-front.page-arrangementer #page .node-type-ding-news .view-display-id-ding_event_list.panel-pane.pane-ding-related-content-news-events, .node-type-ding-news .not-front.page-arrangementer #page .view-display-id-ding_event_list.panel-pane.pane-ding-related-content-news-events,
+  .not-front.page-arrangementer #page .container.default-panel-layout,
+  .not-front.page-arrangementer #page #ding-library-front .attachments-wrapper .default-panel-layout.pane-title,
+  #ding-library-front .attachments-wrapper .not-front.page-arrangementer #page .default-panel-layout.pane-title,
+  .not-front.page-arrangementer #page .node-type-ding-news .default-panel-layout.panel-pane.pane-ding-related-content-news-events,
+  .node-type-ding-news .not-front.page-arrangementer #page .default-panel-layout.panel-pane.pane-ding-related-content-news-events,
+  .not-front.page-arrangementer #page .col-lg-8,
+  .not-front.page-arrangementer #page .row {
+    padding: 0; } }
+
 .event-details-wrapper {
   margin-top: 70px;
   font-family: "SourceSansPro-Regular"; }
   .event-details-wrapper .left {
-    width: 410px;
-    height: 615px; }
+    width: 100%;
+    height: 100%;
+    margin-bottom: 30px; }
+    @media (min-width: 992px) {
+      .event-details-wrapper .left {
+        width: 410px;
+        height: 615px;
+        margin-bottom: 0; } }
+  .event-details-wrapper .col-md-7 {
+    padding-left: 10px; }
   .event-details-wrapper .info-top {
     color: #4D4E6C;
     font-size: 10px;
-    font-weight: bold;
+    font-family: "SourceSansPro-Bold";
     text-transform: uppercase;
     position: relative;
     padding-bottom: 17px;
@@ -8598,7 +8812,9 @@ header.site-header nav.main-menu-wrapper.navbar {
     margin-top: 50px;
     color: #01032E;
     font-family: 'Rubik-Regular';
-    font-size: 16px; }
+    font-size: 16px;
+    margin-bottom: 30px;
+    text-transform: uppercase; }
   .event-details-wrapper .event-date a {
     color: #000119;
     font-size: 16px;
@@ -8628,15 +8844,20 @@ header.site-header nav.main-menu-wrapper.navbar {
     font-size: 14px;
     font-weight: 600;
     line-height: 26px; }
-  .event-details-wrapper .event-info::after, .event-details-wrapper .event-info .info-item-group::after {
+  .event-details-wrapper .event-info::after,
+  .event-details-wrapper .event-info .info-item-group::after {
     display: block;
     clear: both;
     content: ""; }
-  .event-details-wrapper .event-info .info-item, .event-details-wrapper .event-info .info-item-group, .event-details-wrapper .event-info .info-item-group .group-left > div {
+  .event-details-wrapper .event-info .info-item,
+  .event-details-wrapper .event-info .info-item-group,
+  .event-details-wrapper .event-info .info-item-group .group-left > div {
     float: left;
     position: relative;
     margin-right: 20px; }
-    .event-details-wrapper .event-info .info-item:not(:last-child):not(.info-item-group):after, .event-details-wrapper .event-info .info-item-group:not(:last-child):not(.info-item-group):after, .event-details-wrapper .event-info .info-item-group .group-left > div:not(:last-child):not(.info-item-group):after {
+    .event-details-wrapper .event-info .info-item:not(:last-child):not(.info-item-group):after,
+    .event-details-wrapper .event-info .info-item-group:not(:last-child):not(.info-item-group):after,
+    .event-details-wrapper .event-info .info-item-group .group-left > div:not(:last-child):not(.info-item-group):after {
       content: '';
       position: absolute;
       right: -10px;
@@ -8644,9 +8865,13 @@ header.site-header nav.main-menu-wrapper.navbar {
       width: 1px;
       height: 100%;
       background-color: #000119; }
-  .event-details-wrapper .event-info .info-item-group, .event-details-wrapper .event-info .group-left > div:last-child {
+  .event-details-wrapper .event-info .info-item-group,
+  .event-details-wrapper .event-info .group-left > div:last-child {
     margin: 0; }
-  .event-details-wrapper .event-info .info-item, .event-details-wrapper .event-info .info-item-group, .event-details-wrapper .event-info .info-item a, .event-details-wrapper .event-info .info-item-group a {
+  .event-details-wrapper .event-info .info-item,
+  .event-details-wrapper .event-info .info-item-group,
+  .event-details-wrapper .event-info .info-item a,
+  .event-details-wrapper .event-info .info-item-group a {
     color: #000119;
     font-size: 14px;
     font-weight: 600;
@@ -8661,16 +8886,47 @@ header.site-header nav.main-menu-wrapper.navbar {
     text-transform: uppercase;
     margin-bottom: 30px; }
 
+.ticket.button {
+  display: inline-block;
+  color: #FFFFFF;
+  font-family: 'Rubik-Regular';
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.8px;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 29px 20px;
+  width: 100%;
+  background-color: #1E0195;
+  transition: box-shadow 0.2s linear;
+  margin-top: 49px; }
+  .ticket.button, .ticket.button:hover {
+    text-decoration: none; }
+  .ticket.button:hover {
+    box-shadow: 0 10px 35px 0 rgba(30, 1, 149, 0.2); }
+
 .separator:after {
   content: '|';
   margin: 0 5px;
   font-size: 0.8em;
   vertical-align: text-top; }
 
+.page-libraries .layout-wrapper,
+.node-type-ding-library .layout-wrapper {
+  padding-left: 10px;
+  padding-right: 10px; }
+  @media (min-width: 992px) {
+    .page-libraries .layout-wrapper,
+    .node-type-ding-library .layout-wrapper {
+      padding-left: 0;
+      padding-right: 0; } }
+
 .page-libraries #ding-library-page,
 .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content {
   margin-top: 70px; }
-  .page-libraries #ding-library-page .primary-content h2.pane-title, .page-libraries #ding-library-page .secondary-content h2.pane-title,
+  .page-libraries #ding-library-page .primary-content h2.pane-title,
+  .page-libraries #ding-library-page .secondary-content h2.pane-title,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .primary-content h2.pane-title,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .secondary-content h2.pane-title {
     color: #01032E;
@@ -8678,7 +8934,10 @@ header.site-header nav.main-menu-wrapper.navbar {
     font-size: 16px;
     letter-spacing: 0.6px;
     text-transform: uppercase; }
-  .page-libraries #ding-library-page .primary-content ul, .page-libraries #ding-library-page .primary-content ul li, .page-libraries #ding-library-page .secondary-content ul, .page-libraries #ding-library-page .secondary-content ul li,
+  .page-libraries #ding-library-page .primary-content ul,
+  .page-libraries #ding-library-page .primary-content ul li,
+  .page-libraries #ding-library-page .secondary-content ul,
+  .page-libraries #ding-library-page .secondary-content ul li,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .primary-content ul,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .primary-content ul li,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .secondary-content ul,
@@ -8769,14 +9028,19 @@ header.site-header nav.main-menu-wrapper.navbar {
         display: block;
         clear: both;
         content: ""; }
-      .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .field-items::after, .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .field-item::after, .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .street-block::after,
+      .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .field-items::after,
+      .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .field-item::after,
+      .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .street-block::after,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .field-items::after,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .field-item::after,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .street-block::after {
         display: block;
         clear: both;
         content: ""; }
-      .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .street-block, .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .street-block > div, .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .locality-block, .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .country,
+      .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .street-block,
+      .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .street-block > div,
+      .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .locality-block,
+      .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .country,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .street-block,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .street-block > div,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .locality-block,
@@ -8852,6 +9116,9 @@ header.site-header nav.main-menu-wrapper.navbar {
         .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .libraries .maps-link:hover {
           text-decoration: none; }
 
+#page #ding-library-page {
+  padding: 0; }
+
 #ding-library-front {
   margin-top: 70px; }
   #ding-library-front .secondary-content .sub-menu-title a {
@@ -8902,9 +9169,8 @@ header.site-header nav.main-menu-wrapper.navbar {
     #ding-library-front .primary-content .ding-library-address .library-address .library-address-street,
     #ding-library-front .primary-content .ding-library-address .library-address .library-address-city-wrapper {
       color: #000119;
-      font-family: "SourceSansPro-Regular";
+      font-family: "SourceSansPro-Bold";
       font-size: 16px;
-      font-weight: 600;
       line-height: 20px;
       float: left; }
     #ding-library-front .primary-content .ding-library-address .library-address .library-address-city-wrapper::after {
@@ -8974,7 +9240,11 @@ header.site-header nav.main-menu-wrapper.navbar {
     #ding-library-front .attachments-wrapper .card .node-ding-news {
       height: 100%;
       box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
-    #ding-library-front .attachments-wrapper .card a, #ding-library-front .attachments-wrapper .card a:active, #ding-library-front .attachments-wrapper .card a:visited, #ding-library-front .attachments-wrapper .card a:hover, #ding-library-front .attachments-wrapper .card a:focus {
+    #ding-library-front .attachments-wrapper .card a,
+    #ding-library-front .attachments-wrapper .card a:active,
+    #ding-library-front .attachments-wrapper .card a:visited,
+    #ding-library-front .attachments-wrapper .card a:hover,
+    #ding-library-front .attachments-wrapper .card a:focus {
       color: #000119;
       text-decoration: none; }
     #ding-library-front .attachments-wrapper .card .inner {
@@ -9018,7 +9288,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       #ding-library-front .attachments-wrapper .card .card-body .info-top {
         color: #4D4E6C;
         font-size: 10px;
-        font-weight: bold;
+        font-family: "SourceSansPro-Bold";
         text-transform: uppercase;
         position: relative;
         padding-bottom: 20px;
@@ -9033,7 +9303,7 @@ header.site-header nav.main-menu-wrapper.navbar {
           padding-left: 20px; }
       #ding-library-front .attachments-wrapper .card .card-body .date {
         font-size: 12px;
-        font-weight: 600;
+        font-family: "SourceSansPro-Bold";
         padding-bottom: 15px; }
       #ding-library-front .attachments-wrapper .card .card-body .card-title {
         font-size: 21px;
@@ -9045,11 +9315,12 @@ header.site-header nav.main-menu-wrapper.navbar {
       #ding-library-front .attachments-wrapper .card .card-body .card-description {
         color: #414256;
         font-size: 14px;
-        font-weight: 600;
+        font-family: "SourceSansPro-Bold";
         padding-bottom: 23px; }
-      #ding-library-front .attachments-wrapper .card .card-body .library, #ding-library-front .attachments-wrapper .card .card-body .date-time {
+      #ding-library-front .attachments-wrapper .card .card-body .library,
+      #ding-library-front .attachments-wrapper .card .card-body .date-time {
         font-size: 12px;
-        font-weight: 600;
+        font-family: "SourceSansPro-Bold";
         padding-bottom: 10px; }
       #ding-library-front .attachments-wrapper .card .card-body .price {
         color: #00A878;
@@ -9141,6 +9412,85 @@ header.site-header nav.main-menu-wrapper.navbar {
           box-shadow: none; }
         .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .item-list ul.sub-menu li a.active:before {
           background-color: #1E0195; }
+  .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper {
+    margin-bottom: 20px; }
+    .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-control {
+      display: inline-block;
+      position: relative;
+      cursor: pointer;
+      padding: 10px 30px 10px 0;
+      color: #01032E;
+      font-family: "Rubik-Regular";
+      font-size: 14px; }
+      .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-control::after {
+        display: block;
+        clear: both;
+        content: ""; }
+      .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-control span.arrow {
+        position: absolute;
+        right: 0;
+        top: 13px;
+        margin-top: 5px;
+        content: '';
+        display: block;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        -moz-transform: scale(0.9999);
+        border-width: 6px 5px 0 6px;
+        border-color: #01032E transparent transparent transparent; }
+    .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body {
+      padding-top: 15px; }
+      .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu {
+        padding: 0; }
+        .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li {
+          display: block;
+          margin-bottom: 10px; }
+          .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"] {
+            padding: 0;
+            height: initial;
+            width: initial;
+            margin-bottom: 0;
+            display: none;
+            cursor: pointer; }
+            .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + label:before,
+            .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + .element-label:before {
+              background-color: #1E0195; }
+            .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + label:after,
+            .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + .element-label:after {
+              content: '';
+              display: block;
+              position: absolute;
+              top: 3px;
+              left: 11px;
+              width: 18px;
+              height: 11px;
+              border: solid white;
+              border-width: 1px 1px 0 0;
+              transform: rotate(133deg);
+              box-shadow: none; }
+          .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > label,
+          .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label {
+            position: relative;
+            cursor: pointer; }
+            .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > label:before,
+            .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label:before {
+              content: '';
+              -webkit-appearance: none;
+              background-color: transparent;
+              border: 1px solid #1E0195;
+              border-radius: 2px;
+              width: 40px;
+              height: 40px;
+              display: inline-block;
+              position: relative;
+              vertical-align: middle;
+              cursor: pointer;
+              margin-right: 20px;
+              transition: box-shadow 0.2s linear; }
+              .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > label:before:hover,
+              .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label:before:hover {
+                box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
   .page-bibliotek .layout-wrapper .primary-content .view-ding-event h3.colums {
     padding: 0;
     margin-bottom: 30px; }
@@ -9157,7 +9507,11 @@ header.site-header nav.main-menu-wrapper.navbar {
     .page-bibliotek .layout-wrapper .primary-content .card .node-ding-event {
       height: 100%;
       box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
-    .page-bibliotek .layout-wrapper .primary-content .card a, .page-bibliotek .layout-wrapper .primary-content .card a:active, .page-bibliotek .layout-wrapper .primary-content .card a:visited, .page-bibliotek .layout-wrapper .primary-content .card a:hover, .page-bibliotek .layout-wrapper .primary-content .card a:focus {
+    .page-bibliotek .layout-wrapper .primary-content .card a,
+    .page-bibliotek .layout-wrapper .primary-content .card a:active,
+    .page-bibliotek .layout-wrapper .primary-content .card a:visited,
+    .page-bibliotek .layout-wrapper .primary-content .card a:hover,
+    .page-bibliotek .layout-wrapper .primary-content .card a:focus {
       color: #000119;
       text-decoration: none; }
     .page-bibliotek .layout-wrapper .primary-content .card .inner {
@@ -9249,7 +9603,8 @@ header.site-header nav.main-menu-wrapper.navbar {
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis; }
-      .page-bibliotek .layout-wrapper .primary-content .card .card-body .library, .page-bibliotek .layout-wrapper .primary-content .card .card-body .date-time {
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .library,
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .date-time {
         font-size: 12px;
         font-weight: 600; }
       .page-bibliotek .layout-wrapper .primary-content .card .card-body .price {
@@ -9273,6 +9628,24 @@ header.site-header nav.main-menu-wrapper.navbar {
     .page-bibliotek .layout-wrapper .primary-content .card .card-img-top {
       border-radius: 2px 2px 0 0;
       background-color: #DBD9D9; }
+
+.page-bibliotek .secondary-content {
+  padding-left: 10px;
+  padding-right: 10px; }
+  @media (min-width: 992px) {
+    .page-bibliotek .secondary-content {
+      padding-left: 0;
+      padding-right: 0; } }
+
+.page-nyheder .pane-taxonomy-menu,
+.page-taxonomy-term .pane-taxonomy-menu {
+  padding-left: 10px;
+  padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    .page-nyheder .pane-taxonomy-menu,
+    .page-taxonomy-term .pane-taxonomy-menu {
+      padding-left: 0;
+      padding-bottom: 0; } }
 
 .page-nyheder .layout-wrapper,
 .page-taxonomy-term .layout-wrapper {
@@ -9388,7 +9761,9 @@ header.site-header nav.main-menu-wrapper.navbar {
       display: block;
       clear: both;
       content: ""; }
-    .page-nyheder .primary-content .pane-content .card.news-item .category-and-submitted .news-category .field, .page-nyheder .primary-content .pane-content .card.news-item .category-and-submitted .news-category .fields-item, .page-nyheder .primary-content .pane-content .card.news-item .category-and-submitted .news-category .fild-item,
+    .page-nyheder .primary-content .pane-content .card.news-item .category-and-submitted .news-category .field,
+    .page-nyheder .primary-content .pane-content .card.news-item .category-and-submitted .news-category .fields-item,
+    .page-nyheder .primary-content .pane-content .card.news-item .category-and-submitted .news-category .fild-item,
     .page-taxonomy-term .primary-content .pane-content .card.news-item .category-and-submitted .news-category .field,
     .page-taxonomy-term .primary-content .pane-content .card.news-item .category-and-submitted .news-category .fields-item,
     .page-taxonomy-term .primary-content .pane-content .card.news-item .category-and-submitted .news-category .fild-item {
@@ -9412,10 +9787,9 @@ header.site-header nav.main-menu-wrapper.navbar {
   .page-nyheder .primary-content .pane-content .card.news-item .category-and-submitted .submitted,
   .page-taxonomy-term .primary-content .pane-content .card.news-item .category-and-submitted .submitted {
     color: #000119;
-    font-family: 'SourceSansPro-Regular';
+    font-family: 'SourceSansPro-Bold';
     font-size: 12px;
-    padding-top: 15px;
-    font-weight: 600; }
+    padding-top: 15px; }
   .page-nyheder .primary-content .pane-content .card.news-item .card-body,
   .page-taxonomy-term .primary-content .pane-content .card.news-item .card-body {
     color: #000119;
@@ -9441,13 +9815,32 @@ header.site-header nav.main-menu-wrapper.navbar {
       .page-nyheder .primary-content .pane-content .card.news-item .card-body .news-text h3 ~ .field,
       .page-taxonomy-term .primary-content .pane-content .card.news-item .card-body .news-text h3 ~ .field {
         color: #414256;
-        font-family: "SourceSansPro-Regular";
-        font-size: 14px;
-        font-weight: 600; }
+        font-family: "SourceSansPro-Bold";
+        font-size: 14px; }
+
+@media (min-width: 992px) {
+  .not-front.page-nyheder #page .view-display-id-ding_news_list.container, .not-front.page-nyheder #page #ding-library-front .attachments-wrapper .view-display-id-ding_news_list.pane-title, #ding-library-front .attachments-wrapper .not-front.page-nyheder #page .view-display-id-ding_news_list.pane-title, .not-front.page-nyheder #page .node-type-ding-news .view-display-id-ding_news_list.panel-pane.pane-ding-related-content-news-events, .node-type-ding-news .not-front.page-nyheder #page .view-display-id-ding_news_list.panel-pane.pane-ding-related-content-news-events,
+  .not-front.page-nyheder #page .container.default-panel-layout,
+  .not-front.page-nyheder #page #ding-library-front .attachments-wrapper .default-panel-layout.pane-title,
+  #ding-library-front .attachments-wrapper .not-front.page-nyheder #page .default-panel-layout.pane-title,
+  .not-front.page-nyheder #page .node-type-ding-news .default-panel-layout.panel-pane.pane-ding-related-content-news-events,
+  .node-type-ding-news .not-front.page-nyheder #page .default-panel-layout.panel-pane.pane-ding-related-content-news-events,
+  .not-front.page-nyheder #page .col-lg-8,
+  .not-front.page-nyheder #page .row {
+    padding: 0; } }
 
 .news-details-wrapper {
   max-width: 726px;
   margin: 70px auto 0; }
+  .news-details-wrapper .field-slideshow,
+  .news-details-wrapper img {
+    width: 100%;
+    height: 100%; }
+  .news-details-wrapper .ding-news-inner {
+    padding-left: 10px; }
+    @media (min-width: 768px) {
+      .news-details-wrapper .ding-news-inner {
+        padding-left: 0; } }
   .news-details-wrapper .ding-news-right .category-tag {
     color: #4D4E6C;
     font-size: 10px;
@@ -9475,15 +9868,15 @@ header.site-header nav.main-menu-wrapper.navbar {
       color: #4D4E6C; }
   .news-details-wrapper .ding-news-right .category-info {
     color: #000119;
-    font-family: 'SourceSansPro-Regular';
+    font-family: 'SourceSansPro-Bold';
     font-size: 12px;
-    font-weight: 600;
     margin-top: 20px; }
     .news-details-wrapper .ding-news-right .category-info::after {
       display: block;
       clear: both;
       content: ""; }
-    .news-details-wrapper .ding-news-right .category-info .author, .news-details-wrapper .ding-news-right .category-info .created {
+    .news-details-wrapper .ding-news-right .category-info .author,
+    .news-details-wrapper .ding-news-right .category-info .created {
       float: left; }
   .news-details-wrapper .ding-news-right h1 {
     color: #000119;
@@ -9495,9 +9888,8 @@ header.site-header nav.main-menu-wrapper.navbar {
     display: none; }
   .news-details-wrapper .ding-news-right .category-text {
     color: #414256;
-    font-family: "SourceSansPro-Regular";
-    font-size: 14px;
-    font-weight: 600; }
+    font-family: "SourceSansPro-Bold";
+    font-size: 14px; }
   .news-details-wrapper .ding-news-right .field-label-above {
     color: #01032E;
     font-family: 'Rubik-Regular';
@@ -9512,182 +9904,739 @@ header.site-header nav.main-menu-wrapper.navbar {
       display: block;
       clear: both;
       content: ""; }
-    .news-details-wrapper .ding-news-right .field-label-above .field-label, .news-details-wrapper .ding-news-right .field-label-above .field-item {
+    .news-details-wrapper .ding-news-right .field-label-above .field-label,
+    .news-details-wrapper .ding-news-right .field-label-above .field-item {
       float: left;
       font-weight: normal; }
     .news-details-wrapper .ding-news-right .field-label-above .field-item {
       color: #1E0195;
-      padding-left: 20px; }
+      padding-left: 10px; }
+      @media (min-width: 992px) {
+        .news-details-wrapper .ding-news-right .field-label-above .field-item {
+          padding-left: 20px; } }
       .news-details-wrapper .ding-news-right .field-label-above .field-item a {
         text-decoration: none; }
 
-.front.page-culture-frontpage .content-wrapper .container .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide {
-  position: relative;
-  z-index: 2;
-  background: linear-gradient(226.14deg, rgba(1, 14, 29, 0.5) 0%, rgba(1, 14, 29, 0.8) 100%); }
-  .front.page-culture-frontpage .content-wrapper .container .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .event-time, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .event-time, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .event-time, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .event-time, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .event-time {
-    display: none; }
-  .front.page-culture-frontpage .content-wrapper .container .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info {
-    color: #ffffff;
-    position: absolute;
-    top: 100px; }
-    .front.page-culture-frontpage .content-wrapper .container .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item {
-      font-family: 'Rubik-Regular';
-      font-size: 10px;
-      font-weight: 500;
-      letter-spacing: 1.14px;
-      line-height: 12px;
-      text-transform: uppercase;
-      position: relative;
-      padding-left: 15px; }
-      .front.page-culture-frontpage .content-wrapper .container .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item:before, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item:before, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item:before, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item:before, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .carousel-front-wrapper .carousel-front-inner .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item:before {
-        content: '';
-        position: absolute;
-        top: 1px;
-        left: 0;
-        height: 13px;
-        width: 10px;
-        background: url("../images/tag.png") no-repeat center center; }
-
-.front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .item, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .item, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .item, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .item, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .item {
+.panel-pane.pane-ding-related-content-news-events .card.news-item {
   border: none;
   border-radius: 2px;
-  margin-bottom: 57px; }
-  .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .item::after, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .item::after, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .item::after, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .item::after, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .item::after {
+  margin-bottom: 57px;
+  box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+  height: calc(100% - 57px); }
+  .panel-pane.pane-ding-related-content-news-events .card.news-item a {
+    text-decoration: none; }
+  .panel-pane.pane-ding-related-content-news-events .card.news-item .category-and-submitted::after {
     display: block;
     clear: both;
     content: ""; }
-  .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .item .item-list-image, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .item .item-list-image, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .item .item-list-image, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .item .item-list-image, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .item .item-list-image {
-    position: relative;
-    float: left;
-    overflow: hidden;
-    width: 206px;
-    height: 206px; }
-    .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .item .item-list-image img, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .item .item-list-image img, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .item .item-list-image img, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .item .item-list-image img, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .item .item-list-image img {
-      top: 50%;
-      left: 50%;
-      transform: translateX(-50%) translateY(-50%);
-      position: absolute;
-      width: auto;
-      height: auto; }
-  .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .item .item-details .item-title, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .item .item-details .item-title, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .item .item-details .item-title, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .item .item-details .item-title, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .item .item-details .item-title {
-    font-size: 21px;
-    font-weight: 900;
-    padding-bottom: 8px;
-    margin: 0;
-    font-family: "SourceSansPro-Bold";
-    text-transform: none; }
-
-.front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .node-ding-event, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .node-ding-event, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .node-ding-event, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .node-ding-event, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .node-ding-event {
-  height: 100%;
-  box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
-
-.front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items a, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items a, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items a, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items a, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items a, .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items a:active, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items a:active, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items a:active, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items a:active, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items a:active, .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items a:visited, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items a:visited, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items a:visited, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items a:visited, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items a:visited, .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items a:hover, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items a:hover, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items a:hover, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items a:hover, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items a:hover, .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items a:focus, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items a:focus, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items a:focus, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items a:focus, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items a:focus {
-  color: #000119;
-  text-decoration: none; }
-
-.front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .inner, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .inner, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .inner, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .inner, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .inner {
-  position: relative; }
-  .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .inner::after, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .inner::after, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .inner::after, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .inner::after, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .inner::after {
-    display: block;
-    clear: both;
-    content: ""; }
-
-.front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .price-tag, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .price-tag, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .price-tag, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .price-tag, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .price-tag {
-  position: absolute;
-  top: 10px;
-  right: -5px;
-  background-color: #00A878;
-  box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
-  color: white;
-  width: 90px;
-  font-family: 'Rubik-Medium';
-  font-size: 12px;
-  letter-spacing: 0.4px;
-  text-transform: uppercase;
-  text-align: center;
-  padding: 9px 20px; }
-  .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .price-tag:after, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .price-tag:after, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .price-tag:after, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .price-tag:after, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .price-tag:after {
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -5px;
-    height: 0;
-    width: 0;
-    display: block;
-    border-top: 5px solid #007352;
-    border-right: 5px solid transparent;
-    -moz-transform: scale(0.9999); }
-
-.front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .card-body, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body {
-  color: #000119;
-  font-family: "SourceSansPro-Regular";
-  padding: 29px 30px;
-  float: left;
-  width: calc(100% - 206px); }
-  .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .card-body .info-top, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .info-top, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .info-top, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .info-top, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .info-top {
+  .panel-pane.pane-ding-related-content-news-events .card.news-item .category-and-submitted > .info-dash {
+    display: none; }
+  .panel-pane.pane-ding-related-content-news-events .card.news-item .category-and-submitted .news-category {
     color: #4D4E6C;
     font-size: 10px;
     font-weight: bold;
     text-transform: uppercase;
     position: relative;
-    padding-bottom: 19px;
-    letter-spacing: 1px;
-    line-height: 13px; }
-    .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .card-body .info-top i.tag-icon, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .info-top i.tag-icon, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .info-top i.tag-icon, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .info-top i.tag-icon, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .info-top i.tag-icon {
+    padding: 0 0 20px 20px;
+    letter-spacing: 1px; }
+    .panel-pane.pane-ding-related-content-news-events .card.news-item .category-and-submitted .news-category::after {
+      display: block;
+      clear: both;
+      content: ""; }
+    .panel-pane.pane-ding-related-content-news-events .card.news-item .category-and-submitted .news-category .field,
+    .panel-pane.pane-ding-related-content-news-events .card.news-item .category-and-submitted .news-category .fields-item,
+    .panel-pane.pane-ding-related-content-news-events .card.news-item .category-and-submitted .news-category .fild-item {
+      color: #4D4E6C;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 0;
+      letter-spacing: 1px; }
+    .panel-pane.pane-ding-related-content-news-events .card.news-item .category-and-submitted .news-category:after {
       position: absolute;
       top: 1px;
+      left: 0;
       height: 13px;
       width: 10px;
       background: url("../images/tag.png") no-repeat center center; }
-    .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .card-body .info-top .field, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .info-top .field, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .info-top .field, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .info-top .field, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .info-top .field {
-      padding-left: 20px; }
-  .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .card-body .date, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .date, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .date, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .date, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .date {
+    .panel-pane.pane-ding-related-content-news-events .card.news-item .category-and-submitted .news-category > div {
+      float: left; }
+  .panel-pane.pane-ding-related-content-news-events .card.news-item .category-and-submitted .submitted {
+    color: #000119;
+    font-family: 'SourceSansPro-Bold';
     font-size: 12px;
-    font-weight: 600;
-    padding-bottom: 15px;
-    line-height: 15px; }
-  .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .card-body .card-title, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .card-title, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .card-title, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .card-title, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .card-title {
+    padding-top: 15px; }
+  .panel-pane.pane-ding-related-content-news-events .card.news-item .card-body {
+    color: #000119;
+    font-family: "SourceSansPro-Regular";
+    padding: 0; }
+    .panel-pane.pane-ding-related-content-news-events .card.news-item .card-body .image-wrapper {
+      position: relative;
+      height: 206px;
+      overflow: hidden; }
+      .panel-pane.pane-ding-related-content-news-events .card.news-item .card-body .image-wrapper img {
+        width: 100%; }
+    .panel-pane.pane-ding-related-content-news-events .card.news-item .card-body .news-text {
+      padding: 30px; }
+      .panel-pane.pane-ding-related-content-news-events .card.news-item .card-body .news-text h3 {
+        color: #000119;
+        padding-top: 15px;
+        font-family: "SourceSansPro-Bold";
+        font-size: 21px; }
+      .panel-pane.pane-ding-related-content-news-events .card.news-item .card-body .news-text h3 ~ .field {
+        color: #414256;
+        font-family: "SourceSansPro-Bold";
+        font-size: 14px; }
+
+@media (min-width: 992px) {
+  .front.page-culture-frontpage .content-wrapper .container .content-container, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .content-container, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container {
+    margin-right: -28.5px;
+    margin-left: -28.5px; }
+    .front.page-culture-frontpage .content-wrapper .container .content-container > .col, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container > .col, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container > .col, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .content-container > .col, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container > .col,
+    .front.page-culture-frontpage .content-wrapper .container .content-container > [class*="col-"],
+    .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container > [class*="col-"],
+    #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container > [class*="col-"],
+    .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .content-container > [class*="col-"],
+    .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container > [class*="col-"] {
+      padding-right: 28.5px;
+      padding-left: 28.5px; } }
+
+.front.page-culture-frontpage .content-wrapper .container .front-slider-container .front-slider-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .front-slider-container .front-slider-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .front-slider-container .front-slider-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .front-slider-container .front-slider-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .front-slider-container .front-slider-wrapper {
+  padding: 0; }
+
+@media (min-width: 992px) {
+  .front.page-culture-frontpage .content-wrapper .container .front-slider-container, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .front-slider-container, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .front-slider-container, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .front-slider-container, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .front-slider-container {
+    margin-right: -28.5px;
+    margin-left: -28.5px; }
+    .front.page-culture-frontpage .content-wrapper .container .front-slider-container > .col, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .front-slider-container > .col, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .front-slider-container > .col, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .front-slider-container > .col, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .front-slider-container > .col,
+    .front.page-culture-frontpage .content-wrapper .container .front-slider-container > [class*="col-"],
+    .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .front-slider-container > [class*="col-"],
+    #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .front-slider-container > [class*="col-"],
+    .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .front-slider-container > [class*="col-"],
+    .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .front-slider-container > [class*="col-"] {
+      padding-right: 28.5px;
+      padding-left: 28.5px; } }
+
+.front.page-culture-frontpage .content-wrapper .container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .primary-content-wrapper,
+.front.page-culture-frontpage .content-wrapper .container .secondary-content-wrapper,
+.front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .secondary-content-wrapper,
+#ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .secondary-content-wrapper,
+.front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .secondary-content-wrapper,
+.node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .secondary-content-wrapper {
+  width: 100%; }
+
+.front.page-culture-frontpage .content-wrapper .container .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper {
+  padding-left: 10px;
+  padding-right: 10px; }
+  @media (min-width: 768px) {
+    .front.page-culture-frontpage .content-wrapper .container .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper {
+      padding-left: 20px;
+      padding-right: 20px; } }
+  @media (min-width: 992px) {
+    .front.page-culture-frontpage .content-wrapper .container .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper {
+      padding-left: 0px;
+      padding-right: 0px; } }
+
+.front.page-culture-frontpage .content-wrapper .container .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .pane-campaign .ding-campaign-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper {
+  margin: 70px auto 30px;
+  width: calc(100% - 20px);
+  background-color: #FFFFFF;
+  box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+  max-width: 352px; }
+  @media (min-width: 768px) {
+    .front.page-culture-frontpage .content-wrapper .container .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .pane-campaign .ding-campaign-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper {
+      width: calc(100% - 40px);
+      max-width: 100%; } }
+  @media (min-width: 992px) {
+    .front.page-culture-frontpage .content-wrapper .container .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .pane-campaign .ding-campaign-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper {
+      width: 100%;
+      margin: 70px 0 30px; } }
+  .front.page-culture-frontpage .content-wrapper .container .pane-campaign .ding-campaign-wrapper .node-ding-campaign, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign {
+    padding: 24px 20px;
+    border-bottom: 1px solid #F0F0F2; }
+    .front.page-culture-frontpage .content-wrapper .container .pane-campaign .ding-campaign-wrapper .node-ding-campaign:last-child, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign:last-child, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign:last-child, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign:last-child, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign:last-child {
+      border-bottom: none; }
+    .front.page-culture-frontpage .content-wrapper .container .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title {
+      color: #000119;
+      font-family: 'Rubik-Regular';
+      font-size: 15px;
+      line-height: 18px; }
+      .front.page-culture-frontpage .content-wrapper .container .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title a, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title a, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title a, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title a, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title a {
+        color: #000119;
+        text-decoration: none; }
+        .front.page-culture-frontpage .content-wrapper .container .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title a:hover, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title a:hover, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title a:hover, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title a:hover, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign .page-title a:hover {
+          text-decoration: none; }
+    .front.page-culture-frontpage .content-wrapper .container .pane-campaign .ding-campaign-wrapper .node-ding-campaign .content, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign .content, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign .content, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign .content, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign .content {
+      width: 25px;
+      height: 8px;
+      background: transparent url(../images/nav-arrow-right.png) no-repeat left center; }
+      .front.page-culture-frontpage .content-wrapper .container .pane-campaign .ding-campaign-wrapper .node-ding-campaign .content > *, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign .content > *, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .pane-campaign .ding-campaign-wrapper .node-ding-campaign .content > *, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign .content > *, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper .node-ding-campaign .content > * {
+        display: none; }
+
+.front.page-culture-frontpage .content-wrapper .container #eventsCalendar, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar {
+  max-width: 352px;
+  width: calc(100% - 20px);
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .front.page-culture-frontpage .content-wrapper .container #eventsCalendar, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar {
+      width: calc(100% - 40px);
+      max-width: 100%; } }
+  @media (min-width: 992px) {
+    .front.page-culture-frontpage .content-wrapper .container #eventsCalendar, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar {
+      width: 100%;
+      margin: 0; } }
+  .front.page-culture-frontpage .content-wrapper .container #eventsCalendar .navi-heading, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar .navi-heading, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar .navi-heading, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar .navi-heading, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar .navi-heading {
+    position: relative; }
+    .front.page-culture-frontpage .content-wrapper .container #eventsCalendar .navi-heading h2, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar .navi-heading h2, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar .navi-heading h2, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar .navi-heading h2, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar .navi-heading h2 {
+      color: #01032E;
+      font-family: 'Rubik-Regular';
+      font-size: 16px;
+      letter-spacing: 0.6px;
+      line-height: 19px;
+      text-transform: uppercase;
+      margin: 0; }
+    .front.page-culture-frontpage .content-wrapper .container #eventsCalendar .navi-heading a, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar .navi-heading a, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar .navi-heading a, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar .navi-heading a, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar .navi-heading a {
+      position: absolute;
+      width: 25px;
+      height: 8px;
+      text-decoration: none;
+      color: transparent; }
+      .front.page-culture-frontpage .content-wrapper .container #eventsCalendar .navi-heading a:hover, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar .navi-heading a:hover, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar .navi-heading a:hover, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar .navi-heading a:hover, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar .navi-heading a:hover {
+        text-decoration: none; }
+      .front.page-culture-frontpage .content-wrapper .container #eventsCalendar .navi-heading a.slick-next, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar .navi-heading a.slick-next, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar .navi-heading a.slick-next, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar .navi-heading a.slick-next, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar .navi-heading a.slick-next {
+        right: 1px;
+        top: calc(50% - 10px);
+        background: url(../images/nav-arrow-right.png) no-repeat right center; }
+      .front.page-culture-frontpage .content-wrapper .container #eventsCalendar .navi-heading a.slick-prev, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar .navi-heading a.slick-prev, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar .navi-heading a.slick-prev, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar .navi-heading a.slick-prev, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar .navi-heading a.slick-prev {
+        left: 1px;
+        top: calc(50% - 10px);
+        background: url(../images/nav-arrow-left.png) no-repeat right center; }
+  .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar {
+    min-width: 100%;
+    width: auto; }
+    .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody {
+      width: auto;
+      border: none; }
+      .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row {
+        background-color: transparent;
+        border: none; }
+        .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row .calendar-day-head, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row .calendar-day-head, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row .calendar-day-head, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row .calendar-day-head, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row .calendar-day-head {
+          width: 40px;
+          height: 40px;
+          background: transparent;
+          color: #01032E;
+          font-family: 'Rubik-Regular';
+          font-size: 12px;
+          letter-spacing: 0.3px;
+          line-height: 14px;
+          text-align: center;
+          text-transform: uppercase;
+          font-weight: normal; }
+          @media (min-width: 768px) {
+            .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row .calendar-day-head, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row .calendar-day-head, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row .calendar-day-head, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row .calendar-day-head, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row .calendar-day-head {
+              width: 52px;
+              height: 52px; } }
+        .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td {
+          border: none;
+          background: none;
+          padding: 0; }
+          .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number {
+            width: 40px;
+            height: 40px;
+            font-size: 12px;
+            color: #01032E;
+            font-family: 'Rubik-Medium';
+            line-height: 14px;
+            text-decoration: none;
+            padding: 15px 0;
+            margin-bottom: 6px; }
+            .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a {
+              font-size: 12px;
+              color: #01032E;
+              font-family: 'Rubik-Medium';
+              line-height: 14px;
+              text-decoration: none; }
+            @media (min-width: 992px) {
+              .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number {
+                width: 52px;
+                height: 52px;
+                padding: 20px 0; }
+                .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a {
+                  color: white; }
+                  .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a:hover, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a:hover, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a:hover, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a:hover, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.calendar-day .day-number a:hover {
+                    text-decoration: none; } }
+          .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number {
+            background-color: #1E0195; }
+          .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number {
+            background-color: #fff;
+            box-shadow: 0 10px 35px 0 rgba(30, 1, 149, 0.2);
+            border-radius: 50%;
+            margin-right: 6px; }
+            @media (min-width: 992px) {
+              .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number {
+                background-color: #8B8CA4; } }
+          .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.current-day .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.current-day .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.current-day .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.current-day .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.current-day .day-number {
+            background-color: #1E0195; }
+            .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.current-day .day-number a, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.current-day .day-number a, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.current-day .day-number a, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.current-day .day-number a, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.current-day .day-number a {
+              color: white; }
+          .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.event-start, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-start, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-start, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-start, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-start, .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-end {
+            background-color: white;
+            z-index: 1; }
+          .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-end {
+            border-radius: 0 50% 50% 0;
+            box-shadow: 5px 0 15px -2px rgba(30, 1, 149, 0.2);
+            border-radius: 0 50% 50% 0; }
+            @media (min-width: 992px) {
+              .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-end {
+                box-shadow: none; } }
+          .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress {
+            box-shadow: 0 3px 2px -3px rgba(30, 1, 149, 0.2); }
+            @media (min-width: 992px) {
+              .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress {
+                box-shadow: none; } }
+          .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.event-start, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-start, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-start, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-start, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-start {
+            border-radius: 50% 0 0 50%; }
+          .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-start .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-start .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-start .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-start .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-start .day-number {
+            border-radius: 50% 0 0 50%;
+            margin-right: 0; }
+          .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number {
+            border-radius: 0;
+            margin-right: 0; }
+          .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number {
+            box-shadow: 5px 0 15px -2px rgba(30, 1, 149, 0.2);
+            border-radius: 0 50% 50% 0; }
+            @media (min-width: 992px) {
+              .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number {
+                box-shadow: none; } }
+
+.front.page-culture-frontpage .content-wrapper .container #eventList, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList {
+  border: none;
+  margin: 30px auto 0;
+  width: calc(100% - 20px);
+  max-width: 352px; }
+  @media (min-width: 768px) {
+    .front.page-culture-frontpage .content-wrapper .container #eventList, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList {
+      max-width: 100%;
+      width: calc(100% - 40px); } }
+  @media (min-width: 992px) {
+    .front.page-culture-frontpage .content-wrapper .container #eventList, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList {
+      width: 100%;
+      margin: 30px 0 0; } }
+  .front.page-culture-frontpage .content-wrapper .container #eventList .more-link, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .more-link, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .more-link, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .more-link, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .more-link {
+    float: none;
+    text-align: center;
+    margin-top: 30px; }
+    .front.page-culture-frontpage .content-wrapper .container #eventList .more-link a, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .more-link a, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .more-link a, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .more-link a, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .more-link a {
+      display: inline-block;
+      color: #FFFFFF;
+      font-family: 'Rubik-Regular';
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      line-height: 17px;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 29px 20px;
+      width: 100%;
+      max-width: 410px;
+      background-color: #1E0195;
+      transition: box-shadow 0.2s linear; }
+      .front.page-culture-frontpage .content-wrapper .container #eventList .more-link a, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .more-link a, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .more-link a, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .more-link a, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .more-link a, .front.page-culture-frontpage .content-wrapper .container #eventList .more-link a:hover, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .more-link a:hover, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .more-link a:hover, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .more-link a:hover, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .more-link a:hover {
+        text-decoration: none; }
+      .front.page-culture-frontpage .content-wrapper .container #eventList .more-link a:hover, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .more-link a:hover, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .more-link a:hover, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .more-link a:hover, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .more-link a:hover {
+        box-shadow: 0 10px 35px 0 rgba(30, 1, 149, 0.2); }
+  .front.page-culture-frontpage .content-wrapper .container #eventList .event-day-header, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-day-header, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-day-header, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-day-header, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-day-header {
+    color: #000119;
+    font-family: 'Rubik-Light';
+    font-size: 14px;
+    letter-spacing: 0.3px;
+    line-height: 17px;
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: left;
+    margin: 0 0 30px 0; }
+  .front.page-culture-frontpage .content-wrapper .container #eventList .event-items, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items {
+    max-height: 100%;
+    padding: 0 20px;
+    background-color: #FFFFFF;
+    box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
+    .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .event-item, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .event-item, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .event-item, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-item, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-item {
+      background: transparent url(../images/nav-arrow-right.png) no-repeat right center;
+      padding: 24px 25px 23px 0;
+      border-bottom: 1px solid #F0F0F2; }
+      .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .event-item:last-child, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .event-item:last-child, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .event-item:last-child, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-item:last-child, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-item:last-child {
+        border-bottom: 0; }
+      .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .event-item .event-title, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .event-item .event-title, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .event-item .event-title, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-item .event-title, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-item .event-title {
+        line-height: 19px; }
+        .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .event-item .event-title a, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .event-item .event-title a, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .event-item .event-title a, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-item .event-title a, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-item .event-title a {
+          color: #000119;
+          font-family: 'SourceSansPro-Bold';
+          font-size: 14px;
+          line-height: 19px;
+          text-decoration: none; }
+          .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .event-item .event-title a:hover, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .event-item .event-title a:hover, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .event-item .event-title a:hover, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-item .event-title a:hover, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-item .event-title a:hover {
+            text-decoration: none; }
+    .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .info-event, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .info-event, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .info-event, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .info-event, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .info-event {
+      margin-top: 7px; }
+      .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .info-event::after, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .info-event::after, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .info-event::after, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .info-event::after, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .info-event::after {
+        display: block;
+        clear: both;
+        content: ""; }
+      .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .info-event .event-location, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .info-event .event-location, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .info-event .event-location, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .info-event .event-location, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .info-event .event-location {
+        float: left;
+        line-height: 14px; }
+        .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .info-event .event-location a, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .info-event .event-location a, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .info-event .event-location a, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .info-event .event-location a, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .info-event .event-location a {
+          text-decoration: none;
+          color: #000119;
+          font-family: "SourceSansPro-Semibold";
+          font-size: 12px;
+          line-height: 15px; }
+          .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .info-event .event-location a:after, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .info-event .event-location a:after, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .info-event .event-location a:after, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .info-event .event-location a:after, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .info-event .event-location a:after {
+            margin-left: 24px;
+            content: '|'; }
+          .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .info-event .event-location a:hover, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .info-event .event-location a:hover, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .info-event .event-location a:hover, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .info-event .event-location a:hover, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .info-event .event-location a:hover {
+            text-decoration: none; }
+    .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .event-time, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .event-time, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .event-time, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-time, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-time {
+      float: left;
+      margin: 0 0 0 10px;
+      color: #000119;
+      font-family: "SourceSansPro-Semibold";
+      font-size: 12px;
+      line-height: 15px; }
+    .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .event-category, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .event-category, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .event-category, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-category, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-category {
+      display: none; }
+
+.ding_nodelist-carousel {
+  position: relative;
+  margin-bottom: 70px; }
+  .ding_nodelist-carousel .event-image:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0; }
+  .ding_nodelist-carousel .event-image:after {
+    background: rgba(0, 0, 0, 0.3); }
+  .ding_nodelist-carousel .slick-list {
+    position: relative;
+    z-index: 0; }
+  .ding_nodelist-carousel .slick-list .slick-track .slick-slide {
+    max-height: 465px;
+    position: relative; }
+    .ding_nodelist-carousel .slick-list .slick-track .slick-slide .event-time {
+      display: none; }
+    @media (min-width: 768px) {
+      .ding_nodelist-carousel .slick-list .slick-track .slick-slide .event-image a {
+        display: block;
+        width: 100%;
+        max-width: 990px;
+        height: 465px;
+        overflow: hidden;
+        position: relative; } }
+    @media (min-width: 992px) {
+      .ding_nodelist-carousel .slick-list .slick-track .slick-slide .event-image a {
+        max-width: 100%; } }
+    .ding_nodelist-carousel .slick-list .slick-track .slick-slide .event-image img {
+      height: 465px; }
+      @media (min-width: 768px) {
+        .ding_nodelist-carousel .slick-list .slick-track .slick-slide .event-image img {
+          position: absolute;
+          width: 100%;
+          height: auto; } }
+      @media (min-width: 992px) {
+        .ding_nodelist-carousel .slick-list .slick-track .slick-slide .event-image img {
+          width: 100%;
+          height: auto; } }
+    .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info {
+      color: #ffffff;
+      position: absolute;
+      top: 68px;
+      left: 35px; }
+      @media (min-width: 768px) {
+        .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info {
+          top: 104px;
+          left: 122px; } }
+      .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item {
+        color: #FFFFFF;
+        font-family: 'Rubik-Regular';
+        font-size: 10px;
+        font-weight: 500;
+        letter-spacing: 1.14px;
+        line-height: 12px;
+        text-transform: uppercase;
+        position: relative;
+        padding-left: 15px;
+        margin-bottom: 20px; }
+        .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item:before {
+          content: '';
+          position: absolute;
+          top: 1px;
+          left: 0;
+          height: 13px;
+          width: 10px;
+          background: url("../images/tag.png") no-repeat center center; }
+      .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .item-date {
+        color: #FFFFFF;
+        font-family: 'Rubik-Regular';
+        font-size: 12px;
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        line-height: 14px;
+        margin-bottom: 20px; }
+      .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .node-title {
+        color: #FFFFFF;
+        font-family: 'SourceSansPro-Bold';
+        font-size: 52px;
+        letter-spacing: -1.68px;
+        line-height: 42px;
+        margin-bottom: 24px; }
+        .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .node-title a {
+          color: #FFFFFF;
+          text-decoration: none; }
+          .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .node-title a:hover {
+            text-decoration: none; }
+      .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .item-details {
+        color: #FFFFFF;
+        font-family: 'Rubik-Medium';
+        font-size: 14px;
+        letter-spacing: 0.3px;
+        line-height: 25px; }
+      .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info {
+        color: #FFFFFF;
+        font-family: 'Rubik-Regular';
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        line-height: 14px; }
+        .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info a,
+        .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info a:hover {
+          color: #FFFFFF;
+          text-decoration: none; }
+        .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info .item-price {
+          font-family: 'Rubik-Medium';
+          text-transform: uppercase; }
+  .ding_nodelist-carousel .ding_nodelist-items {
+    position: relative; }
+  .ding_nodelist-carousel .slick-dots {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 40px); }
+    .ding_nodelist-carousel .slick-dots::after {
+      display: block;
+      clear: both;
+      content: ""; }
+    .ding_nodelist-carousel .slick-dots li {
+      float: left;
+      color: transparent;
+      width: 6px;
+      height: 6px;
+      border: 1px solid #FFF8F8;
+      border-radius: 50%;
+      margin-right: 10px; }
+      .ding_nodelist-carousel .slick-dots li.slick-active {
+        background-color: #ffffff; }
+  .ding_nodelist-carousel .next-prev {
+    display: none; }
+  .ding_nodelist-carousel .slick-dotted .slick-arrow {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    transition: box-shadow 0.2s linear;
+    top: calc(50% - 35px);
+    z-index: 10; }
+    .ding_nodelist-carousel .slick-dotted .slick-arrow:hover {
+      box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.2); }
+  .ding_nodelist-carousel .slick-dotted .fa-prev.slick-arrow {
+    display: none !important;
+    left: -35px;
+    background: #1E0195 url(../images/nav-arrow-left.png) no-repeat center center; }
+    @media (min-width: 992px) {
+      .ding_nodelist-carousel .slick-dotted .fa-prev.slick-arrow {
+        display: block !important; } }
+  .ding_nodelist-carousel .slick-dotted .fa-next.slick-arrow {
+    display: none !important;
+    right: -35px;
+    background: #1E0195 url(../images/nav-arrow-right.png) no-repeat center center; }
+    @media (min-width: 992px) {
+      .ding_nodelist-carousel .slick-dotted .fa-next.slick-arrow {
+        display: block !important; } }
+
+.pane-ding-nodelist .pane-title {
+  color: #01032E;
+  font-family: 'Rubik-Regular';
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  max-width: 352px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media (min-width: 768px) {
+    .pane-ding-nodelist .pane-title {
+      max-width: 100%; } }
+
+.pane-ding-nodelist .more-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+  .pane-ding-nodelist .more-links ul .more-link {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 72px; }
+    @media (min-width: 768px) {
+      .pane-ding-nodelist .more-links ul .more-link {
+        margin-left: 20px;
+        margin-right: 20px; } }
+    @media (min-width: 992px) {
+      .pane-ding-nodelist .more-links ul .more-link {
+        margin-bottom: 0;
+        margin-left: 0;
+        margin-right: 0; } }
+    .pane-ding-nodelist .more-links ul .more-link a {
+      display: inline-block;
+      color: #FFFFFF;
+      font-family: 'Rubik-Regular';
+      font-size: 14px;
+      font-weight: 500;
+      letter-spacing: 0.8px;
+      line-height: 17px;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 29px 20px;
+      width: 100%;
+      max-width: 352px;
+      background-color: #1E0195;
+      transition: box-shadow 0.2s linear; }
+      @media (min-width: 992px) {
+        .pane-ding-nodelist .more-links ul .more-link a {
+          max-width: 410px; } }
+      .pane-ding-nodelist .more-links ul .more-link a, .pane-ding-nodelist .more-links ul .more-link a:hover {
+        text-decoration: none; }
+      .pane-ding-nodelist .more-links ul .more-link a:hover {
+        box-shadow: 0 10px 35px 0 rgba(30, 1, 149, 0.2); }
+
+.pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item {
+  border: none;
+  border-radius: 2px;
+  transition: box-shadow 0.2s linear;
+  max-width: 352px;
+  border-radius: 2px;
+  box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+  margin: 0 auto 10px; }
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item::after {
+    display: block;
+    clear: both;
+    content: ""; }
+  @media (min-width: 768px) {
+    .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item {
+      max-width: 100%;
+      border-radius: 0;
+      box-shadow: none;
+      margin: 0 0 10px; } }
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item:hover {
+    box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item > .label,
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item > .event-list-fulldate,
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item > .item-details {
+    padding: 0 20px 0; }
+    @media (min-width: 768px) {
+      .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item > .label,
+      .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item > .event-list-fulldate,
+      .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item > .item-details {
+        padding-bottom: 0;
+        margin-bottom: 0;
+        float: left;
+        width: 60%;
+        display: block; } }
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item > .label {
+    padding-top: 28px;
+    margin-bottom: 17px; }
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item > .event-list-fulldate {
+    display: block;
+    color: #000119;
+    font-family: "SourceSansPro-Bold";
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 14px; }
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item > .item-details {
+    padding-bottom: 28px; }
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-list-image {
+    position: relative;
+    overflow: hidden;
+    height: 206px; }
+    @media (min-width: 768px) {
+      .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-list-image {
+        margin-right: 30px; } }
+    .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-list-image img {
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+      position: absolute;
+      width: 100%; }
+    @media (min-width: 768px) {
+      .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-list-image {
+        float: left;
+        width: 206px; }
+        .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-list-image img {
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          width: auto;
+          height: auto; } }
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-title {
     font-size: 21px;
     font-weight: 900;
-    padding-bottom: 8px;
     margin: 0;
     font-family: "SourceSansPro-Bold";
-    text-transform: none; }
-  .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .card-body .card-description, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .card-description, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .card-description, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .card-description, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .card-description {
+    text-transform: none;
+    margin-bottom: 8px;
+    line-height: 25px; }
+    .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-title a,
+    .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-title a:hover {
+      text-decoration: none;
+      color: #000119; }
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-body {
     color: #414256;
+    font-family: "SourceSansPro-Bold";
     font-size: 14px;
-    font-weight: 600;
-    padding-bottom: 14px; }
-    .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .card-body .card-description .field-item, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .card-description .field-item, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .card-description .field-item, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .card-description .field-item, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .card-description .field-item {
+    line-height: 20px;
+    margin-bottom: 14px; }
+    .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-body span {
+      display: block;
       max-width: 100%;
       white-space: nowrap;
       overflow: hidden;
       text-overflow: ellipsis; }
-  .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .card-body .library, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .library, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .library, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .library, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .library, .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .card-body .date-time, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .date-time, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .date-time, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .date-time, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .date-time {
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-library {
+    color: #000119;
+    font-family: "SourceSansPro-Bold";
     font-size: 12px;
-    font-weight: 600; }
-  .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .card-body .price, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .price, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-body .price, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .price, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-body .price {
-    color: #00A878;
-    font-family: "Rubik-Medium";
-    font-size: 12px;
-    text-transform: uppercase; }
-
-.front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .info-bottom::after, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .info-bottom::after, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .info-bottom::after, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .info-bottom::after, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .info-bottom::after {
-  display: block;
-  clear: both;
-  content: ""; }
-
-.front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .info-bottom > div, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .info-bottom > div, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .info-bottom > div, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .info-bottom > div, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .info-bottom > div {
-  padding: 0 10px 0 0;
-  border-right: 1px solid #000119;
-  float: left; }
-  .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .info-bottom > div:last-child, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .info-bottom > div:last-child, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .info-bottom > div:last-child, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .info-bottom > div:last-child, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .info-bottom > div:last-child {
-    padding: 0;
-    border: none; }
-  .front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .info-bottom > div:not(:first-child), .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .info-bottom > div:not(:first-child), #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .info-bottom > div:not(:first-child), .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .info-bottom > div:not(:first-child), .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .info-bottom > div:not(:first-child) {
-    padding-left: 10px; }
-
-.front.page-culture-frontpage .content-wrapper .container .ding_nodelist .ding_nodelist-items .card-img-top, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-img-top, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .ding_nodelist .ding_nodelist-items .card-img-top, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-img-top, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .ding_nodelist .ding_nodelist-items .card-img-top {
-  border-radius: 2px 2px 0 0;
-  background-color: #DBD9D9; }
+    line-height: 15px; }
+    .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-library a,
+    .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-library a:hover {
+      color: #000119;
+      text-decoration: none; }
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .label .field-items .field-item {
+    position: relative;
+    color: #4D4E6C;
+    font-family: "SourceSansPro-Bold";
+    font-size: 10px;
+    letter-spacing: 1px;
+    line-height: 13px;
+    text-transform: uppercase;
+    padding-left: 20px; }
+    .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .label .field-items .field-item:before {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: 5px;
+      height: 13px;
+      width: 10px;
+      background: url("../images/tag.png") no-repeat center center; }
