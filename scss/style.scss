@@ -14,6 +14,7 @@
 @import 'mixins/search';
 @import 'mixins/datepicker';
 @import 'mixins/ellipsis';
+@import 'mixins/restore-gutters';
 @import 'mixins/grid-view-mode';
 
 @import 'base/general';
@@ -31,4 +32,6 @@
 @import 'components/news';
 @import 'components/news-details';
 @import 'components/frontpage';
-//@import 'components/news';
+
+@import 'modules/event_calendar';
+@import 'modules/nodelist';

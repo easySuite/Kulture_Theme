@@ -1,7 +1,7 @@
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
+  sm: 767px,
+  md: 992px,
+  lg: 1024px,
   xl: 1252px
 ) !default;
 
@@ -11,8 +11,7 @@ $grid-gutter-width: 57px !default;
  * Default Variables.
  */
 
-$theme-colors: (
-  dark: #000119,
+$theme-colors: (dark: #000119,
   filter-text: #01032E,
   blue: #1E0195,
   green: #00A878,
@@ -20,11 +19,9 @@ $theme-colors: (
   active-gray: #4D4E6C,
   gray: #8B8CA4,
   disabled: #8F8F8F,
-  light-gray: #F0F0F2
-);
+  light-gray: #F0F0F2);
 
-$text-size: (
-  micro: 10px,
+$text-size: (micro: 10px,
   mini: 12px,
   small: 14px,
   small-medium: 15px,
@@ -32,47 +29,42 @@ $text-size: (
   medium: 18px,
   medium-large: 21px,
   large: 26px,
-  massive: 57px
-);
+  massive: 57px);
 
-$line-height: (
-  small: 1,
+$line-height: (small: 1,
   small-medium: 10,
   regular: 17,
   medium: 25,
-  large: 30
-);
+  large: 30);
 
-$shadows: (
-  level-1: 0 10px 30px 0 rgba(0, 0, 0, 0.1),
+$shadows: (level-1: 0 10px 30px 0 rgba(0, 0, 0, 0.1),
   level-2: 0 10px 35px 0 rgba(9, 0, 38, 0.1),
-  level-3: 0 10px 35px 0 rgba(30, 1, 149, 0.2)
-);
+  level-3: 0 10px 35px 0 rgba(30, 1, 149, 0.2));
 
 $max-width: 1124px;
 
 // Small screen / tablet
 //** Deprecated `$screen-sm` as of v3.0.1
-$screen-sm:                  767px !default;
-$screen-sm-min:              $screen-sm !default;
+$screen-sm    : 767px !default;
+$screen-sm-min: $screen-sm !default;
 //** Deprecated `$screen-tablet` as of v3.0.1
-$screen-tablet:              $screen-sm-min !default;
+$screen-tablet: $screen-sm-min !default;
 
 // Medium screen / desktop
 //** Deprecated `$screen-md` as of v3.0.1
-$screen-md:                  992px !default;
-$screen-md-min:              $screen-md !default;
+$screen-md    : 992px !default;
+$screen-md-min: $screen-md !default;
 //** Deprecated `$screen-desktop` as of v3.0.1
-$screen-desktop:             $screen-md-min !default;
+$screen-desktop: $screen-md-min !default;
 
 // Large screen / wide desktop
 //** Deprecated `$screen-lg` as of v3.0.1
-$screen-lg:                  1200px !default;
-$screen-lg-min:              $screen-lg !default;
+$screen-lg    : 1200px !default;
+$screen-lg-min: $screen-lg !default;
 //** Deprecated `$screen-lg-desktop` as of v3.0.1
-$screen-lg-desktop:          $screen-lg-min !default;
+$screen-lg-desktop: $screen-lg-min !default;
 
 // Media query variables.
-$tablet:              "screen and (min-width: #{$screen-sm-min})";
-$normal:              "screen and (min-width: #{$screen-md-min})";
-$wide:                "screen and (min-width: #{$screen-lg-min})";
+$tablet: "screen and (min-width: #{$screen-sm-min})";
+$normal: "screen and (min-width: #{$screen-md-min})";
+$wide  : "screen and (min-width: #{$screen-lg-min})";

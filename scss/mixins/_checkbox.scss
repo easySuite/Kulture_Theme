@@ -1,55 +1,59 @@
 @mixin checkbox() {
-  display: block;
+  display      : block;
   margin-bottom: 10px;
 
-  & > input[type="checkbox"] {
-    padding: 0;
-    height: initial;
-    width: initial;
+  &>input[type="checkbox"] {
+    padding      : 0;
+    height       : initial;
+    width        : initial;
     margin-bottom: 0;
-    display: none;
-    cursor: pointer;
+    display      : none;
+    cursor       : pointer;
 
-    &:checked + label:before,
-    &:checked + .element-label:before {
+    &:checked+label:before,
+    &:checked+.element-label:before {
       background-color: map-get($theme-colors, blue);
     }
 
-    &:checked + label:after,
-    &:checked + .element-label:after {
-      content: '';
-      display: block;
-      position: absolute;
-      top: 3px;
-      left: 11px;
-      width: 18px;
-      height: 11px;
-      border: solid white;
+    &:checked+label:after,
+    &:checked+.element-label:after {
+      content     : '';
+      display     : block;
+      position    : absolute;
+      top         : 3px;
+      left        : 11px;
+      width       : 18px;
+      height      : 11px;
+      border      : solid white;
       border-width: 1px 1px 0 0;
-      transform: rotate(133deg);
-      box-shadow: none;
+      transform   : rotate(133deg);
+      box-shadow  : none;
     }
   }
 
-  & > label,
-  & > .element-label {
+  &>label,
+  &>.element-label {
     position: relative;
-    cursor: pointer;
+    cursor  : pointer;
 
     &:before {
-      content:'';
+      content           : '';
       -webkit-appearance: none;
-      background-color: transparent;
-      border: 1px solid map-get($theme-colors, blue);
-      border-radius: 2px;
-      box-shadow: map-get($shadows, level-2);
-      width: 40px;
-      height: 40px;
-      display: inline-block;
-      position: relative;
-      vertical-align: middle;
-      cursor: pointer;
-      margin-right: 20px;
+      background-color  : transparent;
+      border            : 1px solid map-get($theme-colors, blue);
+      border-radius     : 2px;
+      width             : 40px;
+      height            : 40px;
+      display           : inline-block;
+      position          : relative;
+      vertical-align    : middle;
+      cursor            : pointer;
+      margin-right      : 20px;
+      transition        : box-shadow 0.2s linear;
+
+      &:hover {
+        box-shadow: map-get($shadows, level-2);
+      }
     }
   }
 }

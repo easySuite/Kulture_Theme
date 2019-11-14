@@ -7,61 +7,80 @@
   }
 
   .pane-menu-title h2 {
-    color: #01032E;	
-    font-family: 'Rubik-Regular';
+    color         : #01032E;
+    font-family   : 'Rubik-Regular';
     text-transform: uppercase;
-    font-size: 16px;
+    font-size     : 16px;
     letter-spacing: 0.6px;
-    margin-bottom: 30px;
+    margin-bottom : 30px;
   }
 
   .pane-quick-buttons {
-    margin: 40px 0;
-    padding: 40px 0;
-    border-top: 1px solid #DBD9D9;
+    margin       : 40px 0;
+    padding      : 40px 0;
+    border-top   : 1px solid #DBD9D9;
     border-bottom: 1px solid #DBD9D9;
 
     .container {
-      padding-left: 0;
+      padding-left : 0;
       padding-right: 0;
     }
 
     .filters-group {
 
-      & > .events-tomorrow {
+      &>.events-tomorrow {
+        padding-right   : 5px;
+        padding-left    : 0px;
+        width           : auto;
+        float           : left;
+        display         : inline-block;
+      }
+
+      &>.events-next_weekend {
+        padding-right: 5px;
+        padding-left : 0px;
+        width        : auto;
+        float        : left;
+        display      : inline-block;
+
+        @include media-breakpoint-up(md) {
+          padding-right: 0;
+        }
+      }
+
+      &>.top_events {
+        padding-left : 0;
         padding-right: 0;
-      }
-
-      & > .events-next_weekend {
-        padding: 0;
-      }
-
-      & > .top_events {
-        padding-left: 0;
+        width        : auto;
+        float        : left;
+        display      : inline-block;
       }
 
       .label {
         @extend .col-md-12;
-        color: #01032E;	
-        font-family: 'Rubik-Regular';
+        color         : #01032E;
+        font-family   : 'Rubik-Regular';
         text-transform: uppercase;
-        font-size: 16px;
+        font-size     : 16px;
         letter-spacing: 0.6px;
-        margin-bottom: 30px;
+        margin-bottom : 30px;
+        padding       : 0;
+
       }
 
       .form-type-checkbox {
-        color: #01032E;
-        font-family: 'Rubik-Regular';
-        font-size: 14px;
+        color         : #01032E;
+        font-family   : 'Rubik-Regular';
+        font-size     : 14px;
         letter-spacing: 0.3px;
-        
+
         label {
           font-weight: normal;
           @include clearfix();
           @include checkbox();
 
-          input, .element-label {
+          input,
+          .element-label {
             float: left;
           }
 
@@ -74,7 +93,7 @@
   }
 
   .views-exposed-form .views-exposed-widget {
-    float: none;
+    float  : none;
     padding: 0;
   }
 
@@ -86,19 +105,20 @@
       margin-right: 26px;
     }
 
-    .dates-filter-from, .dates-filter-to {
-      float: left;
+    .dates-filter-from,
+    .dates-filter-to {
+      float    : left;
       max-width: calc(50% - 13px);
       @include datepicker();
 
       input {
-        max-width: 200px;  
+        max-width: 200px;
       }
-      
-      & > div .container-inline-date .description {
+
+      &>div .container-inline-date .description {
         display: none;
       }
-      
+
     }
   }
 
@@ -107,20 +127,20 @@
 
     .accordion-filter-header .accordion-control {
       display: block;
-      cursor: pointer;
+      cursor : pointer;
       padding: 10px 0;
       @include clearfix();
 
       h2 {
-        float: left;
-        color: #01032E;
+        float      : left;
+        color      : #01032E;
         font-family: "Rubik-Regular";
-        font-size: 14px;
-        margin: 0 30px 0 0;
+        font-size  : 14px;
+        margin     : 0 30px 0 0;
       }
 
       span.arrow {
-        float: left;
+        float     : left;
         margin-top: 5px;
         @include arrow(bottom, 5px, 6px, #01032E);
       }
@@ -136,6 +156,14 @@
           @include checkbox();
         }
       }
+    }
+  }
+}
+
+.page-arrangementer .filters-group {
+  @include media-breakpoint-up(lg) {
+    .label {
+      padding: 0;
     }
   }
 }

@@ -1,12 +1,11 @@
-
 ul li.leaf {
   list-style-image: none;
 }
 
 .form-checkboxes ul {
   list-style-image: none;
-  list-style: none;
-  padding: 0;
+  list-style      : none;
+  padding         : 0;
 
   li {
     list-style: none;
@@ -15,4 +14,70 @@ ul li.leaf {
 
 .layout-wrapper {
   width: 100%;
+}
+
+.row {
+  margin : 0;
+  padding: 0;
+}
+
+.content-wrapper {
+
+  .col-lg-12,
+  .col-md-12,
+  .col-sm-12,
+  .col-md-8,
+  .col-lg-8,
+  .col-lg-7,
+  .col-md-6,
+  .col-lg-6,
+  .col-md-5,
+  .col-lg-5,
+  .col-md-5,
+  .col-lg-4,
+  .col-md-4 {
+    margin : 0;
+    padding: 0;
+
+    @include media-breakpoint-up(lg) {
+      padding-right: 28.5px;
+      padding-left : 28.5px;
+    }
+  }
+
+  .col-sm-12 {
+    @include media-breakpoint-up(m) {
+      width: auto;
+      flex : auto;
+    }
+  }
+}
+
+#page .content-inner .container {
+  padding: 0;
+
+  @include media-breakpoint-up(lg) {
+    padding-right: 28.5px;
+    padding-left : 28.5px;
+  }
+}
+
+.not-front {
+  .layout-wrapper {
+    padding: 0 10px;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0;
+    }
+  }
+}
+
+.container {
+  padding: 0 10px;
+
+  @include media-breakpoint-up(lg) {
+    padding-right: 28.5px;
+    padding-left : 28.5px;
+    margin       : 0 auto;
+  }
 }
