@@ -14,11 +14,11 @@
   <div class="row left-and-main-content">
     <div class="layout-wrapper">
       <?php if (!empty($content['left_sidebar'])): ?>
-        <aside class="secondary-content col-md-4 float-left">
+        <aside class="secondary-content col-lg-4 float-left">
           <?php print $content['left_sidebar']; ?>
         </aside>
       <?php endif ?>
-      <div class="primary-content col-md-8 float-right">
+      <div class="primary-content col-lg-8 float-right">
         <?php print $content['main_content']; ?>
       </div>
     </div>

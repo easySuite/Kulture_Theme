@@ -8,10 +8,10 @@
  */
 ?>
 <?php if (!empty($title)): ?>
-  <h3 class="col-md-12 colums"><?php print $title; ?></h3>
+  <h3 class="col-lg-12 colums"><?php print $title; ?></h3>
 <?php endif; ?>
 <?php foreach ($rows as $id => $row): ?>
-  <div<?php if ($classes_array[$id]) { print ' class="card col-md-12 ' . $classes_array[$id] .'"';  } ?>>
+  <div<?php if ($classes_array[$id]) { print ' class="card col-lg-12 ' . $classes_array[$id] .'"';  } ?>>
     <?php print $row; ?>
   </div>
 <?php endforeach; ?>

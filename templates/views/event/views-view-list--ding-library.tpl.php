@@ -16,7 +16,7 @@
   <?php endif; ?>
   <ul class="row <?php print $class; ?>">
     <?php foreach ($rows as $id => $row): ?>
-      <li class="col-md-12 <?php print $classes_array[$id]; ?>"><?php print $row; ?></li>
+      <li class="col-lg-12 <?php print $classes_array[$id]; ?>"><?php print $row; ?></li>
     <?php endforeach; ?>
     </ul>
   <?php print $list_type_suffix; ?>

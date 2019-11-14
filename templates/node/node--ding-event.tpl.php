@@ -95,10 +95,10 @@ unset($content['field_ding_event_ticket_link']);
 <article class="event-details-wrapper <?php print $classes; ?>"<?php print $attributes; ?>>
   <div class="container inner">
     <div class="row">
-      <div class="left col-md-5">
+      <div class="left col-lg-5">
         <?php print render($content['group_left']['field_ding_event_title_image']); ?>
       </div>
-      <div class="right col-md-7">
+      <div class="right col-lg-7">
         <div class="info-top">
           <i class="tag-icon"></i>
           <?php print render($content['field_ding_event_category']); ?>
