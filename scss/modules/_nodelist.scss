@@ -59,7 +59,7 @@
       }
 
       img {
-        height       : 465px;
+        height: 465px;
 
         @include media-breakpoint-up(md) {
           position: absolute;
@@ -170,7 +170,6 @@
     position: relative;
   }
 
-
   .slick-dots {
     list-style: none;
     padding   : 0;
@@ -188,6 +187,10 @@
       border       : 1px solid #FFF8F8;
       border-radius: 50%;
       margin-right : 10px;
+
+      a {
+        display: none;
+      }
 
       &.slick-active {
         background-color: #ffffff;
@@ -270,7 +273,6 @@
       }
 
       @include media-breakpoint-up(lg) {
-        margin-bottom: 0;
         margin-left  : 0;
         margin-right : 0;
       }
@@ -312,10 +314,11 @@
     border-radius: 2px;
     transition   : box-shadow 0.2s linear;
     @include clearfix();
-    max-width    : 352px;
-    border-radius: 2px;
-    box-shadow   : 0 10px 35px 0 rgba(9, 0, 38, 0.1);
-    margin       : 0 auto 10px;
+    max-width       : 352px;
+    border-radius   : 2px;
+    box-shadow      : 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+    margin          : 0 auto 10px;
+    background-color: #fff;
 
     @include media-breakpoint-up(md) {
       max-width    : 100%;
@@ -362,20 +365,21 @@
     }
 
     .item-list-image {
-      position  : relative;
-      overflow  : hidden;
-      height    : 206px;
+      position: relative;
+      overflow: hidden;
+      height  : 206px;
 
       @include media-breakpoint-up(md) {
         margin-right: 30px;
       }
 
       img {
-        top            : 50%;
-        left           : 50%;
-        transform      : translateX(-50%) translateY(-50%);
-        position       : absolute;
-        width          : 100%;
+        top      : 50%;
+        left     : 50%;
+        transform: translateX(-50%) translateY(-50%);
+        position : absolute;
+        width    : 100%;
+        max-width: inherit;
       }
 
       @include media-breakpoint-up(md) {
@@ -437,14 +441,14 @@
     }
 
     .label .field-items .field-item {
-      position      : relative;
-      color         : #4D4E6C;
-      font-family   : "SourceSansPro-Bold";
-      font-size     : 10px;
-      letter-spacing: 1px;
-      line-height   : 13px;
-      text-transform: uppercase;
-      padding-left  : 20px;
+      position        : relative;
+      color           : #4D4E6C;
+      font-family     : "SourceSansPro-Bold";
+      font-size       : 10px;
+      letter-spacing  : 1px;
+      line-height     : 13px;
+      text-transform  : uppercase;
+      //padding-left  : 20px;
 
       &:before {
         content   : '';
