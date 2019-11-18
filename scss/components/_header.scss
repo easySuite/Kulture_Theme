@@ -76,7 +76,7 @@ header.site-header {
 .not-front header.site-header {
 	box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
 
-	nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li.expanded {
+	nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li {
 		position: relative;
 
 		&.active:after {

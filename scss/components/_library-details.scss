@@ -17,7 +17,7 @@
     }
 
     .panel-pane-inner {
-      .pane-content, h2.pane-title {
+      .pane-content :first, h2.pane-title a.active-trail {
         display: none;
       }
     }
