@@ -8065,6 +8065,8 @@ header.site-header nav.main-menu-wrapper.navbar {
   header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav {
     margin-left: 0;
     margin-top: 32px; }
+    header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav ul.main-menu.navbar-nav {
+      display: none; }
     @media (min-width: 992px) {
       header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav {
         margin-top: 0;
@@ -8095,9 +8097,9 @@ header.site-header nav.main-menu-wrapper.navbar {
 
 .not-front header.site-header {
   box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1); }
-  .not-front header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li {
+  .not-front header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li.expanded {
     position: relative; }
-    .not-front header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li.active:after {
+    .not-front header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li.expanded.active:after {
       display: none;
       content: '';
       position: absolute;
@@ -8107,8 +8109,10 @@ header.site-header nav.main-menu-wrapper.navbar {
       bottom: -58px;
       background-color: #1E0195; }
       @media (min-width: 992px) {
-        .not-front header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li.active:after {
+        .not-front header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li.expanded.active:after {
           display: block; } }
+  .not-front header.site-header ul.main-menu li.expanded {
+    list-style-image: none; }
 
 .footer {
   display: block;
@@ -9121,14 +9125,19 @@ header.site-header nav.main-menu-wrapper.navbar {
 
 #ding-library-front {
   margin-top: 70px; }
-  #ding-library-front .secondary-content .sub-menu-title a {
+  #ding-library-front .secondary-content .sub-menu-title a,
+  #ding-library-front .secondary-content .sub-menu-wrapper .pane-title a {
     text-transform: uppercase;
     color: #1E0195;
     font-family: 'Rubik-Regular';
     font-size: 16px;
     letter-spacing: 0.6px; }
-    #ding-library-front .secondary-content .sub-menu-title a, #ding-library-front .secondary-content .sub-menu-title a:hover {
+    #ding-library-front .secondary-content .sub-menu-title a, #ding-library-front .secondary-content .sub-menu-title a:hover,
+    #ding-library-front .secondary-content .sub-menu-wrapper .pane-title a,
+    #ding-library-front .secondary-content .sub-menu-wrapper .pane-title a:hover {
       text-decoration: none; }
+  #ding-library-front .secondary-content .panel-pane-inner .pane-content, #ding-library-front .secondary-content .panel-pane-inner h2.pane-title {
+    display: none; }
   #ding-library-front .secondary-content .menu {
     padding: 0;
     margin: 30px 0 0 0;
@@ -10439,6 +10448,8 @@ header.site-header nav.main-menu-wrapper.navbar {
       border: 1px solid #FFF8F8;
       border-radius: 50%;
       margin-right: 10px; }
+      .ding_nodelist-carousel .slick-dots li a {
+        display: none; }
       .ding_nodelist-carousel .slick-dots li.slick-active {
         background-color: #ffffff; }
   .ding_nodelist-carousel .next-prev {
@@ -10496,7 +10507,6 @@ header.site-header nav.main-menu-wrapper.navbar {
         margin-right: 20px; } }
     @media (min-width: 992px) {
       .pane-ding-nodelist .more-links ul .more-link {
-        margin-bottom: 0;
         margin-left: 0;
         margin-right: 0; } }
     .pane-ding-nodelist .more-links ul .more-link a {
@@ -10529,7 +10539,8 @@ header.site-header nav.main-menu-wrapper.navbar {
   max-width: 352px;
   border-radius: 2px;
   box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
-  margin: 0 auto 10px; }
+  margin: 0 auto 10px;
+  background-color: #fff; }
   .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item::after {
     display: block;
     clear: both;
@@ -10579,7 +10590,8 @@ header.site-header nav.main-menu-wrapper.navbar {
       left: 50%;
       transform: translateX(-50%) translateY(-50%);
       position: absolute;
-      width: 100%; }
+      width: 100%;
+      max-width: inherit; }
     @media (min-width: 768px) {
       .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-list-image {
         float: left;
@@ -10630,8 +10642,7 @@ header.site-header nav.main-menu-wrapper.navbar {
     font-size: 10px;
     letter-spacing: 1px;
     line-height: 13px;
-    text-transform: uppercase;
-    padding-left: 20px; }
+    text-transform: uppercase; }
     .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .label .field-items .field-item:before {
       content: '';
       position: absolute;

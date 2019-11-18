@@ -73,9 +73,9 @@
     }
 
     var list = $('.page-bibliotek .content-wrapper .layout-wrapper .pane-taxonomy-menu');
-    if (list.length) {
-      addCollapseToList(list);
-    }
+    // if (list.length) {
+    //   addCollapseToList(list);
+    // }
   });
 
 })(jQuery);
