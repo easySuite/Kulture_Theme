@@ -8845,6 +8845,9 @@ header.site-header nav.main-menu-wrapper.navbar {
         width: 410px;
         height: 615px;
         margin-bottom: 0; } }
+  .event-details-wrapper .field-name-field-ding-event-body img {
+    max-width: 625px;
+    height: auto; }
   .event-details-wrapper .col-md-7 {
     padding-left: 10px; }
   .event-details-wrapper .info-top {
@@ -10016,6 +10019,9 @@ header.site-header nav.main-menu-wrapper.navbar {
           padding-left: 20px; } }
       .news-details-wrapper .ding-news-right .field-label-above .field-item a {
         text-decoration: none; }
+
+.panel-pane.pane-ding-related-content-news-events .col-lg-4 {
+  display: inline-block; }
 
 .panel-pane.pane-ding-related-content-news-events .card.news-item {
   border: none;

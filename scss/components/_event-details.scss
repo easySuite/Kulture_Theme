@@ -14,6 +14,13 @@
 		}
 	}
 
+	.field-name-field-ding-event-body {
+		img {
+			max-width: 625px;
+			height   : auto;
+		}
+	}
+
 	.col-md-7 {
 		padding-left: 10px;
 	}
@@ -161,29 +168,29 @@
 }
 
 .ticket.button {
-		display         : inline-block;
-		color           : #FFFFFF;
-		font-family     : 'Rubik-Regular';
-		font-size       : 14px;
-		font-weight     : 500;
-		letter-spacing  : 0.8px;
-		line-height     : 17px;
-		text-align      : center;
-		text-transform  : uppercase;
-		padding         : 29px 20px;
-		width           : 100%;
-		background-color: #1E0195;
-		transition      : box-shadow 0.2s linear;
-		margin-top: 49px;
+	display         : inline-block;
+	color           : #FFFFFF;
+	font-family     : 'Rubik-Regular';
+	font-size       : 14px;
+	font-weight     : 500;
+	letter-spacing  : 0.8px;
+	line-height     : 17px;
+	text-align      : center;
+	text-transform  : uppercase;
+	padding         : 29px 20px;
+	width           : 100%;
+	background-color: #1E0195;
+	transition      : box-shadow 0.2s linear;
+	margin-top      : 49px;
 
-		&,
-		&:hover {
-			text-decoration: none;
-		}
+	&,
+	&:hover {
+		text-decoration: none;
+	}
 
-		&:hover {
-			box-shadow: 0 10px 35px 0 rgba(30, 1, 149, 0.2);
-		}
+	&:hover {
+		box-shadow: 0 10px 35px 0 rgba(30, 1, 149, 0.2);
+	}
 }
 
 .separator {
