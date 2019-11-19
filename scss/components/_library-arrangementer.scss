@@ -125,19 +125,19 @@
 
         .accordion-control {
           display    : inline-block;
-          position      : relative;
-          cursor        : pointer;
-          padding       : 10px 30px 10px 0;
-          color         : #01032E;
-          font-family   : "Rubik-Regular";
-          font-size     : 14px;
+          position   : relative;
+          cursor     : pointer;
+          padding    : 10px 30px 10px 0;
+          color      : #01032E;
+          font-family: "Rubik-Regular";
+          font-size  : 14px;
           @include clearfix();
 
           span.arrow {
-            position     : absolute;
-            right        : 0;
-            top          : 13px;
-            margin-top   : 5px;
+            position  : absolute;
+            right     : 0;
+            top       : 13px;
+            margin-top: 5px;
             @include arrow(bottom, 5px, 6px, #01032E);
           }
         }
@@ -178,7 +178,8 @@
       border-radius: 2px;
       margin-bottom: 57px;
 
-      .node-ding-event {
+      .node-ding-event,
+      .node-ding-news {
         height    : 100%;
         box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
       }
@@ -340,6 +341,29 @@
       }
     }
   }
+
+  .primary-content .pane-ding-news-ding-news-list-library {
+    .card .card-body {
+      padding: 0px;
+      width  : 100%;
+
+      .card-img-top {
+        margin-right: 30px;
+      }
+
+      .category-label,
+      .field-name-field-ding-news-category {
+        display: inline-block;
+      }
+
+      .info-dash {
+        display: none;
+      }
+      .card-text {
+        padding: 29px 30px;
+      }
+    }
+  }
 }
 
 .page-bibliotek {
@@ -351,5 +375,14 @@
       padding-left : 0;
       padding-right: 0;
     }
+  }
+
+  @include media-breakpoint-up(lg) {
+    #page .view-display-id-ding_news_list_library.container {
+      padding: 0;
+    }
+      .primary-content.col-lg-8.float-right {
+    padding-right: 0;
+  }
   }
 }

@@ -81,3 +81,17 @@ ul li.leaf {
     margin       : 0 auto;
   }
 }
+
+.page-taxonomy-term {
+  #page .node-ding-library.library-item-wrapper {
+    max-width: 1252px;
+    @extend.container;
+  }
+}
+
+.page-user-login .content-inner,
+.page-user .content-inner {
+  max-width: 1252px;
+  @extend.container;
+}
+
