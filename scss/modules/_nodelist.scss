@@ -38,6 +38,7 @@
     }
 
     .event-image {
+      margin-right: 0;
 
       @include media-breakpoint-up(md) {
         a {
@@ -59,7 +60,8 @@
       }
 
       img {
-        height: 465px;
+        height : 465px;
+        display: block;
 
         @include media-breakpoint-up(md) {
           position: absolute;
@@ -83,6 +85,14 @@
       @include media-breakpoint-up(md) {
         top : 104px;
         left: 122px;
+      }
+
+      & > * {
+        max-width: calc(100% - 35px);
+
+        @include media-breakpoint-up(md) {
+          max-width: calc(100% - 122px);
+        }
       }
 
 
@@ -120,12 +130,13 @@
       }
 
       .node-title {
-        color         : #FFFFFF;
-        font-family   : 'SourceSansPro-Bold';
-        font-size     : 52px;
-        letter-spacing: -1.68px;
-        line-height   : 42px;
-        margin-bottom : 24px;
+        color          : #FFFFFF;
+        font-family    : 'SourceSansPro-Bold';
+        font-size      : 52px;
+        letter-spacing : -1.68px;
+        line-height    : 42px;
+        margin-bottom  : 24px;
+        text-decoration: none;
 
         a {
           color          : #FFFFFF;
@@ -176,8 +187,14 @@
     margin    : 0;
     position  : absolute;
     bottom    : 20px;
+    top       : auto;
     left      : calc(50% - 40px);
     @include clearfix();
+
+    // @include media-breakpoint-up(lg) {
+    //   position: relative;
+    //   top     : -20px;
+    // }
 
     li {
       float        : left;
@@ -257,10 +274,19 @@
     }
   }
 
+  .more-links {
+    float: none;
+  }
+
   .more-links ul {
     list-style: none;
     padding   : 0;
     margin    : 0;
+
+    li {
+      display    : list-item;
+      margin-left: 0;
+    }
 
     .more-link {
       text-align   : center;
@@ -273,8 +299,8 @@
       }
 
       @include media-breakpoint-up(lg) {
-        margin-left  : 0;
-        margin-right : 0;
+        margin-left : 0;
+        margin-right: 0;
       }
 
       a {
@@ -319,6 +345,8 @@
     box-shadow      : 0 10px 35px 0 rgba(9, 0, 38, 0.1);
     margin          : 0 auto 10px;
     background-color: #fff;
+    display         : block;
+    overflow        : auto;
 
     @include media-breakpoint-up(md) {
       max-width    : 100%;
@@ -369,9 +397,9 @@
       overflow: hidden;
       height  : 206px;
 
-      @include media-breakpoint-up(md) {
-        margin-right: 30px;
-      }
+      // @include media-breakpoint-up(md) {
+      //   margin-right: 30px;
+      // }
 
       img {
         top      : 50%;
@@ -441,14 +469,14 @@
     }
 
     .label .field-items .field-item {
-      position        : relative;
-      color           : #4D4E6C;
-      font-family     : "SourceSansPro-Bold";
-      font-size       : 10px;
-      letter-spacing  : 1px;
-      line-height     : 13px;
-      text-transform  : uppercase;
-      //padding-left  : 20px;
+      position      : relative;
+      color         : #4D4E6C;
+      font-family   : "SourceSansPro-Bold";
+      font-size     : 10px;
+      letter-spacing: 1px;
+      line-height   : 13px;
+      text-transform: uppercase;
+      padding-left  : 20px;
 
       &:before {
         content   : '';
