@@ -1,4 +1,4 @@
-.secondary-content {
+#page .secondary-content {
   padding-right: 0;
 
   // hide search input from filter
@@ -21,39 +21,45 @@
     border-top   : 1px solid #DBD9D9;
     border-bottom: 1px solid #DBD9D9;
 
-    .container {
-      padding-left : 0;
-      padding-right: 0;
-    }
+   .pane-content .container {
+      padding : 0;
+   }
 
     .filters-group {
 
       &>.events-tomorrow {
-        padding-right   : 5px;
         padding-left    : 0px;
-        width           : auto;
+        width           : 110px;
         float           : left;
         display         : inline-block;
+        @include media-breakpoint-up(md) {
+          width: auto;
+           padding-right   : 5px;
+
+        }
       }
 
       &>.events-next_weekend {
-        padding-right: 5px;
         padding-left : 0px;
-        width        : auto;
+        width        : 108px;
         float        : left;
         display      : inline-block;
 
         @include media-breakpoint-up(md) {
           padding-right: 0;
+          width: auto;
         }
       }
 
       &>.top_events {
         padding-left : 0;
         padding-right: 0;
-        width        : auto;
+        width        : 130px;
         float        : left;
         display      : inline-block;
+         @include media-breakpoint-up(md) {
+          width: auto;
+        }
       }
 
       .label {

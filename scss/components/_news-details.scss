@@ -111,10 +111,24 @@
   }
 }
 
+.node-type-ding-news .view.view-ding-related-content .view-content {
+  @extend .row;
+}
+
 .panel-pane.pane-ding-related-content-news-events {
-  .col-lg-4 {
-    display: inline-block;
+
+  .pane-title {
+    color: #000119;
+    font-family: 'Rubik-Regular';
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    line-height: 19px;
+    text-transform: uppercase;
+
+    @extend .col-md-12;
+    margin-bottom: 35px;
   }
+
   .card.news-item {
     border       : none;
     border-radius: 2px;
