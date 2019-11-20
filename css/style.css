@@ -484,7 +484,7 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
-.row {
+.row, .node-type-ding-news .view.view-ding-related-content .view-content {
   display: flex;
   flex-wrap: wrap;
   margin-right: -28.5px;
@@ -511,7 +511,7 @@ pre {
 
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
-.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .secondary-content .pane-quick-buttons .filters-group .label, .col-md,
+.col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, #page .secondary-content .pane-quick-buttons .filters-group .label, .panel-pane.pane-ding-related-content-news-events .pane-title, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
 .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl,
 .col-xl-auto {
@@ -798,7 +798,7 @@ pre {
   .col-md-11 {
     flex: 0 0 91.66667%;
     max-width: 91.66667%; }
-  .col-md-12, .secondary-content .pane-quick-buttons .filters-group .label {
+  .col-md-12, #page .secondary-content .pane-quick-buttons .filters-group .label, .panel-pane.pane-ding-related-content-news-events .pane-title {
     flex: 0 0 100%;
     max-width: 100%; }
   .order-md-first {
@@ -7984,14 +7984,16 @@ ul li.leaf {
 .layout-wrapper {
   width: 100%; }
 
-.row {
+.row, .node-type-ding-news .view.view-ding-related-content .view-content {
   margin: 0;
   padding: 0; }
 
 .content-wrapper .col-lg-12,
 .content-wrapper .col-md-12,
-.content-wrapper .secondary-content .pane-quick-buttons .filters-group .label,
-.secondary-content .pane-quick-buttons .filters-group .content-wrapper .label,
+.content-wrapper #page .secondary-content .pane-quick-buttons .filters-group .label,
+#page .secondary-content .pane-quick-buttons .filters-group .content-wrapper .label,
+.content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-title,
+.panel-pane.pane-ding-related-content-news-events .content-wrapper .pane-title,
 .content-wrapper .col-sm-12,
 .content-wrapper .col-md-8,
 .content-wrapper .col-lg-8,
@@ -8008,8 +8010,10 @@ ul li.leaf {
   @media (min-width: 992px) {
     .content-wrapper .col-lg-12,
     .content-wrapper .col-md-12,
-    .content-wrapper .secondary-content .pane-quick-buttons .filters-group .label,
-    .secondary-content .pane-quick-buttons .filters-group .content-wrapper .label,
+    .content-wrapper #page .secondary-content .pane-quick-buttons .filters-group .label,
+    #page .secondary-content .pane-quick-buttons .filters-group .content-wrapper .label,
+    .content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-title,
+    .panel-pane.pane-ding-related-content-news-events .content-wrapper .pane-title,
     .content-wrapper .col-sm-12,
     .content-wrapper .col-md-8,
     .content-wrapper .col-lg-8,
@@ -8225,48 +8229,53 @@ header.site-header nav.main-menu-wrapper.navbar {
         .footer .footer-inner .panel-pane .panel-pane-inner ul.menu li a {
           color: white; }
 
-.secondary-content {
+#page .secondary-content {
   padding-right: 0; }
-  .secondary-content #edit-title-wrapper {
+  #page .secondary-content #edit-title-wrapper {
     display: none; }
-  .secondary-content .pane-menu-title h2 {
+  #page .secondary-content .pane-menu-title h2 {
     color: #01032E;
     font-family: 'Rubik-Regular';
     text-transform: uppercase;
     font-size: 16px;
     letter-spacing: 0.6px;
     margin-bottom: 30px; }
-  .secondary-content .pane-quick-buttons {
+  #page .secondary-content .pane-quick-buttons {
     margin: 40px 0;
     padding: 40px 0;
     border-top: 1px solid #DBD9D9;
     border-bottom: 1px solid #DBD9D9; }
-    .secondary-content .pane-quick-buttons .container, .secondary-content .pane-quick-buttons .page-taxonomy-term #page .node-ding-library.library-item-wrapper, .page-taxonomy-term #page .secondary-content .pane-quick-buttons .node-ding-library.library-item-wrapper, .secondary-content .pane-quick-buttons .page-user-login .content-inner, .page-user-login .secondary-content .pane-quick-buttons .content-inner,
-    .secondary-content .pane-quick-buttons .page-user .content-inner, .page-user .secondary-content .pane-quick-buttons .content-inner, .secondary-content .pane-quick-buttons #ding-library-front .attachments-wrapper .pane-title, #ding-library-front .attachments-wrapper .secondary-content .pane-quick-buttons .pane-title, .secondary-content .pane-quick-buttons .node-type-ding-news .panel-pane.pane-ding-related-content-news-events, .node-type-ding-news .secondary-content .pane-quick-buttons .panel-pane.pane-ding-related-content-news-events {
-      padding-left: 0;
-      padding-right: 0; }
-    .secondary-content .pane-quick-buttons .filters-group > .events-tomorrow {
-      padding-right: 5px;
+    #page .secondary-content .pane-quick-buttons .pane-content .container, .page-taxonomy-term #page .secondary-content .pane-quick-buttons .pane-content .node-ding-library.library-item-wrapper, #page .secondary-content .pane-quick-buttons .pane-content .page-user-login .content-inner, .page-user-login #page .secondary-content .pane-quick-buttons .pane-content .content-inner,
+    #page .secondary-content .pane-quick-buttons .pane-content .page-user .content-inner, .page-user #page .secondary-content .pane-quick-buttons .pane-content .content-inner, #page .secondary-content .pane-quick-buttons .pane-content #ding-library-front .attachments-wrapper .pane-title, #ding-library-front .attachments-wrapper #page .secondary-content .pane-quick-buttons .pane-content .pane-title, #page .secondary-content .pane-quick-buttons .pane-content .node-type-ding-news .panel-pane.pane-ding-related-content-news-events, .node-type-ding-news #page .secondary-content .pane-quick-buttons .pane-content .panel-pane.pane-ding-related-content-news-events {
+      padding: 0; }
+    #page .secondary-content .pane-quick-buttons .filters-group > .events-tomorrow {
       padding-left: 0px;
-      width: auto;
-      float: left;
-      display: inline-block; }
-    .secondary-content .pane-quick-buttons .filters-group > .events-next_weekend {
-      padding-right: 5px;
-      padding-left: 0px;
-      width: auto;
+      width: 110px;
       float: left;
       display: inline-block; }
       @media (min-width: 768px) {
-        .secondary-content .pane-quick-buttons .filters-group > .events-next_weekend {
-          padding-right: 0; } }
-    .secondary-content .pane-quick-buttons .filters-group > .top_events {
-      padding-left: 0;
-      padding-right: 0;
-      width: auto;
+        #page .secondary-content .pane-quick-buttons .filters-group > .events-tomorrow {
+          width: auto;
+          padding-right: 5px; } }
+    #page .secondary-content .pane-quick-buttons .filters-group > .events-next_weekend {
+      padding-left: 0px;
+      width: 108px;
       float: left;
       display: inline-block; }
-    .secondary-content .pane-quick-buttons .filters-group .label {
+      @media (min-width: 768px) {
+        #page .secondary-content .pane-quick-buttons .filters-group > .events-next_weekend {
+          padding-right: 0;
+          width: auto; } }
+    #page .secondary-content .pane-quick-buttons .filters-group > .top_events {
+      padding-left: 0;
+      padding-right: 0;
+      width: 130px;
+      float: left;
+      display: inline-block; }
+      @media (min-width: 768px) {
+        #page .secondary-content .pane-quick-buttons .filters-group > .top_events {
+          width: auto; } }
+    #page .secondary-content .pane-quick-buttons .filters-group .label {
       color: #01032E;
       font-family: 'Rubik-Regular';
       text-transform: uppercase;
@@ -8274,31 +8283,31 @@ header.site-header nav.main-menu-wrapper.navbar {
       letter-spacing: 0.6px;
       margin-bottom: 30px;
       padding: 0; }
-    .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox {
+    #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox {
       color: #01032E;
       font-family: 'Rubik-Regular';
       font-size: 14px;
       letter-spacing: 0.3px; }
-      .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label {
+      #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label {
         font-weight: normal;
         display: block;
         margin-bottom: 10px; }
-        .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label::after {
+        #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label::after {
           display: block;
           clear: both;
           content: ""; }
-        .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > input[type="checkbox"] {
+        #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > input[type="checkbox"] {
           padding: 0;
           height: initial;
           width: initial;
           margin-bottom: 0;
           display: none;
           cursor: pointer; }
-          .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > input[type="checkbox"]:checked + label:before,
-          .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > input[type="checkbox"]:checked + .element-label:before {
+          #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > input[type="checkbox"]:checked + label:before,
+          #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > input[type="checkbox"]:checked + .element-label:before {
             background-color: #1E0195; }
-          .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > input[type="checkbox"]:checked + label:after,
-          .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > input[type="checkbox"]:checked + .element-label:after {
+          #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > input[type="checkbox"]:checked + label:after,
+          #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > input[type="checkbox"]:checked + .element-label:after {
             content: '';
             display: block;
             position: absolute;
@@ -8310,12 +8319,12 @@ header.site-header nav.main-menu-wrapper.navbar {
             border-width: 1px 1px 0 0;
             transform: rotate(133deg);
             box-shadow: none; }
-        .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > label,
-        .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > .element-label {
+        #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > label,
+        #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > .element-label {
           position: relative;
           cursor: pointer; }
-          .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > label:before,
-          .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > .element-label:before {
+          #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > label:before,
+          #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > .element-label:before {
             content: '';
             -webkit-appearance: none;
             background-color: transparent;
@@ -8329,38 +8338,38 @@ header.site-header nav.main-menu-wrapper.navbar {
             cursor: pointer;
             margin-right: 20px;
             transition: box-shadow 0.2s linear; }
-            .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > label:before:hover,
-            .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > .element-label:before:hover {
+            #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > label:before:hover,
+            #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label > .element-label:before:hover {
               box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
-        .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label input,
-        .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label .element-label {
+        #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label input,
+        #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label .element-label {
           float: left; }
-        .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label .element-label:before {
+        #page .secondary-content .pane-quick-buttons .filters-group .form-type-checkbox label .element-label:before {
           margin-right: 10px; }
-  .secondary-content .views-exposed-form .views-exposed-widget {
+  #page .secondary-content .views-exposed-form .views-exposed-widget {
     float: none;
     padding: 0; }
-  .secondary-content .filter-dates-wrapper {
+  #page .secondary-content .filter-dates-wrapper {
     margin-bottom: 20px; }
-    .secondary-content .filter-dates-wrapper::after {
+    #page .secondary-content .filter-dates-wrapper::after {
       display: block;
       clear: both;
       content: ""; }
-    .secondary-content .filter-dates-wrapper .dates-filter-from {
+    #page .secondary-content .filter-dates-wrapper .dates-filter-from {
       margin-right: 26px; }
-    .secondary-content .filter-dates-wrapper .dates-filter-from,
-    .secondary-content .filter-dates-wrapper .dates-filter-to {
+    #page .secondary-content .filter-dates-wrapper .dates-filter-from,
+    #page .secondary-content .filter-dates-wrapper .dates-filter-to {
       float: left;
       max-width: calc(50% - 13px); }
-      .secondary-content .filter-dates-wrapper .dates-filter-from label,
-      .secondary-content .filter-dates-wrapper .dates-filter-to label {
+      #page .secondary-content .filter-dates-wrapper .dates-filter-from label,
+      #page .secondary-content .filter-dates-wrapper .dates-filter-to label {
         color: #01032E;
         font-family: 'Rubik-Regular';
         font-size: 15px;
         margin-bottom: 25px;
         font-weight: normal; }
-      .secondary-content .filter-dates-wrapper .dates-filter-from input,
-      .secondary-content .filter-dates-wrapper .dates-filter-to input {
+      #page .secondary-content .filter-dates-wrapper .dates-filter-from input,
+      #page .secondary-content .filter-dates-wrapper .dates-filter-to input {
         width: 100%;
         color: #8F8F8F;
         font-family: 'Rubik-Regular';
@@ -8369,33 +8378,33 @@ header.site-header nav.main-menu-wrapper.navbar {
         box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
         border: none;
         background: white url("../images/calendar-gray.png") no-repeat 20px center; }
-        .secondary-content .filter-dates-wrapper .dates-filter-from input:not([value='']),
-        .secondary-content .filter-dates-wrapper .dates-filter-to input:not([value='']) {
+        #page .secondary-content .filter-dates-wrapper .dates-filter-from input:not([value='']),
+        #page .secondary-content .filter-dates-wrapper .dates-filter-to input:not([value='']) {
           color: white;
           background: #1E0195 url("../images/calendar-white.png") no-repeat 20px center; }
-      .secondary-content .filter-dates-wrapper .dates-filter-from input,
-      .secondary-content .filter-dates-wrapper .dates-filter-to input {
+      #page .secondary-content .filter-dates-wrapper .dates-filter-from input,
+      #page .secondary-content .filter-dates-wrapper .dates-filter-to input {
         max-width: 200px; }
-      .secondary-content .filter-dates-wrapper .dates-filter-from > div .container-inline-date .description,
-      .secondary-content .filter-dates-wrapper .dates-filter-to > div .container-inline-date .description {
+      #page .secondary-content .filter-dates-wrapper .dates-filter-from > div .container-inline-date .description,
+      #page .secondary-content .filter-dates-wrapper .dates-filter-to > div .container-inline-date .description {
         display: none; }
-  .secondary-content .accordion-wrapper {
+  #page .secondary-content .accordion-wrapper {
     margin-bottom: 20px; }
-    .secondary-content .accordion-wrapper .accordion-filter-header .accordion-control {
+    #page .secondary-content .accordion-wrapper .accordion-filter-header .accordion-control {
       display: block;
       cursor: pointer;
       padding: 10px 0; }
-      .secondary-content .accordion-wrapper .accordion-filter-header .accordion-control::after {
+      #page .secondary-content .accordion-wrapper .accordion-filter-header .accordion-control::after {
         display: block;
         clear: both;
         content: ""; }
-      .secondary-content .accordion-wrapper .accordion-filter-header .accordion-control h2 {
+      #page .secondary-content .accordion-wrapper .accordion-filter-header .accordion-control h2 {
         float: left;
         color: #01032E;
         font-family: "Rubik-Regular";
         font-size: 14px;
         margin: 0 30px 0 0; }
-      .secondary-content .accordion-wrapper .accordion-filter-header .accordion-control span.arrow {
+      #page .secondary-content .accordion-wrapper .accordion-filter-header .accordion-control span.arrow {
         float: left;
         margin-top: 5px;
         content: '';
@@ -8406,25 +8415,25 @@ header.site-header nav.main-menu-wrapper.navbar {
         -moz-transform: scale(0.9999);
         border-width: 6px 5px 0 6px;
         border-color: #01032E transparent transparent transparent; }
-    .secondary-content .accordion-wrapper .accordion-filter-body {
+    #page .secondary-content .accordion-wrapper .accordion-filter-body {
       padding-top: 15px; }
-      .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu {
+      #page .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu {
         padding: 0; }
-        .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li {
+        #page .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li {
           display: block;
           margin-bottom: 10px; }
-          .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"] {
+          #page .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"] {
             padding: 0;
             height: initial;
             width: initial;
             margin-bottom: 0;
             display: none;
             cursor: pointer; }
-            .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + label:before,
-            .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + .element-label:before {
+            #page .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + label:before,
+            #page .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + .element-label:before {
               background-color: #1E0195; }
-            .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + label:after,
-            .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + .element-label:after {
+            #page .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + label:after,
+            #page .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + .element-label:after {
               content: '';
               display: block;
               position: absolute;
@@ -8436,12 +8445,12 @@ header.site-header nav.main-menu-wrapper.navbar {
               border-width: 1px 1px 0 0;
               transform: rotate(133deg);
               box-shadow: none; }
-          .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > label,
-          .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label {
+          #page .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > label,
+          #page .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label {
             position: relative;
             cursor: pointer; }
-            .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > label:before,
-            .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label:before {
+            #page .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > label:before,
+            #page .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label:before {
               content: '';
               -webkit-appearance: none;
               background-color: transparent;
@@ -8455,8 +8464,8 @@ header.site-header nav.main-menu-wrapper.navbar {
               cursor: pointer;
               margin-right: 20px;
               transition: box-shadow 0.2s linear; }
-              .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > label:before:hover,
-              .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label:before:hover {
+              #page .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > label:before:hover,
+              #page .secondary-content .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label:before:hover {
                 box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
 
 @media (min-width: 992px) {
@@ -8641,8 +8650,10 @@ header.site-header nav.main-menu-wrapper.navbar {
 .node-type-ding-event .layout-wrapper {
   padding-top: 60px; }
 
-.page-arrangementer .view-content.row h3,
-.node-type-ding-event .view-content.row h3 {
+.page-arrangementer .view-content.row h3, .page-arrangementer .node-type-ding-news .view.view-ding-related-content .view-content h3, .node-type-ding-news .view.view-ding-related-content .page-arrangementer .view-content h3,
+.node-type-ding-event .view-content.row h3,
+.node-type-ding-event .node-type-ding-news .view.view-ding-related-content .view-content h3,
+.node-type-ding-news .view.view-ding-related-content .node-type-ding-event .view-content h3 {
   color: #01032E;
   font-family: Rubik-Regular;
   font-size: 16px;
@@ -8830,7 +8841,9 @@ header.site-header nav.main-menu-wrapper.navbar {
   .not-front.page-arrangementer #page .node-type-ding-news .default-panel-layout.panel-pane.pane-ding-related-content-news-events,
   .node-type-ding-news .not-front.page-arrangementer #page .default-panel-layout.panel-pane.pane-ding-related-content-news-events,
   .not-front.page-arrangementer #page .col-lg-8,
-  .not-front.page-arrangementer #page .row {
+  .not-front.page-arrangementer #page .row,
+  .not-front.page-arrangementer #page .node-type-ding-news .view.view-ding-related-content .view-content,
+  .node-type-ding-news .view.view-ding-related-content .not-front.page-arrangementer #page .view-content {
     padding: 0; } }
 
 .event-details-wrapper {
@@ -8968,7 +8981,8 @@ header.site-header nav.main-menu-wrapper.navbar {
   width: 100%;
   background-color: #1E0195;
   transition: box-shadow 0.2s linear;
-  margin-top: 49px; }
+  margin-top: 49px;
+  margin-bottom: 70px; }
   .ticket.button, .ticket.button:hover {
     text-decoration: none; }
   .ticket.button:hover {
@@ -9357,6 +9371,72 @@ header.site-header nav.main-menu-wrapper.navbar {
       #ding-library-front .attachments-wrapper .card .image-wrapper img {
         top: calc(50% - 103px);
         position: absolute; }
+    #ding-library-front .attachments-wrapper .card .node-ding-news .card-body {
+      padding: 0; }
+    #ding-library-front .attachments-wrapper .card .node-ding-news .card-text {
+      padding: 30px; }
+    #ding-library-front .attachments-wrapper .card .node-ding-news .category-and-submitted::after {
+      display: block;
+      clear: both;
+      content: ""; }
+    #ding-library-front .attachments-wrapper .card .node-ding-news .category-and-submitted > .info-dash {
+      display: none; }
+    #ding-library-front .attachments-wrapper .card .node-ding-news .category-and-submitted .news-category {
+      color: #4D4E6C;
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      position: relative;
+      padding: 0 0 20px 20px;
+      letter-spacing: 1px; }
+      #ding-library-front .attachments-wrapper .card .node-ding-news .category-and-submitted .news-category::after {
+        display: block;
+        clear: both;
+        content: ""; }
+      #ding-library-front .attachments-wrapper .card .node-ding-news .category-and-submitted .news-category .field,
+      #ding-library-front .attachments-wrapper .card .node-ding-news .category-and-submitted .news-category .fields-item,
+      #ding-library-front .attachments-wrapper .card .node-ding-news .category-and-submitted .news-category .fild-item {
+        color: #4D4E6C;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        padding: 0;
+        letter-spacing: 1px; }
+      #ding-library-front .attachments-wrapper .card .node-ding-news .category-and-submitted .news-category:after {
+        position: absolute;
+        top: 1px;
+        left: 0;
+        height: 13px;
+        width: 10px;
+        background: url("../images/tag.png") no-repeat center center; }
+      #ding-library-front .attachments-wrapper .card .node-ding-news .category-and-submitted .news-category > div {
+        float: left; }
+    #ding-library-front .attachments-wrapper .card .node-ding-news .category-and-submitted .submitted {
+      color: #000119;
+      font-family: 'SourceSansPro-Bold';
+      font-size: 12px;
+      padding-top: 15px; }
+    #ding-library-front .attachments-wrapper .card .node-ding-news .card-body {
+      color: #000119;
+      font-family: "SourceSansPro-Regular";
+      padding: 0; }
+      #ding-library-front .attachments-wrapper .card .node-ding-news .card-body .image-wrapper {
+        position: relative;
+        height: 206px;
+        overflow: hidden; }
+        #ding-library-front .attachments-wrapper .card .node-ding-news .card-body .image-wrapper img {
+          width: 100%; }
+      #ding-library-front .attachments-wrapper .card .node-ding-news .card-body .news-text {
+        padding: 30px; }
+        #ding-library-front .attachments-wrapper .card .node-ding-news .card-body .news-text h3 {
+          color: #000119;
+          padding-top: 15px;
+          font-family: "SourceSansPro-Bold";
+          font-size: 21px; }
+        #ding-library-front .attachments-wrapper .card .node-ding-news .card-body .news-text h3 ~ .field {
+          color: #414256;
+          font-family: "SourceSansPro-Bold";
+          font-size: 14px; }
     #ding-library-front .attachments-wrapper .card .card-body {
       color: #000119;
       font-family: "SourceSansPro-Regular";
@@ -9593,10 +9673,6 @@ header.site-header nav.main-menu-wrapper.navbar {
       text-decoration: none; }
     .page-bibliotek .layout-wrapper .primary-content .card .inner {
       position: relative; }
-      .page-bibliotek .layout-wrapper .primary-content .card .inner::after {
-        display: block;
-        clear: both;
-        content: ""; }
     .page-bibliotek .layout-wrapper .primary-content .card .price-tag {
       position: absolute;
       top: 10px;
@@ -9624,87 +9700,262 @@ header.site-header nav.main-menu-wrapper.navbar {
         -moz-transform: scale(0.9999); }
     .page-bibliotek .layout-wrapper .primary-content .card .image-wrapper {
       position: relative;
-      float: left;
       overflow: hidden;
-      width: 206px;
       height: 206px; }
       .page-bibliotek .layout-wrapper .primary-content .card .image-wrapper img {
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%);
-        position: absolute;
-        width: auto;
-        height: auto; }
-    .page-bibliotek .layout-wrapper .primary-content .card .card-body {
+        top: calc(50% - 103px);
+        position: absolute; }
+    .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text {
       color: #000119;
       font-family: "SourceSansPro-Regular";
-      padding: 29px 30px;
-      float: left;
-      width: calc(100% - 206px); }
-      .page-bibliotek .layout-wrapper .primary-content .card .card-body .info-top {
+      padding: 30px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .info-top {
         color: #4D4E6C;
         font-size: 10px;
-        font-weight: bold;
+        font-family: "SourceSansPro-Bold";
         text-transform: uppercase;
         position: relative;
-        padding-bottom: 19px;
-        letter-spacing: 1px;
-        line-height: 13px; }
-        .page-bibliotek .layout-wrapper .primary-content .card .card-body .info-top i.tag-icon {
+        padding-bottom: 20px;
+        letter-spacing: 1px; }
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .info-top i.tag-icon {
           position: absolute;
           top: 1px;
           height: 13px;
           width: 10px;
           background: url("../images/tag.png") no-repeat center center; }
-        .page-bibliotek .layout-wrapper .primary-content .card .card-body .info-top .field {
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .info-top .field {
           padding-left: 20px; }
-      .page-bibliotek .layout-wrapper .primary-content .card .card-body .date {
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .date {
         font-size: 12px;
-        font-weight: 600;
-        padding-bottom: 15px;
-        line-height: 15px; }
-      .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-title {
+        font-family: "SourceSansPro-Bold";
+        padding-bottom: 15px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .card-title {
         font-size: 21px;
         font-weight: 900;
         padding-bottom: 8px;
         margin: 0;
         font-family: "SourceSansPro-Bold";
         text-transform: none; }
-      .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-description {
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .card-description {
         color: #414256;
         font-size: 14px;
-        font-weight: 600;
-        padding-bottom: 14px; }
-        .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-description .field-item {
-          max-width: 100%;
-          white-space: nowrap;
-          overflow: hidden;
-          text-overflow: ellipsis; }
-      .page-bibliotek .layout-wrapper .primary-content .card .card-body .library,
-      .page-bibliotek .layout-wrapper .primary-content .card .card-body .date-time {
+        font-family: "SourceSansPro-Bold";
+        padding-bottom: 23px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .library,
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .date-time {
         font-size: 12px;
-        font-weight: 600; }
-      .page-bibliotek .layout-wrapper .primary-content .card .card-body .price {
+        font-family: "SourceSansPro-Bold";
+        padding-bottom: 10px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .price {
         color: #00A878;
         font-family: "Rubik-Medium";
         font-size: 12px;
         text-transform: uppercase; }
-    .page-bibliotek .layout-wrapper .primary-content .card .info-bottom::after {
-      display: block;
-      clear: both;
-      content: ""; }
-    .page-bibliotek .layout-wrapper .primary-content .card .info-bottom > div {
-      padding: 0 10px 0 0;
-      border-right: 1px solid #000119;
-      float: left; }
-      .page-bibliotek .layout-wrapper .primary-content .card .info-bottom > div:last-child {
-        padding: 0;
-        border: none; }
-      .page-bibliotek .layout-wrapper .primary-content .card .info-bottom > div:not(:first-child) {
-        padding-left: 10px; }
     .page-bibliotek .layout-wrapper .primary-content .card .card-img-top {
       border-radius: 2px 2px 0 0;
       background-color: #DBD9D9; }
+  .page-bibliotek .layout-wrapper .primary-content .card {
+    border: none; }
+  .page-bibliotek .layout-wrapper .primary-content .card.news-item {
+    border: none;
+    margin-bottom: 0; }
+  .page-bibliotek .layout-wrapper .primary-content .card .card-body {
+    padding: 0px;
+    width: 100%; }
+    .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-img-top {
+      margin-right: 30px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-img-top img {
+        width: 100%; }
+        @media (min-width: 768px) {
+          .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-img-top img {
+            width: auto; } }
+    .page-bibliotek .layout-wrapper .primary-content .card .card-body .category-label,
+    .page-bibliotek .layout-wrapper .primary-content .card .card-body .field-name-field-ding-news-category {
+      display: inline-block; }
+    .page-bibliotek .layout-wrapper .primary-content .card .card-body .info-dash {
+      display: none; }
+    .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text {
+      padding: 29px 30px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text .news-category {
+        color: #4D4E6C;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 0 20px 20px;
+        letter-spacing: 1px; }
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text .news-category::after {
+          display: block;
+          clear: both;
+          content: ""; }
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text .news-category .field,
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text .news-category .fields-item,
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text .news-category .fild-item {
+          color: #4D4E6C;
+          font-size: 10px;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 0;
+          letter-spacing: 1px; }
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text .news-category:after {
+          position: absolute;
+          top: 1px;
+          left: 0;
+          height: 13px;
+          width: 10px;
+          background: url("../images/tag.png") no-repeat center center; }
+          @media (min-width: 768px) {
+            .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text .news-category:after {
+              left: 31%; } }
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text .news-category > div {
+          float: left;
+          margin-left: 10px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text .submitted {
+        color: #000119;
+        font-family: 'SourceSansPro-Bold';
+        font-size: 12px;
+        padding-top: 15px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text h3 {
+        color: #000119;
+        padding-top: 15px;
+        font-family: "SourceSansPro-Bold";
+        font-size: 21px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text h3 ~ .field {
+        color: #414256;
+        font-family: "SourceSansPro-Bold";
+        font-size: 14px; }
+  @media (min-width: 768px) {
+    .page-bibliotek .layout-wrapper .primary-content .card.views-row {
+      border: none; }
+    .page-bibliotek .layout-wrapper .primary-content .card {
+      border-radius: 2px;
+      margin-bottom: 57px;
+      border: none; }
+      .page-bibliotek .layout-wrapper .primary-content .card .node-ding-event, .page-bibliotek .layout-wrapper .primary-content .card.node-ding-news {
+        height: 100%;
+        box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
+      .page-bibliotek .layout-wrapper .primary-content .card a,
+      .page-bibliotek .layout-wrapper .primary-content .card a:active,
+      .page-bibliotek .layout-wrapper .primary-content .card a:visited,
+      .page-bibliotek .layout-wrapper .primary-content .card a:hover,
+      .page-bibliotek .layout-wrapper .primary-content .card a:focus {
+        color: #000119;
+        text-decoration: none; }
+      .page-bibliotek .layout-wrapper .primary-content .card .inner {
+        position: relative; }
+        .page-bibliotek .layout-wrapper .primary-content .card .inner::after {
+          display: block;
+          clear: both;
+          content: ""; }
+      .page-bibliotek .layout-wrapper .primary-content .card .price-tag {
+        position: absolute;
+        top: 10px;
+        right: -5px;
+        background-color: #00A878;
+        box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
+        color: white;
+        width: 90px;
+        font-family: 'Rubik-Medium';
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 9px 20px; }
+        .page-bibliotek .layout-wrapper .primary-content .card .price-tag:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: -5px;
+          height: 0;
+          width: 0;
+          display: block;
+          border-top: 5px solid #007352;
+          border-right: 5px solid transparent;
+          -moz-transform: scale(0.9999); }
+      .page-bibliotek .layout-wrapper .primary-content .card .image-wrapper {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: 206px;
+        height: 206px; }
+        .page-bibliotek .layout-wrapper .primary-content .card .image-wrapper img {
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          position: absolute;
+          width: auto;
+          height: auto; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body {
+        color: #000119;
+        font-family: "SourceSansPro-Regular";
+        padding: 29px 30px;
+        float: left;
+        width: calc(100% - 206px); }
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .info-top {
+          color: #4D4E6C;
+          font-size: 10px;
+          font-weight: bold;
+          text-transform: uppercase;
+          position: relative;
+          padding-bottom: 19px;
+          letter-spacing: 1px;
+          line-height: 13px; }
+          .page-bibliotek .layout-wrapper .primary-content .card .card-body .info-top i.tag-icon {
+            position: absolute;
+            top: 1px;
+            height: 13px;
+            width: 10px;
+            background: url("../images/tag.png") no-repeat center center; }
+          .page-bibliotek .layout-wrapper .primary-content .card .card-body .info-top .field {
+            padding-left: 20px; }
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .date {
+          font-size: 12px;
+          font-weight: 600;
+          padding-bottom: 15px;
+          line-height: 15px; }
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-title {
+          font-size: 21px;
+          font-weight: 900;
+          padding-bottom: 8px;
+          margin: 0;
+          font-family: "SourceSansPro-Bold";
+          text-transform: none; }
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-description {
+          color: #414256;
+          font-size: 14px;
+          font-weight: 600;
+          padding-bottom: 14px; }
+          .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-description .field-item {
+            max-width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .library,
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .date-time {
+          font-size: 12px;
+          font-weight: 600; }
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .price {
+          color: #00A878;
+          font-family: "Rubik-Medium";
+          font-size: 12px;
+          text-transform: uppercase; }
+      .page-bibliotek .layout-wrapper .primary-content .card .info-bottom::after {
+        display: block;
+        clear: both;
+        content: ""; }
+      .page-bibliotek .layout-wrapper .primary-content .card .info-bottom > div {
+        padding: 0 10px 0 0;
+        border-right: 1px solid #000119;
+        float: left;
+        height: 18px; }
+        .page-bibliotek .layout-wrapper .primary-content .card .info-bottom > div:last-child {
+          padding: 0;
+          border: none; }
+        .page-bibliotek .layout-wrapper .primary-content .card .info-bottom > div:not(:first-child) {
+          padding-left: 10px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-img-top {
+        border-radius: 2px 2px 0 0;
+        background-color: #DBD9D9; } }
   .page-bibliotek .layout-wrapper .primary-content .pane-ding-news-ding-news-list-library .card .card-body {
     padding: 0px;
     width: 100%; }
@@ -9717,6 +9968,50 @@ header.site-header nav.main-menu-wrapper.navbar {
       display: none; }
     .page-bibliotek .layout-wrapper .primary-content .pane-ding-news-ding-news-list-library .card .card-body .card-text {
       padding: 29px 30px; }
+      .page-bibliotek .layout-wrapper .primary-content .pane-ding-news-ding-news-list-library .card .card-body .card-text .news-category {
+        color: #4D4E6C;
+        font-size: 10px;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 0 20px 20px;
+        letter-spacing: 1px; }
+        .page-bibliotek .layout-wrapper .primary-content .pane-ding-news-ding-news-list-library .card .card-body .card-text .news-category::after {
+          display: block;
+          clear: both;
+          content: ""; }
+        .page-bibliotek .layout-wrapper .primary-content .pane-ding-news-ding-news-list-library .card .card-body .card-text .news-category .field,
+        .page-bibliotek .layout-wrapper .primary-content .pane-ding-news-ding-news-list-library .card .card-body .card-text .news-category .fields-item,
+        .page-bibliotek .layout-wrapper .primary-content .pane-ding-news-ding-news-list-library .card .card-body .card-text .news-category .fild-item {
+          color: #4D4E6C;
+          font-size: 10px;
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 0;
+          letter-spacing: 1px; }
+        .page-bibliotek .layout-wrapper .primary-content .pane-ding-news-ding-news-list-library .card .card-body .card-text .news-category:after {
+          position: absolute;
+          top: 1px;
+          height: 13px;
+          width: 10px;
+          background: url("../images/tag.png") no-repeat center center; }
+        .page-bibliotek .layout-wrapper .primary-content .pane-ding-news-ding-news-list-library .card .card-body .card-text .news-category > div {
+          float: left;
+          margin-left: 10px; }
+      .page-bibliotek .layout-wrapper .primary-content .pane-ding-news-ding-news-list-library .card .card-body .card-text .submitted {
+        color: #000119;
+        font-family: 'SourceSansPro-Bold';
+        font-size: 12px;
+        padding-top: 15px; }
+      .page-bibliotek .layout-wrapper .primary-content .pane-ding-news-ding-news-list-library .card .card-body .card-text h3 {
+        color: #000119;
+        padding-top: 15px;
+        font-family: "SourceSansPro-Bold";
+        font-size: 21px; }
+      .page-bibliotek .layout-wrapper .primary-content .pane-ding-news-ding-news-list-library .card .card-body .card-text h3 ~ .field {
+        color: #414256;
+        font-family: "SourceSansPro-Bold";
+        font-size: 14px; }
 
 .page-bibliotek .secondary-content {
   padding-left: 10px;
@@ -9929,7 +10224,9 @@ header.site-header nav.main-menu-wrapper.navbar {
   .not-front.page-nyheder #page .node-type-ding-news .default-panel-layout.panel-pane.pane-ding-related-content-news-events,
   .node-type-ding-news .not-front.page-nyheder #page .default-panel-layout.panel-pane.pane-ding-related-content-news-events,
   .not-front.page-nyheder #page .col-lg-8,
-  .not-front.page-nyheder #page .row {
+  .not-front.page-nyheder #page .row,
+  .not-front.page-nyheder #page .node-type-ding-news .view.view-ding-related-content .view-content,
+  .node-type-ding-news .view.view-ding-related-content .not-front.page-nyheder #page .view-content {
     padding: 0; } }
 
 .news-details-wrapper {
@@ -10020,8 +10317,14 @@ header.site-header nav.main-menu-wrapper.navbar {
       .news-details-wrapper .ding-news-right .field-label-above .field-item a {
         text-decoration: none; }
 
-.panel-pane.pane-ding-related-content-news-events .col-lg-4 {
-  display: inline-block; }
+.panel-pane.pane-ding-related-content-news-events .pane-title {
+  color: #000119;
+  font-family: 'Rubik-Regular';
+  font-size: 16px;
+  letter-spacing: 0.6px;
+  line-height: 19px;
+  text-transform: uppercase;
+  margin-bottom: 35px; }
 
 .panel-pane.pane-ding-related-content-news-events .card.news-item {
   border: none;
@@ -10149,27 +10452,27 @@ header.site-header nav.main-menu-wrapper.navbar {
 .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .secondary-content-wrapper {
   width: 100%; }
 
-.front.page-culture-frontpage .content-wrapper .container .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .row.content-container .primary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .row.content-container .primary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .row.content-container .primary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper {
+.front.page-culture-frontpage .content-wrapper .container .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .row.content-container .primary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .row.content-container .primary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .row.content-container .primary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .container .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .container .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .content-container.view-content .primary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .content-container.view-content .primary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-user .content-inner .content-container.view-content .primary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-user .front.page-culture-frontpage .content-wrapper .content-inner .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container.view-content .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .view.view-ding-related-content .panel-pane.pane-ding-related-content-news-events .content-container.view-content .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container.view-content .primary-content-wrapper {
   padding-left: 10px;
   padding-right: 10px; }
   @media (min-width: 768px) {
-    .front.page-culture-frontpage .content-wrapper .container .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .row.content-container .primary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .row.content-container .primary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .row.content-container .primary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper {
+    .front.page-culture-frontpage .content-wrapper .container .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .row.content-container .primary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .row.content-container .primary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .row.content-container .primary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .container .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .container .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .content-container.view-content .primary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .content-container.view-content .primary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-user .content-inner .content-container.view-content .primary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-user .front.page-culture-frontpage .content-wrapper .content-inner .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container.view-content .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .view.view-ding-related-content .panel-pane.pane-ding-related-content-news-events .content-container.view-content .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container.view-content .primary-content-wrapper {
       padding-left: 20px;
       padding-right: 20px; } }
   @media (min-width: 992px) {
-    .front.page-culture-frontpage .content-wrapper .container .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .row.content-container .primary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .row.content-container .primary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .row.content-container .primary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper {
+    .front.page-culture-frontpage .content-wrapper .container .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .row.content-container .primary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .row.content-container .primary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .row.content-container .primary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .container .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .container .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .content-container.view-content .primary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .content-container.view-content .primary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-user .content-inner .content-container.view-content .primary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-user .front.page-culture-frontpage .content-wrapper .content-inner .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container.view-content .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .node-type-ding-news .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .view.view-ding-related-content .panel-pane.pane-ding-related-content-news-events .content-container.view-content .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .view.view-ding-related-content .content-container.view-content .primary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container.view-content .primary-content-wrapper {
       padding-left: 0px;
       padding-right: 10px; } }
 
-.front.page-culture-frontpage .content-wrapper .container .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .row.content-container .secondary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .row.content-container .secondary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .row.content-container .secondary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .secondary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .secondary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .secondary-content-wrapper {
+.front.page-culture-frontpage .content-wrapper .container .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .row.content-container .secondary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .row.content-container .secondary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .row.content-container .secondary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .secondary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .secondary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .container .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .container .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .content-container.view-content .secondary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .content-container.view-content .secondary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-user .content-inner .content-container.view-content .secondary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-user .front.page-culture-frontpage .content-wrapper .content-inner .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container.view-content .secondary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .view.view-ding-related-content .panel-pane.pane-ding-related-content-news-events .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container.view-content .secondary-content-wrapper {
   padding-left: 10px;
   padding-right: 10px; }
   @media (min-width: 768px) {
-    .front.page-culture-frontpage .content-wrapper .container .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .row.content-container .secondary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .row.content-container .secondary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .row.content-container .secondary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .secondary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .secondary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .secondary-content-wrapper {
+    .front.page-culture-frontpage .content-wrapper .container .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .row.content-container .secondary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .row.content-container .secondary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .row.content-container .secondary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .secondary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .secondary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .container .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .container .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .content-container.view-content .secondary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .content-container.view-content .secondary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-user .content-inner .content-container.view-content .secondary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-user .front.page-culture-frontpage .content-wrapper .content-inner .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container.view-content .secondary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .view.view-ding-related-content .panel-pane.pane-ding-related-content-news-events .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container.view-content .secondary-content-wrapper {
       padding-left: 20px;
       padding-right: 20px; } }
   @media (min-width: 992px) {
-    .front.page-culture-frontpage .content-wrapper .container .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .row.content-container .secondary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .row.content-container .secondary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .row.content-container .secondary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .secondary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .secondary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .secondary-content-wrapper {
+    .front.page-culture-frontpage .content-wrapper .container .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .row.content-container .secondary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .row.content-container .secondary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .row.content-container .secondary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .row.content-container .secondary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .row.content-container .secondary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .row.content-container .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .container .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .container .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .content-container.view-content .secondary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .content-container.view-content .secondary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .page-user .content-inner .content-container.view-content .secondary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .page-user .front.page-culture-frontpage .content-wrapper .content-inner .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container.view-content .secondary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .node-type-ding-news .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .view.view-ding-related-content .panel-pane.pane-ding-related-content-news-events .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .view.view-ding-related-content .content-container.view-content .secondary-content-wrapper, .node-type-ding-news .view.view-ding-related-content .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container.view-content .secondary-content-wrapper {
       padding-left: 0px;
       padding-right: 0px; } }
 
@@ -10407,8 +10710,8 @@ header.site-header nav.main-menu-wrapper.navbar {
             border-radius: 50% 0 0 50%;
             margin-right: 0; }
           .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-progress .day-number {
-            border-radius: 0;
-            margin-right: 0; }
+            margin-bottom: 0px;
+            border-radius: 50%; }
           .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events.event-end .day-number {
             border-radius: 0 50% 50% 0;
             box-shadow: none; }
