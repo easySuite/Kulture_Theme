@@ -21,7 +21,7 @@
   <?php print $scripts; ?>
 </head>
 <body class="<?php print $classes; ?>">
-  <div id="page" class="ding2-site-template-test-ms">
+  <div id="page" class="ding2-site-template">
     <!-- <section class="topbar"> -->
       <div class="topbar-inner">
         <div class="panel-pane pane-pane-header">
