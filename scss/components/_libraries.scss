@@ -107,8 +107,12 @@
     h2.page-title>a {
       color          : #000119;
       font-family    : 'SourceSansPro-Bold';
-      font-size      : 57px;
+      font-size      : 42px;
       text-decoration: none;
+
+      @include media-breakpoint-up(md) {
+        font-size: 57px;
+      }
 
       &:hover {
         text-decoration: none;

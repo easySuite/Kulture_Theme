@@ -67,10 +67,14 @@
       h2 {
         color        : #000119;
         font-family  : 'SourceSansPro-Bold';
-        font-size    : 57px;
+        font-size    : 42px;
         line-height  : 42px;
         margin       : 0;
         margin-bottom: 17px;
+
+        @include media-breakpoint-up(md) {
+          font-size: 57px;
+        }
       }
     }
 
@@ -404,5 +408,11 @@
         background-color: #DBD9D9;
       }
     }
+  }
+}
+
+#ding-library-about {
+  .adaptive-image {
+    width: 100%;
   }
 }
