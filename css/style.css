@@ -11199,3 +11199,12 @@ header.site-header nav.main-menu-wrapper.navbar {
       height: 13px;
       width: 10px;
       background: url("../images/tag.png") no-repeat center center; }
+
+.ding_nodelist-taxonomy .item .item-list-image {
+  display: block; }
+
+.ding_nodelist-taxonomy .item .item-details {
+  display: block; }
+
+.ding_nodelist-taxonomy .item h2.item-title {
+  padding-left: 0px; }
