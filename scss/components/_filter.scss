@@ -29,7 +29,7 @@
 
       &>.events-tomorrow {
         padding-left    : 0px;
-        width           : 110px;
+        width           : 105px;
         float           : left;
         display         : inline-block;
         @include media-breakpoint-up(md) {
@@ -41,7 +41,7 @@
 
       &>.events-next_weekend {
         padding-left : 0px;
-        width        : 108px;
+        width        : 120px;
         float        : left;
         display      : inline-block;
 
@@ -91,7 +91,10 @@
           }
 
           .element-label:before {
-            margin-right: 10px;
+            margin-right: 5px;
+            @include media-breakpoint-up(md) {
+              margin-right: 10px;
+            }
           }
         }
       }

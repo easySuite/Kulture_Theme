@@ -14,6 +14,14 @@
 		}
 	}
 
+	.right.col-lg-7 {
+		padding: 0 28.5px;
+
+		@include media-breakpoint-up(lg) {
+			padding-right: 58.5px;
+		}
+	}
+
 	.field-name-field-ding-event-body {
 		img {
 			max-width: 625px;
