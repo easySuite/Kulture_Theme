@@ -10,19 +10,11 @@
     <header class="site-header container">
       <nav class="main-menu-wrapper navbar navbar-expand-lg navbar-light container <?php print $classes; ?>" <?php print $id; ?>>
         <?php if (!empty($content['branding'])): ?>
-          <!-- <section class="topbar"> -->
-            <!-- <div class="topbar-inner"> -->
-              <?php print render($content['branding']); ?>
-            <!-- </div> -->
-          <!-- </section> -->
+          <?php print render($content['branding']); ?>
         <?php endif; ?>
 
         <?php if (!empty($content['header'])): ?>
-          <!-- <section class="header-wrapper"> -->
-            <!-- <div class="header-inner"> -->
-              <?php print render($content['header']); ?>
-            <!-- </div> -->
-          <!-- </section> -->
+          <?php print render($content['header']); ?>
         <?php endif; ?>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMenuContent" aria-controls="navbarMenuContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,11 +23,7 @@
 
         <div class="collapse navbar-collapse" id="navbarMenuContent">
           <?php if (!empty($content['navigation'])): ?>
-            <!-- <section class="navigation-wrapper js-topbar-menu"> -->
-              <!-- <div class="navigation-inner"> -->
-                <?php print render($content['navigation']); ?>
-              <!-- </div> -->
-            <!-- </section> -->
+            <?php print render($content['navigation']); ?>
           <?php endif; ?>
         </div>  
       </nav>  
@@ -50,14 +38,16 @@
 
   <?php if (!empty($content['footer'])): ?>
     <footer class="footer">
-      <?php if (!empty($content['bottom'])): ?>
-      <div class="bottom btn">
-        <?php print render($content['bottom']); ?>
-      </div>
-      <?php endif; ?> 
+      <div class="container">
+        <?php if (!empty($content['bottom'])): ?>
+        <div class="bottom btn">
+          <?php print render($content['bottom']); ?>
+        </div>
+        <?php endif; ?> 
 
-      <div class="footer-inner">
-        <?php print render($content['footer']); ?>
+        <div class="footer-inner">
+          <?php print render($content['footer']); ?>
+        </div>
       </div>
     </footer>
   <?php endif; ?>
