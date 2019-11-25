@@ -7,7 +7,7 @@
 ?>
 <div id="page<?php print $css_id ? " $css_id" : ''; ?>" class="<?php print $classes; ?> kultur-wrapper">
   <?php if (!empty($content['branding']) || !empty($content['header']) || !empty($content['navigation'])): ?>
-    <header class="site-header container">
+    <header class="site-header">
       <nav class="main-menu-wrapper navbar navbar-expand-lg navbar-light container <?php print $classes; ?>" <?php print $id; ?>>
         <?php if (!empty($content['branding'])): ?>
           <?php print render($content['branding']); ?>
