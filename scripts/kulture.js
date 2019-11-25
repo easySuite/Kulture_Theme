@@ -54,27 +54,54 @@
     accordionBody.attr("class", "accordion-filter-body collapse");
   }
 
+  function addCollapseToNewsFilter(listContainerRef) {
+    console.log(listContainerRef);
+    listContainerRef.find('.select-list').addClass("accordion-wrapper");
+
+    listContainerRef.find('.select-list h2.list-title').replaceWith(function() {
+      return $("<a/>", {html: $(this).html()});
+    });
+
+    var link = listContainerRef.find('.select-list > a');
+    link.attr("class", "sub-menu-title accordion-control collapsed");
+    link.attr("data-toggle", "collapse");
+    link.attr("role", "button");
+    link.attr("data-target", "#news-library-filter-accordion");
+    link.attr("aria-controls", "#news-library-filter-accordion");
+
+    link.append('<span class="arrow"></span>');
+
+    var accordionBody = listContainerRef.find('.accordion-wrapper > .list-items');
+    accordionBody.attr("id", "news-library-filter-accordion");
+    accordionBody.attr("class", "list-items accordion-filter-body collapse");
+  }
+
 
   $(document).ready(function () {
     if ($('#edit-date-wrapper').length) {
-        $('#edit-date-wrapper').after($('.panel-pane.pane-quick-buttons'));
+      $('#edit-date-wrapper').after($('.panel-pane.pane-quick-buttons'));
     }
 
     if ($('#ding-library-page').length) {
-        detectMapsLinkPosition($('#ding-library-page'));
+      detectMapsLinkPosition($('#ding-library-page'));
     }
 
     if ($('.page-taxonomy.page-taxonomy-term').length) {
-        detectMapsLinkPosition($('.page-taxonomy.page-taxonomy-term'));
+      detectMapsLinkPosition($('.page-taxonomy.page-taxonomy-term'));
     }
 
     if ($('#ding-library-front').length) {
-        tranformLibraryToAccordion($('#ding-library-front'));
+      tranformLibraryToAccordion($('#ding-library-front'));
     }
 
     var list = $('.page-bibliotek .content-wrapper .layout-wrapper .pane-taxonomy-menu');
     if (list.length) {
       addCollapseToList(list);
+    }
+
+    var filter = $('.page-taxonomy.page-taxonomy-term .layout-wrapper .secondary-content .pane-library-list');
+    if (filter.length) {
+      addCollapseToNewsFilter(filter);
     }
   });
 

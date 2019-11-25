@@ -156,8 +156,12 @@
       }
     }
   }
+    //   .container.default-panel-layout {
+    //   padding: 0;
+    // }
 
   .primary-content {
+
     .view-ding-event {
       h3.colums {
         padding      : 0;
@@ -418,6 +422,10 @@
         border-radius: 2px;
         margin-bottom: 57px;
         border       : none;
+
+        &.col-lg-12 {
+          padding-right: 0;
+        }
 
         .node-ding-event,
         &.node-ding-news {
