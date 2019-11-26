@@ -238,7 +238,7 @@
     .fa-prev.slick-arrow {
       display   : none !important;
       left      : -35px;
-      background: #1E0195 url(../images/nav-arrow-left.png) no-repeat center center;
+      background: #1E0195 url(../images/white-arrow-left.png) no-repeat center center;
 
       @include media-breakpoint-up(lg) {
         display: block !important;
@@ -248,7 +248,7 @@
     .fa-next.slick-arrow {
       display   : none !important;
       right     : -35px;
-      background: #1E0195 url(../images/nav-arrow-right.png) no-repeat center center;
+      background: #1E0195 url(../images/white-arrow-right.png) no-repeat center center;
 
       @include media-breakpoint-up(lg) {
         display: block !important;
@@ -293,7 +293,7 @@
     .more-link {
       text-align   : center;
       margin-top   : 30px;
-      margin-bottom: 72px;
+      // margin-bottom: 72px;
 
       @include media-breakpoint-up(md) {
         margin-left : 20px;
