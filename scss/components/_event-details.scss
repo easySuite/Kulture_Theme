@@ -210,3 +210,14 @@
 		vertical-align: text-top;
 	}
 }
+
+.page-node #page {
+	.container.inner,
+	.view {
+		padding: 0;
+
+		h2 {
+			padding: 0 28.5px;
+		}
+	}
+}

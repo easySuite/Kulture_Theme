@@ -136,6 +136,14 @@
     box-shadow   : 0 10px 35px 0 rgba(9, 0, 38, 0.1);
     height       : calc(100% - 57px);
 
+      @include media-breakpoint-up(lg) {
+        transition : box-shadow 0.2s linear;
+        box-shadow: none;
+        &:hover {
+          box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+        }
+      }
+
     a {
       text-decoration: none;
     }

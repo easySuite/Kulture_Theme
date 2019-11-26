@@ -1,5 +1,6 @@
 #ding-library-front {
   margin-top: 70px;
+  padding   : 0;
 
   .secondary-content {
 
@@ -175,6 +176,16 @@
           &:hover {
             text-decoration: none;
           }
+
+          &:after {
+            content: '';
+            width: 25px;
+            height: 8px;
+            margin-left: 30px;
+            padding: 7px 0;
+            display: inline-block;
+            background: url("../images/blue-arrow-right.png") no-repeat center center;
+          }
         }
       }
     }
@@ -188,6 +199,15 @@
       .node-ding-news {
         height    : 100%;
         box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+
+        @include media-breakpoint-up(lg) {
+          transition: box-shadow 0.2s linear;
+          box-shadow: none;
+
+          &:hover {
+            box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+          }
+        }
       }
 
       a,
@@ -402,7 +422,6 @@
         }
       }
 
-
       .card-img-top {
         border-radius   : 2px 2px 0 0;
         background-color: #DBD9D9;
@@ -415,4 +434,8 @@
   .adaptive-image {
     width: 100%;
   }
+}
+
+.node-type-ding-library #page .content-inner #ding-library-front {
+  padding: 0;
 }
