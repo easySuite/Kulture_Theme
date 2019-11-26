@@ -1,4 +1,5 @@
 .item-list ul.pager {
+  margin: 0;
   @include clearfix();
 
   li.pager-item,
