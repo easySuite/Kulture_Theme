@@ -168,6 +168,7 @@
               background-color: #1E0195;
               color           : #fff;
               border-radius   : 50%;
+              margin-right    : 6px;
             }
 
             // &.calendar-day {
@@ -225,7 +226,7 @@
               //   margin-right: 0;
               // }
 
-              box-shadow : none !important;
+              box-shadow: none !important;
 
               .day-number {
                 box-shadow: 6px 1px 8px rgba(30, 1, 149, 0.2), 4px -1px 4px rgba(30, 1, 149, 0.2) !important;
