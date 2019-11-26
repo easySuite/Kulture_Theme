@@ -7988,6 +7988,9 @@ ul li.leaf {
   margin: 0;
   padding: 0; }
 
+img {
+  width: 100%; }
+
 .content-wrapper .col-lg-12,
 .content-wrapper .col-md-12,
 .content-wrapper #page .secondary-content .pane-quick-buttons .filters-group .label,
@@ -8162,7 +8165,8 @@ header.site-header nav.main-menu-wrapper.navbar {
   background-color: #000119;
   padding: 100px 10px;
   text-align: center;
-  color: #ffffff; }
+  color: #ffffff;
+  margin-top: 100px; }
   @media (min-width: 768px) {
     .footer {
       padding: 100px 60px; } }
@@ -8490,59 +8494,56 @@ header.site-header nav.main-menu-wrapper.navbar {
   .page-arrangementer .filters-group .label {
     padding: 0; } }
 
-.item-list ul.pager::after {
-  display: block;
-  clear: both;
-  content: ""; }
-
-.item-list ul.pager li.pager-item,
-.item-list ul.pager li.pager-current,
-.item-list ul.pager li.pager-ellipsis {
-  opacity: 0.6;
-  color: #4D4E6C;
-  font-family: 'Rubik-Light';
-  font-size: 18px;
-  letter-spacing: 0.42px;
-  margin-left: 15px;
-  position: relative;
-  padding: 0; }
-  .item-list ul.pager li.pager-item a:hover,
-  .item-list ul.pager li.pager-current a:hover,
-  .item-list ul.pager li.pager-ellipsis a:hover {
-    text-decoration: none; }
-
-.item-list ul.pager li.pager-current {
-  color: #1820B0;
-  font-weight: normal; }
-  .item-list ul.pager li.pager-current:after {
-    content: '';
-    position: absolute;
-    height: 1px;
-    width: 100%;
-    background-color: #1820B0;
-    left: 0;
-    bottom: 0; }
-
-.item-list ul.pager li.pager-next a,
-.item-list ul.pager li.pager-previous a {
-  color: transparent;
-  padding: 0;
-  width: 25px;
-  height: 8px; }
-
-.item-list ul.pager li.pager-next {
-  float: right;
-  padding: 0;
+.item-list ul.pager {
   margin: 0; }
-  .item-list ul.pager li.pager-next a {
-    background: url("../images/nav-arrow-right.png") no-repeat right center; }
-
-.item-list ul.pager li.pager-previous {
-  float: left;
-  padding: 0;
-  margin: 0; }
+  .item-list ul.pager::after {
+    display: block;
+    clear: both;
+    content: ""; }
+  .item-list ul.pager li.pager-item,
+  .item-list ul.pager li.pager-current,
+  .item-list ul.pager li.pager-ellipsis {
+    opacity: 0.6;
+    color: #4D4E6C;
+    font-family: 'Rubik-Light';
+    font-size: 18px;
+    letter-spacing: 0.42px;
+    margin-left: 15px;
+    position: relative;
+    padding: 0; }
+    .item-list ul.pager li.pager-item a:hover,
+    .item-list ul.pager li.pager-current a:hover,
+    .item-list ul.pager li.pager-ellipsis a:hover {
+      text-decoration: none; }
+  .item-list ul.pager li.pager-current {
+    color: #1820B0;
+    font-weight: normal; }
+    .item-list ul.pager li.pager-current:after {
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
+      background-color: #1820B0;
+      left: 0;
+      bottom: 0; }
+  .item-list ul.pager li.pager-next a,
   .item-list ul.pager li.pager-previous a {
-    background: url("../images/nav-arrow-left.png") no-repeat left center; }
+    color: transparent;
+    padding: 0;
+    width: 25px;
+    height: 8px; }
+  .item-list ul.pager li.pager-next {
+    float: right;
+    padding: 0;
+    margin: 0; }
+    .item-list ul.pager li.pager-next a {
+      background: url("../images/nav-arrow-right.png") no-repeat right center; }
+  .item-list ul.pager li.pager-previous {
+    float: left;
+    padding: 0;
+    margin: 0; }
+    .item-list ul.pager li.pager-previous a {
+      background: url("../images/nav-arrow-left.png") no-repeat left center; }
 
 .primary-content .library-item-wrapper .accordion-wrapper,
 .primary-content .pane-weekly-opening-hours .accordion-wrapper,
@@ -8688,6 +8689,14 @@ header.site-header nav.main-menu-wrapper.navbar {
   .node-type-ding-event .card .node-ding-event {
     height: 100%;
     box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
+    @media (min-width: 992px) {
+      .page-arrangementer .card .node-ding-event,
+      .node-type-ding-event .card .node-ding-event {
+        transition: box-shadow 0.2s linear;
+        box-shadow: none; }
+        .page-arrangementer .card .node-ding-event:hover,
+        .node-type-ding-event .card .node-ding-event:hover {
+          box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); } }
   .page-arrangementer .card a,
   .page-arrangementer .card a:active,
   .page-arrangementer .card a:visited,
@@ -9017,6 +9026,14 @@ header.site-header nav.main-menu-wrapper.navbar {
   font-size: 0.8em;
   vertical-align: text-top; }
 
+.page-node #page .container.inner, .page-node .page-taxonomy-term #page .inner.node-ding-library.library-item-wrapper, .page-taxonomy-term .page-node #page .inner.node-ding-library.library-item-wrapper, .page-node #page .page-user-login .inner.content-inner, .page-user-login .page-node #page .inner.content-inner,
+.page-node #page .page-user .inner.content-inner, .page-user .page-node #page .inner.content-inner, .page-node #page #ding-library-front .attachments-wrapper .inner.pane-title, #ding-library-front .attachments-wrapper .page-node #page .inner.pane-title, .page-node #page .node-type-ding-news .inner.panel-pane.pane-ding-related-content-news-events, .node-type-ding-news .page-node #page .inner.panel-pane.pane-ding-related-content-news-events,
+.page-node #page .view {
+  padding: 0; }
+  .page-node #page .container.inner h2, .page-node .page-taxonomy-term #page .inner.node-ding-library.library-item-wrapper h2, .page-taxonomy-term .page-node #page .inner.node-ding-library.library-item-wrapper h2, .page-node #page .page-user-login .inner.content-inner h2, .page-user-login .page-node #page .inner.content-inner h2, .page-node #page .page-user .inner.content-inner h2, .page-user .page-node #page .inner.content-inner h2, .page-node #page #ding-library-front .attachments-wrapper .inner.pane-title h2, #ding-library-front .attachments-wrapper .page-node #page .inner.pane-title h2, .page-node #page .node-type-ding-news .inner.panel-pane.pane-ding-related-content-news-events h2, .node-type-ding-news .page-node #page .inner.panel-pane.pane-ding-related-content-news-events h2,
+  .page-node #page .view h2 {
+    padding: 0 28.5px; }
+
 .page-libraries .layout-wrapper,
 .node-type-ding-library .layout-wrapper {
   padding-left: 10px;
@@ -9229,7 +9246,8 @@ header.site-header nav.main-menu-wrapper.navbar {
   padding: 0; }
 
 #ding-library-front {
-  margin-top: 70px; }
+  margin-top: 70px;
+  padding: 0; }
   #ding-library-front .secondary-content .sub-menu-title a,
   #ding-library-front .secondary-content .sub-menu-wrapper .pane-title a,
   #ding-library-front .secondary-content .panel-pane-inner h2.pane-title a {
@@ -9352,6 +9370,15 @@ header.site-header nav.main-menu-wrapper.navbar {
         #ding-library-front .attachments-wrapper .view-ding-event .more-link a:hover,
         #ding-library-front .attachments-wrapper .view-ding-news .more-link a:hover {
           text-decoration: none; }
+        #ding-library-front .attachments-wrapper .view-ding-event .more-link a:after,
+        #ding-library-front .attachments-wrapper .view-ding-news .more-link a:after {
+          content: '';
+          width: 25px;
+          height: 8px;
+          margin-left: 30px;
+          padding: 7px 0;
+          display: inline-block;
+          background: url("../images/blue-arrow-right.png") no-repeat center center; }
   #ding-library-front .attachments-wrapper .card {
     border: none;
     border-radius: 2px;
@@ -9360,6 +9387,14 @@ header.site-header nav.main-menu-wrapper.navbar {
     #ding-library-front .attachments-wrapper .card .node-ding-news {
       height: 100%;
       box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
+      @media (min-width: 992px) {
+        #ding-library-front .attachments-wrapper .card .node-ding-event,
+        #ding-library-front .attachments-wrapper .card .node-ding-news {
+          transition: box-shadow 0.2s linear;
+          box-shadow: none; }
+          #ding-library-front .attachments-wrapper .card .node-ding-event:hover,
+          #ding-library-front .attachments-wrapper .card .node-ding-news:hover {
+            box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); } }
     #ding-library-front .attachments-wrapper .card a,
     #ding-library-front .attachments-wrapper .card a:active,
     #ding-library-front .attachments-wrapper .card a:visited,
@@ -9519,6 +9554,9 @@ header.site-header nav.main-menu-wrapper.navbar {
 
 #ding-library-about .adaptive-image {
   width: 100%; }
+
+.node-type-ding-library #page .content-inner #ding-library-front {
+  padding: 0; }
 
 .page-bibliotek .layout-wrapper {
   margin-top: 70px; }
@@ -9702,6 +9740,14 @@ header.site-header nav.main-menu-wrapper.navbar {
     .page-bibliotek .layout-wrapper .primary-content .card .node-ding-news {
       height: 100%;
       box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
+      @media (min-width: 992px) {
+        .page-bibliotek .layout-wrapper .primary-content .card .node-ding-event,
+        .page-bibliotek .layout-wrapper .primary-content .card .node-ding-news {
+          transition: box-shadow 0.2s linear;
+          box-shadow: none; }
+          .page-bibliotek .layout-wrapper .primary-content .card .node-ding-event:hover,
+          .page-bibliotek .layout-wrapper .primary-content .card .node-ding-news:hover {
+            box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); } }
     .page-bibliotek .layout-wrapper .primary-content .card a,
     .page-bibliotek .layout-wrapper .primary-content .card a:active,
     .page-bibliotek .layout-wrapper .primary-content .card a:visited,
@@ -9873,7 +9919,14 @@ header.site-header nav.main-menu-wrapper.navbar {
         padding-right: 0; }
       .page-bibliotek .layout-wrapper .primary-content .card .node-ding-event, .page-bibliotek .layout-wrapper .primary-content .card.node-ding-news {
         height: 100%;
-        box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
+        box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); } }
+    @media (min-width: 768px) and (min-width: 992px) {
+      .page-bibliotek .layout-wrapper .primary-content .card .node-ding-event, .page-bibliotek .layout-wrapper .primary-content .card.node-ding-news {
+        transition: box-shadow 0.2s linear;
+        box-shadow: none; }
+        .page-bibliotek .layout-wrapper .primary-content .card .node-ding-event:hover, .page-bibliotek .layout-wrapper .primary-content .card.node-ding-news:hover {
+          box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); } }
+  @media (min-width: 768px) {
       .page-bibliotek .layout-wrapper .primary-content .card a,
       .page-bibliotek .layout-wrapper .primary-content .card a:active,
       .page-bibliotek .layout-wrapper .primary-content .card a:visited,
@@ -10066,7 +10119,14 @@ header.site-header nav.main-menu-wrapper.navbar {
   .page-bibliotek #page .page-user .view-display-id-ding_news_list_library.content-inner, .page-user .page-bibliotek #page .view-display-id-ding_news_list_library.content-inner, .page-bibliotek #page #ding-library-front .attachments-wrapper .view-display-id-ding_news_list_library.pane-title, #ding-library-front .attachments-wrapper .page-bibliotek #page .view-display-id-ding_news_list_library.pane-title, .page-bibliotek #page .node-type-ding-news .view-display-id-ding_news_list_library.panel-pane.pane-ding-related-content-news-events, .node-type-ding-news .page-bibliotek #page .view-display-id-ding_news_list_library.panel-pane.pane-ding-related-content-news-events {
     padding: 0; }
   .page-bibliotek .primary-content.col-lg-8.float-right {
+    padding-right: 0; }
+  .page-bibliotek .primary-content .pane-content .view.container, .page-bibliotek .primary-content .pane-content .page-taxonomy-term #page .view.node-ding-library.library-item-wrapper, .page-taxonomy-term #page .page-bibliotek .primary-content .pane-content .view.node-ding-library.library-item-wrapper, .page-bibliotek .primary-content .pane-content .page-user-login .view.content-inner, .page-user-login .page-bibliotek .primary-content .pane-content .view.content-inner,
+  .page-bibliotek .primary-content .pane-content .page-user .view.content-inner, .page-user .page-bibliotek .primary-content .pane-content .view.content-inner, .page-bibliotek .primary-content .pane-content #ding-library-front .attachments-wrapper .view.pane-title, #ding-library-front .attachments-wrapper .page-bibliotek .primary-content .pane-content .view.pane-title, .page-bibliotek .primary-content .pane-content .node-type-ding-news .view.panel-pane.pane-ding-related-content-news-events, .node-type-ding-news .page-bibliotek .primary-content .pane-content .view.panel-pane.pane-ding-related-content-news-events {
     padding-right: 0; } }
+
+.page-bibliotek #page .content-inner .primary-content .view.container, .page-bibliotek .page-taxonomy-term #page .content-inner .primary-content .view.node-ding-library.library-item-wrapper, .page-taxonomy-term .page-bibliotek #page .content-inner .primary-content .view.node-ding-library.library-item-wrapper, .page-bibliotek #page .content-inner .primary-content .page-user-login .view.content-inner, .page-user-login .page-bibliotek #page .content-inner .primary-content .view.content-inner,
+.page-bibliotek #page .content-inner .primary-content .page-user .view.content-inner, .page-user .page-bibliotek #page .content-inner .primary-content .view.content-inner, .page-bibliotek #page .content-inner .primary-content #ding-library-front .attachments-wrapper .view.pane-title, #ding-library-front .attachments-wrapper .page-bibliotek #page .content-inner .primary-content .view.pane-title, .page-bibliotek #page .content-inner .primary-content .node-type-ding-news .view.panel-pane.pane-ding-related-content-news-events, .node-type-ding-news .page-bibliotek #page .content-inner .primary-content .view.panel-pane.pane-ding-related-content-news-events {
+  padding-right: 0; }
 
 .page-nyheder .pane-taxonomy-menu,
 .page-taxonomy-term .pane-taxonomy-menu {
@@ -10251,6 +10311,14 @@ header.site-header nav.main-menu-wrapper.navbar {
   margin-bottom: 57px;
   box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
   height: calc(100% - 57px); }
+  @media (min-width: 992px) {
+    .page-nyheder .primary-content .pane-content .card.news-item,
+    .page-taxonomy-term .primary-content .pane-content .card.news-item {
+      transition: box-shadow 0.2s linear;
+      box-shadow: none; }
+      .page-nyheder .primary-content .pane-content .card.news-item:hover,
+      .page-taxonomy-term .primary-content .pane-content .card.news-item:hover {
+        box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); } }
   .page-nyheder .primary-content .pane-content .card.news-item a,
   .page-taxonomy-term .primary-content .pane-content .card.news-item a {
     text-decoration: none; }
@@ -10456,6 +10524,12 @@ header.site-header nav.main-menu-wrapper.navbar {
   margin-bottom: 57px;
   box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
   height: calc(100% - 57px); }
+  @media (min-width: 992px) {
+    .panel-pane.pane-ding-related-content-news-events .card.news-item {
+      transition: box-shadow 0.2s linear;
+      box-shadow: none; }
+      .panel-pane.pane-ding-related-content-news-events .card.news-item:hover {
+        box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); } }
   .panel-pane.pane-ding-related-content-news-events .card.news-item a {
     text-decoration: none; }
   .panel-pane.pane-ding-related-content-news-events .card.news-item .category-and-submitted::after {
@@ -10585,7 +10659,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       padding-left: 0px; } }
 
 .front.page-culture-frontpage .content-wrapper .container .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .pane-campaign .ding-campaign-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .pane-campaign .ding-campaign-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .pane-campaign .ding-campaign-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .pane-campaign .ding-campaign-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper {
-  margin: 70px auto 30px;
+  margin: 70px auto 0;
   width: calc(100% - 20px);
   background-color: #FFFFFF;
   box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
@@ -10776,7 +10850,8 @@ header.site-header nav.main-menu-wrapper.navbar {
           .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number {
             background-color: #1E0195;
             color: #fff;
-            border-radius: 50%; }
+            border-radius: 50%;
+            margin-right: 6px; }
           .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number {
             background-color: #fff;
             box-shadow: 0 10px 35px 0 rgba(30, 1, 149, 0.2);
@@ -11119,14 +11194,14 @@ header.site-header nav.main-menu-wrapper.navbar {
   .ding_nodelist-carousel .slick-dotted .fa-prev.slick-arrow {
     display: none !important;
     left: -35px;
-    background: #1E0195 url(../images/nav-arrow-left.png) no-repeat center center; }
+    background: #1E0195 url(../images/white-arrow-left.png) no-repeat center center; }
     @media (min-width: 992px) {
       .ding_nodelist-carousel .slick-dotted .fa-prev.slick-arrow {
         display: block !important; } }
   .ding_nodelist-carousel .slick-dotted .fa-next.slick-arrow {
     display: none !important;
     right: -35px;
-    background: #1E0195 url(../images/nav-arrow-right.png) no-repeat center center; }
+    background: #1E0195 url(../images/white-arrow-right.png) no-repeat center center; }
     @media (min-width: 992px) {
       .ding_nodelist-carousel .slick-dotted .fa-next.slick-arrow {
         display: block !important; } }
@@ -11158,8 +11233,7 @@ header.site-header nav.main-menu-wrapper.navbar {
     margin-left: 0; }
   .pane-ding-nodelist .more-links ul .more-link {
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 72px; }
+    margin-top: 30px; }
     @media (min-width: 768px) {
       .pane-ding-nodelist .more-links ul .more-link {
         margin-left: 20px;
