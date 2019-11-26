@@ -9042,6 +9042,9 @@ header.site-header nav.main-menu-wrapper.navbar {
   .page-node #page .view h2 {
     padding: 0 28.5px; }
 
+.page-node #page .container.inner .right h2, .page-node .page-taxonomy-term #page .inner.node-ding-library.library-item-wrapper .right h2, .page-taxonomy-term .page-node #page .inner.node-ding-library.library-item-wrapper .right h2, .page-node #page .page-user-login .inner.content-inner .right h2, .page-user-login .page-node #page .inner.content-inner .right h2, .page-node #page .page-user .inner.content-inner .right h2, .page-user .page-node #page .inner.content-inner .right h2, .page-node #page #ding-library-front .attachments-wrapper .inner.pane-title .right h2, #ding-library-front .attachments-wrapper .page-node #page .inner.pane-title .right h2, .page-node #page .node-type-ding-news .inner.panel-pane.pane-ding-related-content-news-events .right h2, .node-type-ding-news .page-node #page .inner.panel-pane.pane-ding-related-content-news-events .right h2 {
+  padding: 0; }
+
 .page-libraries .layout-wrapper,
 .node-type-ding-library .layout-wrapper {
   padding-left: 10px;
@@ -9570,13 +9573,17 @@ header.site-header nav.main-menu-wrapper.navbar {
   margin-top: 70px; }
   .page-bibliotek .layout-wrapper .secondary-content .panel-pane.pane-menu-title {
     display: none; }
-  .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper .sub-menu-title,
-  .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper .pane-og-menu-og-single-menu-block h2 a {
+  .page-bibliotek .layout-wrapper .secondary-content .pane-og-menu-og-single-menu-block h2 a {
     color: #1E0195;
     font-family: 'Rubik-Regular';
     font-size: 16px;
     letter-spacing: 0.6px;
     text-transform: uppercase; }
+  .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper .sub-menu-title {
+    color: #1E0195;
+    font-family: 'Rubik-Regular';
+    font-size: 16px;
+    letter-spacing: 0.6px; }
   .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper ul.menu {
     margin: 30px 0 0;
     list-style: none;

@@ -125,6 +125,7 @@
 		font-size  : 14px;
 		font-weight: 600;
 		line-height: 26px;
+
 		h2 {
 			padding: 0;
 		}
@@ -229,12 +230,16 @@
 
 .page-node #page {
 
-	.container.inner,
+	.container.inner ,
 	.view {
 		padding: 0;
 
 		h2 {
 			padding: 0 28.5px;
 		}
+	}
+
+	.container.inner .right h2 {
+		padding: 0;
 	}
 }
