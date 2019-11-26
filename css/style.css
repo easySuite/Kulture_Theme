@@ -8914,6 +8914,12 @@ header.site-header nav.main-menu-wrapper.navbar {
       .event-details-wrapper .info-top .field a {
         color: #4D4E6C;
         text-decoration: none; }
+  .event-details-wrapper .field-name-field-ding-event-tags .field-label,
+  .event-details-wrapper .field-name-field-ding-event-tags .field-items,
+  .event-details-wrapper .field-name-field-ding-event-tags .field-item {
+    display: inline-block; }
+  .event-details-wrapper .field-name-field-ding-event-tags .field-item {
+    padding-right: 10px; }
   .event-details-wrapper h1 {
     font-family: 'SourceSansPro-Bold';
     color: #000119;
@@ -8957,6 +8963,8 @@ header.site-header nav.main-menu-wrapper.navbar {
     font-size: 14px;
     font-weight: 600;
     line-height: 26px; }
+    .event-details-wrapper .event-description h2 {
+      padding: 0; }
   .event-details-wrapper .event-info::after,
   .event-details-wrapper .event-info .info-item-group::after {
     display: block;
@@ -9562,11 +9570,13 @@ header.site-header nav.main-menu-wrapper.navbar {
   margin-top: 70px; }
   .page-bibliotek .layout-wrapper .secondary-content .panel-pane.pane-menu-title {
     display: none; }
-  .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper .sub-menu-title {
+  .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper .sub-menu-title,
+  .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper .pane-og-menu-og-single-menu-block h2 a {
     color: #1E0195;
     font-family: 'Rubik-Regular';
     font-size: 16px;
-    letter-spacing: 0.6px; }
+    letter-spacing: 0.6px;
+    text-transform: uppercase; }
   .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper ul.menu {
     margin: 30px 0 0;
     list-style: none;
@@ -11312,7 +11322,7 @@ header.site-header nav.main-menu-wrapper.navbar {
     line-height: 15px;
     margin-bottom: 14px; }
   .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item > .item-details {
-    padding-bottom: 28px; }
+    padding-bottom: 20px; }
   .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-list-image {
     position: relative;
     overflow: hidden;

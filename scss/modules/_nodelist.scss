@@ -391,17 +391,13 @@
     }
 
     &>.item-details {
-      padding-bottom: 28px;
+      padding-bottom: 20px;
     }
 
     .item-list-image {
       position: relative;
       overflow: hidden;
       height  : 206px;
-
-      // @include media-breakpoint-up(md) {
-      //   margin-right: 30px;
-      // }
 
       img {
         top      : 50%;

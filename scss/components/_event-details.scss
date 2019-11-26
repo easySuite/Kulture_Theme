@@ -60,6 +60,19 @@
 		}
 	}
 
+	.field-name-field-ding-event-tags {
+
+		.field-label,
+		.field-items,
+		.field-item {
+			display: inline-block;
+		}
+
+		.field-item {
+			padding-right: 10px;
+		}
+	}
+
 	h1 {
 		font-family  : 'SourceSansPro-Bold';
 		color        : #000119;
@@ -112,6 +125,9 @@
 		font-size  : 14px;
 		font-weight: 600;
 		line-height: 26px;
+		h2 {
+			padding: 0;
+		}
 	}
 
 	.event-info {
@@ -212,6 +228,7 @@
 }
 
 .page-node #page {
+
 	.container.inner,
 	.view {
 		padding: 0;
