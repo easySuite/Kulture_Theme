@@ -9907,7 +9907,7 @@ header.site-header nav.main-menu-wrapper.navbar {
           background: url("../images/tag.png") no-repeat center center; }
           @media (min-width: 768px) {
             .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text .news-category:after {
-              left: 31%; } }
+              left: 30%; } }
         .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-text.news-text .news-category > div {
           float: left;
           margin-left: 10px; }
