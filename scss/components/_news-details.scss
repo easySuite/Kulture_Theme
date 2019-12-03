@@ -18,7 +18,7 @@
   .ding-news-right {
     .category-tag {
       @include clearfix();
-      color         : #4D4E6C;
+      color         :map-get($theme-colors, active-gray);
       font-size     : 10px;
       font-weight   : bold;
       position      : relative;
@@ -42,13 +42,13 @@
 
       a {
         text-decoration: none;
-        color          : #4D4E6C;
+        color          :map-get($theme-colors, active-gray);
       }
     }
 
     .category-info {
       @include clearfix();
-      color      : #000119;
+      color      :map-get($theme-colors, dark);
       font-family: 'SourceSansPro-Bold';
       font-size  : 12px;
       margin-top : 20px;
@@ -60,7 +60,7 @@
     }
 
     h1 {
-      color      : #000119;
+      color      :map-get($theme-colors, dark);
       font-family: "SourceSansPro-Bold";
       font-size  : 57px;
       line-height: 62px;
@@ -72,14 +72,14 @@
     }
 
     .category-text {
-      color      : #414256;
+      color      :map-get($theme-colors, details-gray);
       font-family: "SourceSansPro-Bold";
       font-size  : 14px;
     }
 
     .field-label-above {
       @include clearfix();
-      color         : #01032E;
+      color         :map-get($theme-colors, filter-text);
       font-family   : 'Rubik-Regular';
       font-size     : 14px;
       letter-spacing: 0.3px;
@@ -96,7 +96,7 @@
       }
 
       .field-item {
-        color       : #1E0195;
+        color       :map-get($theme-colors, blue);
         padding-left: 10px;
 
         @include media-breakpoint-up(lg) {
@@ -118,7 +118,7 @@
 .panel-pane.pane-ding-related-content-news-events {
 
   .pane-title {
-    color: #000119;
+    color:map-get($theme-colors, dark);
     font-family: 'Rubik-Regular';
     font-size: 16px;
     letter-spacing: 0.6px;
@@ -157,7 +157,7 @@
 
       .news-category {
         @include clearfix();
-        color         : #4D4E6C;
+        color         :map-get($theme-colors, active-gray);
         font-size     : 10px;
         font-weight   : bold;
         text-transform: uppercase;
@@ -168,7 +168,7 @@
         .field,
         .fields-item,
         .fild-item {
-          color         : #4D4E6C;
+          color         :map-get($theme-colors, active-gray);
           font-size     : 10px;
           font-weight   : bold;
           text-transform: uppercase;
@@ -191,7 +191,7 @@
       }
 
       .submitted {
-        color      : #000119;
+        color      :map-get($theme-colors, dark);
         font-family: 'SourceSansPro-Bold';
         font-size  : 12px;
         padding-top: 15px;
@@ -199,7 +199,7 @@
     }
 
     .card-body {
-      color      : #000119;
+      color      :map-get($theme-colors, dark);
       font-family: "SourceSansPro-Regular";
       padding    : 0;
 
@@ -217,14 +217,14 @@
         padding: 30px;
 
         h3 {
-          color      : #000119;
+          color      :map-get($theme-colors, dark);
           padding-top: 15px;
           font-family: "SourceSansPro-Bold";
           font-size  : 21px;
         }
 
         h3~.field {
-          color      : #414256;
+          color      :map-get($theme-colors, details-gray);
           font-family: "SourceSansPro-Bold";
           font-size  : 14px;
         }

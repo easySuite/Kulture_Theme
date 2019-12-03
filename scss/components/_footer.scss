@@ -1,6 +1,6 @@
 .footer {
   display         : block;
-  background-color: #000119;
+  background-color:map-get($theme-colors, dark);
   padding: 100px 10px;
   text-align      : center;
   color           : #ffffff;

@@ -34,7 +34,7 @@
 	}
 
 	.info-top {
-		color         : #4D4E6C;
+		color         :map-get($theme-colors, active-gray);
 		font-size     : 10px;
 		font-family   : "SourceSansPro-Bold";
 		text-transform: uppercase;
@@ -54,7 +54,7 @@
 			padding-left: 20px;
 
 			a {
-				color          : #4D4E6C;
+				color          :map-get($theme-colors, active-gray);
 				text-decoration: none;
 			}
 		}
@@ -75,7 +75,7 @@
 
 	h1 {
 		font-family  : 'SourceSansPro-Bold';
-		color        : #000119;
+		color        :map-get($theme-colors, dark);
 		font-size    : 57px;
 		font-weight  : 900;
 		line-height  : 42px;
@@ -84,7 +84,7 @@
 
 	h2 {
 		margin-top    : 50px;
-		color         : #01032E;
+		color         :map-get($theme-colors, filter-text);
 		font-family   : 'Rubik-Regular';
 		font-size     : 16px;
 		margin-bottom : 30px;
@@ -92,7 +92,7 @@
 	}
 
 	.event-date a {
-		color          : #000119;
+		color          :map-get($theme-colors, dark);
 		font-size      : 16px;
 		font-weight    : 600;
 		text-decoration: none;
@@ -113,14 +113,14 @@
 		.share-buttons a {
 			margin-left    : 20px;
 			text-decoration: none;
-			color          : #1E0195;
+			color          :map-get($theme-colors, blue);
 			font-family    : 'Rubik-Regular';
 			font-size      : 14px;
 		}
 	}
 
 	.event-description {
-		color      : #000119;
+		color      :map-get($theme-colors, dark);
 		margin-top : 20px;
 		font-size  : 14px;
 		font-weight: 600;
@@ -153,8 +153,8 @@
 					top             : 0;
 					width           : 1px;
 					height          : 100%;
-					background-color: #000119;
-					// border-right : 1px solid #000119;
+					background-color:map-get($theme-colors, dark);
+					// border-right : 1px solidmap-get($theme-colors, dark);
 				}
 			}
 		}
@@ -168,14 +168,14 @@
 		.info-item-group,
 		.info-item a,
 		.info-item-group a {
-			color          : #000119;
+			color          :map-get($theme-colors, dark);
 			font-size      : 14px;
 			font-weight    : 600;
 			text-decoration: none;
 		}
 
 		.price {
-			color         : #00A878;
+			color         :map-get($theme-colors, green);
 			font-family   : "Rubik-Regular";
 			font-size     : 14px;
 			letter-spacing: 0.47px;
@@ -204,7 +204,7 @@
 	text-transform  : uppercase;
 	padding         : 29px 20px;
 	width           : 100%;
-	background-color: #1E0195;
+	background-color:map-get($theme-colors, blue);
 	transition      : box-shadow 0.2s linear;
 	margin-top      : 49px;
 	margin-bottom   : 70px;

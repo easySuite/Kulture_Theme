@@ -1,6 +1,6 @@
 @mixin datepicker() {
   label {
-    color        : #01032E;
+    color        :map-get($theme-colors, filter-text);
     font-family  : 'Rubik-Regular';
     font-size    : 15px;
     margin-bottom: 25px;
@@ -9,7 +9,7 @@
 
   input {
     width      : 100%;
-    color      : #8F8F8F;
+    color      :map-get($theme-colors, disabled);
     font-family: 'Rubik-Regular';
     font-size  : 14px;
     padding    : 24px 23px 23px 64px;
@@ -20,7 +20,7 @@
 
     &:not([value='']) {
       color     : white;
-      background: #1E0195 url('../images/calendar-white.png') no-repeat 20px center;
+      background:map-get($theme-colors, blue) url('../images/calendar-white.png') no-repeat 20px center;
     }
   }
 }

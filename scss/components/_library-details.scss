@@ -8,7 +8,7 @@
     .sub-menu-wrapper .pane-title a,
     .panel-pane-inner h2.pane-title a {
       text-transform: uppercase;
-      color         : #1E0195;
+      color         :map-get($theme-colors, blue);
       font-family   : 'Rubik-Regular';
       font-size     : 16px;
       letter-spacing: 0.6px;
@@ -34,7 +34,7 @@
         padding        : 0;
 
         a {
-          color      : #01032E;
+          color      :map-get($theme-colors, filter-text);
           font-family: 'Rubik-Regular';
           font-size  : 14px;
 
@@ -57,7 +57,7 @@
     }
 
     .pane-entity-field {
-      color      : #000119;
+      color      :map-get($theme-colors, dark);
       font-family: 'SourceSansPro-Regular';
       font-size  : 14px;
     }
@@ -66,7 +66,7 @@
       margin-top: 70px;
 
       h2 {
-        color        : #000119;
+        color        :map-get($theme-colors, dark);
         font-family  : 'SourceSansPro-Bold';
         font-size    : 42px;
         line-height  : 42px;
@@ -85,7 +85,7 @@
 
       & .library-address-street,
       & .library-address-city-wrapper {
-        color      : #000119;
+        color      :map-get($theme-colors, dark);
         font-family: "SourceSansPro-Bold";
         font-size  : 16px;
         line-height: 20px;
@@ -120,7 +120,7 @@
 
       .library-contact-phone,
       .library-contact-phone a {
-        color          : #1E0195;
+        color          :map-get($theme-colors, blue);
         font-family    : 'Rubik-Regular';
         font-size      : 18px;
         font-weight    : 300;
@@ -147,7 +147,7 @@
     .pane-title {
       @extend .container;
 
-      color         : #01032E;
+      color         :map-get($theme-colors, filter-text);
       font-family   : 'Rubik-Regular';
       font-size     : 16px;
       letter-spacing: 0.6px;
@@ -165,7 +165,7 @@
         right   : 28px;
 
         a {
-          color          : #1E0195;
+          color          :map-get($theme-colors, blue);
           font-family    : 'Rubik-Regular';
           font-size      : 16px;
           letter-spacing : 0.6px;
@@ -215,7 +215,7 @@
       a:visited,
       a:hover,
       a:focus {
-        color          : #000119;
+        color          :map-get($theme-colors, dark);
         text-decoration: none;
       }
 
@@ -227,7 +227,7 @@
         position        : absolute;
         top             : 10px;
         right           : -5px;
-        background-color: #00A878;
+        background-color:map-get($theme-colors, green);
         box-shadow      : -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
         color           : white;
         width           : 90px;
@@ -281,7 +281,7 @@
 
           .news-category {
             @include clearfix();
-            color         : #4D4E6C;
+            color         :map-get($theme-colors, active-gray);
             font-size     : 10px;
             font-weight   : bold;
             text-transform: uppercase;
@@ -292,7 +292,7 @@
             .field,
             .fields-item,
             .fild-item {
-              color         : #4D4E6C;
+              color         :map-get($theme-colors, active-gray);
               font-size     : 10px;
               font-weight   : bold;
               text-transform: uppercase;
@@ -315,7 +315,7 @@
           }
 
           .submitted {
-            color      : #000119;
+            color      :map-get($theme-colors, dark);
             font-family: 'SourceSansPro-Bold';
             font-size  : 12px;
             padding-top: 15px;
@@ -323,7 +323,7 @@
         }
 
         .card-body {
-          color      : #000119;
+          color      :map-get($theme-colors, dark);
           font-family: "SourceSansPro-Regular";
           padding    : 0;
 
@@ -341,14 +341,14 @@
             padding: 30px;
 
             h3 {
-              color      : #000119;
+              color      :map-get($theme-colors, dark);
               padding-top: 15px;
               font-family: "SourceSansPro-Bold";
               font-size  : 21px;
             }
 
             h3~.field {
-              color      : #414256;
+              color      :map-get($theme-colors, details-gray);
               font-family: "SourceSansPro-Bold";
               font-size  : 14px;
             }
@@ -358,12 +358,12 @@
       }
 
       .card-body {
-        color      : #000119;
+        color      :map-get($theme-colors, dark);
         font-family: "SourceSansPro-Regular";
         padding    : 30px;
 
         .info-top {
-          color         : #4D4E6C;
+          color         :map-get($theme-colors, active-gray);
           font-size     : 10px;
           font-family   : "SourceSansPro-Bold";
           text-transform: uppercase;
@@ -400,7 +400,7 @@
         }
 
         .card-description {
-          color         : #414256;
+          color         :map-get($theme-colors, details-gray);
           font-size     : 14px;
           font-family   : "SourceSansPro-Bold";
           padding-bottom: 23px;
@@ -415,7 +415,7 @@
         }
 
         .price {
-          color         : #00A878;
+          color         :map-get($theme-colors, green);
           font-family   : "Rubik-Medium";
           font-size     : 12px;
           text-transform: uppercase;

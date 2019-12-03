@@ -12,7 +12,7 @@
     position        : relative;
     background-color: #FFFFFF;
     padding         : 26px 30px;
-    color           : #01032E;
+    color           :map-get($theme-colors, filter-text);
     font-family     : 'Rubik-Regular';
     font-size       : 14px;
     cursor          : pointer;
@@ -22,11 +22,11 @@
       position: absolute;
       right   : 15px;
       top     : calc(50% - 3px);
-      @include arrow(bottom, 5px, 6px, #01032E);
+      @include arrow(bottom, 5px, 6px,map-get($theme-colors, filter-text));
     }
 
     &:not(.collapsed) {
-      background-color: #1E0195;
+      background-color:map-get($theme-colors, blue);
       color           : #ffffff;
 
       &:after {
@@ -67,7 +67,7 @@
   }
 
   .opening-hours-table {
-    color           : #01032E;
+    color           :map-get($theme-colors, filter-text);
     font-family     : 'Rubik-Regular';
     font-size       : 14px;
 

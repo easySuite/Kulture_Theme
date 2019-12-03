@@ -87,7 +87,7 @@ header.site-header {
 			height          : 5px;
 			left            : calc(50% - 20px);
 			bottom          : -58px;
-			background-color: #1E0195;
+			background-color:map-get($theme-colors, blue);
 
 			@include media-breakpoint-up(lg) {
 				display: block;

@@ -21,7 +21,7 @@
 		a:visited,
 		a:hover,
 		a:focus {
-			color          : #000119;
+			color          :map-get($theme-colors, dark);
 			text-decoration: none;
 		}
 
@@ -33,7 +33,7 @@
 			position        : absolute;
 			top             : 10px;
 			right           : -5px;
-			background-color: #00A878;
+			background-color:map-get($theme-colors, green);
 			box-shadow      : -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
 			color           : white;
 			width           : 90px;
@@ -71,12 +71,12 @@
 		}
 
 		.card-body {
-			color      : #000119;
+			color      :map-get($theme-colors, dark);
 			font-family: "SourceSansPro-Regular";
 			padding    : 30px;
 
 			.info-top {
-				color         : #4D4E6C;
+				color         :map-get($theme-colors, active-gray);
 				font-size     : 10px;
 				font-weight   : bold;
 				text-transform: uppercase;
@@ -113,7 +113,7 @@
 			}
 
 			.card-description {
-				color         : #414256;
+				color         :map-get($theme-colors, details-gray);
 				font-size     : 14px;
 				font-weight   : 600;
 				padding-bottom: 23px;
@@ -128,7 +128,7 @@
 			}
 
 			.price {
-				color         : #00A878;
+				color         :map-get($theme-colors, green);
 				font-family   : "Rubik-Medium";
 				font-size     : 12px;
 				text-transform: uppercase;

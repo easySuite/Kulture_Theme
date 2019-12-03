@@ -18,7 +18,7 @@
       position: relative;
 
       h2 {
-        color         : #01032E;
+        color         :map-get($theme-colors, filter-text);
         font-family   : 'Rubik-Regular';
         font-size     : 16px;
         letter-spacing: 0.6px;
@@ -71,7 +71,7 @@
             width         : 38px;
             height        : 38px;
             background    : transparent;
-            color         : #01032E;
+            color         :map-get($theme-colors, filter-text);
             font-family   : 'Rubik-Regular';
             font-size     : 12px;
             letter-spacing: 0.3px;
@@ -98,7 +98,7 @@
               width             : 38px;
               height            : 38px;
               font-size         : 12px;
-              color             : #01032E;
+              color             :map-get($theme-colors, filter-text);
               font-family       : 'Rubik-Medium';
               line-height       : 14px;
               text-decoration   : none;
@@ -107,7 +107,7 @@
 
               a {
                 font-size      : 12px;
-                color          : #01032E;
+                color          :map-get($theme-colors, filter-text);
                 font-family    : 'Rubik-Medium';
                 line-height    : 14px;
                 text-decoration: none;
@@ -165,7 +165,7 @@
             }
 
             &.current-day .day-number {
-              background-color: #1E0195;
+              background-color:map-get($theme-colors, blue);
               color           : #fff;
               border-radius   : 50%;
               margin-right    : 6px;
@@ -179,7 +179,7 @@
               margin-right    : 6px;
 
               @include media-breakpoint-up(lg) {
-                background-color: #8B8CA4;
+                background-color:map-get($theme-colors, gray);
               }
             }
 
@@ -197,7 +197,7 @@
             }
 
             &.has-events.current-day .day-number {
-              background-color: #1E0195;
+              background-color:map-get($theme-colors, blue);
               color           : white;
 
               a {
@@ -214,7 +214,7 @@
               margin          : 0;
 
               @include media-breakpoint-up(lg) {
-                background-color: #8B8CA4;
+                background-color:map-get($theme-colors, gray);
                 padding         : 0;
                 margin          : 0;
               }
@@ -324,7 +324,7 @@
         padding         : 29px 20px;
         width           : 100%;
         max-width       : 410px;
-        background-color: #1E0195;
+        background-color:map-get($theme-colors, blue);
         transition      : box-shadow 0.2s linear;
 
         &,
@@ -339,7 +339,7 @@
     }
 
     .event-day-header {
-      color         : #000119;
+      color         :map-get($theme-colors, dark);
       font-family   : 'Rubik-Light';
       font-size     : 14px;
       letter-spacing: 0.3px;
@@ -359,7 +359,7 @@
       .event-item {
         background   : transparent url(../images/nav-arrow-right.png) no-repeat right center;
         padding      : 24px 25px 23px 0;
-        border-bottom: 1px solid #F0F0F2;
+        border-bottom: 1px solid map-get($theme-colors, light-gray);
 
         &:last-child {
           border-bottom: 0;
@@ -369,7 +369,7 @@
           line-height: 19px;
 
           a {
-            color          : #000119;
+            color          :map-get($theme-colors, dark);
             font-family    : 'SourceSansPro-Bold';
             font-size      : 14px;
             line-height    : 19px;
@@ -392,7 +392,7 @@
 
           a {
             text-decoration: none;
-            color          : #000119;
+            color          :map-get($theme-colors, dark);
             font-family    : "SourceSansPro-Semibold";
             font-size      : 12px;
             line-height    : 15px;
@@ -412,7 +412,7 @@
       .event-time {
         float      : left;
         margin     : 0 0 0 10px;
-        color      : #000119;
+        color      :map-get($theme-colors, dark);
         font-family: "SourceSansPro-Semibold";
         font-size  : 12px;
         line-height: 15px;

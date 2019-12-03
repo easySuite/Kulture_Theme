@@ -75,7 +75,7 @@
 
     .node-ding-campaign {
       padding      : 24px 20px;
-      border-bottom: 1px solid #F0F0F2;
+      border-bottom: 1px solid map-get($theme-colors, light-gray);
 
       &:last-child {
         border-bottom: none;
@@ -83,13 +83,13 @@
 
       h2,
       .page-title {
-        color      : #000119;
+        color      :map-get($theme-colors, dark);
         font-family: 'Rubik-Regular';
         font-size  : 15px;
         line-height: 18px;
 
         a {
-          color          : #000119;
+          color          :map-get($theme-colors, dark);
           text-decoration: none;
 
           &:hover {

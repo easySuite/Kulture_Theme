@@ -28,7 +28,7 @@
 
       .pane-title,
       .select-list .accordion-control {
-        color         : #01032E;
+        color         :map-get($theme-colors, filter-text);
         font-family   : 'Rubik-Regular';
         font-size     : 16px;
         letter-spacing: 0.6px;
@@ -44,7 +44,7 @@
           float      : right;
           margin-top : 8px;
           margin-left: 5px;
-          @include arrow(bottom, 5px, 6px, #01032E);
+          @include arrow(bottom, 5px, 6px,map-get($theme-colors, filter-text));
         }
       }
 
@@ -60,7 +60,7 @@
 
           a {
             position      : relative;
-            color         : #01032E;
+            color         :map-get($theme-colors, filter-text);
             font-family   : 'Rubik-Regular';
             font-size     : 14px;
             letter-spacing: 0.3px;
@@ -110,7 +110,7 @@
 
   .primary-content {
     .pane-title {
-      color         : #01032E;
+      color         :map-get($theme-colors, filter-text);
       font-family   : 'Rubik-Regular';
       font-size     : 16px;
       letter-spacing: 0.6px;
@@ -149,7 +149,7 @@
 
         .news-category {
           @include clearfix();
-          color         : #4D4E6C;
+          color         :map-get($theme-colors, active-gray);
           font-size     : 10px;
           font-weight   : bold;
           text-transform: uppercase;
@@ -160,7 +160,7 @@
           .field,
           .fields-item,
           .fild-item {
-            color         : #4D4E6C;
+            color         :map-get($theme-colors, active-gray);
             font-size     : 10px;
             font-weight   : bold;
             text-transform: uppercase;
@@ -183,7 +183,7 @@
         }
 
         .submitted {
-          color      : #000119;
+          color      :map-get($theme-colors, dark);
           font-family: 'SourceSansPro-Bold';
           font-size  : 12px;
           padding-top: 15px;
@@ -191,7 +191,7 @@
       }
 
       .card-body {
-        color      : #000119;
+        color      :map-get($theme-colors, dark);
         font-family: "SourceSansPro-Regular";
         padding    : 0;
 
@@ -209,14 +209,14 @@
           padding: 30px;
 
           h3 {
-            color      : #000119;
+            color      :map-get($theme-colors, dark);
             padding-top: 15px;
             font-family: "SourceSansPro-Bold";
             font-size  : 21px;
           }
 
           h3~.field {
-            color      : #414256;
+            color      :map-get($theme-colors, details-gray);
             font-family: "SourceSansPro-Bold";
             font-size  : 14px;
           }

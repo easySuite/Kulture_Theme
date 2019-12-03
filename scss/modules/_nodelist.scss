@@ -234,7 +234,7 @@
     .fa-prev.slick-arrow {
       display   : none !important;
       left      : -35px;
-      background: #1E0195 url(../images/white-arrow-left.png) no-repeat center center;
+      background:map-get($theme-colors, blue) url(../images/white-arrow-left.png) no-repeat center center;
 
       @include media-breakpoint-up(lg) {
         display: block !important;
@@ -244,7 +244,7 @@
     .fa-next.slick-arrow {
       display   : none !important;
       right     : -35px;
-      background: #1E0195 url(../images/white-arrow-right.png) no-repeat center center;
+      background:map-get($theme-colors, blue) url(../images/white-arrow-right.png) no-repeat center center;
 
       @include media-breakpoint-up(lg) {
         display: block !important;
@@ -257,7 +257,7 @@
 .pane-ding-nodelist {
 
   .pane-title {
-    color         : #01032E;
+    color         :map-get($theme-colors, filter-text);
     font-family   : 'Rubik-Regular';
     font-size     : 16px;
     letter-spacing: 0.6px;
@@ -315,7 +315,7 @@
         padding         : 29px 20px;
         width           : 100%;
         max-width       : 352px;
-        background-color: #1E0195;
+        background-color:map-get($theme-colors, blue);
         transition      : box-shadow 0.2s linear;
 
         @include media-breakpoint-up(lg) {
@@ -380,7 +380,7 @@
 
     &>.event-list-fulldate {
       display      : block;
-      color        : #000119;
+      color        :map-get($theme-colors, dark);
       font-family  : "SourceSansPro-Bold";
       font-size    : 12px;
       line-height  : 15px;
@@ -432,12 +432,12 @@
         a,
         a:hover {
           text-decoration: none;
-          color          : #000119;
+          color          :map-get($theme-colors, dark);
         }
       }
 
       .item-body {
-        color        : #414256;
+        color        :map-get($theme-colors, details-gray);
         font-family  : "SourceSansPro-Bold";
         font-size    : 14px;
         line-height  : 20px;
@@ -450,14 +450,14 @@
       }
 
       .item-library {
-        color      : #000119;
+        color      :map-get($theme-colors, dark);
         font-family: "SourceSansPro-Bold";
         font-size  : 12px;
         line-height: 15px;
 
         a,
         a:hover {
-          color          : #000119;
+          color          :map-get($theme-colors, dark);
           text-decoration: none;
         }
       }
@@ -465,7 +465,7 @@
 
     .label .field-items .field-item {
       position      : relative;
-      color         : #4D4E6C;
+      color         :map-get($theme-colors, active-gray);
       font-family   : "SourceSansPro-Bold";
       font-size     : 10px;
       letter-spacing: 1px;
@@ -676,7 +676,7 @@
           width       : calc(100% - 82px);
 
           .ac-nav-item-category {
-            color         : #4D4E6C;
+            color         :map-get($theme-colors, active-gray);
             font-family   : "SourceSansPro-Bold";
             font-size     : 10px;
             letter-spacing: 1px;
@@ -700,7 +700,7 @@
           .ac-nav-item-date {
             height       : 15px;
             width        : 160px;
-            color        : #000119;
+            color        :map-get($theme-colors, dark);
             font-family  : "Source Sans Pro";
             font-size    : 12px;
             font-weight  : 600;
@@ -711,7 +711,7 @@
           .ac-nav-item-title {
             height     : 19px;
             width      : 159px;
-            color      : #000119;
+            color      :map-get($theme-colors, dark);
             font-family: Futura;
             font-size  : 14px;
             font-weight: bold;
@@ -734,7 +734,7 @@
         font-size     : 18px;
         letter-spacing: normal;
         float         : left;
-        color         : #000119;
+        color         :map-get($theme-colors, dark);
         padding-right : 5px;
         font-family   : Rubik Light;
       }
@@ -743,7 +743,7 @@
         font-size     : 14px;
         letter-spacing: normal;
         opacity       : 0.4;
-        color         : #4D4E6C;
+        color         :map-get($theme-colors, active-gray);
         padding-left  : 5px;
         font-family   : Rubik Light;
       }
