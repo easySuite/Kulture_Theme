@@ -118,10 +118,12 @@ function kulture_theme_preprocess__node__ding_event(&$variables) {
   $results = $query->execute()->fetchCol();
 
   $price = field_get_items('node', $variables['node'], 'field_ding_event_price');
+  $variables['free']  = FALSE;
   if (!empty($price)) {
     $variables['event_price'] = $price[0]['value'] . ' ' . variable_get('ding_event_currency_type', 'Kr');
   }
   else {
+    $variables['free']  = TRUE;
     $variables['event_price'] = t('Free');
   }
 
