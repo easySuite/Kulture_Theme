@@ -114,7 +114,9 @@
           <div class="price"><?php print $event_price; ?></div>
         </div>
       </div>
-      <div class="price-tag"><?php print $event_price; ?></div>
+      <?php if ($free): ?>
+        <div class="price-tag"><?php print $event_price; ?></div>
+      <?php endif; ?>
     </div>
   </a>
 </article>
