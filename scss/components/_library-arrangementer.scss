@@ -9,7 +9,7 @@
     .pane-og-menu-og-single-menu-block h2 a {
       color         :map-get($theme-colors, blue);
       font-family   : 'Rubik-Regular';
-      font-size     : 16px;
+      font-size     : map-get($text-size, regular);
       letter-spacing: 0.6px;
       text-transform: uppercase;
     }
@@ -19,7 +19,7 @@
       .sub-menu-title {
         color         :map-get($theme-colors, blue);
         font-family   : 'Rubik-Regular';
-        font-size     : 16px;
+        font-size     : map-get($text-size, regular);
         letter-spacing: 0.6px;
       }
 
@@ -37,7 +37,7 @@
           a {
             color      :map-get($theme-colors, filter-text);
             font-family: 'Rubik-Regular';
-            font-size  : 14px;
+            font-size  : map-get($text-size, small);
 
             &,
             &:hover {
@@ -60,7 +60,7 @@
     .panel-pane.sub-menu-wrapper~.panel-separator {
       margin          : 40px 0;
       height          : 1px;
-      background-color: #DBD9D9;
+      background-color: map-get($theme-colors, light2-gray);
     }
 
     .pane-taxonomy-menu {
@@ -68,7 +68,7 @@
       .pane-title {
         color         :map-get($theme-colors, filter-text);
         font-family   : 'Rubik-Regular';
-        font-size     : 16px;
+        font-size     : map-get($text-size, regular);
         letter-spacing: 0.6px;
         text-transform: uppercase;
       }
@@ -85,7 +85,7 @@
             position      : relative;
             color         :map-get($theme-colors, filter-text);
             font-family   : 'Rubik-Regular';
-            font-size     : 14px;
+            font-size     : map-get($text-size, small);
             letter-spacing: 0.3px;
 
             &:hover {
@@ -139,7 +139,7 @@
           padding    : 10px 30px 10px 0;
           color      :map-get($theme-colors, filter-text);
           font-family: "Rubik-Regular";
-          font-size  : 14px;
+          font-size  : map-get($text-size, small);
           @include clearfix();
 
           span.arrow {
@@ -166,11 +166,6 @@
     }
   }
 
-  //   .container.default-panel-layout {
-  //   padding: 0;
-  // }
-
-
   .primary-content {
     .view-ding-event {
       h3.colums {
@@ -181,165 +176,13 @@
           text-transform: uppercase;
           color         :map-get($theme-colors, filter-text);
           font-family   : 'Rubik-Regular';
-          font-size     : 16px;
+          font-size     : map-get($text-size, regular);
           letter-spacing: 0.6px;
         }
       }
     }
 
-    .card {
-      border       : none;
-      border-radius: 2px;
-      margin-bottom: 57px;
-
-      .node-ding-event,
-      .node-ding-news {
-        height    : 100%;
-        box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
-
-        @include media-breakpoint-up(lg) {
-          transition: box-shadow 0.2s linear;
-          box-shadow: none;
-
-          &:hover {
-            box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
-          }
-        }
-      }
-
-      a,
-      a:active,
-      a:visited,
-      a:hover,
-      a:focus {
-        color          :map-get($theme-colors, dark);
-        text-decoration: none;
-      }
-
-      .inner {
-        position: relative;
-      }
-
-      .price-tag {
-        position        : absolute;
-        top             : 10px;
-        right           : -5px;
-        background-color:map-get($theme-colors, green);
-        box-shadow      : -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
-        color           : white;
-        width           : 90px;
-        font-family     : 'Rubik-Medium';
-        font-size       : 12px;
-        letter-spacing  : 0.4px;
-        text-transform  : uppercase;
-        text-align      : center;
-        padding         : 9px 20px;
-
-        &:after {
-          content       : '';
-          position      : absolute;
-          right         : 0;
-          bottom        : -5px;
-          height        : 0;
-          width         : 0;
-          display       : block;
-          border-top    : 5px solid #007352;
-          border-right  : 5px solid transparent;
-          -moz-transform: scale(.9999);
-        }
-      }
-
-      .image-wrapper {
-        position: relative;
-        overflow: hidden;
-        height  : 206px;
-
-        img {
-          top     : calc(50% - 103px);
-          position: absolute;
-        }
-      }
-
-      .card-body.event-text {
-        color      :map-get($theme-colors, dark);
-        font-family: "SourceSansPro-Regular";
-        padding    : 30px;
-
-        .info-top {
-          color         :map-get($theme-colors, active-gray);
-          font-size     : 10px;
-          font-family   : "SourceSansPro-Bold";
-          text-transform: uppercase;
-          position      : relative;
-          padding-bottom: 20px;
-          letter-spacing: 1px;
-
-          i.tag-icon {
-            position  : absolute;
-            top       : 1px;
-            height    : 13px;
-            width     : 10px;
-            background: url('../images/tag.png') no-repeat center center;
-          }
-
-          .field {
-            padding-left: 20px;
-          }
-        }
-
-        .date {
-          font-size     : 12px;
-          font-family   : "SourceSansPro-Bold";
-          padding-bottom: 15px;
-        }
-
-        .card-title {
-          font-size     : 21px;
-          font-weight   : 900;
-          padding-bottom: 8px;
-          margin        : 0;
-          font-family   : "SourceSansPro-Bold";
-          text-transform: none;
-        }
-
-        .card-description {
-          color         :map-get($theme-colors, details-gray);
-          font-size     : 14px;
-          font-family   : "SourceSansPro-Bold";
-          padding-bottom: 23px;
-          // @include elipsis()
-        }
-
-        .library,
-        .date-time {
-          font-size     : 12px;
-          font-family   : "SourceSansPro-Bold";
-          padding-bottom: 10px;
-        }
-
-        .price {
-          color         :map-get($theme-colors, green);
-          font-family   : "Rubik-Medium";
-          font-size     : 12px;
-          text-transform: uppercase;
-        }
-      }
-
-
-      .card-img-top {
-        border-radius   : 2px 2px 0 0;
-        background-color: #DBD9D9;
-      }
-    }
-
-    .card {
-      border: none;
-    }
-
-    .card.news-item {
-      border       : none;
-      margin-bottom: 0;
-    }
+    @include grid-view-mode();
 
     .card .card-body {
       padding: 0px;
@@ -372,7 +215,7 @@
         .news-category {
           @include clearfix();
           color         :map-get($theme-colors, active-gray);
-          font-size     : 10px;
+          font-size     : map-get($text-size, micro);
           font-weight   : bold;
           text-transform: uppercase;
           position      : relative;
@@ -383,7 +226,7 @@
           .fields-item,
           .fild-item {
             color         :map-get($theme-colors, active-gray);
-            font-size     : 10px;
+            font-size     : map-get($text-size, micro);
             font-weight   : bold;
             text-transform: uppercase;
             padding       : 0;
@@ -412,7 +255,7 @@
         .submitted {
           color      :map-get($theme-colors, dark);
           font-family: 'SourceSansPro-Bold';
-          font-size  : 12px;
+          font-size  : map-get($text-size, mini);
           padding-top: 15px;
         }
 
@@ -421,13 +264,13 @@
           color      :map-get($theme-colors, dark);
           padding-top: 15px;
           font-family: "SourceSansPro-Bold";
-          font-size  : 21px;
+          font-size  : map-get($text-size, medium-large);
         }
 
         h3~.field {
           color      :map-get($theme-colors, details-gray);
           font-family: "SourceSansPro-Bold";
-          font-size  : 14px;
+          font-size  : map-get($text-size, small);
         }
       }
     }
@@ -449,14 +292,14 @@
         .node-ding-event,
         &.node-ding-news {
           height    : 100%;
-          box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+          box-shadow: map-get($shadows, level-2);
 
           @include media-breakpoint-up(lg) {
             transition: box-shadow 0.2s linear;
             box-shadow: none;
 
             &:hover {
-              box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+              box-shadow: map-get($shadows, level-2);
             }
           }
         }
@@ -484,7 +327,7 @@
           color           : white;
           width           : 90px;
           font-family     : 'Rubik-Medium';
-          font-size       : 12px;
+          font-size       : map-get($text-size, mini);
           letter-spacing  : 0.4px;
           text-transform  : uppercase;
           text-align      : center;
@@ -498,7 +341,7 @@
             height        : 0;
             width         : 0;
             display       : block;
-            border-top    : 5px solid #007352;
+            border-top    : 5px solid map-get($theme-colors, dark-green);
             border-right  : 5px solid transparent;
             -moz-transform: scale(.9999);
           }
@@ -530,7 +373,7 @@
 
           .info-top {
             color         :map-get($theme-colors, active-gray);
-            font-size     : 10px;
+            font-size     : map-get($text-size, micro);
             font-weight   : bold;
             text-transform: uppercase;
             position      : relative;
@@ -552,14 +395,14 @@
           }
 
           .date {
-            font-size     : 12px;
+            font-size     : map-get($text-size, mini);
             font-weight   : 600;
             padding-bottom: 15px;
             line-height   : 15px;
           }
 
           .card-title {
-            font-size     : 21px;
+            font-size     : map-get($text-size, medium-large);
             font-weight   : 900;
             padding-bottom: 8px;
             margin        : 0;
@@ -569,7 +412,7 @@
 
           .card-description {
             color         :map-get($theme-colors, details-gray);
-            font-size     : 14px;
+            font-size     : map-get($text-size, small);
             font-weight   : 600;
             padding-bottom: 14px;
 
@@ -580,14 +423,14 @@
 
           .library,
           .date-time {
-            font-size  : 12px;
+            font-size  : map-get($text-size, mini);
             font-weight: 600;
           }
 
           .price {
             color         :map-get($theme-colors, green);
             font-family   : "Rubik-Medium";
-            font-size     : 12px;
+            font-size     : map-get($text-size, mini);
             text-transform: uppercase;
           }
         }
@@ -614,7 +457,7 @@
 
         .card-img-top {
           border-radius   : 2px 2px 0 0;
-          background-color: #DBD9D9;
+          background-color: map-get($theme-colors, light2-gray);
         }
       }
     }
@@ -644,7 +487,7 @@
         .news-category {
           @include clearfix();
           color         :map-get($theme-colors, active-gray);
-          font-size     : 10px;
+          font-size     : map-get($text-size, micro);
           font-weight   : bold;
           text-transform: uppercase;
           position      : relative;
@@ -655,7 +498,7 @@
           .fields-item,
           .fild-item {
             color         :map-get($theme-colors, active-gray);
-            font-size     : 10px;
+            font-size     : map-get($text-size, micro);
             font-weight   : bold;
             text-transform: uppercase;
             padding       : 0;
@@ -679,7 +522,7 @@
         .submitted {
           color      :map-get($theme-colors, dark);
           font-family: 'SourceSansPro-Bold';
-          font-size  : 12px;
+          font-size  : map-get($text-size, mini);
           padding-top: 15px;
         }
 
@@ -688,13 +531,13 @@
           color      :map-get($theme-colors, dark);
           padding-top: 15px;
           font-family: "SourceSansPro-Bold";
-          font-size  : 21px;
+          font-size  : map-get($text-size, medium-large);
         }
 
         h3~.field {
           color      :map-get($theme-colors, details-gray);
           font-family: "SourceSansPro-Bold";
-          font-size  : 14px;
+          font-size  : map-get($text-size, small);
         }
       }
     }

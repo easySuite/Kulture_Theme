@@ -5,7 +5,7 @@
     padding-left  : 10px;
     padding-bottom: 30px;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
       padding-left  : 0;
       padding-bottom: 0;
     }
@@ -30,7 +30,7 @@
       .select-list .accordion-control {
         color         :map-get($theme-colors, filter-text);
         font-family   : 'Rubik-Regular';
-        font-size     : 16px;
+        font-size     : map-get($text-size, regular);
         letter-spacing: 0.6px;
         text-transform: uppercase;
       }
@@ -62,7 +62,7 @@
             position      : relative;
             color         :map-get($theme-colors, filter-text);
             font-family   : 'Rubik-Regular';
-            font-size     : 14px;
+            font-size     : map-get($text-size, small);
             letter-spacing: 0.3px;
 
             &:hover {
@@ -112,7 +112,7 @@
     .pane-title {
       color         :map-get($theme-colors, filter-text);
       font-family   : 'Rubik-Regular';
-      font-size     : 16px;
+      font-size     : map-get($text-size, regular);
       letter-spacing: 0.6px;
       text-transform: uppercase;
       margin-bottom : 30px;
@@ -126,16 +126,17 @@
       border       : none;
       border-radius: 2px;
       margin-bottom: 57px;
-      box-shadow   : 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+      box-shadow   : map-get($shadows, level-2);
       height       : calc(100% - 57px);
 
       @include media-breakpoint-up(lg) {
         transition : box-shadow 0.2s linear;
         box-shadow: none;
         &:hover {
-          box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+          box-shadow: map-get($shadows, level-2);
         }
       }
+      
       a {
         text-decoration: none;
       }
@@ -150,7 +151,7 @@
         .news-category {
           @include clearfix();
           color         :map-get($theme-colors, active-gray);
-          font-size     : 10px;
+          font-size     : map-get($text-size, micro);
           font-weight   : bold;
           text-transform: uppercase;
           position      : relative;
@@ -161,7 +162,7 @@
           .fields-item,
           .fild-item {
             color         :map-get($theme-colors, active-gray);
-            font-size     : 10px;
+            font-size     : map-get($text-size, micro);
             font-weight   : bold;
             text-transform: uppercase;
             padding       : 0;
@@ -185,7 +186,7 @@
         .submitted {
           color      :map-get($theme-colors, dark);
           font-family: 'SourceSansPro-Bold';
-          font-size  : 12px;
+          font-size  : map-get($text-size, mini);
           padding-top: 15px;
         }
       }
@@ -212,19 +213,32 @@
             color      :map-get($theme-colors, dark);
             padding-top: 15px;
             font-family: "SourceSansPro-Bold";
-            font-size  : 21px;
+            font-size  : map-get($text-size, medium-large);
           }
 
           h3~.field {
             color      :map-get($theme-colors, details-gray);
             font-family: "SourceSansPro-Bold";
-            font-size  : 14px;
+            font-size  : map-get($text-size, small);
           }
         }
       }
     }
 
   }
+
+  #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content {
+  padding: 0;
+
+    .panel-pane .pane-content .view.view-ding-news.container {
+      padding: 0;
+      
+      @include media-breakpoint-up(lg) {
+        padding: 0;
+      }
+    }
+  }
+
 }
 
 .not-front.page-nyheder #page {

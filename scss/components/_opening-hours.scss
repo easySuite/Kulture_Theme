@@ -3,18 +3,18 @@
 .content-wrapper .library-item-wrapper {
 
   .accordion-wrapper {
-    box-shadow   : 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+    box-shadow   : map-get($shadows, level-2);
     margin-bottom: 100px;
   }
 
   .accordion-control {
     display         : block;
     position        : relative;
-    background-color: #FFFFFF;
+    background-color: white;
     padding         : 26px 30px;
     color           :map-get($theme-colors, filter-text);
     font-family     : 'Rubik-Regular';
-    font-size       : 14px;
+    font-size       : map-get($text-size, small);
     cursor          : pointer;
 
     &:after {
@@ -22,15 +22,15 @@
       position: absolute;
       right   : 15px;
       top     : calc(50% - 3px);
-      @include arrow(bottom, 5px, 6px,map-get($theme-colors, filter-text));
+      @include arrow(bottom, 5px, 6px, map-get($theme-colors, filter-text));
     }
 
     &:not(.collapsed) {
       background-color:map-get($theme-colors, blue);
-      color           : #ffffff;
+      color           : white;
 
       &:after {
-        @include arrow(top, 5px, 6px, #ffffff);
+        @include arrow(top, 5px, 6px, white);
       }
     }
   }
@@ -69,7 +69,7 @@
   .opening-hours-table {
     color           :map-get($theme-colors, filter-text);
     font-family     : 'Rubik-Regular';
-    font-size       : 14px;
+    font-size       : map-get($text-size, small);
 
     thead {
       tr th {

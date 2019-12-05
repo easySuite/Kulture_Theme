@@ -13,12 +13,12 @@
       padding: 0;
     }
 
-    @include media-breakpoint-up(lg) {
-      .front-slider-wrapper {
-        padding-left : 20px;
-        padding-right: 20px;
-      }
-    }
+    // @include media-breakpoint-up(lg) {
+    //   .front-slider-wrapper {
+    //     padding-left : 20px;
+    //     padding-right: 20px;
+    //   }
+    // }
   }
 
   .primary-content-wrapper,
@@ -59,8 +59,8 @@
   .pane-campaign .ding-campaign-wrapper {
     margin          : 70px auto 0;
     width           : calc(100% - 20px);
-    background-color: #FFFFFF;
-    box-shadow      : 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+    background-color: white;
+    box-shadow      : map-get($shadows, level-2);
     max-width       : 352px;
 
     @include media-breakpoint-up(md) {
@@ -85,7 +85,7 @@
       .page-title {
         color      :map-get($theme-colors, dark);
         font-family: 'Rubik-Regular';
-        font-size  : 15px;
+        font-size  : map-get($text-size, small-medium);
         line-height: 18px;
 
         a {

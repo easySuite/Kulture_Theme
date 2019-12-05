@@ -103,6 +103,24 @@
     if (filter.length) {
       addCollapseToNewsFilter(filter);
     }
+
+    var inputs = $('.container-inline-date .date-padding input');
+    inputs.change(function (event) {
+      if (!event.target.value) {
+        $(this).removeClass('input-has-date');
+      } else {
+        $(this).addClass('input-has-date');
+      }
+    });
+
+    inputs.each(function (index, item) {
+      if (!$(item).val()) {
+        $(this).removeClass('input-has-date');
+      } else {
+        $(this).addClass('input-has-date');
+      }
+    });
+  
   });
 
 })(jQuery);

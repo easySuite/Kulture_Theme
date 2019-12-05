@@ -35,7 +35,7 @@
 
 	.info-top {
 		color         :map-get($theme-colors, active-gray);
-		font-size     : 10px;
+		font-size     :map-get($text-size, micro);
 		font-family   : "SourceSansPro-Bold";
 		text-transform: uppercase;
 		position      : relative;
@@ -76,7 +76,7 @@
 	h1 {
 		font-family  : 'SourceSansPro-Bold';
 		color        :map-get($theme-colors, dark);
-		font-size    : 57px;
+		font-size    : map-get($text-size, masive);
 		font-weight  : 900;
 		line-height  : 42px;
 		margin-bottom: 20px;
@@ -86,14 +86,14 @@
 		margin-top    : 50px;
 		color         :map-get($theme-colors, filter-text);
 		font-family   : 'Rubik-Regular';
-		font-size     : 16px;
+		font-size     : map-get($text-size, regular);
 		margin-bottom : 30px;
 		text-transform: uppercase;
 	}
 
 	.event-date a {
 		color          :map-get($theme-colors, dark);
-		font-size      : 16px;
+		font-size      : map-get($text-size, regular);
 		font-weight    : 600;
 		text-decoration: none;
 	}
@@ -106,7 +106,7 @@
 		padding-bottom: 16px;
 		@include clearfix();
 
-		&>div {
+		& > div {
 			float: left;
 		}
 
@@ -115,14 +115,14 @@
 			text-decoration: none;
 			color          :map-get($theme-colors, blue);
 			font-family    : 'Rubik-Regular';
-			font-size      : 14px;
+			font-size      : map-get($text-size, small);
 		}
 	}
 
 	.event-description {
 		color      :map-get($theme-colors, dark);
 		margin-top : 20px;
-		font-size  : 14px;
+		font-size  : map-get($text-size, small);
 		font-weight: 600;
 		line-height: 26px;
 
@@ -169,7 +169,7 @@
 		.info-item a,
 		.info-item-group a {
 			color          :map-get($theme-colors, dark);
-			font-size      : 14px;
+			font-size      : map-get($text-size, small);
 			font-weight    : 600;
 			text-decoration: none;
 		}
@@ -177,14 +177,12 @@
 		.price {
 			color         :map-get($theme-colors, green);
 			font-family   : "Rubik-Regular";
-			font-size     : 14px;
+			font-size     : map-get($text-size, small);
 			letter-spacing: 0.47px;
 			text-transform: uppercase;
 		}
 
 	}
-
-
 
 	.controlled-category-list h2 {
 		text-transform: uppercase;
@@ -196,7 +194,7 @@
 	display         : inline-block;
 	color           : #FFFFFF;
 	font-family     : 'Rubik-Regular';
-	font-size       : 14px;
+	font-size       : map-get($text-size, small);
 	font-weight     : 500;
 	letter-spacing  : 0.8px;
 	line-height     : 17px;
@@ -230,7 +228,7 @@
 
 .page-node #page {
 
-	.container.inner ,
+	.container.inner,
 	.view {
 		padding: 0;
 

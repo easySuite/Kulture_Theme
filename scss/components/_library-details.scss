@@ -198,14 +198,14 @@
       .node-ding-event,
       .node-ding-news {
         height    : 100%;
-        box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+        box-shadow: map-get($shadows, level-2);
 
         @include media-breakpoint-up(lg) {
           transition: box-shadow 0.2s linear;
           box-shadow: none;
 
           &:hover {
-            box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+            box-shadow: map-get($shadows, level-2);
           }
         }
       }
@@ -246,7 +246,7 @@
           height        : 0;
           width         : 0;
           display       : block;
-          border-top    : 5px solid #007352;
+          border-top    : 5px solid map-get($theme-colors, dark-green);
           border-right  : 5px solid transparent;
           -moz-transform: scale(.9999);
         }
@@ -424,7 +424,7 @@
 
       .card-img-top {
         border-radius   : 2px 2px 0 0;
-        background-color: #DBD9D9;
+        background-color: map-get($theme-colors, light2-gray);
       }
     }
   }

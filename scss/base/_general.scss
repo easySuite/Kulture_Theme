@@ -26,7 +26,6 @@ img {
 }
 
 .content-wrapper {
-
   .col-lg-12,
   .col-md-12,
   .col-sm-12,
@@ -88,14 +87,14 @@ img {
 
 .page-taxonomy-term {
   #page .node-ding-library.library-item-wrapper {
-    max-width: 1252px;
+    max-width: map-get($container-max-widths, lg);
     @extend.container;
   }
 }
 
 .page-user-login .content-inner,
 .page-user .content-inner {
-  max-width: 1252px;
+  max-width: map-get($container-max-widths, lg);
   @extend.container;
 }
 

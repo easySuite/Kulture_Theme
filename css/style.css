@@ -31,12 +31,17 @@
   --dark: #000119;
   --filter-text: #01032E;
   --blue: #1E0195;
+  --blue-button: #1820B0;
   --green: #00A878;
+  --dark-green: #007352;
   --details-gray: #414256;
   --active-gray: #4D4E6C;
   --gray: #8B8CA4;
   --disabled: #8F8F8F;
   --light-gray: #F0F0F2;
+  --light2-gray: #DBD9D9;
+  --wihte: #ffffff;
+  --black: #000000;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1267,6 +1272,23 @@ pre {
   .table-hover .table-blue:hover > th {
     background-color: #b0a6d9; }
 
+.table-blue-button,
+.table-blue-button > th,
+.table-blue-button > td {
+  background-color: #bec1e9; }
+
+.table-blue-button th,
+.table-blue-button td,
+.table-blue-button thead th,
+.table-blue-button tbody + tbody {
+  border-color: #878bd6; }
+
+.table-hover .table-blue-button:hover {
+  background-color: #abafe3; }
+  .table-hover .table-blue-button:hover > td,
+  .table-hover .table-blue-button:hover > th {
+    background-color: #abafe3; }
+
 .table-green,
 .table-green > th,
 .table-green > td {
@@ -1283,6 +1305,23 @@ pre {
   .table-hover .table-green:hover > td,
   .table-hover .table-green:hover > th {
     background-color: #a5e1cf; }
+
+.table-dark-green,
+.table-dark-green > th,
+.table-dark-green > td {
+  background-color: #b8d8cf; }
+
+.table-dark-green th,
+.table-dark-green td,
+.table-dark-green thead th,
+.table-dark-green tbody + tbody {
+  border-color: #7ab6a5; }
+
+.table-hover .table-dark-green:hover {
+  background-color: #a8cfc4; }
+  .table-hover .table-dark-green:hover > td,
+  .table-hover .table-dark-green:hover > th {
+    background-color: #a8cfc4; }
 
 .table-details-gray,
 .table-details-gray > th,
@@ -1368,6 +1407,57 @@ pre {
   .table-hover .table-light-gray:hover > td,
   .table-hover .table-light-gray:hover > th {
     background-color: #eeeeee; }
+
+.table-light2-gray,
+.table-light2-gray > th,
+.table-light2-gray > td {
+  background-color: #f5f4f4; }
+
+.table-light2-gray th,
+.table-light2-gray td,
+.table-light2-gray thead th,
+.table-light2-gray tbody + tbody {
+  border-color: #ecebeb; }
+
+.table-hover .table-light2-gray:hover {
+  background-color: #e9e7e7; }
+  .table-hover .table-light2-gray:hover > td,
+  .table-hover .table-light2-gray:hover > th {
+    background-color: #e9e7e7; }
+
+.table-wihte,
+.table-wihte > th,
+.table-wihte > td {
+  background-color: white; }
+
+.table-wihte th,
+.table-wihte td,
+.table-wihte thead th,
+.table-wihte tbody + tbody {
+  border-color: white; }
+
+.table-hover .table-wihte:hover {
+  background-color: #f2f2f2; }
+  .table-hover .table-wihte:hover > td,
+  .table-hover .table-wihte:hover > th {
+    background-color: #f2f2f2; }
+
+.table-black,
+.table-black > th,
+.table-black > td {
+  background-color: #b8b8b8; }
+
+.table-black th,
+.table-black td,
+.table-black thead th,
+.table-black tbody + tbody {
+  border-color: #7a7a7a; }
+
+.table-hover .table-black:hover {
+  background-color: #ababab; }
+  .table-hover .table-black:hover > td,
+  .table-hover .table-black:hover > th {
+    background-color: #ababab; }
 
 .table-active,
 .table-active > th,
@@ -2087,6 +2177,29 @@ fieldset:disabled a.btn {
     .show > .btn-blue.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(64, 39, 165, 0.5); }
 
+.btn-blue-button {
+  color: #fff;
+  background-color: #1820B0;
+  border-color: #1820B0; }
+  .btn-blue-button:hover {
+    color: #fff;
+    background-color: #131a8e;
+    border-color: #121883; }
+  .btn-blue-button:focus, .btn-blue-button.focus {
+    box-shadow: 0 0 0 0.2rem rgba(59, 65, 188, 0.5); }
+  .btn-blue-button.disabled, .btn-blue-button:disabled {
+    color: #fff;
+    background-color: #1820B0;
+    border-color: #1820B0; }
+  .btn-blue-button:not(:disabled):not(.disabled):active, .btn-blue-button:not(:disabled):not(.disabled).active,
+  .show > .btn-blue-button.dropdown-toggle {
+    color: #fff;
+    background-color: #121883;
+    border-color: #101678; }
+    .btn-blue-button:not(:disabled):not(.disabled):active:focus, .btn-blue-button:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-blue-button.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(59, 65, 188, 0.5); }
+
 .btn-green {
   color: #fff;
   background-color: #00A878;
@@ -2109,6 +2222,29 @@ fieldset:disabled a.btn {
     .btn-green:not(:disabled):not(.disabled):active:focus, .btn-green:not(:disabled):not(.disabled).active:focus,
     .show > .btn-green.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(38, 181, 140, 0.5); }
+
+.btn-dark-green {
+  color: #fff;
+  background-color: #007352;
+  border-color: #007352; }
+  .btn-dark-green:hover {
+    color: #fff;
+    background-color: #004d37;
+    border-color: #00402e; }
+  .btn-dark-green:focus, .btn-dark-green.focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 136, 108, 0.5); }
+  .btn-dark-green.disabled, .btn-dark-green:disabled {
+    color: #fff;
+    background-color: #007352;
+    border-color: #007352; }
+  .btn-dark-green:not(:disabled):not(.disabled):active, .btn-dark-green:not(:disabled):not(.disabled).active,
+  .show > .btn-dark-green.dropdown-toggle {
+    color: #fff;
+    background-color: #00402e;
+    border-color: #003325; }
+    .btn-dark-green:not(:disabled):not(.disabled):active:focus, .btn-dark-green:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-dark-green.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(38, 136, 108, 0.5); }
 
 .btn-details-gray {
   color: #fff;
@@ -2224,6 +2360,75 @@ fieldset:disabled a.btn {
     .btn-light-gray:not(:disabled):not(.disabled):active:focus, .btn-light-gray:not(:disabled):not(.disabled).active:focus,
     .show > .btn-light-gray.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(209, 210, 212, 0.5); }
+
+.btn-light2-gray {
+  color: #212529;
+  background-color: #DBD9D9;
+  border-color: #DBD9D9; }
+  .btn-light2-gray:hover {
+    color: #212529;
+    background-color: #c8c5c5;
+    border-color: #c2bfbf; }
+  .btn-light2-gray:focus, .btn-light2-gray.focus {
+    box-shadow: 0 0 0 0.2rem rgba(191, 190, 191, 0.5); }
+  .btn-light2-gray.disabled, .btn-light2-gray:disabled {
+    color: #212529;
+    background-color: #DBD9D9;
+    border-color: #DBD9D9; }
+  .btn-light2-gray:not(:disabled):not(.disabled):active, .btn-light2-gray:not(:disabled):not(.disabled).active,
+  .show > .btn-light2-gray.dropdown-toggle {
+    color: #212529;
+    background-color: #c2bfbf;
+    border-color: #bcb8b8; }
+    .btn-light2-gray:not(:disabled):not(.disabled):active:focus, .btn-light2-gray:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-light2-gray.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(191, 190, 191, 0.5); }
+
+.btn-wihte {
+  color: #212529;
+  background-color: #ffffff;
+  border-color: #ffffff; }
+  .btn-wihte:hover {
+    color: #212529;
+    background-color: #ececec;
+    border-color: #e6e6e6; }
+  .btn-wihte:focus, .btn-wihte.focus {
+    box-shadow: 0 0 0 0.2rem rgba(222, 222, 223, 0.5); }
+  .btn-wihte.disabled, .btn-wihte:disabled {
+    color: #212529;
+    background-color: #ffffff;
+    border-color: #ffffff; }
+  .btn-wihte:not(:disabled):not(.disabled):active, .btn-wihte:not(:disabled):not(.disabled).active,
+  .show > .btn-wihte.dropdown-toggle {
+    color: #212529;
+    background-color: #e6e6e6;
+    border-color: #dfdfdf; }
+    .btn-wihte:not(:disabled):not(.disabled):active:focus, .btn-wihte:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-wihte.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(222, 222, 223, 0.5); }
+
+.btn-black {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000; }
+  .btn-black:hover {
+    color: #fff;
+    background-color: black;
+    border-color: black; }
+  .btn-black:focus, .btn-black.focus {
+    box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5); }
+  .btn-black.disabled, .btn-black:disabled {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000; }
+  .btn-black:not(:disabled):not(.disabled):active, .btn-black:not(:disabled):not(.disabled).active,
+  .show > .btn-black.dropdown-toggle {
+    color: #fff;
+    background-color: black;
+    border-color: black; }
+    .btn-black:not(:disabled):not(.disabled):active:focus, .btn-black:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-black.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5); }
 
 .btn-outline-primary {
   color: #007bff;
@@ -2435,6 +2640,27 @@ fieldset:disabled a.btn {
     .show > .btn-outline-blue.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(30, 1, 149, 0.5); }
 
+.btn-outline-blue-button {
+  color: #1820B0;
+  border-color: #1820B0; }
+  .btn-outline-blue-button:hover {
+    color: #fff;
+    background-color: #1820B0;
+    border-color: #1820B0; }
+  .btn-outline-blue-button:focus, .btn-outline-blue-button.focus {
+    box-shadow: 0 0 0 0.2rem rgba(24, 32, 176, 0.5); }
+  .btn-outline-blue-button.disabled, .btn-outline-blue-button:disabled {
+    color: #1820B0;
+    background-color: transparent; }
+  .btn-outline-blue-button:not(:disabled):not(.disabled):active, .btn-outline-blue-button:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-blue-button.dropdown-toggle {
+    color: #fff;
+    background-color: #1820B0;
+    border-color: #1820B0; }
+    .btn-outline-blue-button:not(:disabled):not(.disabled):active:focus, .btn-outline-blue-button:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-blue-button.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(24, 32, 176, 0.5); }
+
 .btn-outline-green {
   color: #00A878;
   border-color: #00A878; }
@@ -2455,6 +2681,27 @@ fieldset:disabled a.btn {
     .btn-outline-green:not(:disabled):not(.disabled):active:focus, .btn-outline-green:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-green.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(0, 168, 120, 0.5); }
+
+.btn-outline-dark-green {
+  color: #007352;
+  border-color: #007352; }
+  .btn-outline-dark-green:hover {
+    color: #fff;
+    background-color: #007352;
+    border-color: #007352; }
+  .btn-outline-dark-green:focus, .btn-outline-dark-green.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 115, 82, 0.5); }
+  .btn-outline-dark-green.disabled, .btn-outline-dark-green:disabled {
+    color: #007352;
+    background-color: transparent; }
+  .btn-outline-dark-green:not(:disabled):not(.disabled):active, .btn-outline-dark-green:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-dark-green.dropdown-toggle {
+    color: #fff;
+    background-color: #007352;
+    border-color: #007352; }
+    .btn-outline-dark-green:not(:disabled):not(.disabled):active:focus, .btn-outline-dark-green:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-dark-green.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(0, 115, 82, 0.5); }
 
 .btn-outline-details-gray {
   color: #414256;
@@ -2560,6 +2807,69 @@ fieldset:disabled a.btn {
     .btn-outline-light-gray:not(:disabled):not(.disabled):active:focus, .btn-outline-light-gray:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-light-gray.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(240, 240, 242, 0.5); }
+
+.btn-outline-light2-gray {
+  color: #DBD9D9;
+  border-color: #DBD9D9; }
+  .btn-outline-light2-gray:hover {
+    color: #212529;
+    background-color: #DBD9D9;
+    border-color: #DBD9D9; }
+  .btn-outline-light2-gray:focus, .btn-outline-light2-gray.focus {
+    box-shadow: 0 0 0 0.2rem rgba(219, 217, 217, 0.5); }
+  .btn-outline-light2-gray.disabled, .btn-outline-light2-gray:disabled {
+    color: #DBD9D9;
+    background-color: transparent; }
+  .btn-outline-light2-gray:not(:disabled):not(.disabled):active, .btn-outline-light2-gray:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-light2-gray.dropdown-toggle {
+    color: #212529;
+    background-color: #DBD9D9;
+    border-color: #DBD9D9; }
+    .btn-outline-light2-gray:not(:disabled):not(.disabled):active:focus, .btn-outline-light2-gray:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-light2-gray.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(219, 217, 217, 0.5); }
+
+.btn-outline-wihte {
+  color: #ffffff;
+  border-color: #ffffff; }
+  .btn-outline-wihte:hover {
+    color: #212529;
+    background-color: #ffffff;
+    border-color: #ffffff; }
+  .btn-outline-wihte:focus, .btn-outline-wihte.focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
+  .btn-outline-wihte.disabled, .btn-outline-wihte:disabled {
+    color: #ffffff;
+    background-color: transparent; }
+  .btn-outline-wihte:not(:disabled):not(.disabled):active, .btn-outline-wihte:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-wihte.dropdown-toggle {
+    color: #212529;
+    background-color: #ffffff;
+    border-color: #ffffff; }
+    .btn-outline-wihte:not(:disabled):not(.disabled):active:focus, .btn-outline-wihte:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-wihte.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
+
+.btn-outline-black {
+  color: #000000;
+  border-color: #000000; }
+  .btn-outline-black:hover {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000; }
+  .btn-outline-black:focus, .btn-outline-black.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
+  .btn-outline-black.disabled, .btn-outline-black:disabled {
+    color: #000000;
+    background-color: transparent; }
+  .btn-outline-black:not(:disabled):not(.disabled):active, .btn-outline-black:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-black.dropdown-toggle {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000; }
+    .btn-outline-black:not(:disabled):not(.disabled):active:focus, .btn-outline-black:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-black.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -4105,6 +4415,16 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(30, 1, 149, 0.5); }
 
+.badge-blue-button {
+  color: #fff;
+  background-color: #1820B0; }
+  a.badge-blue-button:hover, a.badge-blue-button:focus {
+    color: #fff;
+    background-color: #121883; }
+  a.badge-blue-button:focus, a.badge-blue-button.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(24, 32, 176, 0.5); }
+
 .badge-green {
   color: #fff;
   background-color: #00A878; }
@@ -4114,6 +4434,16 @@ input[type="button"].btn-block {
   a.badge-green:focus, a.badge-green.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(0, 168, 120, 0.5); }
+
+.badge-dark-green {
+  color: #fff;
+  background-color: #007352; }
+  a.badge-dark-green:hover, a.badge-dark-green:focus {
+    color: #fff;
+    background-color: #00402e; }
+  a.badge-dark-green:focus, a.badge-dark-green.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 115, 82, 0.5); }
 
 .badge-details-gray {
   color: #fff;
@@ -4164,6 +4494,36 @@ input[type="button"].btn-block {
   a.badge-light-gray:focus, a.badge-light-gray.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(240, 240, 242, 0.5); }
+
+.badge-light2-gray {
+  color: #212529;
+  background-color: #DBD9D9; }
+  a.badge-light2-gray:hover, a.badge-light2-gray:focus {
+    color: #212529;
+    background-color: #c2bfbf; }
+  a.badge-light2-gray:focus, a.badge-light2-gray.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(219, 217, 217, 0.5); }
+
+.badge-wihte {
+  color: #212529;
+  background-color: #ffffff; }
+  a.badge-wihte:hover, a.badge-wihte:focus {
+    color: #212529;
+    background-color: #e6e6e6; }
+  a.badge-wihte:focus, a.badge-wihte.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
+
+.badge-black {
+  color: #fff;
+  background-color: #000000; }
+  a.badge-black:hover, a.badge-black:focus {
+    color: #fff;
+    background-color: black; }
+  a.badge-black:focus, a.badge-black.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
 
 .jumbotron {
   padding: 2rem 1rem;
@@ -4291,6 +4651,15 @@ input[type="button"].btn-block {
   .alert-blue .alert-link {
     color: #06001b; }
 
+.alert-blue-button {
+  color: #0c115c;
+  background-color: #d1d2ef;
+  border-color: #bec1e9; }
+  .alert-blue-button hr {
+    border-top-color: #abafe3; }
+  .alert-blue-button .alert-link {
+    color: #06092f; }
+
 .alert-green {
   color: #00573e;
   background-color: #cceee4;
@@ -4299,6 +4668,15 @@ input[type="button"].btn-block {
     border-top-color: #a5e1cf; }
   .alert-green .alert-link {
     color: #00241a; }
+
+.alert-dark-green {
+  color: #003c2b;
+  background-color: #cce3dc;
+  border-color: #b8d8cf; }
+  .alert-dark-green hr {
+    border-top-color: #a8cfc4; }
+  .alert-dark-green .alert-link {
+    color: #000906; }
 
 .alert-details-gray {
   color: #22222d;
@@ -4344,6 +4722,33 @@ input[type="button"].btn-block {
     border-top-color: #eeeeee; }
   .alert-light-gray .alert-link {
     color: #646464; }
+
+.alert-light2-gray {
+  color: #727171;
+  background-color: #f8f7f7;
+  border-color: #f5f4f4; }
+  .alert-light2-gray hr {
+    border-top-color: #e9e7e7; }
+  .alert-light2-gray .alert-link {
+    color: #585858; }
+
+.alert-wihte {
+  color: #858585;
+  background-color: white;
+  border-color: white; }
+  .alert-wihte hr {
+    border-top-color: #f2f2f2; }
+  .alert-wihte .alert-link {
+    color: #6c6c6c; }
+
+.alert-black {
+  color: black;
+  background-color: #cccccc;
+  border-color: #b8b8b8; }
+  .alert-black hr {
+    border-top-color: #ababab; }
+  .alert-black .alert-link {
+    color: black; }
 
 @keyframes progress-bar-stripes {
   from {
@@ -4635,6 +5040,17 @@ input[type="button"].btn-block {
     background-color: #10014d;
     border-color: #10014d; }
 
+.list-group-item-blue-button {
+  color: #0c115c;
+  background-color: #bec1e9; }
+  .list-group-item-blue-button.list-group-item-action:hover, .list-group-item-blue-button.list-group-item-action:focus {
+    color: #0c115c;
+    background-color: #abafe3; }
+  .list-group-item-blue-button.list-group-item-action.active {
+    color: #fff;
+    background-color: #0c115c;
+    border-color: #0c115c; }
+
 .list-group-item-green {
   color: #00573e;
   background-color: #b8e7d9; }
@@ -4645,6 +5061,17 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #00573e;
     border-color: #00573e; }
+
+.list-group-item-dark-green {
+  color: #003c2b;
+  background-color: #b8d8cf; }
+  .list-group-item-dark-green.list-group-item-action:hover, .list-group-item-dark-green.list-group-item-action:focus {
+    color: #003c2b;
+    background-color: #a8cfc4; }
+  .list-group-item-dark-green.list-group-item-action.active {
+    color: #fff;
+    background-color: #003c2b;
+    border-color: #003c2b; }
 
 .list-group-item-details-gray {
   color: #22222d;
@@ -4700,6 +5127,39 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #7d7d7e;
     border-color: #7d7d7e; }
+
+.list-group-item-light2-gray {
+  color: #727171;
+  background-color: #f5f4f4; }
+  .list-group-item-light2-gray.list-group-item-action:hover, .list-group-item-light2-gray.list-group-item-action:focus {
+    color: #727171;
+    background-color: #e9e7e7; }
+  .list-group-item-light2-gray.list-group-item-action.active {
+    color: #fff;
+    background-color: #727171;
+    border-color: #727171; }
+
+.list-group-item-wihte {
+  color: #858585;
+  background-color: white; }
+  .list-group-item-wihte.list-group-item-action:hover, .list-group-item-wihte.list-group-item-action:focus {
+    color: #858585;
+    background-color: #f2f2f2; }
+  .list-group-item-wihte.list-group-item-action.active {
+    color: #fff;
+    background-color: #858585;
+    border-color: #858585; }
+
+.list-group-item-black {
+  color: black;
+  background-color: #b8b8b8; }
+  .list-group-item-black.list-group-item-action:hover, .list-group-item-black.list-group-item-action:focus {
+    color: black;
+    background-color: #ababab; }
+  .list-group-item-black.list-group-item-action.active {
+    color: #fff;
+    background-color: black;
+    border-color: black; }
 
 .close {
   float: right;
@@ -5399,6 +5859,14 @@ button.bg-blue:hover,
 button.bg-blue:focus {
   background-color: #140162 !important; }
 
+.bg-blue-button {
+  background-color: #1820B0 !important; }
+
+a.bg-blue-button:hover, a.bg-blue-button:focus,
+button.bg-blue-button:hover,
+button.bg-blue-button:focus {
+  background-color: #121883 !important; }
+
 .bg-green {
   background-color: #00A878 !important; }
 
@@ -5406,6 +5874,14 @@ a.bg-green:hover, a.bg-green:focus,
 button.bg-green:hover,
 button.bg-green:focus {
   background-color: #007554 !important; }
+
+.bg-dark-green {
+  background-color: #007352 !important; }
+
+a.bg-dark-green:hover, a.bg-dark-green:focus,
+button.bg-dark-green:hover,
+button.bg-dark-green:focus {
+  background-color: #00402e !important; }
 
 .bg-details-gray {
   background-color: #414256 !important; }
@@ -5446,6 +5922,30 @@ a.bg-light-gray:hover, a.bg-light-gray:focus,
 button.bg-light-gray:hover,
 button.bg-light-gray:focus {
   background-color: #d5d5da !important; }
+
+.bg-light2-gray {
+  background-color: #DBD9D9 !important; }
+
+a.bg-light2-gray:hover, a.bg-light2-gray:focus,
+button.bg-light2-gray:hover,
+button.bg-light2-gray:focus {
+  background-color: #c2bfbf !important; }
+
+.bg-wihte {
+  background-color: #ffffff !important; }
+
+a.bg-wihte:hover, a.bg-wihte:focus,
+button.bg-wihte:hover,
+button.bg-wihte:focus {
+  background-color: #e6e6e6 !important; }
+
+.bg-black {
+  background-color: #000000 !important; }
+
+a.bg-black:hover, a.bg-black:focus,
+button.bg-black:hover,
+button.bg-black:focus {
+  background-color: black !important; }
 
 .bg-white {
   background-color: #fff !important; }
@@ -5513,8 +6013,14 @@ button.bg-light-gray:focus {
 .border-blue {
   border-color: #1E0195 !important; }
 
+.border-blue-button {
+  border-color: #1820B0 !important; }
+
 .border-green {
   border-color: #00A878 !important; }
+
+.border-dark-green {
+  border-color: #007352 !important; }
 
 .border-details-gray {
   border-color: #414256 !important; }
@@ -5530,6 +6036,15 @@ button.bg-light-gray:focus {
 
 .border-light-gray {
   border-color: #F0F0F2 !important; }
+
+.border-light2-gray {
+  border-color: #DBD9D9 !important; }
+
+.border-wihte {
+  border-color: #ffffff !important; }
+
+.border-black {
+  border-color: #000000 !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -7793,11 +8308,23 @@ a.text-filter-text:hover, a.text-filter-text:focus {
 a.text-blue:hover, a.text-blue:focus {
   color: #0f0049 !important; }
 
+.text-blue-button {
+  color: #1820B0 !important; }
+
+a.text-blue-button:hover, a.text-blue-button:focus {
+  color: #0f146d !important; }
+
 .text-green {
   color: #00A878 !important; }
 
 a.text-green:hover, a.text-green:focus {
   color: #005c41 !important; }
+
+.text-dark-green {
+  color: #007352 !important; }
+
+a.text-dark-green:hover, a.text-dark-green:focus {
+  color: #00271b !important; }
 
 .text-details-gray {
   color: #414256 !important; }
@@ -7828,6 +8355,24 @@ a.text-disabled:hover, a.text-disabled:focus {
 
 a.text-light-gray:hover, a.text-light-gray:focus {
   color: #c7c7ce !important; }
+
+.text-light2-gray {
+  color: #DBD9D9 !important; }
+
+a.text-light2-gray:hover, a.text-light2-gray:focus {
+  color: #b6b2b2 !important; }
+
+.text-wihte {
+  color: #ffffff !important; }
+
+a.text-wihte:hover, a.text-wihte:focus {
+  color: #d9d9d9 !important; }
+
+.text-black {
+  color: #000000 !important; }
+
+a.text-black:hover, a.text-black:focus {
+  color: black !important; }
 
 .text-body {
   color: #212529 !important; }
@@ -8061,11 +8606,11 @@ img {
       margin: 0 auto; } }
 
 .page-taxonomy-term #page .node-ding-library.library-item-wrapper {
-  max-width: 1252px; }
+  max-width: 1024px; }
 
 .page-user-login .content-inner,
 .page-user .content-inner {
-  max-width: 1252px; }
+  max-width: 1024px; }
 
 header.site-header nav.main-menu-wrapper.navbar {
   width: 100%;
@@ -8165,7 +8710,7 @@ header.site-header nav.main-menu-wrapper.navbar {
   background-color: #000119;
   padding: 100px 10px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
   margin-top: 100px; }
   @media (min-width: 768px) {
     .footer {
@@ -8176,7 +8721,7 @@ header.site-header nav.main-menu-wrapper.navbar {
   .footer .bottom.btn {
     padding: 0 0 100px 0; }
   .footer .company-info {
-    color: #ffffff; }
+    color: #fff; }
     .footer .company-info .name-cp {
       font-family: 'Rubik-Regular';
       font-size: 12px;
@@ -8194,7 +8739,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       .footer .company-info .email-cp a:hover,
       .footer .company-info .phone-cp a,
       .footer .company-info .phone-cp a:hover {
-        color: #ffffff;
+        color: #fff;
         text-decoration: none; }
     .footer .company-info .phone-cp {
       padding: 20px 0 30px; }
@@ -8391,12 +8936,12 @@ header.site-header nav.main-menu-wrapper.navbar {
         color: #8F8F8F;
         font-family: 'Rubik-Regular';
         font-size: 14px;
-        padding: 24px 23px 23px 64px;
+        padding: 24px 23px 23px 56px;
         box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
         border: none;
         background: white url("../images/calendar-gray.png") no-repeat 20px center; }
-        #page .secondary-content .filter-dates-wrapper .dates-filter-from input:not([value='']),
-        #page .secondary-content .filter-dates-wrapper .dates-filter-to input:not([value='']) {
+        #page .secondary-content .filter-dates-wrapper .dates-filter-from input.input-has-date,
+        #page .secondary-content .filter-dates-wrapper .dates-filter-to input.input-has-date {
           color: white;
           background: #1E0195 url("../images/calendar-white.png") no-repeat 20px center; }
       #page .secondary-content .filter-dates-wrapper .dates-filter-from input,
@@ -8556,7 +9101,7 @@ header.site-header nav.main-menu-wrapper.navbar {
 .content-wrapper .library-item-wrapper .accordion-control {
   display: block;
   position: relative;
-  background-color: #FFFFFF;
+  background-color: white;
   padding: 26px 30px;
   color: #01032E;
   font-family: 'Rubik-Regular';
@@ -8581,7 +9126,7 @@ header.site-header nav.main-menu-wrapper.navbar {
   .primary-content .pane-weekly-opening-hours .accordion-control:not(.collapsed),
   .content-wrapper .library-item-wrapper .accordion-control:not(.collapsed) {
     background-color: #1E0195;
-    color: #ffffff; }
+    color: white; }
     .primary-content .library-item-wrapper .accordion-control:not(.collapsed):after,
     .primary-content .pane-weekly-opening-hours .accordion-control:not(.collapsed):after,
     .content-wrapper .library-item-wrapper .accordion-control:not(.collapsed):after {
@@ -8592,7 +9137,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       border-style: solid;
       -moz-transform: scale(0.9999);
       border-width: 0 6px 5px 6px;
-      border-color: transparent transparent #ffffff transparent; }
+      border-color: transparent transparent white transparent; }
 
 .primary-content .library-item-wrapper .opening-hours-week,
 .primary-content .pane-weekly-opening-hours .opening-hours-week,
@@ -8685,17 +9230,31 @@ header.site-header nav.main-menu-wrapper.navbar {
   border: none;
   border-radius: 2px;
   margin-bottom: 57px; }
+  .page-arrangementer .card.news-item,
+  .node-type-ding-event .card.news-item {
+    border: none;
+    margin-bottom: 0; }
+  @media (min-width: 768px) {
+    .page-arrangementer .card.views-row,
+    .node-type-ding-event .card.views-row {
+      border: none; } }
   .page-arrangementer .card .node-ding-event,
-  .node-type-ding-event .card .node-ding-event {
+  .page-arrangementer .card .node-ding-news,
+  .node-type-ding-event .card .node-ding-event,
+  .node-type-ding-event .card .node-ding-news {
     height: 100%;
     box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
     @media (min-width: 992px) {
       .page-arrangementer .card .node-ding-event,
-      .node-type-ding-event .card .node-ding-event {
+      .page-arrangementer .card .node-ding-news,
+      .node-type-ding-event .card .node-ding-event,
+      .node-type-ding-event .card .node-ding-news {
         transition: box-shadow 0.2s linear;
         box-shadow: none; }
         .page-arrangementer .card .node-ding-event:hover,
-        .node-type-ding-event .card .node-ding-event:hover {
+        .page-arrangementer .card .node-ding-news:hover,
+        .node-type-ding-event .card .node-ding-event:hover,
+        .node-type-ding-event .card .node-ding-news:hover {
           box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); } }
   .page-arrangementer .card a,
   .page-arrangementer .card a:active,
@@ -8748,36 +9307,48 @@ header.site-header nav.main-menu-wrapper.navbar {
     .node-type-ding-event .card .image-wrapper img {
       position: absolute; }
   .page-arrangementer .card .card-body,
-  .node-type-ding-event .card .card-body {
+  .page-arrangementer .card .card-body.event-text,
+  .node-type-ding-event .card .card-body,
+  .node-type-ding-event .card .card-body.event-text {
     color: #000119;
     font-family: "SourceSansPro-Regular";
     padding: 30px; }
     .page-arrangementer .card .card-body .info-top,
-    .node-type-ding-event .card .card-body .info-top {
+    .page-arrangementer .card .card-body.event-text .info-top,
+    .node-type-ding-event .card .card-body .info-top,
+    .node-type-ding-event .card .card-body.event-text .info-top {
       color: #4D4E6C;
       font-size: 10px;
-      font-weight: bold;
+      font-family: "SourceSansPro-Bold";
       text-transform: uppercase;
       position: relative;
       padding-bottom: 20px;
       letter-spacing: 1px; }
       .page-arrangementer .card .card-body .info-top i.tag-icon,
-      .node-type-ding-event .card .card-body .info-top i.tag-icon {
+      .page-arrangementer .card .card-body.event-text .info-top i.tag-icon,
+      .node-type-ding-event .card .card-body .info-top i.tag-icon,
+      .node-type-ding-event .card .card-body.event-text .info-top i.tag-icon {
         position: absolute;
         top: 1px;
         height: 13px;
         width: 10px;
         background: url("../images/tag.png") no-repeat center center; }
       .page-arrangementer .card .card-body .info-top .field,
-      .node-type-ding-event .card .card-body .info-top .field {
+      .page-arrangementer .card .card-body.event-text .info-top .field,
+      .node-type-ding-event .card .card-body .info-top .field,
+      .node-type-ding-event .card .card-body.event-text .info-top .field {
         padding-left: 20px; }
     .page-arrangementer .card .card-body .date,
-    .node-type-ding-event .card .card-body .date {
+    .page-arrangementer .card .card-body.event-text .date,
+    .node-type-ding-event .card .card-body .date,
+    .node-type-ding-event .card .card-body.event-text .date {
       font-size: 12px;
-      font-weight: 600;
+      font-family: "SourceSansPro-Bold";
       padding-bottom: 15px; }
     .page-arrangementer .card .card-body .card-title,
-    .node-type-ding-event .card .card-body .card-title {
+    .page-arrangementer .card .card-body.event-text .card-title,
+    .node-type-ding-event .card .card-body .card-title,
+    .node-type-ding-event .card .card-body.event-text .card-title {
       font-size: 21px;
       font-weight: 900;
       padding-bottom: 8px;
@@ -8785,20 +9356,28 @@ header.site-header nav.main-menu-wrapper.navbar {
       font-family: "SourceSansPro-Bold";
       text-transform: none; }
     .page-arrangementer .card .card-body .card-description,
-    .node-type-ding-event .card .card-body .card-description {
+    .page-arrangementer .card .card-body.event-text .card-description,
+    .node-type-ding-event .card .card-body .card-description,
+    .node-type-ding-event .card .card-body.event-text .card-description {
       color: #414256;
       font-size: 14px;
-      font-weight: 600;
+      font-family: "SourceSansPro-Bold";
       padding-bottom: 23px; }
     .page-arrangementer .card .card-body .library,
     .page-arrangementer .card .card-body .date-time,
+    .page-arrangementer .card .card-body.event-text .library,
+    .page-arrangementer .card .card-body.event-text .date-time,
     .node-type-ding-event .card .card-body .library,
-    .node-type-ding-event .card .card-body .date-time {
+    .node-type-ding-event .card .card-body .date-time,
+    .node-type-ding-event .card .card-body.event-text .library,
+    .node-type-ding-event .card .card-body.event-text .date-time {
       font-size: 12px;
-      font-weight: 600;
+      font-family: "SourceSansPro-Bold";
       padding-bottom: 10px; }
     .page-arrangementer .card .card-body .price,
-    .node-type-ding-event .card .card-body .price {
+    .page-arrangementer .card .card-body.event-text .price,
+    .node-type-ding-event .card .card-body .price,
+    .node-type-ding-event .card .card-body.event-text .price {
       color: #00A878;
       font-family: "Rubik-Medium";
       font-size: 12px;
@@ -8923,7 +9502,6 @@ header.site-header nav.main-menu-wrapper.navbar {
   .event-details-wrapper h1 {
     font-family: 'SourceSansPro-Bold';
     color: #000119;
-    font-size: 57px;
     font-weight: 900;
     line-height: 42px;
     margin-bottom: 20px; }
@@ -9753,6 +10331,12 @@ header.site-header nav.main-menu-wrapper.navbar {
     border: none;
     border-radius: 2px;
     margin-bottom: 57px; }
+    .page-bibliotek .layout-wrapper .primary-content .card.news-item {
+      border: none;
+      margin-bottom: 0; }
+    @media (min-width: 768px) {
+      .page-bibliotek .layout-wrapper .primary-content .card.views-row {
+        border: none; } }
     .page-bibliotek .layout-wrapper .primary-content .card .node-ding-event,
     .page-bibliotek .layout-wrapper .primary-content .card .node-ding-news {
       height: 100%;
@@ -9804,12 +10388,13 @@ header.site-header nav.main-menu-wrapper.navbar {
       overflow: hidden;
       height: 206px; }
       .page-bibliotek .layout-wrapper .primary-content .card .image-wrapper img {
-        top: calc(50% - 103px);
         position: absolute; }
+    .page-bibliotek .layout-wrapper .primary-content .card .card-body,
     .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text {
       color: #000119;
       font-family: "SourceSansPro-Regular";
       padding: 30px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .info-top,
       .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .info-top {
         color: #4D4E6C;
         font-size: 10px;
@@ -9818,18 +10403,22 @@ header.site-header nav.main-menu-wrapper.navbar {
         position: relative;
         padding-bottom: 20px;
         letter-spacing: 1px; }
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .info-top i.tag-icon,
         .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .info-top i.tag-icon {
           position: absolute;
           top: 1px;
           height: 13px;
           width: 10px;
           background: url("../images/tag.png") no-repeat center center; }
+        .page-bibliotek .layout-wrapper .primary-content .card .card-body .info-top .field,
         .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .info-top .field {
           padding-left: 20px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .date,
       .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .date {
         font-size: 12px;
         font-family: "SourceSansPro-Bold";
         padding-bottom: 15px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-title,
       .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .card-title {
         font-size: 21px;
         font-weight: 900;
@@ -9837,16 +10426,20 @@ header.site-header nav.main-menu-wrapper.navbar {
         margin: 0;
         font-family: "SourceSansPro-Bold";
         text-transform: none; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .card-description,
       .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .card-description {
         color: #414256;
         font-size: 14px;
         font-family: "SourceSansPro-Bold";
         padding-bottom: 23px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .library,
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .date-time,
       .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .library,
       .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .date-time {
         font-size: 12px;
         font-family: "SourceSansPro-Bold";
         padding-bottom: 10px; }
+      .page-bibliotek .layout-wrapper .primary-content .card .card-body .price,
       .page-bibliotek .layout-wrapper .primary-content .card .card-body.event-text .price {
         color: #00A878;
         font-family: "Rubik-Medium";
@@ -9855,11 +10448,6 @@ header.site-header nav.main-menu-wrapper.navbar {
     .page-bibliotek .layout-wrapper .primary-content .card .card-img-top {
       border-radius: 2px 2px 0 0;
       background-color: #DBD9D9; }
-  .page-bibliotek .layout-wrapper .primary-content .card {
-    border: none; }
-  .page-bibliotek .layout-wrapper .primary-content .card.news-item {
-    border: none;
-    margin-bottom: 0; }
   .page-bibliotek .layout-wrapper .primary-content .card .card-body {
     padding: 0px;
     width: 100%; }
@@ -10149,7 +10737,7 @@ header.site-header nav.main-menu-wrapper.navbar {
 .page-taxonomy-term .pane-taxonomy-menu {
   padding-left: 10px;
   padding-bottom: 30px; }
-  @media (min-width: 768px) {
+  @media (min-width: 992px) {
     .page-nyheder .pane-taxonomy-menu,
     .page-taxonomy-term .pane-taxonomy-menu {
       padding-left: 0;
@@ -10418,6 +11006,37 @@ header.site-header nav.main-menu-wrapper.navbar {
         font-family: "SourceSansPro-Bold";
         font-size: 14px; }
 
+.page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content,
+.page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content {
+  padding: 0; }
+  .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.container, .page-nyheder .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.node-ding-library.library-item-wrapper, .page-taxonomy-term .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.node-ding-library.library-item-wrapper, .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .page-user-login .view.view-ding-news.content-inner, .page-user-login .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.content-inner,
+  .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .page-user .view.view-ding-news.content-inner, .page-user .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.content-inner, .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content #ding-library-front .attachments-wrapper .view.view-ding-news.pane-title, #ding-library-front .attachments-wrapper .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.pane-title, .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .node-type-ding-news .view.view-ding-news.panel-pane.pane-ding-related-content-news-events, .node-type-ding-news .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.panel-pane.pane-ding-related-content-news-events,
+  .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.container,
+  .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.node-ding-library.library-item-wrapper,
+  .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .page-user-login .view.view-ding-news.content-inner,
+  .page-user-login .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.content-inner,
+  .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .page-user .view.view-ding-news.content-inner,
+  .page-user .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.content-inner,
+  .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content #ding-library-front .attachments-wrapper .view.view-ding-news.pane-title,
+  #ding-library-front .attachments-wrapper .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.pane-title,
+  .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .node-type-ding-news .view.view-ding-news.panel-pane.pane-ding-related-content-news-events,
+  .node-type-ding-news .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.panel-pane.pane-ding-related-content-news-events {
+    padding: 0; }
+    @media (min-width: 992px) {
+      .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.container, .page-nyheder .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.node-ding-library.library-item-wrapper, .page-taxonomy-term .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.node-ding-library.library-item-wrapper, .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .page-user-login .view.view-ding-news.content-inner, .page-user-login .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.content-inner,
+      .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .page-user .view.view-ding-news.content-inner, .page-user .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.content-inner, .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content #ding-library-front .attachments-wrapper .view.view-ding-news.pane-title, #ding-library-front .attachments-wrapper .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.pane-title, .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .node-type-ding-news .view.view-ding-news.panel-pane.pane-ding-related-content-news-events, .node-type-ding-news .page-nyheder #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.panel-pane.pane-ding-related-content-news-events,
+      .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.container,
+      .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.node-ding-library.library-item-wrapper,
+      .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .page-user-login .view.view-ding-news.content-inner,
+      .page-user-login .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.content-inner,
+      .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .page-user .view.view-ding-news.content-inner,
+      .page-user .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.content-inner,
+      .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content #ding-library-front .attachments-wrapper .view.view-ding-news.pane-title,
+      #ding-library-front .attachments-wrapper .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.pane-title,
+      .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .node-type-ding-news .view.view-ding-news.panel-pane.pane-ding-related-content-news-events,
+      .node-type-ding-news .page-taxonomy-term #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content .panel-pane .pane-content .view.view-ding-news.panel-pane.pane-ding-related-content-news-events {
+        padding: 0; } }
+
 @media (min-width: 992px) {
   .not-front.page-nyheder #page .view-display-id-ding_news_list.container, .not-front.page-nyheder .page-taxonomy-term #page .view-display-id-ding_news_list.node-ding-library.library-item-wrapper, .page-taxonomy-term .not-front.page-nyheder #page .view-display-id-ding_news_list.node-ding-library.library-item-wrapper, .not-front.page-nyheder #page .page-user-login .view-display-id-ding_news_list.content-inner, .page-user-login .not-front.page-nyheder #page .view-display-id-ding_news_list.content-inner,
   .not-front.page-nyheder #page .page-user .view-display-id-ding_news_list.content-inner, .page-user .not-front.page-nyheder #page .view-display-id-ding_news_list.content-inner, .not-front.page-nyheder #page #ding-library-front .attachments-wrapper .view-display-id-ding_news_list.pane-title, #ding-library-front .attachments-wrapper .not-front.page-nyheder #page .view-display-id-ding_news_list.pane-title, .not-front.page-nyheder #page .node-type-ding-news .view-display-id-ding_news_list.panel-pane.pane-ding-related-content-news-events, .node-type-ding-news .not-front.page-nyheder #page .view-display-id-ding_news_list.panel-pane.pane-ding-related-content-news-events,
@@ -10634,11 +11253,6 @@ header.site-header nav.main-menu-wrapper.navbar {
 .front.page-culture-frontpage .content-wrapper .container .front-slider-container .front-slider-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .front-slider-container .front-slider-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .front-slider-container .front-slider-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .front-slider-container .front-slider-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .front-slider-container .front-slider-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .front-slider-container .front-slider-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .front-slider-container .front-slider-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .front-slider-container .front-slider-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .front-slider-container .front-slider-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .front-slider-container .front-slider-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .front-slider-container .front-slider-wrapper {
   padding: 0; }
 
-@media (min-width: 992px) {
-  .front.page-culture-frontpage .content-wrapper .container .front-slider-container .front-slider-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .front-slider-container .front-slider-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .front-slider-container .front-slider-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .front-slider-container .front-slider-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .front-slider-container .front-slider-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .front-slider-container .front-slider-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .front-slider-container .front-slider-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .front-slider-container .front-slider-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .front-slider-container .front-slider-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .front-slider-container .front-slider-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .front-slider-container .front-slider-wrapper {
-    padding-left: 20px;
-    padding-right: 20px; } }
-
 .front.page-culture-frontpage .content-wrapper .container .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .primary-content-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .primary-content-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .primary-content-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .primary-content-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .primary-content-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .primary-content-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .primary-content-wrapper,
 .front.page-culture-frontpage .content-wrapper .container .secondary-content-wrapper,
 .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .secondary-content-wrapper,
@@ -10678,7 +11292,7 @@ header.site-header nav.main-menu-wrapper.navbar {
 .front.page-culture-frontpage .content-wrapper .container .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .pane-campaign .ding-campaign-wrapper, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .pane-campaign .ding-campaign-wrapper, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .pane-campaign .ding-campaign-wrapper, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .pane-campaign .ding-campaign-wrapper, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .pane-campaign .ding-campaign-wrapper, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .pane-campaign .ding-campaign-wrapper {
   margin: 70px auto 0;
   width: calc(100% - 20px);
-  background-color: #FFFFFF;
+  background-color: white;
   box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
   max-width: 352px; }
   @media (min-width: 768px) {
@@ -10869,11 +11483,11 @@ header.site-header nav.main-menu-wrapper.navbar {
                 padding: 17px; } }
           .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.current-day .day-number {
             background-color: #1E0195;
-            color: #fff;
+            color: white;
             border-radius: 50%;
             margin-right: 6px; }
           .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.has-events .day-number {
-            background-color: #fff;
+            background-color: white;
             box-shadow: 0 10px 35px 0 rgba(30, 1, 149, 0.2);
             border-radius: 50%;
             margin-right: 6px; }
@@ -10973,7 +11587,7 @@ header.site-header nav.main-menu-wrapper.navbar {
     margin-top: 30px; }
     .front.page-culture-frontpage .content-wrapper .container #eventList .more-link a, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventList .more-link a, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventList .more-link a, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventList .more-link a, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventList .more-link a, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventList .more-link a, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventList .more-link a, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .more-link a, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .more-link a, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .more-link a, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .more-link a {
       display: inline-block;
-      color: #FFFFFF;
+      color: white;
       font-family: 'Rubik-Regular';
       font-size: 14px;
       font-weight: 500;
@@ -11003,7 +11617,7 @@ header.site-header nav.main-menu-wrapper.navbar {
   .front.page-culture-frontpage .content-wrapper .container #eventList .event-items, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventList .event-items, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventList .event-items, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventList .event-items, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventList .event-items, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventList .event-items, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventList .event-items, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items {
     max-height: 100%;
     padding: 0 20px;
-    background-color: #FFFFFF;
+    background-color: white;
     box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
     .front.page-culture-frontpage .content-wrapper .container #eventList .event-items .event-item, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventList .event-items .event-item, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventList .event-items .event-item, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventList .event-items .event-item, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventList .event-items .event-item, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventList .event-items .event-item, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventList .event-items .event-item, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventList .event-items .event-item, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventList .event-items .event-item, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-item, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventList .event-items .event-item {
       background: transparent url(../images/nav-arrow-right.png) no-repeat right center;
@@ -11102,7 +11716,7 @@ header.site-header nav.main-menu-wrapper.navbar {
             width: 100%;
             height: auto; } }
     .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info {
-      color: #ffffff;
+      color: white;
       position: absolute;
       top: 68px;
       left: 35px; }
@@ -11116,7 +11730,7 @@ header.site-header nav.main-menu-wrapper.navbar {
           .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info > * {
             max-width: calc(100% - 122px); } }
       .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item {
-        color: #FFFFFF;
+        color: white;
         font-family: 'Rubik-Regular';
         font-size: 10px;
         font-weight: 500;
@@ -11135,7 +11749,7 @@ header.site-header nav.main-menu-wrapper.navbar {
           width: 10px;
           background: url("../images/tag.png") no-repeat center center; }
       .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .item-date {
-        color: #FFFFFF;
+        color: white;
         font-family: 'Rubik-Regular';
         font-size: 12px;
         font-weight: 500;
@@ -11143,7 +11757,7 @@ header.site-header nav.main-menu-wrapper.navbar {
         line-height: 14px;
         margin-bottom: 20px; }
       .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .node-title {
-        color: #FFFFFF;
+        color: white;
         font-family: 'SourceSansPro-Bold';
         font-size: 52px;
         letter-spacing: -1.68px;
@@ -11151,25 +11765,25 @@ header.site-header nav.main-menu-wrapper.navbar {
         margin-bottom: 24px;
         text-decoration: none; }
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .node-title a {
-          color: #FFFFFF;
+          color: white;
           text-decoration: none; }
           .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .node-title a:hover {
             text-decoration: none; }
       .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .item-details {
-        color: #FFFFFF;
+        color: white;
         font-family: 'Rubik-Medium';
         font-size: 14px;
         letter-spacing: 0.3px;
         line-height: 25px; }
       .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info {
-        color: #FFFFFF;
+        color: white;
         font-family: 'Rubik-Regular';
         font-size: 12px;
         letter-spacing: 0.4px;
         line-height: 14px; }
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info a,
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info a:hover {
-          color: #FFFFFF;
+          color: white;
           text-decoration: none; }
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info .item-price {
           font-family: 'Rubik-Medium';
@@ -11193,38 +11807,48 @@ header.site-header nav.main-menu-wrapper.navbar {
       color: transparent;
       width: 6px;
       height: 6px;
-      border: 1px solid #FFF8F8;
+      border: 1px solid white8F8;
       border-radius: 50%;
       margin-right: 10px; }
       .ding_nodelist-carousel .slick-dots li a {
         display: none; }
       .ding_nodelist-carousel .slick-dots li.slick-active {
-        background-color: #ffffff; }
+        background-color: white; }
   .ding_nodelist-carousel .next-prev {
     display: none; }
   .ding_nodelist-carousel .slick-dotted .slick-arrow {
     position: absolute;
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     transition: box-shadow 0.2s linear;
     top: calc(50% - 35px);
     z-index: 10; }
     .ding_nodelist-carousel .slick-dotted .slick-arrow:hover {
       box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.2); }
+    @media (min-width: 1200px) {
+      .ding_nodelist-carousel .slick-dotted .slick-arrow {
+        width: 70px;
+        height: 70px; } }
   .ding_nodelist-carousel .slick-dotted .fa-prev.slick-arrow {
     display: none !important;
-    left: -35px;
+    left: -26px;
     background: #1E0195 url(../images/white-arrow-left.png) no-repeat center center; }
     @media (min-width: 992px) {
       .ding_nodelist-carousel .slick-dotted .fa-prev.slick-arrow {
         display: block !important; } }
+    @media (min-width: 1200px) {
+      .ding_nodelist-carousel .slick-dotted .fa-prev.slick-arrow {
+        left: -28px; } }
   .ding_nodelist-carousel .slick-dotted .fa-next.slick-arrow {
     display: none !important;
-    right: -35px;
+    right: -26px;
     background: #1E0195 url(../images/white-arrow-right.png) no-repeat center center; }
     @media (min-width: 992px) {
       .ding_nodelist-carousel .slick-dotted .fa-next.slick-arrow {
         display: block !important; } }
+    @media (min-width: 1200px) {
+      .ding_nodelist-carousel .slick-dotted .fa-next.slick-arrow {
+        right: -28px; } }
 
 .pane-ding-nodelist .pane-title {
   color: #01032E;
@@ -11264,7 +11888,7 @@ header.site-header nav.main-menu-wrapper.navbar {
         margin-right: 0; } }
     .pane-ding-nodelist .more-links ul .more-link a {
       display: inline-block;
-      color: #FFFFFF;
+      color: white;
       font-family: 'Rubik-Regular';
       font-size: 14px;
       font-weight: 500;
@@ -11293,7 +11917,7 @@ header.site-header nav.main-menu-wrapper.navbar {
   border-radius: 2px;
   box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
   margin: 0 auto 10px;
-  background-color: #fff;
+  background-color: white;
   display: block;
   overflow: auto; }
   .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item::after {
@@ -11440,12 +12064,12 @@ header.site-header nav.main-menu-wrapper.navbar {
       height: 526px;
       display: block; }
   .ding_nodelist-advanced_carousel .ac-item .ac-info {
-    color: #ffffff;
+    color: white;
     position: absolute;
     top: 108px;
     left: 83px; }
     .ding_nodelist-advanced_carousel .ac-item .ac-info .field-name-field-ding-event-category {
-      color: #FFFFFF;
+      color: white;
       font-family: 'Rubik-Regular';
       font-size: 10px;
       font-weight: 500;
@@ -11464,7 +12088,7 @@ header.site-header nav.main-menu-wrapper.navbar {
         width: 10px;
         background: url("../images/tag.png") no-repeat center center; }
     .ding_nodelist-advanced_carousel .ac-item .ac-info .item-date {
-      color: #FFFFFF;
+      color: white;
       font-family: 'Rubik-Regular';
       font-size: 12px;
       font-weight: 500;
@@ -11472,7 +12096,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       line-height: 14px;
       margin-bottom: 20px; }
     .ding_nodelist-advanced_carousel .ac-item .ac-info .item-title {
-      color: #FFFFFF;
+      color: white;
       font-family: 'SourceSansPro-Bold';
       font-size: 52px;
       letter-spacing: -1.68px;
@@ -11480,7 +12104,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       margin-bottom: 24px;
       text-decoration: none; }
       .ding_nodelist-advanced_carousel .ac-item .ac-info .item-title a {
-        color: #FFFFFF;
+        color: white;
         text-decoration: none; }
         .ding_nodelist-advanced_carousel .ac-item .ac-info .item-title a:hover {
           text-decoration: none; }
@@ -11497,7 +12121,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       float: left; }
     .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info .library-name,
     .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info .date-time {
-      color: #FFFFFF;
+      color: white;
       font-family: "SourceSansPro-Bold";
       font-size: 12px;
       line-height: 15px; }
@@ -11507,7 +12131,7 @@ header.site-header nav.main-menu-wrapper.navbar {
         margin: 0 10px; }
       .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info .library-name a,
       .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info .date-time a {
-        color: #FFFFFF;
+        color: white;
         text-decoration: none; }
         .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info .library-name a:hover,
         .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info .date-time a:hover {
@@ -11520,7 +12144,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       line-height: 16px; }
   .ding_nodelist-advanced_carousel .slider-nav-wrapper {
     border-radius: 2px 0 0 2px;
-    background-color: #FFFFFF;
+    background-color: white;
     box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
     position: absolute;
     bottom: -77px;
@@ -11540,7 +12164,11 @@ header.site-header nav.main-menu-wrapper.navbar {
       .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper {
         max-width: 352px;
         margin-right: 66px;
-        margin-bottom: 33px; }
+        margin-bottom: 33px;
+        min-width: 100%; }
+        @media (min-width: 768px) {
+          .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper {
+            min-width: auto; } }
         .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper.slick-active {
           opacity: 0.2; }
         .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper.slick-current {
@@ -11578,19 +12206,21 @@ header.site-header nav.main-menu-wrapper.navbar {
             height: 15px;
             width: 160px;
             color: #000119;
-            font-family: "Source Sans Pro";
+            font-family: "SourceSansPro-Bold";
             font-size: 12px;
-            font-weight: 600;
-            margin-bottom: 14px;
+            margin-bottom: 10px;
             line-height: 15px; }
           .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper .ac-nav-item-meta .ac-nav-item-title {
             height: 19px;
             width: 159px;
             color: #000119;
-            font-family: Futura;
+            font-family: "SourceSansPro-Bold";
             font-size: 14px;
-            font-weight: bold;
-            line-height: 19px; }
+            line-height: 19px;
+            max-width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis; }
         .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper:first-child .ac-nav-item-image {
           box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.2); }
     .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls {
@@ -11603,14 +12233,14 @@ header.site-header nav.main-menu-wrapper.navbar {
         float: left;
         color: #000119;
         padding-right: 5px;
-        font-family: Rubik Light; }
+        font-family: 'Rubik-Light'; }
       .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls .indicator--total {
         font-size: 14px;
         letter-spacing: normal;
         opacity: 0.4;
         color: #4D4E6C;
         padding-left: 5px;
-        font-family: Rubik Light; }
+        font-family: 'Rubik-Light'; }
       .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls .carousel-controls__indicator {
         left: 50px;
         position: relative; }

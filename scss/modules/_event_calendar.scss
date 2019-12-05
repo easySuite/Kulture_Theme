@@ -20,7 +20,7 @@
       h2 {
         color         :map-get($theme-colors, filter-text);
         font-family   : 'Rubik-Regular';
-        font-size     : 16px;
+        font-size     : map-get($text-size, regular);
         letter-spacing: 0.6px;
         line-height   : 19px;
         text-transform: uppercase;
@@ -73,7 +73,7 @@
             background    : transparent;
             color         :map-get($theme-colors, filter-text);
             font-family   : 'Rubik-Regular';
-            font-size     : 12px;
+            font-size     : map-get($text-size, mini);
             letter-spacing: 0.3px;
             line-height   : 14px;
             text-align    : center;
@@ -97,7 +97,7 @@
             &.event-end {
               width             : 38px;
               height            : 38px;
-              font-size         : 12px;
+              font-size         : map-get($text-size, mini);
               color             :map-get($theme-colors, filter-text);
               font-family       : 'Rubik-Medium';
               line-height       : 14px;
@@ -106,7 +106,7 @@
               // margin-bottom  : 6px;
 
               a {
-                font-size      : 12px;
+                font-size      : map-get($text-size, mini);
                 color          :map-get($theme-colors, filter-text);
                 font-family    : 'Rubik-Medium';
                 line-height    : 14px;
@@ -166,14 +166,14 @@
 
             &.current-day .day-number {
               background-color:map-get($theme-colors, blue);
-              color           : #fff;
+              color           : white;
               border-radius   : 50%;
               margin-right    : 6px;
             }
 
             // &.calendar-day {
             &.has-events .day-number {
-              background-color: #fff;
+              background-color: white;
               box-shadow      : 0 10px 35px 0 rgba(30, 1, 149, 0.2);
               border-radius   : 50%;
               margin-right    : 6px;
@@ -313,9 +313,9 @@
 
       a {
         display         : inline-block;
-        color           : #FFFFFF;
+        color           : white;
         font-family     : 'Rubik-Regular';
-        font-size       : 14px;
+        font-size       : map-get($text-size, small);
         font-weight     : 500;
         letter-spacing  : 0.8px;
         line-height     : 17px;
@@ -341,7 +341,7 @@
     .event-day-header {
       color         :map-get($theme-colors, dark);
       font-family   : 'Rubik-Light';
-      font-size     : 14px;
+      font-size     : map-get($text-size, small);
       letter-spacing: 0.3px;
       line-height   : 17px;
       text-transform: uppercase;
@@ -353,8 +353,8 @@
     .event-items {
       max-height      : 100%;
       padding         : 0 20px;
-      background-color: #FFFFFF;
-      box-shadow      : 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+      background-color: white;
+      box-shadow      : map-get($shadows, level-2);
 
       .event-item {
         background   : transparent url(../images/nav-arrow-right.png) no-repeat right center;
@@ -371,7 +371,7 @@
           a {
             color          :map-get($theme-colors, dark);
             font-family    : 'SourceSansPro-Bold';
-            font-size      : 14px;
+            font-size      : map-get($text-size, small);
             line-height    : 19px;
             text-decoration: none;
 
@@ -394,7 +394,7 @@
             text-decoration: none;
             color          :map-get($theme-colors, dark);
             font-family    : "SourceSansPro-Semibold";
-            font-size      : 12px;
+            font-size      : map-get($text-size, mini);
             line-height    : 15px;
 
             &:after {
@@ -414,7 +414,7 @@
         margin     : 0 0 0 10px;
         color      :map-get($theme-colors, dark);
         font-family: "SourceSansPro-Semibold";
-        font-size  : 12px;
+        font-size  : map-get($text-size, mini);
         line-height: 15px;
       }
 

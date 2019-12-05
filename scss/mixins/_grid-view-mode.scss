@@ -4,14 +4,26 @@
 		border-radius: 2px;
 		margin-bottom: 57px;
 
-		.node-ding-event {
+		&.news-item {
+			border       : none;
+      margin-bottom: 0;
+		}
+
+		&.views-row {
+			@include media-breakpoint-up(md) {
+				border: none;
+			}
+		}
+
+		.node-ding-event,
+		.node-ding-news {
 			height    : 100%;
-			box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+			box-shadow: map-get($shadows, level-2);
 			@include media-breakpoint-up(lg) {
 				transition : box-shadow 0.2s linear;
 				box-shadow: none;
 				&:hover {
-					box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+					box-shadow: map-get($shadows, level-2);
 				}
 			}
 		}
@@ -38,7 +50,7 @@
 			color           : white;
 			width           : 90px;
 			font-family     : 'Rubik-Medium';
-			font-size       : 12px;
+			font-size       : map-get($text-size, mini);
 			// font-weight  : 500;
 			letter-spacing  : 0.4px;
 			text-transform  : uppercase;
@@ -53,7 +65,7 @@
 				height        : 0;
 				width         : 0;
 				display       : block;
-				border-top    : 5px solid #007352;
+				border-top    : 5px solid map-get($theme-colors, dark-green);
 				border-right  : 5px solid transparent;
 				-moz-transform: scale(.9999);
 			}
@@ -65,20 +77,21 @@
 			height  : 206px;
 
 			img {
-				//top     : calc(-50% - 103px);
+				//top     : calc(-50% - 103px);  //TODO: library-arangementer.scss
 				position: absolute;
 			}
 		}
 
-		.card-body {
+		.card-body,
+		.card-body.event-text {
 			color      :map-get($theme-colors, dark);
 			font-family: "SourceSansPro-Regular";
 			padding    : 30px;
 
 			.info-top {
 				color         :map-get($theme-colors, active-gray);
-				font-size     : 10px;
-				font-weight   : bold;
+				font-size     : map-get($text-size, micro);
+				font-family   : "SourceSansPro-Bold";
 				text-transform: uppercase;
 				position      : relative;
 				padding-bottom: 20px;
@@ -98,13 +111,13 @@
 			}
 
 			.date {
-				font-size     : 12px;
-				font-weight   : 600;
+				font-size     : map-get($text-size, mini);
+				font-family   : "SourceSansPro-Bold";
 				padding-bottom: 15px;
 			}
 
 			.card-title {
-				font-size     : 21px;
+				font-size     : map-get($text-size, medium-large);
 				font-weight   : 900;
 				padding-bottom: 8px;
 				margin        : 0;
@@ -114,23 +127,23 @@
 
 			.card-description {
 				color         :map-get($theme-colors, details-gray);
-				font-size     : 14px;
-				font-weight   : 600;
+				font-size     : map-get($text-size, small);
+				font-family   : "SourceSansPro-Bold";
 				padding-bottom: 23px;
 				// @include elipsis()
 			}
 
 			.library,
 			.date-time {
-				font-size     : 12px;
-				font-weight   : 600;
+				font-size     : map-get($text-size, mini);
+				font-family   : "SourceSansPro-Bold";
 				padding-bottom: 10px;
 			}
 
 			.price {
 				color         :map-get($theme-colors, green);
 				font-family   : "Rubik-Medium";
-				font-size     : 12px;
+				font-size     : map-get($text-size, mini);
 				text-transform: uppercase;
 			}
 		}
@@ -138,7 +151,7 @@
 
 		.card-img-top {
 			border-radius   : 2px 2px 0 0;
-			background-color: #DBD9D9;
+			background-color: map-get($theme-colors, light2-gray);
 		}
 	}
 }

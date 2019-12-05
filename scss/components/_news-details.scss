@@ -19,7 +19,7 @@
     .category-tag {
       @include clearfix();
       color         :map-get($theme-colors, active-gray);
-      font-size     : 10px;
+      font-size     : map-get($text-size, micro);
       font-weight   : bold;
       position      : relative;
       margin-top    : 30px;
@@ -50,7 +50,7 @@
       @include clearfix();
       color      :map-get($theme-colors, dark);
       font-family: 'SourceSansPro-Bold';
-      font-size  : 12px;
+      font-size  : map-get($text-size, mini);
       margin-top : 20px;
 
       .author,
@@ -62,7 +62,7 @@
     h1 {
       color      :map-get($theme-colors, dark);
       font-family: "SourceSansPro-Bold";
-      font-size  : 57px;
+      font-size  : map-get($text-size, massive);
       line-height: 62px;
       margin     : 0 0 10px;
     }
@@ -74,18 +74,18 @@
     .category-text {
       color      :map-get($theme-colors, details-gray);
       font-family: "SourceSansPro-Bold";
-      font-size  : 14px;
+      font-size  : map-get($text-size, small);
     }
 
     .field-label-above {
       @include clearfix();
       color         :map-get($theme-colors, filter-text);
       font-family   : 'Rubik-Regular';
-      font-size     : 14px;
+      font-size     : map-get($text-size, small);
       letter-spacing: 0.3px;
       margin-top    : 30px;
-      border-top    : 1px solid #DBD9D9;
-      border-bottom : 1px solid #DBD9D9;
+      border-top    : 1px solid map-get($theme-colors, light2-gray);
+      border-bottom : 1px solid map-get($theme-colors, light2-gray);
       padding-top   : 16px;
       padding-bottom: 16px;
 
@@ -120,7 +120,7 @@
   .pane-title {
     color:map-get($theme-colors, dark);
     font-family: 'Rubik-Regular';
-    font-size: 16px;
+    font-size: map-get($text-size, regular);
     letter-spacing: 0.6px;
     line-height: 19px;
     text-transform: uppercase;
@@ -133,14 +133,14 @@
     border       : none;
     border-radius: 2px;
     margin-bottom: 57px;
-    box-shadow   : 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+    box-shadow   : map-get($shadows, level-2);
     height       : calc(100% - 57px);
 
       @include media-breakpoint-up(lg) {
         transition : box-shadow 0.2s linear;
         box-shadow: none;
         &:hover {
-          box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+          box-shadow: map-get($shadows, level-2);
         }
       }
 
@@ -158,7 +158,7 @@
       .news-category {
         @include clearfix();
         color         :map-get($theme-colors, active-gray);
-        font-size     : 10px;
+        font-size     : map-get($text-size, micro);
         font-weight   : bold;
         text-transform: uppercase;
         position      : relative;
@@ -169,7 +169,7 @@
         .fields-item,
         .fild-item {
           color         :map-get($theme-colors, active-gray);
-          font-size     : 10px;
+          font-size     : map-get($text-size, micro);
           font-weight   : bold;
           text-transform: uppercase;
           padding       : 0;
@@ -193,7 +193,7 @@
       .submitted {
         color      :map-get($theme-colors, dark);
         font-family: 'SourceSansPro-Bold';
-        font-size  : 12px;
+        font-size  : map-get($text-size, mini);
         padding-top: 15px;
       }
     }
@@ -220,13 +220,13 @@
           color      :map-get($theme-colors, dark);
           padding-top: 15px;
           font-family: "SourceSansPro-Bold";
-          font-size  : 21px;
+          font-size  : map-get($text-size, medium-large);
         }
 
         h3~.field {
           color      :map-get($theme-colors, details-gray);
           font-family: "SourceSansPro-Bold";
-          font-size  : 14px;
+          font-size  : map-get($text-size, small);
         }
       }
     }
