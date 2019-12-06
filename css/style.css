@@ -12152,6 +12152,9 @@ header.site-header nav.main-menu-wrapper.navbar {
       width: 10px;
       background: url("../images/tag.png") no-repeat center center; }
 
+.ding_nodelist span, .ding_nodelist p {
+  font-family: "SourceSansPro-Bold"; }
+
 .ding_nodelist-taxonomy .item .item-list-image {
   display: block; }
 
