@@ -106,7 +106,7 @@ $image_exist_class = (!empty($content['group_ding_library_left_column'])) ? ' li
   <div class="content"<?php print $content_attributes; ?>>
     <div class="libraries <?php print $image_exist_class; ?>">
       <?php print render($content); ?>
-	    <div class="order-redirect"><?php print l('Se kommende arrangementer ', 'node/' . $nid . '/arrangementer'); ?></div>
+	    <div class="order-redirect"><?php print l('Se kommende arrangementer ', $node_url . '/arrangementer'); ?></div>
     </div>
     <?php if (!empty($opening_hours)) : ?>
     <div class="accordion-wrapper">
