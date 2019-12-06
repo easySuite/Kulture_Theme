@@ -2,7 +2,7 @@
   #eventsCalendar {
     max-width: 340px;
     width    : calc(100% - 20px);
-    margin   : 0 auto;
+    margin   : 30px auto 0;
 
     @include media-breakpoint-up(md) {
       width    : calc(100% - 40px);
@@ -240,9 +240,11 @@
               @include media-breakpoint-up(lg) {
                 box-shadow   : none;
                 border-radius: 0 50% 50% 0;
+                background-color: white;
 
                 .day-number {
                   box-shadow: none !important;
+                  background-color:map-get($theme-colors, gray);
                 }
               }
 

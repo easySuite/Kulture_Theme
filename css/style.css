@@ -41,7 +41,7 @@
   --light-gray: #F0F0F2;
   --light2-gray: #DBD9D9;
   --wihte: #ffffff;
-  --black: #000000;
+  --black: #8f8d8dc9;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1445,19 +1445,19 @@ pre {
 .table-black,
 .table-black > th,
 .table-black > td {
-  background-color: #b8b8b8; }
+  background-color: rgba(232, 232, 232, 0.940706); }
 
 .table-black th,
 .table-black td,
 .table-black thead th,
 .table-black tbody + tbody {
-  border-color: #7a7a7a; }
+  border-color: rgba(209, 208, 208, 0.889882); }
 
 .table-hover .table-black:hover {
-  background-color: #ababab; }
+  background-color: rgba(219, 219, 219, 0.940706); }
   .table-hover .table-black:hover > td,
   .table-hover .table-black:hover > th {
-    background-color: #ababab; }
+    background-color: rgba(219, 219, 219, 0.940706); }
 
 .table-active,
 .table-active > th,
@@ -2409,26 +2409,26 @@ fieldset:disabled a.btn {
 
 .btn-black {
   color: #fff;
-  background-color: #000000;
-  border-color: #000000; }
+  background-color: #8f8d8dc9;
+  border-color: #8f8d8dc9; }
   .btn-black:hover {
     color: #fff;
-    background-color: black;
-    border-color: black; }
+    background-color: rgba(124, 122, 122, 0.788235);
+    border-color: rgba(118, 115, 115, 0.788235); }
   .btn-black:focus, .btn-black.focus {
-    box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(167, 165, 165, 0.5); }
   .btn-black.disabled, .btn-black:disabled {
     color: #fff;
-    background-color: #000000;
-    border-color: #000000; }
+    background-color: #8f8d8dc9;
+    border-color: #8f8d8dc9; }
   .btn-black:not(:disabled):not(.disabled):active, .btn-black:not(:disabled):not(.disabled).active,
   .show > .btn-black.dropdown-toggle {
     color: #fff;
-    background-color: black;
-    border-color: black; }
+    background-color: rgba(118, 115, 115, 0.788235);
+    border-color: rgba(111, 109, 109, 0.788235); }
     .btn-black:not(:disabled):not(.disabled):active:focus, .btn-black:not(:disabled):not(.disabled).active:focus,
     .show > .btn-black.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(167, 165, 165, 0.5); }
 
 .btn-outline-primary {
   color: #007bff;
@@ -2851,25 +2851,25 @@ fieldset:disabled a.btn {
       box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5); }
 
 .btn-outline-black {
-  color: #000000;
-  border-color: #000000; }
+  color: #8f8d8dc9;
+  border-color: #8f8d8dc9; }
   .btn-outline-black:hover {
     color: #fff;
-    background-color: #000000;
-    border-color: #000000; }
+    background-color: #8f8d8dc9;
+    border-color: #8f8d8dc9; }
   .btn-outline-black:focus, .btn-outline-black.focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(143, 141, 141, 0.5); }
   .btn-outline-black.disabled, .btn-outline-black:disabled {
-    color: #000000;
+    color: #8f8d8dc9;
     background-color: transparent; }
   .btn-outline-black:not(:disabled):not(.disabled):active, .btn-outline-black:not(:disabled):not(.disabled).active,
   .show > .btn-outline-black.dropdown-toggle {
     color: #fff;
-    background-color: #000000;
-    border-color: #000000; }
+    background-color: #8f8d8dc9;
+    border-color: #8f8d8dc9; }
     .btn-outline-black:not(:disabled):not(.disabled):active:focus, .btn-outline-black:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-black.dropdown-toggle:focus {
-      box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
+      box-shadow: 0 0 0 0.2rem rgba(143, 141, 141, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -4517,13 +4517,13 @@ input[type="button"].btn-block {
 
 .badge-black {
   color: #fff;
-  background-color: #000000; }
+  background-color: #8f8d8dc9; }
   a.badge-black:hover, a.badge-black:focus {
     color: #fff;
-    background-color: black; }
+    background-color: rgba(118, 115, 115, 0.788235); }
   a.badge-black:focus, a.badge-black.focus {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 0 0 0.2rem rgba(143, 141, 141, 0.5); }
 
 .jumbotron {
   padding: 2rem 1rem;
@@ -4742,13 +4742,13 @@ input[type="button"].btn-block {
     color: #6c6c6c; }
 
 .alert-black {
-  color: black;
-  background-color: #cccccc;
-  border-color: #b8b8b8; }
+  color: rgba(59, 58, 58, 0.889882);
+  background-color: rgba(239, 239, 239, 0.957647);
+  border-color: rgba(232, 232, 232, 0.940706); }
   .alert-black hr {
-    border-top-color: #ababab; }
+    border-top-color: rgba(219, 219, 219, 0.940706); }
   .alert-black .alert-link {
-    color: black; }
+    color: rgba(33, 33, 33, 0.889882); }
 
 @keyframes progress-bar-stripes {
   from {
@@ -5151,15 +5151,15 @@ input[type="button"].btn-block {
     border-color: #858585; }
 
 .list-group-item-black {
-  color: black;
-  background-color: #b8b8b8; }
+  color: rgba(59, 58, 58, 0.889882);
+  background-color: rgba(232, 232, 232, 0.940706); }
   .list-group-item-black.list-group-item-action:hover, .list-group-item-black.list-group-item-action:focus {
-    color: black;
-    background-color: #ababab; }
+    color: rgba(59, 58, 58, 0.889882);
+    background-color: rgba(219, 219, 219, 0.940706); }
   .list-group-item-black.list-group-item-action.active {
     color: #fff;
-    background-color: black;
-    border-color: black; }
+    background-color: rgba(59, 58, 58, 0.889882);
+    border-color: rgba(59, 58, 58, 0.889882); }
 
 .close {
   float: right;
@@ -5940,12 +5940,12 @@ button.bg-wihte:focus {
   background-color: #e6e6e6 !important; }
 
 .bg-black {
-  background-color: #000000 !important; }
+  background-color: #8f8d8dc9 !important; }
 
 a.bg-black:hover, a.bg-black:focus,
 button.bg-black:hover,
 button.bg-black:focus {
-  background-color: black !important; }
+  background-color: rgba(118, 115, 115, 0.788235) !important; }
 
 .bg-white {
   background-color: #fff !important; }
@@ -6044,7 +6044,7 @@ button.bg-black:focus {
   border-color: #ffffff !important; }
 
 .border-black {
-  border-color: #000000 !important; }
+  border-color: #8f8d8dc9 !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -8369,10 +8369,10 @@ a.text-wihte:hover, a.text-wihte:focus {
   color: #d9d9d9 !important; }
 
 .text-black {
-  color: #000000 !important; }
+  color: #8f8d8dc9 !important; }
 
 a.text-black:hover, a.text-black:focus {
-  color: black !important; }
+  color: rgba(105, 103, 103, 0.788235) !important; }
 
 .text-body {
   color: #212529 !important; }
@@ -8516,6 +8516,27 @@ a.text-black:hover, a.text-black:focus {
   font-weight: normal;
   font-style: normal; }
 
+.search-overlay--wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: #000;
+  opacity: 0.8;
+  text-align: center; }
+  .search-overlay--wrapper .search-overlay--inner {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    background: #1820B0;
+    opacity: 1 !important;
+    height: 25%;
+    padding-top: 40px;
+    width: 20%;
+    color: white; }
+    .search-overlay--wrapper .search-overlay--inner a {
+      color: white; }
+
 ul li.leaf {
   list-style-image: none; }
 
@@ -8611,6 +8632,32 @@ img {
 .page-user-login .content-inner,
 .page-user .content-inner {
   max-width: 1024px; }
+
+.search-overlay--wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  opacity: 1; }
+  .search-overlay--wrapper .search-overlay--inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: white;
+    padding: 40px;
+    width: 350px;
+    height: auto;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 2px; }
+    .search-overlay--wrapper .search-overlay--inner .icon-spinner {
+      display: none; }
+    .search-overlay--wrapper .search-overlay--inner .search-overlay--text {
+      color: black; }
+    .search-overlay--wrapper .search-overlay--inner .cancel a {
+      color: blue; }
 
 header.site-header nav.main-menu-wrapper.navbar {
   width: 100%;
@@ -9462,13 +9509,15 @@ header.site-header nav.main-menu-wrapper.navbar {
     @media (min-width: 992px) {
       .event-details-wrapper .left {
         width: 410px;
-        height: 615px;
+        min-height: 615px;
         margin-bottom: 0; } }
   .event-details-wrapper .right.col-lg-7 {
     padding: 0 28.5px; }
     @media (min-width: 992px) {
       .event-details-wrapper .right.col-lg-7 {
         padding-right: 58.5px; } }
+    .event-details-wrapper .right.col-lg-7 .event-info .field-type-taxonomy-term-reference {
+      display: none; }
   .event-details-wrapper .field-name-field-ding-event-body img {
     max-width: 625px;
     height: auto; }
@@ -9581,6 +9630,8 @@ header.site-header nav.main-menu-wrapper.navbar {
     font-size: 14px;
     letter-spacing: 0.47px;
     text-transform: uppercase; }
+    .event-details-wrapper .event-info .price:after {
+      display: none; }
   .event-details-wrapper .controlled-category-list h2 {
     text-transform: uppercase;
     margin-bottom: 30px; }
@@ -11368,7 +11419,7 @@ header.site-header nav.main-menu-wrapper.navbar {
 .front.page-culture-frontpage .content-wrapper .container #eventsCalendar, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventsCalendar, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventsCalendar, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventsCalendar, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventsCalendar, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar {
   max-width: 340px;
   width: calc(100% - 20px);
-  margin: 0 auto; }
+  margin: 30px auto 0; }
   @media (min-width: 768px) {
     .front.page-culture-frontpage .content-wrapper .container #eventsCalendar, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventsCalendar, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventsCalendar, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventsCalendar, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventsCalendar, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar {
       width: calc(100% - 40px);
@@ -11547,9 +11598,11 @@ header.site-header nav.main-menu-wrapper.navbar {
             @media (min-width: 992px) {
               .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-end, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-end {
                 box-shadow: none;
-                border-radius: 0 50% 50% 0; }
+                border-radius: 0 50% 50% 0;
+                background-color: white; }
                 .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.event-end .day-number, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.event-end .day-number, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.event-end .day-number, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.event-end .day-number, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.event-end .day-number, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.event-end .day-number, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.event-end .day-number, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-end .day-number, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-end .day-number, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-end .day-number, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-end .day-number {
-                  box-shadow: none !important; } }
+                  box-shadow: none !important;
+                  background-color: #8B8CA4; } }
           .front.page-culture-frontpage .content-wrapper .container #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .front.page-culture-frontpage .content-wrapper .page-user .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .page-user .front.page-culture-frontpage .content-wrapper .content-inner #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events #eventsCalendar table#calendar tbody tr.calendar-row td.event-progress {
             box-shadow: 13px 3px 8px rgba(30, 1, 149, 0.2), 4px -1px 4px rgba(30, 1, 149, 0.2); }
             @media (min-width: 992px) {
@@ -11669,16 +11722,18 @@ header.site-header nav.main-menu-wrapper.navbar {
   position: relative;
   margin-bottom: 70px;
   height: auto; }
-  .ding_nodelist-carousel .event-image:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    z-index: 0;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0; }
+  .ding_nodelist-carousel .event-image {
+    height: 465px; }
+    .ding_nodelist-carousel .event-image:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0; }
   .ding_nodelist-carousel .event-image:after {
     background: rgba(0, 0, 0, 0.3); }
   .ding_nodelist-carousel .slick-list {
@@ -11781,13 +11836,20 @@ header.site-header nav.main-menu-wrapper.navbar {
         font-size: 12px;
         letter-spacing: 0.4px;
         line-height: 14px; }
+        .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info > span:after {
+          content: '|';
+          margin: 0 10px; }
+        .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info > span:last-child:after {
+          content: '';
+          margin: 0; }
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info a,
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info a:hover {
           color: white;
           text-decoration: none; }
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info .item-price {
           font-family: 'Rubik-Medium';
-          text-transform: uppercase; }
+          text-transform: uppercase;
+          color: white; }
   .ding_nodelist-carousel .ding_nodelist-items {
     position: relative; }
   .ding_nodelist-carousel .slick-dots {
@@ -11807,7 +11869,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       color: transparent;
       width: 6px;
       height: 6px;
-      border: 1px solid white8F8;
+      border: 1px solid white;
       border-radius: 50%;
       margin-right: 10px; }
       .ding_nodelist-carousel .slick-dots li a {
@@ -11901,6 +11963,9 @@ header.site-header nav.main-menu-wrapper.navbar {
       max-width: 352px;
       background-color: #1E0195;
       transition: box-shadow 0.2s linear; }
+      @media (min-width: 768px) {
+        .pane-ding-nodelist .more-links ul .more-link a {
+          max-width: 100%; } }
       @media (min-width: 992px) {
         .pane-ding-nodelist .more-links ul .more-link a {
           max-width: 410px; } }
@@ -11919,7 +11984,8 @@ header.site-header nav.main-menu-wrapper.navbar {
   margin: 0 auto 10px;
   background-color: white;
   display: block;
-  overflow: auto; }
+  overflow: initial;
+  position: relative; }
   .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item::after {
     display: block;
     clear: both;
@@ -12006,11 +12072,53 @@ header.site-header nav.main-menu-wrapper.navbar {
     color: #000119;
     font-family: "SourceSansPro-Bold";
     font-size: 12px;
-    line-height: 15px; }
+    line-height: 15px;
+    margin-right: 15px;
+    position: relative; }
+    .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-library:after {
+      content: '';
+      position: absolute;
+      width: 1px;
+      right: -10px;
+      height: 100%;
+      background-color: black;
+      top: 0; }
     .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-library a,
     .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-library a:hover {
       color: #000119;
       text-decoration: none; }
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-price {
+    font-family: 'Rubik-Medium';
+    text-transform: uppercase;
+    color: #00A878;
+    font-size: 12px;
+    letter-spacing: 0.47px;
+    text-transform: uppercase; }
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .price {
+    position: absolute;
+    top: 10px;
+    right: -5px;
+    background-color: #00A878;
+    box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
+    color: white;
+    width: 90px;
+    font-family: 'Rubik-Medium';
+    font-size: 12px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 9px 20px; }
+    .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .price:after {
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -5px;
+      height: 0;
+      width: 0;
+      display: block;
+      border-top: 5px solid #007352;
+      border-right: 5px solid transparent;
+      -moz-transform: scale(0.9999); }
   .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .label .field-items .field-item {
     position: relative;
     color: #4D4E6C;
@@ -12119,16 +12227,18 @@ header.site-header nav.main-menu-wrapper.navbar {
       content: ""; }
     .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info > * {
       float: left; }
+    .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info > div:after {
+      content: '|';
+      margin: 0 10px; }
+    .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info > div:last-child:after {
+      content: '';
+      margin: 0; }
     .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info .library-name,
     .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info .date-time {
       color: white;
       font-family: "SourceSansPro-Bold";
       font-size: 12px;
       line-height: 15px; }
-      .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info .library-name:after,
-      .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info .date-time:after {
-        content: '|';
-        margin: 0 10px; }
       .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info .library-name a,
       .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info .date-time a {
         color: white;
@@ -12151,24 +12261,26 @@ header.site-header nav.main-menu-wrapper.navbar {
     left: 50px;
     width: calc(100% - 50px);
     overflow: hidden;
-    height: 142px;
-    padding: 30px 25px; }
+    height: 142px; }
     .ding_nodelist-advanced_carousel .slider-nav-wrapper::after {
       display: block;
       clear: both;
       content: ""; }
     .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav {
       float: left;
-      width: calc(100% - 225px);
+      width: calc(100% - 220px);
       height: 100%; }
       .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper {
-        max-width: 352px;
-        margin-right: 66px;
-        margin-bottom: 33px;
+        margin-right: 20px;
+        margin-bottom: 0;
+        padding: 30px 15px;
         min-width: 100%; }
-        @media (min-width: 768px) {
+        @media (min-width: 992px) {
           .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper {
-            min-width: auto; } }
+            min-width: 352px; } }
+        @media (min-width: 1200px) {
+          .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper {
+            min-width: 305px; } }
         .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper.slick-active {
           opacity: 0.2; }
         .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper.slick-current {
@@ -12193,7 +12305,7 @@ header.site-header nav.main-menu-wrapper.navbar {
             position: relative;
             padding-left: 15px;
             margin-bottom: 14px;
-            width: 150px; }
+            width: 100%; }
             .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper .ac-nav-item-meta .ac-nav-item-category:before {
               content: '';
               position: absolute;
@@ -12204,7 +12316,7 @@ header.site-header nav.main-menu-wrapper.navbar {
               background: url("../images/tag.png") no-repeat center center; }
           .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper .ac-nav-item-meta .ac-nav-item-date {
             height: 15px;
-            width: 160px;
+            width: 100%;
             color: #000119;
             font-family: "SourceSansPro-Bold";
             font-size: 12px;
@@ -12212,7 +12324,7 @@ header.site-header nav.main-menu-wrapper.navbar {
             line-height: 15px; }
           .ding_nodelist-advanced_carousel .slider-nav-wrapper .slider-nav .ac-nav-item-wrapper .ac-nav-item-meta .ac-nav-item-title {
             height: 19px;
-            width: 159px;
+            width: 100%;
             color: #000119;
             font-family: "SourceSansPro-Bold";
             font-size: 14px;
@@ -12225,14 +12337,21 @@ header.site-header nav.main-menu-wrapper.navbar {
           box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.2); }
     .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls {
       float: right;
-      width: 200px;
-      height: 100px; }
+      width: auto;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      max-width: 200px; }
+      @media (min-width: 992px) {
+        .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls {
+          margin-right: 30px; } }
       .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls .indicator--current {
         font-size: 18px;
         letter-spacing: normal;
         float: left;
         color: #000119;
-        padding-right: 5px;
+        padding-right: 10px;
         font-family: 'Rubik-Light'; }
       .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls .indicator--total {
         font-size: 14px;
@@ -12242,20 +12361,23 @@ header.site-header nav.main-menu-wrapper.navbar {
         padding-left: 5px;
         font-family: 'Rubik-Light'; }
       .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls .carousel-controls__indicator {
-        left: 50px;
-        position: relative; }
+        position: relative;
+        margin: 0 10px; }
+        @media (min-width: 992px) {
+          .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls .carousel-controls__indicator {
+            margin: 0 20px; } }
+        @media (min-width: 1200px) {
+          .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls .carousel-controls__indicator {
+            margin: 0 30px; } }
       .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls .carousel-controls__prev {
         color: transparent;
         position: relative;
-        top: 30px;
         background: url(../images/nav-arrow-left.png) no-repeat right center; }
         .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls .carousel-controls__prev:focus {
           box-shadow: none; }
       .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls .carousel-controls__next {
         position: relative;
-        top: -32px;
         color: transparent;
-        right: -82px;
-        background: url(../images/nav-arrow-right.png) no-repeat right center; }
+        background: url(../images/nav-arrow-right.png) no-repeat left center; }
         .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls .carousel-controls__next:focus {
           box-shadow: none; }

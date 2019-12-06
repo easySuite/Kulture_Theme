@@ -9,16 +9,21 @@
 
 		@include media-breakpoint-up(lg) {
 			width        : 410px;
-			height       : 615px;
+			min-height       : 615px;
 			margin-bottom: 0;
 		}
 	}
+
 
 	.right.col-lg-7 {
 		padding: 0 28.5px;
 
 		@include media-breakpoint-up(lg) {
 			padding-right: 58.5px;
+		}
+
+		.event-info .field-type-taxonomy-term-reference {
+			display: none;
 		}
 	}
 
@@ -27,6 +32,7 @@
 			max-width: 625px;
 			height   : auto;
 		}
+
 	}
 
 	.col-md-7 {
@@ -180,6 +186,10 @@
 			font-size     : map-get($text-size, small);
 			letter-spacing: 0.47px;
 			text-transform: uppercase;
+
+			&:after {
+				display: none;
+			}
 		}
 
 	}
