@@ -633,8 +633,12 @@
     .ac-info {
       color   : white;
       position: absolute;
-      top     : 108px;
-      left    : 83px;
+      top     : 68px;
+      left    : 35px;
+      @include media-breakpoint-up(md) {
+        top: 108px;
+        left    : 83px;
+      }
 
       .field-name-field-ding-event-category {
         color         : white;

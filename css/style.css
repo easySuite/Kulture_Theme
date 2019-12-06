@@ -12192,8 +12192,12 @@ header.site-header nav.main-menu-wrapper.navbar {
   .ding_nodelist-advanced_carousel .ac-item .ac-info {
     color: white;
     position: absolute;
-    top: 108px;
-    left: 83px; }
+    top: 68px;
+    left: 35px; }
+    @media (min-width: 768px) {
+      .ding_nodelist-advanced_carousel .ac-item .ac-info {
+        top: 108px;
+        left: 83px; } }
     .ding_nodelist-advanced_carousel .ac-item .ac-info .field-name-field-ding-event-category {
       color: white;
       font-family: 'Rubik-Regular';
