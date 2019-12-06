@@ -23,6 +23,12 @@
     height: 465px;
   }
 
+  .date-time {
+    display: inline-block;
+    border-right: 1px solid white;
+    padding-right: 10px;
+  }
+
   .event-image:after {
     background: rgba(0, 0, 0, 0.3);
   }
@@ -136,11 +142,15 @@
       .node-title {
         color          : white;
         font-family    : 'SourceSansPro-Bold';
-        font-size      : 52px;
+        font-size      : 42px;
         letter-spacing : -1.68px;
         line-height    : 42px;
         margin-bottom  : 24px;
         text-decoration: none;
+
+        @include media-breakpoint-up(lg) {
+          font-size: map-get($text-size, massive);
+        }
 
         a {
           color          : white;
@@ -187,6 +197,7 @@
           font-family   : 'Rubik-Medium';
           text-transform: uppercase;
           color          : white;
+          padding-left: 10px;
         }
       }
     }
@@ -384,6 +395,14 @@
       margin       : 0 0 10px;
     }
 
+      .date-time {
+        display: inline-block;
+        border-right: 1px solid black;
+        padding-right: 10px;
+        font-size: map-get($text-size, mini);
+        font-family  : "SourceSansPro-Bold";
+      }
+
 
     &:hover {
       box-shadow: map-get($shadows, level-2);
@@ -511,6 +530,7 @@
           font-size     : map-get($text-size, mini);
           letter-spacing: 0.47px;
           text-transform: uppercase;
+          padding-left: 10px;
         }
 
         .price {
@@ -650,11 +670,15 @@
       .item-title {
         color          : white;
         font-family    : 'SourceSansPro-Bold';
-        font-size      : 52px;
+        font-size      : 42px;
         letter-spacing : -1.68px;
         line-height    : 42px;
         margin-bottom  : 24px;
         text-decoration: none;
+               
+        @include media-breakpoint-up(lg) {
+          font-size: map-get($text-size, massive);
+        }
 
         a {
           color          : white;
@@ -678,6 +702,10 @@
 
         &>* {
           float: left;
+          line-height: 15px;
+          font-size: map-get($text-size, mini);
+          text-transform: uppercase;
+          font-family  : "SourceSansPro-Bold";
         }
 
         & > div:after {
@@ -834,7 +862,7 @@
       max-width: 200px;
 
       @include media-breakpoint-up(lg) {
-        margin-right: 30px;
+        margin-right: 20px;
       }
 
       .indicator--current {

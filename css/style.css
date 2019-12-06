@@ -11734,6 +11734,10 @@ header.site-header nav.main-menu-wrapper.navbar {
       right: 0;
       left: 0;
       bottom: 0; }
+  .ding_nodelist-carousel .date-time {
+    display: inline-block;
+    border-right: 1px solid white;
+    padding-right: 10px; }
   .ding_nodelist-carousel .event-image:after {
     background: rgba(0, 0, 0, 0.3); }
   .ding_nodelist-carousel .slick-list {
@@ -11814,11 +11818,14 @@ header.site-header nav.main-menu-wrapper.navbar {
       .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .node-title {
         color: white;
         font-family: 'SourceSansPro-Bold';
-        font-size: 52px;
+        font-size: 42px;
         letter-spacing: -1.68px;
         line-height: 42px;
         margin-bottom: 24px;
         text-decoration: none; }
+        @media (min-width: 992px) {
+          .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .node-title {
+            font-size: 57px; } }
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .node-title a {
           color: white;
           text-decoration: none; }
@@ -11849,7 +11856,8 @@ header.site-header nav.main-menu-wrapper.navbar {
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info .item-price {
           font-family: 'Rubik-Medium';
           text-transform: uppercase;
-          color: white; }
+          color: white;
+          padding-left: 10px; }
   .ding_nodelist-carousel .ding_nodelist-items {
     position: relative; }
   .ding_nodelist-carousel .slick-dots {
@@ -11996,6 +12004,12 @@ header.site-header nav.main-menu-wrapper.navbar {
       border-radius: 0;
       box-shadow: none;
       margin: 0 0 10px; } }
+  .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .date-time {
+    display: inline-block;
+    border-right: 1px solid black;
+    padding-right: 10px;
+    font-size: 12px;
+    font-family: "SourceSansPro-Bold"; }
   .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item:hover {
     box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
   .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item > .label,
@@ -12093,7 +12107,8 @@ header.site-header nav.main-menu-wrapper.navbar {
     color: #00A878;
     font-size: 12px;
     letter-spacing: 0.47px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    padding-left: 10px; }
   .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .price {
     position: absolute;
     top: 10px;
@@ -12206,11 +12221,14 @@ header.site-header nav.main-menu-wrapper.navbar {
     .ding_nodelist-advanced_carousel .ac-item .ac-info .item-title {
       color: white;
       font-family: 'SourceSansPro-Bold';
-      font-size: 52px;
+      font-size: 42px;
       letter-spacing: -1.68px;
       line-height: 42px;
       margin-bottom: 24px;
       text-decoration: none; }
+      @media (min-width: 992px) {
+        .ding_nodelist-advanced_carousel .ac-item .ac-info .item-title {
+          font-size: 57px; } }
       .ding_nodelist-advanced_carousel .ac-item .ac-info .item-title a {
         color: white;
         text-decoration: none; }
@@ -12226,7 +12244,11 @@ header.site-header nav.main-menu-wrapper.navbar {
       clear: both;
       content: ""; }
     .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info > * {
-      float: left; }
+      float: left;
+      line-height: 15px;
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: "SourceSansPro-Bold"; }
     .ding_nodelist-advanced_carousel .ac-item .ac-info .item-info > div:after {
       content: '|';
       margin: 0 10px; }
@@ -12345,7 +12367,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       max-width: 200px; }
       @media (min-width: 992px) {
         .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls {
-          margin-right: 30px; } }
+          margin-right: 20px; } }
       .ding_nodelist-advanced_carousel .slider-nav-wrapper .carousel-controls .indicator--current {
         font-size: 18px;
         letter-spacing: normal;
