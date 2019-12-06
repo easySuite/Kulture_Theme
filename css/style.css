@@ -12006,7 +12006,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       margin: 0 0 10px; } }
   .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .date-time {
     display: inline-block;
-    border-right: 1px solid black;
+    border-right: 1px solid #000119;
     padding-right: 10px;
     font-size: 12px;
     font-family: "SourceSansPro-Bold"; }
