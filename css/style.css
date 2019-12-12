@@ -8699,10 +8699,23 @@ header.site-header nav.main-menu-wrapper.navbar {
   header.site-header nav.main-menu-wrapper.navbar .logo .navbar-brand {
     margin: 0; }
   header.site-header nav.main-menu-wrapper.navbar .navbar-collapse {
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    padding-left: 20px;
+    width: 100%;
+    position: absolute;
+    top: 112px;
+    z-index: 999;
+    background: #fff;
+    left: 0px;
+    box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
     @media (min-width: 992px) {
       header.site-header nav.main-menu-wrapper.navbar .navbar-collapse {
-        padding-bottom: 0; } }
+        padding: 0;
+        position: relative;
+        z-index: 1;
+        box-shadow: none;
+        background: none;
+        top: 0; } }
   header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav {
     margin-left: 0;
     margin-top: 32px; }
