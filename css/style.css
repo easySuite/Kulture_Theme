@@ -8516,6 +8516,9 @@ a.text-black:hover, a.text-black:focus {
   font-weight: normal;
   font-style: normal; }
 
+.navbar-light .navbar-toggler {
+  border: none; }
+
 .search-overlay--wrapper {
   position: fixed;
   width: 100%;
@@ -8912,7 +8915,7 @@ header.site-header nav.main-menu-wrapper.navbar {
             content: '';
             display: block;
             position: absolute;
-            top: 3px;
+            top: 11px;
             left: 11px;
             width: 18px;
             height: 11px;
@@ -9046,7 +9049,7 @@ header.site-header nav.main-menu-wrapper.navbar {
               content: '';
               display: block;
               position: absolute;
-              top: 3px;
+              top: 11px;
               left: 11px;
               width: 18px;
               height: 11px;
@@ -9159,7 +9162,7 @@ header.site-header nav.main-menu-wrapper.navbar {
   .content-wrapper .library-item-wrapper .accordion-control:after {
     content: '';
     position: absolute;
-    right: 15px;
+    right: 30px;
     top: calc(50% - 3px);
     content: '';
     display: block;
@@ -9746,7 +9749,7 @@ header.site-header nav.main-menu-wrapper.navbar {
           content: '';
           display: block;
           position: absolute;
-          top: 3px;
+          top: calc(50% - 9px);
           left: 11px;
           width: 18px;
           height: 11px;
@@ -10275,7 +10278,7 @@ header.site-header nav.main-menu-wrapper.navbar {
           content: '';
           display: block;
           position: absolute;
-          top: 3px;
+          top: calc(50% - 9px);
           left: 11px;
           width: 18px;
           height: 11px;
@@ -10334,7 +10337,7 @@ header.site-header nav.main-menu-wrapper.navbar {
               content: '';
               display: block;
               position: absolute;
-              top: 3px;
+              top: 11px;
               left: 11px;
               width: 18px;
               height: 11px;
@@ -10929,7 +10932,7 @@ header.site-header nav.main-menu-wrapper.navbar {
         content: '';
         display: block;
         position: absolute;
-        top: 3px;
+        top: calc(50% - 9px);
         left: 11px;
         width: 18px;
         height: 11px;
@@ -12170,6 +12173,33 @@ header.site-header nav.main-menu-wrapper.navbar {
 .ding_nodelist-advanced_carousel {
   margin-bottom: 140px;
   position: relative; }
+  .ding_nodelist-advanced_carousel .slick-dots {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    top: auto;
+    left: calc(50% - 60px); }
+    .ding_nodelist-advanced_carousel .slick-dots::after {
+      display: block;
+      clear: both;
+      content: ""; }
+    .ding_nodelist-advanced_carousel .slick-dots li {
+      float: left;
+      color: transparent;
+      width: 6px;
+      height: 6px;
+      border: 1px solid white;
+      border-radius: 50%;
+      margin-right: 10px; }
+      .ding_nodelist-advanced_carousel .slick-dots li a {
+        display: none; }
+      .ding_nodelist-advanced_carousel .slick-dots li.slick-active {
+        background-color: white; }
+    @media (min-width: 992px) {
+      .ding_nodelist-advanced_carousel .slick-dots {
+        display: none !important; } }
   .ding_nodelist-advanced_carousel .ding_nodelist-advanced-carousel {
     height: auto; }
   .ding_nodelist-advanced_carousel .ac-item .ac-item-image {
@@ -12282,6 +12312,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       text-transform: uppercase;
       line-height: 16px; }
   .ding_nodelist-advanced_carousel .slider-nav-wrapper {
+    display: none;
     border-radius: 2px 0 0 2px;
     background-color: white;
     box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
@@ -12291,6 +12322,9 @@ header.site-header nav.main-menu-wrapper.navbar {
     width: calc(100% - 50px);
     overflow: hidden;
     height: 142px; }
+    @media (min-width: 992px) {
+      .ding_nodelist-advanced_carousel .slider-nav-wrapper {
+        display: block; } }
     .ding_nodelist-advanced_carousel .slider-nav-wrapper::after {
       display: block;
       clear: both;

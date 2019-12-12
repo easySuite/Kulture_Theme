@@ -20,7 +20,7 @@
     &:after {
       content : '';
       position: absolute;
-      right   : 15px;
+      right   : 30px;
       top     : calc(50% - 3px);
       @include arrow(bottom, 5px, 6px, map-get($theme-colors, filter-text));
     }
