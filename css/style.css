@@ -12231,7 +12231,8 @@ header.site-header nav.main-menu-wrapper.navbar {
       background: rgba(0, 0, 0, 0.3); }
     .ding_nodelist-advanced_carousel .ac-item .ac-item-image img {
       height: 526px;
-      display: block; }
+      display: block;
+      width: auto; }
   .ding_nodelist-advanced_carousel .ac-item .ac-info {
     color: white;
     position: absolute;

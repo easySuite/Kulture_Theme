@@ -102,8 +102,6 @@
               font-family       : 'Rubik-Medium';
               line-height       : 14px;
               text-decoration   : none;
-              // padding        : 15px 0;
-              // margin-bottom  : 6px;
 
               a {
                 font-size      : map-get($text-size, mini);
@@ -116,13 +114,11 @@
               @include media-breakpoint-up(md) {
                 width     : 52px;
                 height    : 52px;
-                // padding: 20px 0;
               }
 
               @include media-breakpoint-up(lg) {
                 width     : 40px;
                 height    : 40px;
-                // padding: 15px 0;
 
                 a {
                   color: white;
@@ -136,7 +132,6 @@
               @include media-breakpoint-up(xl) {
                 width     : 48px;
                 height    : 48px;
-                // padding: 18px 0;
               }
             }
 
@@ -171,7 +166,6 @@
               margin-right    : 6px;
             }
 
-            // &.calendar-day {
             &.has-events .day-number {
               background-color: white;
               box-shadow      : 0 10px 35px 0 rgba(30, 1, 149, 0.2);
@@ -222,10 +216,6 @@
 
             &.event-end {
               border-radius: 0 50% 50% 0;
-              // .day-number {
-              //   margin-right: 0;
-              // }
-
               box-shadow: none !important;
 
               .day-number {
@@ -233,7 +223,6 @@
               }
 
               @include media-breakpoint-up(md) {
-                // box-shadow: 4px -1px 6px 0px rgba(30, 1, 149, 0.2);
                 border-radius: 0 50px 50px 0;
               }
 
@@ -247,20 +236,10 @@
                   background-color:map-get($theme-colors, gray);
                 }
               }
-
-              // & + .has-events {
-              //   .day-number {
-              //     margin-left: 6px;
-              //   }
-              // }
             }
 
             &.event-progress {
               box-shadow: 13px 3px 8px rgba(30, 1, 149, 0.2), 4px -1px 4px rgba(30, 1, 149, 0.2);
-
-              @include media-breakpoint-up(md) {
-                //width: 60px !important;
-              }
 
               @include media-breakpoint-up(lg) {
                 box-shadow: none;

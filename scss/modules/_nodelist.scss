@@ -541,7 +541,6 @@
           width           : 90px;
           font-family     : 'Rubik-Medium';
           font-size       : map-get($text-size, mini);
-          // font-weight  : 500;
           letter-spacing  : 0.4px;
           text-transform  : uppercase;
           text-align      : center;
@@ -660,6 +659,7 @@
       img {
         height : 526px;
         display: block;
+        width: auto;
       }
     }
 
@@ -802,7 +802,6 @@
     width           : calc(100% - 50px);
     overflow        : hidden;
     height          : 142px;
-    // padding         : 30px 25px;
 
     .slider-nav {
       float : left;
@@ -811,9 +810,7 @@
 
       .ac-nav-item-wrapper {
         margin-right : 20px;
-        // margin-right : 66px;
         margin-bottom: 0;
-        // margin-bottom: 33px;
         padding         : 30px 15px;
         min-width: 100%;
 
@@ -855,7 +852,6 @@
             padding-left  : 15px;
             margin-bottom : 14px;
             width         : 100%;
-            // width         : 150px;
 
             &:before {
               content   : '';
@@ -871,7 +867,6 @@
           .ac-nav-item-date {
             height       : 15px;
             width        : 100%;
-            // width        : 160px;
             color        :map-get($theme-colors, dark);
             font-family  : "SourceSansPro-Bold";
             font-size    : map-get($text-size, mini);
@@ -882,7 +877,6 @@
           .ac-nav-item-title {
             height     : 19px;
             width      : 100%;
-            // width      : 159px;
             color      :map-get($theme-colors, dark);
             font-family  : "SourceSansPro-Bold";
             font-size  : map-get($text-size, small);
@@ -929,7 +923,6 @@
       }
 
       .carousel-controls__indicator {
-        // left    : 50px;
         position: relative;
         margin: 0 10px;
 
@@ -945,7 +938,6 @@
       .carousel-controls__prev {
         color     : transparent;
         position  : relative;
-        // top       : 30px;
         background: url(../images/nav-arrow-left.png) no-repeat right center;
 
         &:focus {
@@ -955,9 +947,7 @@
 
       .carousel-controls__next {
         position  : relative;
-        // top       : -32px;
         color     : transparent;
-        // right     : -82px;
         background: url(../images/nav-arrow-right.png) no-repeat left center;
 
         &:focus {
