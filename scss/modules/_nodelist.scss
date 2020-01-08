@@ -1,17 +1,3 @@
-@mixin dark-overlay {
-  &:after {
-    content : "";
-    width   : 100%;
-    height  : 100%;
-    position: absolute;
-    z-index : 0;
-    top     : 0;
-    right   : 0;
-    left    : 0;
-    bottom  : 0;
-  }
-}
-
 // Display Carousel
 .ding_nodelist-carousel {
   position     : relative;
@@ -63,9 +49,7 @@
 
       @include media-breakpoint-up(lg) {
         a {
-
           max-width: 100%;
-
         }
       }
 
@@ -390,7 +374,7 @@
     @include media-breakpoint-up(md) {
       max-width    : 100%;
       border-radius: 0;
-      box-shadow   : none;
+      // box-shadow   : none;
       margin       : 0 0 10px;
     }
 
@@ -402,9 +386,9 @@
         font-family  : "SourceSansPro-Bold";
       }
 
-    &:hover {
-      box-shadow: map-get($shadows, level-2);
-    }
+    // &:hover {
+    //   box-shadow: map-get($shadows, level-2);
+    // }
 
     &>.label,
     &>.event-list-fulldate,
@@ -450,6 +434,7 @@
         position : absolute;
         width    : 100%;
         max-width: inherit;
+        transition: transform .5s ease;
       }
 
       @include media-breakpoint-up(md) {
@@ -476,10 +461,10 @@
         margin-bottom : 8px;
         line-height   : 25px;
 
-        a,
-        a:hover {
+        a {
           text-decoration: none;
-          color          :map-get($theme-colors, dark);
+          transition: color 0.5s ease;
+          color: map-get($theme-colors, dark);
         }
       }
 
@@ -581,6 +566,18 @@
         background: url('../images/tag.png') no-repeat center center;
       }
     }
+
+    &:hover {
+      & .item-list-image img {
+        transform: translateX(-50%) translateY(-50%) scale(1.5);
+      }
+
+      & .item-details .item-title a {
+        text-decoration: none;
+        color: map-get($theme-colors, blue);
+      }
+    }
+
   }
 }
 

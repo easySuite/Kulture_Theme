@@ -19,11 +19,14 @@
 		.node-ding-news {
 			height    : 100%;
 			box-shadow: map-get($shadows, level-2);
-			@include media-breakpoint-up(lg) {
-				transition : box-shadow 0.2s linear;
-				box-shadow: none;
-				&:hover {
-					box-shadow: map-get($shadows, level-2);
+
+			&:hover {
+				& .inner .image-wrapper img {
+					transform: scale(1.5);
+				}
+
+				& .card-body .card-text .card-title {
+					color: map-get($theme-colors, blue);
 				}
 			}
 		}
@@ -77,6 +80,7 @@
 
 			img {
 				position: absolute;
+				transition: transform .5s ease;
 			}
 		}
 
@@ -121,6 +125,7 @@
 				margin        : 0;
 				font-family   : "SourceSansPro-Bold";
 				text-transform: none;
+				transition: color 0.5s ease;
 			}
 
 			.card-description {

@@ -136,13 +136,21 @@
     box-shadow   : map-get($shadows, level-2);
     height       : calc(100% - 57px);
 
-      @include media-breakpoint-up(lg) {
-        transition : box-shadow 0.2s linear;
-        box-shadow: none;
-        &:hover {
-          box-shadow: map-get($shadows, level-2);
-        }
-      }
+    &:hover .card-body .image-wrapper img {
+      transform: scale(1.5);
+    }
+
+    &:hover .card-body .card-text .title {
+      color: map-get($theme-colors, blue);
+    }
+
+      // @include media-breakpoint-up(lg) {
+      //   transition : box-shadow 0.2s linear;
+      //   box-shadow: none;
+      //   &:hover {
+      //     box-shadow: map-get($shadows, level-2);
+      //   }
+      // }
 
     a {
       text-decoration: none;
@@ -210,6 +218,7 @@
 
         img {
           width: 100%;
+          transition: transform 0.5s ease;
         }
       }
 
@@ -221,6 +230,7 @@
           padding-top: 15px;
           font-family: "SourceSansPro-Bold";
           font-size  : map-get($text-size, medium-large);
+          transition: color 0.5s ease;
         }
 
         h3~.field {

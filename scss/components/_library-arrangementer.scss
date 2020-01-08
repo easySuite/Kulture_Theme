@@ -184,6 +184,21 @@
 
     @include grid-view-mode();
 
+    .card .node-ding-event,
+		.card .node-ding-news {
+      &:hover .inner .image-wrapper img {
+        transform: translateX(-50%) translateY(-50%) scale(1.5);
+      }
+
+      &:hover .card-body .card-text .card-title {
+        color: map-get($theme-colors, blue);
+      }
+
+      .card-body {
+        padding: 24px 30px;
+      }
+    }
+
     .card .card-body {
       padding: 0px;
       width  : 100%;
@@ -294,14 +309,14 @@
           height    : 100%;
           box-shadow: map-get($shadows, level-2);
 
-          @include media-breakpoint-up(lg) {
-            transition: box-shadow 0.2s linear;
-            box-shadow: none;
+          // @include media-breakpoint-up(lg) {
+          //   transition: box-shadow 0.2s linear;
+          //   box-shadow: none;
 
-            &:hover {
-              box-shadow: map-get($shadows, level-2);
-            }
-          }
+          //   &:hover {
+          //     box-shadow: map-get($shadows, level-2);
+          //   }
+          // }
         }
 
         a,
@@ -361,13 +376,14 @@
             position : absolute;
             width    : auto;
             height   : auto;
+            transition: transform .5s ease;
           }
         }
 
         .card-body {
           color      :map-get($theme-colors, dark);
           font-family: "SourceSansPro-Regular";
-          padding    : 29px 30px;
+          padding    : 24px 30px;
           float      : left;
           width      : calc(100% - 206px);
 
@@ -408,6 +424,7 @@
             margin        : 0;
             font-family   : "SourceSansPro-Bold";
             text-transform: none;
+            transition: color 0.5s ease;
           }
 
           .card-description {
@@ -482,7 +499,7 @@
       }
 
       .card-text {
-        padding: 29px 30px;
+        padding: 24px 30px;
 
         .news-category {
           @include clearfix();
