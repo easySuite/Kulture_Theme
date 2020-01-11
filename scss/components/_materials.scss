@@ -99,6 +99,9 @@
   align-items: flex-end;
   
   img {
+    min-height: 192px;
+    max-width: 192px;
+    height: auto;
     box-shadow: 0 10px 30px 0 rgba(9,0,38,0.2);
   }
 
