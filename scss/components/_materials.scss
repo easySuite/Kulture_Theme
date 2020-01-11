@@ -7,7 +7,7 @@
   @include media-breakpoint-up(md) {
     padding: 0;
   }
-}
+
 .field-type-ting-reference {
   @extend .col-12;
   padding: 70px 0;
@@ -273,6 +273,7 @@
   @include media-breakpoint-up(lg) {
     right: -26px;
   }
+}
 }
 
 .field-name-field-ding-news-materials {
