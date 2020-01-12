@@ -5,7 +5,7 @@
 	}
 
 	.view-content.row h3 {
-		color         :map-get($theme-colors, filter-text);
+		color         : map-get($theme-colors, filter-text);
 		font-family   : Rubik-Regular;
 		font-size     : map-get($text-size, regular);
 		text-transform: uppercase;

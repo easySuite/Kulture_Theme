@@ -1,6 +1,53 @@
 (function ($) {
   "use strict";
 
+  Drupal.behaviors.ding_libray = {
+    attach: function () {
+      if ($('#edit-date-wrapper').length) {
+        $('#edit-date-wrapper').after($('.panel-pane.pane-quick-buttons'));
+      }
+
+      if ($('#ding-library-page').length) {
+        detectMapsLinkPosition($('#ding-library-page'));
+      }
+
+      if ($('.page-taxonomy.page-taxonomy-term').length) {
+        detectMapsLinkPosition($('.page-taxonomy.page-taxonomy-term'));
+      }
+
+      if ($('#ding-library-front').length) {
+        tranformLibraryToAccordion($('#ding-library-front'));
+      }
+
+      var list = $('.page-bibliotek .content-wrapper .layout-wrapper .pane-taxonomy-menu');
+      if (list.length) {
+        addCollapseToList(list);
+      }
+
+      var filter = $('.page-taxonomy.page-taxonomy-term .layout-wrapper .secondary-content .pane-library-list');
+      if (filter.length) {
+        addCollapseToNewsFilter(filter);
+      }
+
+      var inputs = $('.container-inline-date .date-padding input');
+      inputs.change(function (event) {
+        if (!event.target.value) {
+          $(this).removeClass('input-has-date');
+        } else {
+          $(this).addClass('input-has-date');
+        }
+      });
+
+      inputs.each(function (index, item) {
+        if (!$(item).val()) {
+          $(this).removeClass('input-has-date');
+        } else {
+          $(this).addClass('input-has-date');
+        }
+      });
+    }
+  }
+
   function detectMapsLinkPosition(pageElemRef) {
     pageElemRef.find('.library-item-wrapper').each(function(index) {
       var expectedElem = $(this).find('.maps-link');
@@ -55,7 +102,6 @@
   }
 
   function addCollapseToNewsFilter(listContainerRef) {
-    console.log(listContainerRef);
     listContainerRef.find('.select-list').addClass("accordion-wrapper");
 
     listContainerRef.find('.select-list h2.list-title').replaceWith(function() {
@@ -76,52 +122,5 @@
     accordionBody.attr("class", "list-items accordion-filter-body collapse");
   }
 
-
-  Drupal.behaviors.ding_libray = {
-    attach: function () {
-      if ($('#edit-date-wrapper').length) {
-        $('#edit-date-wrapper').after($('.panel-pane.pane-quick-buttons'));
-      }
-
-      if ($('#ding-library-page').length) {
-        detectMapsLinkPosition($('#ding-library-page'));
-      }
-
-      if ($('.page-taxonomy.page-taxonomy-term').length) {
-        detectMapsLinkPosition($('.page-taxonomy.page-taxonomy-term'));
-      }
-
-      if ($('#ding-library-front').length) {
-        tranformLibraryToAccordion($('#ding-library-front'));
-      }
-
-      var list = $('.page-bibliotek .content-wrapper .layout-wrapper .pane-taxonomy-menu');
-      if (list.length) {
-        addCollapseToList(list);
-      }
-
-      var filter = $('.page-taxonomy.page-taxonomy-term .layout-wrapper .secondary-content .pane-library-list');
-      if (filter.length) {
-        addCollapseToNewsFilter(filter);
-      }
-
-      var inputs = $('.container-inline-date .date-padding input');
-      inputs.change(function (event) {
-        if (!event.target.value) {
-          $(this).removeClass('input-has-date');
-        } else {
-          $(this).addClass('input-has-date');
-        }
-      });
-
-      inputs.each(function (index, item) {
-        if (!$(item).val()) {
-          $(this).removeClass('input-has-date');
-        } else {
-          $(this).addClass('input-has-date');
-        }
-      });
-    }
-  }
 })(jQuery);
   

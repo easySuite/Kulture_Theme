@@ -1,6 +1,6 @@
 @mixin datepicker() {
   label {
-    color        :map-get($theme-colors, filter-text);
+    color        : map-get($theme-colors, filter-text);
     font-family  : 'Rubik-Regular';
     font-size    : map-get($text-size, small-medium);
     margin-bottom: 25px;
@@ -9,7 +9,7 @@
 
   input {
     width      : 100%;
-    color      :map-get($theme-colors, disabled);
+    color      : map-get($theme-colors, disabled);
     font-family: 'Rubik-Regular';
     font-size  : map-get($text-size, small);
     padding    : 24px 23px 23px 56px;
@@ -20,7 +20,7 @@
 
     &.input-has-date {
       color     : white;
-      background:map-get($theme-colors, blue) url('../images/calendar-white.png') no-repeat 20px center;
+      background: map-get($theme-colors, blue) url('../images/calendar-white.png') no-repeat 20px center;
     }
   }
 }

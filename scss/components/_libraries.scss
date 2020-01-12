@@ -18,7 +18,7 @@
   .primary-content,
   .secondary-content {
     h2.pane-title {
-      color         :map-get($theme-colors, filter-text);
+      color         : map-get($theme-colors, filter-text);
       font-family   : 'Rubik-Regular';
       font-size     : map-get($text-size, regular);
       letter-spacing: 0.6px;
@@ -46,7 +46,7 @@
 
         a {
           position      : relative;
-          color         :map-get($theme-colors, filter-text);
+          color         : map-get($theme-colors, filter-text);
           font-family   : 'Rubik-Regular';
           font-size     : map-get($text-size, small);
           letter-spacing: 0.3px;
@@ -105,7 +105,7 @@
     }
 
     h2.page-title>a {
-      color          :map-get($theme-colors, dark);
+      color          : map-get($theme-colors, dark);
       font-family    : 'SourceSansPro-Bold';
       font-size      : 42px;
       text-decoration: none;
@@ -141,7 +141,7 @@
       .country {
         float       : left;
         margin-right: 5px;
-        color       :map-get($theme-colors, dark);
+        color       : map-get($theme-colors, dark);
         font-family : 'SourceSansPro-Regular';
         font-size   : map-get($text-size, regular);
         font-weight : 600;
@@ -163,7 +163,7 @@
 
     .field-name-field-ding-library-phone-number,
     .field-name-field-ding-library-mail a {
-      color         :map-get($theme-colors, blue);
+      color         : map-get($theme-colors, blue);
       font-family   : 'Rubik-Regular';
       font-size     : map-get($text-size, medium);
       font-weight   : 300;
@@ -181,7 +181,7 @@
 
       a {
         position      : relative;
-        color         :map-get($theme-colors, filter-text);
+        color         : map-get($theme-colors, filter-text);
         font-family   : 'Rubik-Light';
         font-size     : 20px;
         letter-spacing: 0.46px;

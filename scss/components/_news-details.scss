@@ -18,7 +18,7 @@
   .ding-news-right {
     .category-tag {
       @include clearfix();
-      color         :map-get($theme-colors, active-gray);
+      color         : map-get($theme-colors, active-gray);
       font-size     : map-get($text-size, micro);
       font-weight   : bold;
       position      : relative;
@@ -42,13 +42,13 @@
 
       a {
         text-decoration: none;
-        color          :map-get($theme-colors, active-gray);
+        color          : map-get($theme-colors, active-gray);
       }
     }
 
     .category-info {
       @include clearfix();
-      color      :map-get($theme-colors, dark);
+      color      : map-get($theme-colors, dark);
       font-family: 'SourceSansPro-Bold';
       font-size  : map-get($text-size, mini);
       margin-top : 20px;
@@ -60,7 +60,7 @@
     }
 
     h1 {
-      color      :map-get($theme-colors, dark);
+      color      : map-get($theme-colors, dark);
       font-family: "SourceSansPro-Bold";
       font-size  : map-get($text-size, massive);
       line-height: 62px;
@@ -72,14 +72,14 @@
     }
 
     .category-text {
-      color      :map-get($theme-colors, details-gray);
+      color      : map-get($theme-colors, details-gray);
       font-family: "SourceSansPro-Bold";
       font-size  : map-get($text-size, small);
     }
 
     .field-label-above {
       @include clearfix();
-      color         :map-get($theme-colors, filter-text);
+      color         : map-get($theme-colors, filter-text);
       font-family   : 'Rubik-Regular';
       font-size     : map-get($text-size, small);
       letter-spacing: 0.3px;
@@ -96,7 +96,7 @@
       }
 
       .field-item {
-        color       :map-get($theme-colors, blue);
+        color       : map-get($theme-colors, blue);
         padding-left: 10px;
 
         @include media-breakpoint-up(lg) {
@@ -118,7 +118,7 @@
 .panel-pane.pane-ding-related-content-news-events {
 
   .pane-title {
-    color:map-get($theme-colors, dark);
+    color: map-get($theme-colors, dark);
     font-family: 'Rubik-Regular';
     font-size: map-get($text-size, regular);
     letter-spacing: 0.6px;
@@ -144,14 +144,6 @@
       color: map-get($theme-colors, blue);
     }
 
-      // @include media-breakpoint-up(lg) {
-      //   transition : box-shadow 0.2s linear;
-      //   box-shadow: none;
-      //   &:hover {
-      //     box-shadow: map-get($shadows, level-2);
-      //   }
-      // }
-
     a {
       text-decoration: none;
     }
@@ -165,7 +157,7 @@
 
       .news-category {
         @include clearfix();
-        color         :map-get($theme-colors, active-gray);
+        color         : map-get($theme-colors, active-gray);
         font-size     : map-get($text-size, micro);
         font-weight   : bold;
         text-transform: uppercase;
@@ -176,7 +168,7 @@
         .field,
         .fields-item,
         .fild-item {
-          color         :map-get($theme-colors, active-gray);
+          color         : map-get($theme-colors, active-gray);
           font-size     : map-get($text-size, micro);
           font-weight   : bold;
           text-transform: uppercase;
@@ -199,7 +191,7 @@
       }
 
       .submitted {
-        color      :map-get($theme-colors, dark);
+        color      : map-get($theme-colors, dark);
         font-family: 'SourceSansPro-Bold';
         font-size  : map-get($text-size, mini);
         padding-top: 15px;
@@ -207,7 +199,7 @@
     }
 
     .card-body {
-      color      :map-get($theme-colors, dark);
+      color      : map-get($theme-colors, dark);
       font-family: "SourceSansPro-Regular";
       padding    : 0;
 
@@ -226,7 +218,7 @@
         padding: 30px;
 
         h3 {
-          color      :map-get($theme-colors, dark);
+          color      : map-get($theme-colors, dark);
           padding-top: 15px;
           font-family: "SourceSansPro-Bold";
           font-size  : map-get($text-size, medium-large);
@@ -234,7 +226,7 @@
         }
 
         h3~.field {
-          color      :map-get($theme-colors, details-gray);
+          color      : map-get($theme-colors, details-gray);
           font-family: "SourceSansPro-Bold";
           font-size  : map-get($text-size, small);
         }

@@ -246,7 +246,7 @@
     .fa-prev.slick-arrow {
       display   : none !important;
       left      : -26px;
-      background:map-get($theme-colors, blue) url(../images/white-arrow-left.png) no-repeat center center;
+      background: map-get($theme-colors, blue) url(../images/white-arrow-left.png) no-repeat center center;
 
       @include media-breakpoint-up(lg) {
         display: block !important;
@@ -260,7 +260,7 @@
     .fa-next.slick-arrow {
       display   : none !important;
       right     : -26px;
-      background:map-get($theme-colors, blue) url(../images/white-arrow-right.png) no-repeat center center;
+      background: map-get($theme-colors, blue) url(../images/white-arrow-right.png) no-repeat center center;
 
       @include media-breakpoint-up(lg) {
         display: block !important;
@@ -277,7 +277,7 @@
 .pane-ding-nodelist {
 
   .pane-title {
-    color         :map-get($theme-colors, filter-text);
+    color         : map-get($theme-colors, filter-text);
     font-family   : 'Rubik-Regular';
     font-size     : map-get($text-size, regular);
     letter-spacing: 0.6px;
@@ -334,7 +334,7 @@
         padding         : 29px 20px;
         width           : 100%;
         max-width       : 352px;
-        background-color:map-get($theme-colors, blue);
+        background-color: map-get($theme-colors, blue);
         transition      : box-shadow 0.2s linear;
 
         @include media-breakpoint-up(md) {
@@ -386,10 +386,6 @@
         font-family  : "SourceSansPro-Bold";
       }
 
-    // &:hover {
-    //   box-shadow: map-get($shadows, level-2);
-    // }
-
     &>.label,
     &>.event-list-fulldate,
     &>.item-details {
@@ -411,7 +407,7 @@
 
     &>.event-list-fulldate {
       display      : block;
-      color        :map-get($theme-colors, dark);
+      color        : map-get($theme-colors, dark);
       font-family  : "SourceSansPro-Bold";
       font-size    : map-get($text-size, mini);
       line-height  : 15px;
@@ -469,7 +465,7 @@
       }
 
       .item-body {
-        color        :map-get($theme-colors, details-gray);
+        color        : map-get($theme-colors, details-gray);
         font-family  : "SourceSansPro-Bold";
         font-size    : map-get($text-size, small);
         line-height  : 20px;
@@ -482,7 +478,7 @@
       }
 
       .item-library {
-        color      :map-get($theme-colors, dark);
+        color      : map-get($theme-colors, dark);
         font-family: "SourceSansPro-Bold";
         font-size  : map-get($text-size, mini);
         line-height: 15px;
@@ -501,7 +497,7 @@
 
         a,
         a:hover {
-          color          :map-get($theme-colors, dark);
+          color          : map-get($theme-colors, dark);
           text-decoration: none;
         }
       }
@@ -509,7 +505,7 @@
        .item-price {
           font-family   : 'Rubik-Medium';
           text-transform: uppercase;
-          color         :map-get($theme-colors, green);
+          color         : map-get($theme-colors, green);
           font-size     : map-get($text-size, mini);
           letter-spacing: 0.47px;
           text-transform: uppercase;
@@ -520,7 +516,7 @@
           position        : absolute;
           top             : 10px;
           right           : -5px;
-          background-color:map-get($theme-colors, green);
+          background-color: map-get($theme-colors, green);
           box-shadow      : -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
           color           : white;
           width           : 90px;
@@ -548,7 +544,7 @@
 
     .label .field-items .field-item {
       position      : relative;
-      color         :map-get($theme-colors, active-gray);
+      color         : map-get($theme-colors, active-gray);
       font-family   : "SourceSansPro-Bold";
       font-size     : map-get($text-size, micro);
       letter-spacing: 1px;
@@ -840,7 +836,7 @@
           width       : calc(100% - 82px);
 
           .ac-nav-item-category {
-            color         :map-get($theme-colors, active-gray);
+            color         : map-get($theme-colors, active-gray);
             font-family   : "SourceSansPro-Bold";
             font-size     : map-get($text-size, micro);
             letter-spacing: 1px;
@@ -864,7 +860,7 @@
           .ac-nav-item-date {
             height       : 15px;
             width        : 100%;
-            color        :map-get($theme-colors, dark);
+            color        : map-get($theme-colors, dark);
             font-family  : "SourceSansPro-Bold";
             font-size    : map-get($text-size, mini);
             margin-bottom: 10px;
@@ -874,7 +870,7 @@
           .ac-nav-item-title {
             height     : 19px;
             width      : 100%;
-            color      :map-get($theme-colors, dark);
+            color      : map-get($theme-colors, dark);
             font-family  : "SourceSansPro-Bold";
             font-size  : map-get($text-size, small);
             line-height: 19px;
@@ -905,7 +901,7 @@
         font-size     : map-get($text-size, medium);
         letter-spacing: normal;
         float         : left;
-        color         :map-get($theme-colors, dark);
+        color         : map-get($theme-colors, dark);
         padding-right : 10px;
         font-family   : 'Rubik-Light';
       }
@@ -914,7 +910,7 @@
         font-size     : map-get($text-size, small);
         letter-spacing: normal;
         opacity       : 0.4;
-        color         :map-get($theme-colors, active-gray);
+        color         : map-get($theme-colors, active-gray);
         padding-left  : 5px;
         font-family   : 'Rubik-Light';
       }

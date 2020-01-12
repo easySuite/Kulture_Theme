@@ -81,7 +81,7 @@
 
 	h1 {
 		font-family  : 'SourceSansPro-Bold';
-		color        :map-get($theme-colors, dark);
+		color        : map-get($theme-colors, dark);
 		font-size    : map-get($text-size, masive);
 		font-weight  : 900;
 		line-height  : 42px;
@@ -90,7 +90,7 @@
 
 	h2 {
 		margin-top    : 50px;
-		color         :map-get($theme-colors, filter-text);
+		color         : map-get($theme-colors, filter-text);
 		font-family   : 'Rubik-Regular';
 		font-size     : map-get($text-size, regular);
 		margin-bottom : 30px;
@@ -98,7 +98,7 @@
 	}
 
 	.event-date a {
-		color          :map-get($theme-colors, dark);
+		color          : map-get($theme-colors, dark);
 		font-size      : map-get($text-size, regular);
 		font-weight    : 600;
 		text-decoration: none;
@@ -119,14 +119,14 @@
 		.share-buttons a {
 			margin-left    : 20px;
 			text-decoration: none;
-			color          :map-get($theme-colors, blue);
+			color          : map-get($theme-colors, blue);
 			font-family    : 'Rubik-Regular';
 			font-size      : map-get($text-size, small);
 		}
 	}
 
 	.event-description {
-		color      :map-get($theme-colors, dark);
+		color      : map-get($theme-colors, dark);
 		margin-top : 20px;
 		font-size  : map-get($text-size, small);
 		font-weight: 600;
@@ -159,7 +159,7 @@
 					top             : 0;
 					width           : 1px;
 					height          : 100%;
-					background-color:map-get($theme-colors, dark);
+					background-color: map-get($theme-colors, dark);
 				}
 			}
 		}
@@ -173,14 +173,14 @@
 		.info-item-group,
 		.info-item a,
 		.info-item-group a {
-			color          :map-get($theme-colors, dark);
+			color          : map-get($theme-colors, dark);
 			font-size      : map-get($text-size, small);
 			font-weight    : 600;
 			text-decoration: none;
 		}
 
 		.price {
-			color         :map-get($theme-colors, green);
+			color         : map-get($theme-colors, green);
 			font-family   : "Rubik-Regular";
 			font-size     : map-get($text-size, small);
 			letter-spacing: 0.47px;
@@ -190,7 +190,6 @@
 				display: none;
 			}
 		}
-
 	}
 
 	.controlled-category-list h2 {
@@ -211,7 +210,7 @@
 	text-transform  : uppercase;
 	padding         : 29px 20px;
 	width           : 100%;
-	background-color:map-get($theme-colors, blue);
+	background-color: map-get($theme-colors, blue);
 	transition      : box-shadow 0.2s linear;
 	margin-top      : 49px;
 	margin-bottom   : 70px;

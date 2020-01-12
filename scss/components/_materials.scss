@@ -261,7 +261,7 @@
 .fa-prev.slick-arrow {
   display: block !important;
   left: 0px;
-  background:map-get($theme-colors, blue) url(../images/white-arrow-left.png) no-repeat center center;
+  background: map-get($theme-colors, blue) url(../images/white-arrow-left.png) no-repeat center center;
 
   @include media-breakpoint-up(lg) {
     left: -26px;
@@ -271,7 +271,7 @@
 .fa-next.slick-arrow {
   display: block !important;
   right: 0px;
-  background:map-get($theme-colors, blue) url(../images/white-arrow-right.png) no-repeat center center;
+  background: map-get($theme-colors, blue) url(../images/white-arrow-right.png) no-repeat center center;
 
   @include media-breakpoint-up(lg) {
     right: -26px;

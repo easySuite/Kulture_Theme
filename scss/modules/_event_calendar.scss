@@ -18,7 +18,7 @@
       position: relative;
 
       h2 {
-        color         :map-get($theme-colors, filter-text);
+        color         : map-get($theme-colors, filter-text);
         font-family   : 'Rubik-Regular';
         font-size     : map-get($text-size, regular);
         letter-spacing: 0.6px;
@@ -71,7 +71,7 @@
             width         : 38px;
             height        : 38px;
             background    : transparent;
-            color         :map-get($theme-colors, filter-text);
+            color         : map-get($theme-colors, filter-text);
             font-family   : 'Rubik-Regular';
             font-size     : map-get($text-size, mini);
             letter-spacing: 0.3px;
@@ -98,14 +98,14 @@
               width             : 38px;
               height            : 38px;
               font-size         : map-get($text-size, mini);
-              color             :map-get($theme-colors, filter-text);
+              color             : map-get($theme-colors, filter-text);
               font-family       : 'Rubik-Medium';
               line-height       : 14px;
               text-decoration   : none;
 
               a {
                 font-size      : map-get($text-size, mini);
-                color          :map-get($theme-colors, filter-text);
+                color          : map-get($theme-colors, filter-text);
                 font-family    : 'Rubik-Medium';
                 line-height    : 14px;
                 text-decoration: none;
@@ -160,7 +160,7 @@
             }
 
             &.current-day .day-number {
-              background-color:map-get($theme-colors, blue);
+              background-color: map-get($theme-colors, blue);
               color           : white;
               border-radius   : 50%;
               margin-right    : 6px;
@@ -173,7 +173,7 @@
               margin-right    : 6px;
 
               @include media-breakpoint-up(lg) {
-                background-color:map-get($theme-colors, gray);
+                background-color: map-get($theme-colors, gray);
               }
             }
 
@@ -191,7 +191,7 @@
             }
 
             &.has-events.current-day .day-number {
-              background-color:map-get($theme-colors, blue);
+              background-color: map-get($theme-colors, blue);
               color           : white;
 
               a {
@@ -208,7 +208,7 @@
               margin          : 0;
 
               @include media-breakpoint-up(lg) {
-                background-color:map-get($theme-colors, gray);
+                background-color: map-get($theme-colors, gray);
                 padding         : 0;
                 margin          : 0;
               }
@@ -233,7 +233,7 @@
 
                 .day-number {
                   box-shadow: none !important;
-                  background-color:map-get($theme-colors, gray);
+                  background-color: map-get($theme-colors, gray);
                 }
               }
             }
@@ -305,7 +305,7 @@
         padding         : 29px 20px;
         width           : 100%;
         max-width       : 410px;
-        background-color:map-get($theme-colors, blue);
+        background-color: map-get($theme-colors, blue);
         transition      : box-shadow 0.2s linear;
 
         &,
@@ -320,7 +320,7 @@
     }
 
     .event-day-header {
-      color         :map-get($theme-colors, dark);
+      color         : map-get($theme-colors, dark);
       font-family   : 'Rubik-Light';
       font-size     : map-get($text-size, small);
       letter-spacing: 0.3px;
@@ -350,7 +350,7 @@
           line-height: 19px;
 
           a {
-            color          :map-get($theme-colors, dark);
+            color          : map-get($theme-colors, dark);
             font-family    : 'SourceSansPro-Bold';
             font-size      : map-get($text-size, small);
             line-height    : 19px;
@@ -373,7 +373,7 @@
 
           a {
             text-decoration: none;
-            color          :map-get($theme-colors, dark);
+            color          : map-get($theme-colors, dark);
             font-family    : "SourceSansPro-Semibold";
             font-size      : map-get($text-size, mini);
             line-height    : 15px;
@@ -393,7 +393,7 @@
       .event-time {
         float      : left;
         margin     : 0 0 0 10px;
-        color      :map-get($theme-colors, dark);
+        color      : map-get($theme-colors, dark);
         font-family: "SourceSansPro-Semibold";
         font-size  : map-get($text-size, mini);
         line-height: 15px;

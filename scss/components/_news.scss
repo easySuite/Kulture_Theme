@@ -28,7 +28,7 @@
 
       .pane-title,
       .select-list .accordion-control {
-        color         :map-get($theme-colors, filter-text);
+        color         : map-get($theme-colors, filter-text);
         font-family   : 'Rubik-Regular';
         font-size     : map-get($text-size, regular);
         letter-spacing: 0.6px;
@@ -59,7 +59,7 @@
 
           a {
             position      : relative;
-            color         :map-get($theme-colors, filter-text);
+            color         : map-get($theme-colors, filter-text);
             font-family   : 'Rubik-Regular';
             font-size     : map-get($text-size, small);
             letter-spacing: 0.3px;
@@ -109,7 +109,7 @@
 
   .primary-content {
     .pane-title {
-      color         :map-get($theme-colors, filter-text);
+      color         : map-get($theme-colors, filter-text);
       font-family   : 'Rubik-Regular';
       font-size     : map-get($text-size, regular);
       letter-spacing: 0.6px;
@@ -136,14 +136,6 @@
         color: map-get($theme-colors, blue);
       }
 
-      // @include media-breakpoint-up(lg) {
-        // transition : box-shadow 0.2s linear;
-        // box-shadow: none;
-        // &:hover {
-        //   box-shadow: map-get($shadows, level-2);
-        // }
-      // }
-      
       a {
         text-decoration: none;
       }
@@ -157,7 +149,7 @@
 
         .news-category {
           @include clearfix();
-          color         :map-get($theme-colors, active-gray);
+          color         : map-get($theme-colors, active-gray);
           font-size     : map-get($text-size, micro);
           font-weight   : bold;
           text-transform: uppercase;
@@ -168,7 +160,7 @@
           .field,
           .fields-item,
           .fild-item {
-            color         :map-get($theme-colors, active-gray);
+            color         : map-get($theme-colors, active-gray);
             font-size     : map-get($text-size, micro);
             font-weight   : bold;
             text-transform: uppercase;
@@ -191,7 +183,7 @@
         }
 
         .submitted {
-          color      :map-get($theme-colors, dark);
+          color      : map-get($theme-colors, dark);
           font-family: 'SourceSansPro-Bold';
           font-size  : map-get($text-size, mini);
           padding-top: 15px;
@@ -199,7 +191,7 @@
       }
 
       .card-body {
-        color      :map-get($theme-colors, dark);
+        color      : map-get($theme-colors, dark);
         font-family: "SourceSansPro-Regular";
         padding    : 0;
 
@@ -218,7 +210,7 @@
           padding: 30px;
 
           h3 {
-            color      :map-get($theme-colors, dark);
+            color      : map-get($theme-colors, dark);
             padding-top: 15px;
             font-family: "SourceSansPro-Bold";
             font-size  : map-get($text-size, medium-large);
@@ -226,14 +218,13 @@
           }
 
           h3~.field {
-            color      :map-get($theme-colors, details-gray);
+            color      : map-get($theme-colors, details-gray);
             font-family: "SourceSansPro-Bold";
             font-size  : map-get($text-size, small);
           }
         }
       }
     }
-
   }
 
   #page .content-wrapper .content-inner .default-panel-layout .left-and-main-content .layout-wrapper .primary-content {

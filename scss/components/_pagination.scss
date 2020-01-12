@@ -6,7 +6,7 @@
   li.pager-current,
   li.pager-ellipsis {
     opacity       : 0.6;
-    color         :map-get($theme-colors, active-gray);
+    color         : map-get($theme-colors, active-gray);
     font-family   : 'Rubik-Light';
     font-size     : map-get($text-size, medium);
     letter-spacing: 0.42px;
