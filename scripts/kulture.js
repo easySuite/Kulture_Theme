@@ -121,6 +121,4 @@
     accordionBody.attr("id", "news-library-filter-accordion");
     accordionBody.attr("class", "list-items accordion-filter-body collapse");
   }
-
 })(jQuery);
-  

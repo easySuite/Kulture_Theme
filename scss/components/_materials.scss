@@ -8,275 +8,282 @@
     padding: 0;
   }
 
-.field-type-ting-reference {
-  @extend .col-12;
-  padding: 70px 0;
-  box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+  .field-type-ting-reference {
+    @extend .col-12;
+    padding: 70px 0;
+    box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
 
-  > .field-items.slick-initialized.slick-slider {
+    >.field-items.slick-initialized.slick-slider {
 
-    > .slick-list.draggable {
-      padding: 0;
-      margin: 0 auto;
-      max-width: 250px;
-
-      @media (min-width: 480px) {
+      >.slick-list.draggable {
+        padding: 0;
         margin: 0 auto;
-        max-width: 400px;
+        max-width: 250px;
+
+        @media (min-width: 480px) {
+          margin: 0 auto;
+          max-width: 400px;
+        }
+
+        @include media-breakpoint-up(md) {
+          margin: 0 auto;
+          max-width: 800px;
+        }
+
+        @include media-breakpoint-up(lg) {
+          margin: 0 auto;
+          max-width: 1000px;
+        }
+
+        @include media-breakpoint-up(xl) {
+          margin: 0 auto;
+          max-width: 1000px;
+        }
       }
+    }
+  }
+
+  .field-items.slick-initialized.slick-slider {
+    >.slick-list.draggable {
+      position: relative;
+    }
+
+    >.slick-track .slick-slide {
+      min-height: 465px;
+      height: auto;
+    }
+
+    .field-item.odd,
+    .field-item.even {
+      max-width: unset;
+      margin: 0 13px;
 
       @include media-breakpoint-up(md) {
-        margin: 0 auto;
-        max-width: 800px;
+        max-width: 224px;
       }
 
-      @include media-breakpoint-up(lg) {
-        margin: 0 auto;
-        max-width: 1000px;
-      }
+      &:hover {
+        .field-type-ting-cover {
+          margin: 20px 0;
 
-      @include media-breakpoint-up(xl) {
-        margin: 0 auto;
-        max-width: 1000px;
-      }
-    }
-  }
-}
+          img {
+            box-shadow: none;
+          }
 
-.field-items.slick-initialized.slick-slider {
-  > .slick-list.draggable {
-    position: relative;
-  }
-  
-  > .slick-track .slick-slide {
-    min-height: 465px;
-    height    : auto;
-  }
-
-  .field-item.odd,
-  .field-item.even {
-    max-width: unset;
-    margin: 0 13px;
-
-    @include media-breakpoint-up(md) {
-      max-width: 224px;
-    }
-
-    &:hover {
-      .field-type-ting-cover {
-        margin: 20px 0;
-
-        img {
-          box-shadow: none;
+          &>.field-items {
+            border-color: white;
+            box-shadow: 0 10px 30px 0 rgba(9, 0, 38, 0.2);
+          }
         }
-        
-        & > .field-items {
-          border-color: white;
-          box-shadow: 0 10px 30px 0 rgba(9,0,38,0.2);
+
+        .slick-active[data-slick-index="0"] {
+          position: relative;
+          background: red;
         }
       }
 
-      .slick-active[data-slick-index="0"] {
-        position: relative;
-        background: red;
+      &:last-of-type {
+        margin-right: 0;
+      }
+
+      .field-name-ting-cover .field-item {
+        margin: 0;
       }
     }
-
-    &:last-of-type {
-      margin-right: 0;
-    }
-
-    .field-name-ting-cover .field-item {
-      margin: 0;
-    }
-  }
-}
-
-.field-type-ting-cover {
-  margin: 20px 0;
-  min-height: 250px;
-  display: flex;
-  align-items: flex-end;
-  
-  img {
-    min-height: 192px;
-    max-width: 192px;
-    height: auto;
-    box-shadow: 0 10px 30px 0 rgba(9,0,38,0.2);
   }
 
-  & > .field-items {
-    border: 10px solid transparent;
-    transition: all 0.35s linear;
-  }
-
-  .slick-track {
-    width: 100% !important;
-  }
-
-  .field-item.slick-slide {
-    width: 100% !important;
-  }
-}
-
-.slick-slide {
-  
-  .field-type-ting-cover .field-item .ting-cover {
-    @include dark-overlay;
-    position: relative;
-    height: auto;
-  }
-
-  img {
-    min-height: 192px;
-    max-width: 192px;
-    height: auto;
-  } 
-}
-
-.slick-dots {
-  list-style: none;
-  padding   : 0;
-  margin    : 0;
-  position  : absolute;
-  bottom    : 20px;
-  top       : auto;
-  left      : calc(50% - 40px);
-  @include clearfix();
-
-  li {
-    float        : left;
-    color        : transparent;
-    width        : 6px;
-    height       : 6px;
-    border       : 1px solid white;
-    border-radius: 50%;
-    margin-right : 10px;
-
-    button {
-      display: none;
-    }
-
-    &.slick-active {
-      background-color: white;
-    }
-  }
-}
-
-.ting-object {
-  position: relative;
-
-  .field-group-format {
-    max-width: 100%;
-  
-    &.group-text {
-      position: static;
-      max-width: 192px;
-    }
-  }
-}
-
-
-.field-name-ting-abstract {
-  display: none;
-}
-
-.field-type-ting-title {
-  width: 100% !important;
-
-  .slick-slide, .slick-track {
-    width: 100% !important;
-  }
-
-  h2 {
-    font-family: "SourceSansPro-Bold";
-    margin-bottom: 20px;
-    font-weight: 900;
-    color: #000119;
-    font-size: map-get($text-size, small);
-  }
-}
-
-.field-type-ting-type {
-  .slick-slide, .slick-track {
-    width: 100% !important;
-  }
-
-  .availability {
-    font-family: "SourceSansPro-Bold";
-    font-size: 10px;
-    letter-spacing: 1px;
-    line-height: 13px;
-    list-style: none;
+  .field-type-ting-cover {
     margin: 20px 0;
-    width: 100%;
-    color: #4D4E6C;
+    min-height: 250px;
+    display: flex;
+    align-items: flex-end;
+
+    img {
+      min-height: 192px;
+      max-width: 192px;
+      height: auto;
+      box-shadow: 0 10px 30px 0 rgba(9, 0, 38, 0.2);
+    }
+
+    &>.field-items {
+      border: 10px solid transparent;
+      transition: all 0.35s linear;
+    }
+
+    .slick-track {
+      width: 100% !important;
+    }
+
+    .field-item.slick-slide {
+      width: 100% !important;
+    }
   }
-   ul.availability:before {
+
+  .slick-slide {
+
+    .field-type-ting-cover .field-item .ting-cover {
+      @include dark-overlay;
+      position: relative;
+      height: auto;
+    }
+
+    img {
+      min-height: 192px;
+      max-width: 192px;
+      height: auto;
+    }
+  }
+
+  .slick-dots {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    bottom: 20px;
+    top: auto;
+    left: calc(50% - 40px);
+    @include clearfix();
+
+    li {
+      float: left;
+      color: transparent;
+      width: 6px;
+      height: 6px;
+      border: 1px solid white;
+      border-radius: 50%;
+      margin-right: 10px;
+
+      button {
+        display: none;
+      }
+
+      &.slick-active {
+        background-color: white;
+      }
+    }
+  }
+
+  .ting-object {
+    position: relative;
+
+    .field-group-format {
+      max-width: 100%;
+
+      &.group-text {
+        position: static;
+        max-width: 192px;
+      }
+    }
+  }
+
+
+  .field-name-ting-abstract {
+    display: none;
+  }
+
+  .field-type-ting-title {
+    width: 100% !important;
+
+    .slick-slide,
+    .slick-track {
+      width: 100% !important;
+    }
+
+    h2 {
+      font-family: "SourceSansPro-Bold";
+      margin-bottom: 20px;
+      font-weight: 900;
+      color: #000119;
+      font-size: map-get($text-size, small);
+    }
+  }
+
+  .field-type-ting-type {
+
+    .slick-slide,
+    .slick-track {
+      width: 100% !important;
+    }
+
+    .availability {
+      font-family: "SourceSansPro-Bold";
+      font-size: 10px;
+      letter-spacing: 1px;
+      line-height: 13px;
+      list-style: none;
+      margin: 20px 0;
+      width: 100%;
+      color: #4D4E6C;
+    }
+
+    ul.availability:before {
       content: " ";
       width: 10px;
       height: 13px;
       left: 0;
       background: url(../images/tag.png) no-repeat center center;
-    
-  }
-}
 
-.field-name-ting-author  {
-  .slick-slide, .slick-track {
-    width: 100% !important;
+    }
   }
 
-  .field-item, a {
-    font-family: "SourceSansPro-Bold";	
-    font-size: 12px;
-    line-height: 15px;
-    width: 100%;
-    color: #000119;
-  }
-}
+  .field-name-ting-author {
 
-.ding-entity-rating {
-  display: none;
-}
+    .slick-slide,
+    .slick-track {
+      width: 100% !important;
+    }
 
-.slick-arrow {
-  position  : absolute;
-  width     : 60px;
-  height    : 60px;
-  transition: box-shadow 0.2s linear;
-  top       : calc(50% - 35px);
-  z-index   : 10;
-
-  &:hover {
-    box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.2);
+    .field-item,
+    a {
+      font-family: "SourceSansPro-Bold";
+      font-size: 12px;
+      line-height: 15px;
+      width: 100%;
+      color: #000119;
+    }
   }
 
-  @include media-breakpoint-up(xl) {
-    width     : 70px;
-    height    : 70px;
+  .ding-entity-rating {
+    display: none;
   }
-}
 
-.fa-prev.slick-arrow {
-  display: block !important;
-  left: 0px;
-  background: map-get($theme-colors, blue) url(../images/white-arrow-left.png) no-repeat center center;
+  .slick-arrow {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    transition: box-shadow 0.2s linear;
+    top: calc(50% - 35px);
+    z-index: 10;
 
-  @include media-breakpoint-up(lg) {
-    left: -26px;
+    &:hover {
+      box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.2);
+    }
+
+    @include media-breakpoint-up(xl) {
+      width: 70px;
+      height: 70px;
+    }
   }
-}
 
-.fa-next.slick-arrow {
-  display: block !important;
-  right: 0px;
-  background: map-get($theme-colors, blue) url(../images/white-arrow-right.png) no-repeat center center;
+  .fa-prev.slick-arrow {
+    display: block !important;
+    left: 0px;
+    background: map-get($theme-colors, blue) url(../images/white-arrow-left.png) no-repeat center center;
 
-  @include media-breakpoint-up(lg) {
-    right: -26px;
+    @include media-breakpoint-up(lg) {
+      left: -26px;
+    }
   }
-}
+
+  .fa-next.slick-arrow {
+    display: block !important;
+    right: 0px;
+    background: map-get($theme-colors, blue) url(../images/white-arrow-right.png) no-repeat center center;
+
+    @include media-breakpoint-up(lg) {
+      right: -26px;
+    }
+  }
 }
 
 .field-name-field-ding-news-materials {

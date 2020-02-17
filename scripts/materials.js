@@ -3,6 +3,9 @@
 
   Drupal.behaviors.ding_ting_materials = {
     attach: function (context, settings) {
+
+      console.log($('.field-type-ting-reference > .field-items', context),'---')
+
       $('.field-type-ting-reference > .field-items', context).slick({
         infinite: false,
         slidesToShow: 5,

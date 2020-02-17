@@ -1,25 +1,25 @@
 @mixin datepicker() {
   label {
-    color        : map-get($theme-colors, filter-text);
-    font-family  : 'Rubik-Regular';
-    font-size    : map-get($text-size, small-medium);
+    color: map-get($theme-colors, filter-text);
+    font-family: 'Rubik-Regular';
+    font-size: map-get($text-size, small-medium);
     margin-bottom: 25px;
-    font-weight  : normal;
+    font-weight: normal;
   }
 
   input {
-    width      : 100%;
-    color      : map-get($theme-colors, disabled);
+    width: 100%;
+    color: map-get($theme-colors, disabled);
     font-family: 'Rubik-Regular';
-    font-size  : map-get($text-size, small);
-    padding    : 24px 23px 23px 56px;
-    box-shadow : map-get($shadows, level-2);
-    border     : none;
-    background : white url('../images/calendar-gray.png') no-repeat 20px center;
+    font-size: map-get($text-size, small);
+    padding: 24px 23px 23px 56px;
+    box-shadow: map-get($shadows, level-2);
+    border: none;
+    background: white url('../images/calendar-gray.png') no-repeat 20px center;
 
 
     &.input-has-date {
-      color     : white;
+      color: white;
       background: map-get($theme-colors, blue) url('../images/calendar-white.png') no-repeat 20px center;
     }
   }

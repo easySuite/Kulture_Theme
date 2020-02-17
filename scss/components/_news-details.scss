@@ -1,6 +1,6 @@
 .news-details-wrapper {
   max-width: 726px;
-  margin   : 70px auto 0;
+  margin: 70px auto 0;
 
   .field-slideshow,
   img {
@@ -10,29 +10,30 @@
 
   .ding-news-inner {
     padding-left: 10px;
+
     @include media-breakpoint-up(md) {
-      padding-left  : 0;
+      padding-left: 0;
     }
   }
 
   .ding-news-right {
     .category-tag {
       @include clearfix();
-      color         : map-get($theme-colors, active-gray);
-      font-size     : map-get($text-size, micro);
-      font-weight   : bold;
-      position      : relative;
-      margin-top    : 30px;
+      color: map-get($theme-colors, active-gray);
+      font-size: map-get($text-size, micro);
+      font-weight: bold;
+      position: relative;
+      margin-top: 30px;
       text-transform: uppercase;
-      padding       : 0 0 20px 20px;
+      padding: 0 0 20px 20px;
       letter-spacing: 1px;
 
       &:after {
-        position  : absolute;
-        top       : 1px;
-        left      : 0;
-        height    : 13px;
-        width     : 10px;
+        position: absolute;
+        top: 1px;
+        left: 0;
+        height: 13px;
+        width: 10px;
         background: url('../images/tag.png') no-repeat center center;
       }
 
@@ -42,16 +43,16 @@
 
       a {
         text-decoration: none;
-        color          : map-get($theme-colors, active-gray);
+        color: map-get($theme-colors, active-gray);
       }
     }
 
     .category-info {
       @include clearfix();
-      color      : map-get($theme-colors, dark);
+      color: map-get($theme-colors, dark);
       font-family: 'SourceSansPro-Bold';
-      font-size  : map-get($text-size, mini);
-      margin-top : 20px;
+      font-size: map-get($text-size, mini);
+      margin-top: 20px;
 
       .author,
       .created {
@@ -60,11 +61,11 @@
     }
 
     h1 {
-      color      : map-get($theme-colors, dark);
+      color: map-get($theme-colors, dark);
       font-family: "SourceSansPro-Bold";
-      font-size  : map-get($text-size, massive);
+      font-size: map-get($text-size, massive);
       line-height: 62px;
-      margin     : 0 0 10px;
+      margin: 0 0 10px;
     }
 
     .category-links {
@@ -72,31 +73,31 @@
     }
 
     .category-text {
-      color      : map-get($theme-colors, details-gray);
+      color: map-get($theme-colors, details-gray);
       font-family: "SourceSansPro-Bold";
-      font-size  : map-get($text-size, small);
+      font-size: map-get($text-size, small);
     }
 
     .field-label-above {
       @include clearfix();
-      color         : map-get($theme-colors, filter-text);
-      font-family   : 'Rubik-Regular';
-      font-size     : map-get($text-size, small);
+      color: map-get($theme-colors, filter-text);
+      font-family: 'Rubik-Regular';
+      font-size: map-get($text-size, small);
       letter-spacing: 0.3px;
-      margin-top    : 30px;
-      border-top    : 1px solid map-get($theme-colors, light2-gray);
-      border-bottom : 1px solid map-get($theme-colors, light2-gray);
-      padding-top   : 16px;
+      margin-top: 30px;
+      border-top: 1px solid map-get($theme-colors, light2-gray);
+      border-bottom: 1px solid map-get($theme-colors, light2-gray);
+      padding-top: 16px;
       padding-bottom: 16px;
 
       .field-label,
       .field-item {
-        float      : left;
+        float: left;
         font-weight: normal;
       }
 
       .field-item {
-        color       : map-get($theme-colors, blue);
+        color: map-get($theme-colors, blue);
         padding-left: 10px;
 
         @include media-breakpoint-up(lg) {
@@ -130,11 +131,11 @@
   }
 
   .card.news-item {
-    border       : none;
+    border: none;
     border-radius: 2px;
     margin-bottom: 57px;
-    box-shadow   : map-get($shadows, level-2);
-    height       : calc(100% - 57px);
+    box-shadow: map-get($shadows, level-2);
+    height: calc(100% - 57px);
 
     &:hover .card-body .image-wrapper img {
       transform: scale(1.5);
@@ -157,31 +158,31 @@
 
       .news-category {
         @include clearfix();
-        color         : map-get($theme-colors, active-gray);
-        font-size     : map-get($text-size, micro);
-        font-weight   : bold;
+        color: map-get($theme-colors, active-gray);
+        font-size: map-get($text-size, micro);
+        font-weight: bold;
         text-transform: uppercase;
-        position      : relative;
-        padding       : 0 0 20px 20px;
+        position: relative;
+        padding: 0 0 20px 20px;
         letter-spacing: 1px;
 
         .field,
         .fields-item,
         .fild-item {
-          color         : map-get($theme-colors, active-gray);
-          font-size     : map-get($text-size, micro);
-          font-weight   : bold;
+          color: map-get($theme-colors, active-gray);
+          font-size: map-get($text-size, micro);
+          font-weight: bold;
           text-transform: uppercase;
-          padding       : 0;
+          padding: 0;
           letter-spacing: 1px;
         }
 
         &:after {
-          position  : absolute;
-          top       : 1px;
-          left      : 0;
-          height    : 13px;
-          width     : 10px;
+          position: absolute;
+          top: 1px;
+          left: 0;
+          height: 13px;
+          width: 10px;
           background: url('../images/tag.png') no-repeat center center;
         }
 
@@ -191,21 +192,21 @@
       }
 
       .submitted {
-        color      : map-get($theme-colors, dark);
+        color: map-get($theme-colors, dark);
         font-family: 'SourceSansPro-Bold';
-        font-size  : map-get($text-size, mini);
+        font-size: map-get($text-size, mini);
         padding-top: 15px;
       }
     }
 
     .card-body {
-      color      : map-get($theme-colors, dark);
+      color: map-get($theme-colors, dark);
       font-family: "SourceSansPro-Regular";
-      padding    : 0;
+      padding: 0;
 
       .image-wrapper {
         position: relative;
-        height  : 206px;
+        height: 206px;
         overflow: hidden;
 
         img {
@@ -218,17 +219,17 @@
         padding: 30px;
 
         h3 {
-          color      : map-get($theme-colors, dark);
+          color: map-get($theme-colors, dark);
           padding-top: 15px;
           font-family: "SourceSansPro-Bold";
-          font-size  : map-get($text-size, medium-large);
+          font-size: map-get($text-size, medium-large);
           transition: color 0.5s ease;
         }
 
         h3~.field {
-          color      : map-get($theme-colors, details-gray);
+          color: map-get($theme-colors, details-gray);
           font-family: "SourceSansPro-Bold";
-          font-size  : map-get($text-size, small);
+          font-size: map-get($text-size, small);
         }
       }
     }

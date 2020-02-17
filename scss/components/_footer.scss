@@ -1,13 +1,13 @@
 .footer {
-  display         : block;
-  background-color:map-get($theme-colors, dark);
+  display: block;
+  background-color: map-get($theme-colors, dark);
   padding: 100px 10px;
-  text-align      : center;
-  color           : #fff;
+  text-align: center;
+  color: #fff;
   margin-top: 100px;
 
   @include media-breakpoint-up(md) {
-    padding : 100px 60px;
+    padding: 100px 60px;
   }
 
   .contextual-links-wrapper .pane-title,
@@ -23,9 +23,9 @@
     color: #fff;
 
     .name-cp {
-      font-family   : 'Rubik-Regular';
-      font-size     : map-get($text-size, mini);
-      font-weight   : 500;
+      font-family: 'Rubik-Regular';
+      font-size: map-get($text-size, mini);
+      font-weight: 500;
       letter-spacing: 1px;
       text-transform: uppercase;
       padding-bottom: 18px;
@@ -33,14 +33,14 @@
 
     .email-cp,
     .phone-cp {
-      font-family   : 'Rubik-Light';
-      font-size     : map-get($text-size, large);
-      font-weight   : 300;
+      font-family: 'Rubik-Light';
+      font-size: map-get($text-size, large);
+      font-weight: 300;
       letter-spacing: 0.6px;
 
       a,
       a:hover {
-        color          : #fff;
+        color: #fff;
         text-decoration: none;
       }
     }
@@ -51,9 +51,9 @@
 
     .address-cp,
     .location-cp {
-      font-family   : 'Rubik-Light';
-      font-size     : map-get($text-size, medium);
-      font-weight   : 300;
+      font-family: 'Rubik-Light';
+      font-size: map-get($text-size, medium);
+      font-weight: 300;
       letter-spacing: 0.42px;
     }
 
@@ -63,39 +63,39 @@
   }
 
   .footer-inner {
-    display    : block;
-    border-top : 1px solid rgba(255, 255, 255, 0.11);
+    display: block;
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
     padding: 50px 27px 0;
     height: max-content;
 
     @include media-breakpoint-up(md) {
-      display        : flex;
+      display: flex;
       justify-content: space-around;
       padding: 50px 0 0;
     }
 
     .panel-pane .panel-pane-inner {
       .pane-title {
-        font-family   : 'Rubik-Medium';
-        font-size     : map-get($text-size, mini);
+        font-family: 'Rubik-Medium';
+        font-size: map-get($text-size, mini);
         text-transform: uppercase;
         letter-spacing: 1px;
-        text-align    : left;
+        text-align: left;
       }
 
       ul.menu {
         margin-top: 40px;
         list-style: none;
-        padding   : 0;
+        padding: 0;
 
         li {
-          margin         : 0;
+          margin: 0;
           list-style-type: none;
-          font-family    : 'Rubik-Light';
-          font-size      : map-get($text-size, small);
-          letter-spacing : 0.32px;
-          padding        : 0 0 10px 0;
-          line-height    : 28px;
+          font-family: 'Rubik-Light';
+          font-size: map-get($text-size, small);
+          letter-spacing: 0.32px;
+          padding: 0 0 10px 0;
+          line-height: 28px;
           text-align: left;
 
           a {

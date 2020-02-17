@@ -1,9 +1,9 @@
 @mixin arrow($direction, $sizeH, $sizeV, $color) {
-  content       : '';
-  display       : block;
-  width         : 0;
-  height        : 0;
-  border-style  : solid;
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  border-style: solid;
   -moz-transform: scale(.9999);
 
   @if $direction==top {

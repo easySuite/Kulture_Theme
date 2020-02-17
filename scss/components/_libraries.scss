@@ -1,11 +1,11 @@
 .page-libraries,
 .node-type-ding-library {
   .layout-wrapper {
-    padding-left : 10px;
+    padding-left: 10px;
     padding-right: 10px;
 
     @include media-breakpoint-up(lg) {
-      padding-left : 0;
+      padding-left: 0;
       padding-right: 0;
     }
   }
@@ -18,9 +18,9 @@
   .primary-content,
   .secondary-content {
     h2.pane-title {
-      color         : map-get($theme-colors, filter-text);
-      font-family   : 'Rubik-Regular';
-      font-size     : map-get($text-size, regular);
+      color: map-get($theme-colors, filter-text);
+      font-family: 'Rubik-Regular';
+      font-size: map-get($text-size, regular);
       letter-spacing: 0.6px;
       text-transform: uppercase;
     }
@@ -28,8 +28,8 @@
     ul,
     ul li {
       list-style: none;
-      margin    : 0;
-      padding   : 0;
+      margin: 0;
+      padding: 0;
     }
   }
 
@@ -45,10 +45,10 @@
         margin-bottom: 10px;
 
         a {
-          position      : relative;
-          color         : map-get($theme-colors, filter-text);
-          font-family   : 'Rubik-Regular';
-          font-size     : map-get($text-size, small);
+          position: relative;
+          color: map-get($theme-colors, filter-text);
+          font-family: 'Rubik-Regular';
+          font-size: map-get($text-size, small);
           letter-spacing: 0.3px;
 
           &:hover {
@@ -56,33 +56,33 @@
           }
 
           &:before {
-            content           : '';
+            content: '';
             -webkit-appearance: none;
-            background-color  : transparent;
-            border            : 1px solid map-get($theme-colors, blue);
-            border-radius     : 2px;
-            box-shadow        : map-get($shadows, level-2);
-            width             : 40px;
-            height            : 40px;
-            display           : inline-block;
-            position          : relative;
-            vertical-align    : middle;
-            cursor            : pointer;
-            margin-right      : 20px;
+            background-color: transparent;
+            border: 1px solid map-get($theme-colors, blue);
+            border-radius: 2px;
+            box-shadow: map-get($shadows, level-2);
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 20px;
           }
 
           &:after {
-            content     : '';
-            display     : block;
-            position    : absolute;
-            top         : calc(50% - 9px);
-            left        : 11px;
-            width       : 18px;
-            height      : 11px;
-            border      : solid white;
+            content: '';
+            display: block;
+            position: absolute;
+            top: calc(50% - 9px);
+            left: 11px;
+            width: 18px;
+            height: 11px;
+            border: solid white;
             border-width: 1px 1px 0 0;
-            transform   : rotate(133deg);
-            box-shadow  : none;
+            transform: rotate(133deg);
+            box-shadow: none;
           }
 
           &.active:before {
@@ -105,9 +105,9 @@
     }
 
     h2.page-title>a {
-      color          : map-get($theme-colors, dark);
-      font-family    : 'SourceSansPro-Bold';
-      font-size      : 42px;
+      color: map-get($theme-colors, dark);
+      font-family: 'SourceSansPro-Bold';
+      font-size: 42px;
       text-decoration: none;
 
       @include media-breakpoint-up(md) {
@@ -139,12 +139,12 @@
       .street-block>div,
       .locality-block,
       .country {
-        float       : left;
+        float: left;
         margin-right: 5px;
-        color       : map-get($theme-colors, dark);
-        font-family : 'SourceSansPro-Regular';
-        font-size   : map-get($text-size, regular);
-        font-weight : 600;
+        color: map-get($theme-colors, dark);
+        font-family: 'SourceSansPro-Regular';
+        font-size: map-get($text-size, regular);
+        font-weight: 600;
       }
 
       .street-block {
@@ -163,12 +163,12 @@
 
     .field-name-field-ding-library-phone-number,
     .field-name-field-ding-library-mail a {
-      color         : map-get($theme-colors, blue);
-      font-family   : 'Rubik-Regular';
-      font-size     : map-get($text-size, medium);
-      font-weight   : 300;
+      color: map-get($theme-colors, blue);
+      font-family: 'Rubik-Regular';
+      font-size: map-get($text-size, medium);
+      font-weight: 300;
       letter-spacing: 0.45px;
-      line-height   : 22px;
+      line-height: 22px;
 
       &:hover {
         text-decoration: none;
@@ -176,28 +176,28 @@
     }
 
     .order-redirect {
-      display      : block;
+      display: block;
       margin-bottom: 40px;
 
       a {
-        position      : relative;
-        color         : map-get($theme-colors, filter-text);
-        font-family   : 'Rubik-Light';
-        font-size     : 20px;
+        position: relative;
+        color: map-get($theme-colors, filter-text);
+        font-family: 'Rubik-Light';
+        font-size: 20px;
         letter-spacing: 0.46px;
-        padding-right : 50px;
+        padding-right: 50px;
 
         &:hover {
           text-decoration: none;
         }
 
         &:after {
-          content   : '';
-          width     : 25px;
-          height    : 8px;
-          position  : absolute;
-          right     : 0;
-          top       : calc(50% - 3px);
+          content: '';
+          width: 25px;
+          height: 8px;
+          position: absolute;
+          right: 0;
+          top: calc(50% - 3px);
           background: url('../images/nav-arrow-right.png') no-repeat right center;
         }
       }
@@ -207,11 +207,11 @@
       position: relative;
 
       .maps-link {
-        position   : absolute;
-        right      : 0;
-        color      : map-get($theme-colors, dark);
+        position: absolute;
+        right: 0;
+        color: map-get($theme-colors, dark);
         font-family: "SourceSansPro-Regular";
-        font-size  : map-get($text-size, regular);
+        font-size: map-get($text-size, regular);
         font-weight: 600;
 
         &:hover {

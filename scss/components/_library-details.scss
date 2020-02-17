@@ -1,6 +1,6 @@
 #ding-library-front {
   margin-top: 70px;
-  padding   : 0;
+  padding: 0;
 
   .secondary-content {
 
@@ -8,9 +8,9 @@
     .sub-menu-wrapper .pane-title a,
     .panel-pane-inner h2.pane-title a {
       text-transform: uppercase;
-      color         : map-get($theme-colors, blue);
-      font-family   : 'Rubik-Regular';
-      font-size     : 16px;
+      color: map-get($theme-colors, blue);
+      font-family: 'Rubik-Regular';
+      font-size: 16px;
       letter-spacing: 0.6px;
 
       &,
@@ -24,19 +24,19 @@
     }
 
     .menu {
-      padding        : 0;
-      margin         : 30px 0 0 0;
+      padding: 0;
+      margin: 30px 0 0 0;
       list-style-type: none;
 
       li {
         list-style-type: none;
-        margin         : 0 0 15px;
-        padding        : 0;
+        margin: 0 0 15px;
+        padding: 0;
 
         a {
-          color      : map-get($theme-colors, filter-text);
+          color: map-get($theme-colors, filter-text);
           font-family: 'Rubik-Regular';
-          font-size  : 14px;
+          font-size: 14px;
 
           &,
           &:hover {
@@ -57,20 +57,20 @@
     }
 
     .pane-entity-field {
-      color      : map-get($theme-colors, dark);
+      color: map-get($theme-colors, dark);
       font-family: 'SourceSansPro-Regular';
-      font-size  : 14px;
+      font-size: 14px;
     }
 
     .pane-node-title {
       margin-top: 70px;
 
       h2 {
-        color        : map-get($theme-colors, dark);
-        font-family  : 'SourceSansPro-Bold';
-        font-size    : 42px;
-        line-height  : 42px;
-        margin       : 0;
+        color: map-get($theme-colors, dark);
+        font-family: 'SourceSansPro-Bold';
+        font-size: 42px;
+        line-height: 42px;
+        margin: 0;
         margin-bottom: 17px;
 
         @include media-breakpoint-up(md) {
@@ -85,11 +85,11 @@
 
       & .library-address-street,
       & .library-address-city-wrapper {
-        color      : map-get($theme-colors, dark);
+        color: map-get($theme-colors, dark);
         font-family: "SourceSansPro-Bold";
-        font-size  : 16px;
+        font-size: 16px;
         line-height: 20px;
-        float      : left;
+        float: left;
       }
 
       & .library-address-city-wrapper {
@@ -120,12 +120,12 @@
 
       .library-contact-phone,
       .library-contact-phone a {
-        color          : map-get($theme-colors, blue);
-        font-family    : 'Rubik-Regular';
-        font-size      : 18px;
-        font-weight    : 300;
-        letter-spacing : 0.45px;
-        line-height    : 22px;
+        color: map-get($theme-colors, blue);
+        font-family: 'Rubik-Regular';
+        font-size: 18px;
+        font-weight: 300;
+        letter-spacing: 0.45px;
+        line-height: 22px;
         text-decoration: none;
 
         &:hover {
@@ -147,12 +147,12 @@
     .pane-title {
       @extend .container;
 
-      color         : map-get($theme-colors, filter-text);
-      font-family   : 'Rubik-Regular';
-      font-size     : 16px;
+      color: map-get($theme-colors, filter-text);
+      font-family: 'Rubik-Regular';
+      font-size: 16px;
       letter-spacing: 0.6px;
       text-transform: uppercase;
-      margin-bottom : 30px;
+      margin-bottom: 30px;
     }
 
     .view-ding-event,
@@ -161,16 +161,16 @@
 
       .more-link {
         position: absolute;
-        top     : -50px;
-        right   : 28px;
+        top: -50px;
+        right: 28px;
 
         a {
-          color          : map-get($theme-colors, blue);
-          font-family    : 'Rubik-Regular';
-          font-size      : 16px;
-          letter-spacing : 0.6px;
-          line-height    : 19px;
-          text-transform : uppercase;
+          color: map-get($theme-colors, blue);
+          font-family: 'Rubik-Regular';
+          font-size: 16px;
+          letter-spacing: 0.6px;
+          line-height: 19px;
+          text-transform: uppercase;
           text-decoration: none;
 
           &:hover {
@@ -191,13 +191,13 @@
     }
 
     .card {
-      border       : none;
+      border: none;
       border-radius: 2px;
       margin-bottom: 57px;
 
       .node-ding-event,
       .node-ding-news {
-        height    : 100%;
+        height: 100%;
         box-shadow: map-get($shadows, level-2);
 
         &:hover .inner .image-wrapper img {
@@ -215,7 +215,7 @@
       a:visited,
       a:hover,
       a:focus {
-        color          : map-get($theme-colors, dark);
+        color: map-get($theme-colors, dark);
         text-decoration: none;
       }
 
@@ -224,30 +224,30 @@
       }
 
       .price-tag {
-        position        : absolute;
-        top             : 10px;
-        right           : -5px;
+        position: absolute;
+        top: 10px;
+        right: -5px;
         background-color: map-get($theme-colors, green);
-        box-shadow      : -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
-        color           : white;
-        width           : 90px;
-        font-family     : 'Rubik-Medium';
-        font-size       : 12px;
-        letter-spacing  : 0.4px;
-        text-transform  : uppercase;
-        text-align      : center;
-        padding         : 9px 20px;
+        box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
+        color: white;
+        width: 90px;
+        font-family: 'Rubik-Medium';
+        font-size: 12px;
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 9px 20px;
 
         &:after {
-          content       : '';
-          position      : absolute;
-          right         : 0;
-          bottom        : -5px;
-          height        : 0;
-          width         : 0;
-          display       : block;
-          border-top    : 5px solid map-get($theme-colors, dark-green);
-          border-right  : 5px solid transparent;
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: -5px;
+          height: 0;
+          width: 0;
+          display: block;
+          border-top: 5px solid map-get($theme-colors, dark-green);
+          border-right: 5px solid transparent;
           -moz-transform: scale(.9999);
         }
       }
@@ -255,10 +255,10 @@
       .image-wrapper {
         position: relative;
         overflow: hidden;
-        height  : 206px;
+        height: 206px;
 
         img {
-          top     : calc(50% - 103px);
+          top: calc(50% - 103px);
           position: absolute;
           transition: transform .5s ease;
         }
@@ -282,31 +282,31 @@
 
           .news-category {
             @include clearfix();
-            color         : map-get($theme-colors, active-gray);
-            font-size     : 10px;
-            font-weight   : bold;
+            color: map-get($theme-colors, active-gray);
+            font-size: 10px;
+            font-weight: bold;
             text-transform: uppercase;
-            position      : relative;
-            padding       : 0 0 20px 20px;
+            position: relative;
+            padding: 0 0 20px 20px;
             letter-spacing: 1px;
 
             .field,
             .fields-item,
             .fild-item {
-              color         : map-get($theme-colors, active-gray);
-              font-size     : 10px;
-              font-weight   : bold;
+              color: map-get($theme-colors, active-gray);
+              font-size: 10px;
+              font-weight: bold;
               text-transform: uppercase;
-              padding       : 0;
+              padding: 0;
               letter-spacing: 1px;
             }
 
             &:after {
-              position  : absolute;
-              top       : 1px;
-              left      : 0;
-              height    : 13px;
-              width     : 10px;
+              position: absolute;
+              top: 1px;
+              left: 0;
+              height: 13px;
+              width: 10px;
               background: url('../images/tag.png') no-repeat center center;
             }
 
@@ -316,21 +316,21 @@
           }
 
           .submitted {
-            color      : map-get($theme-colors, dark);
+            color: map-get($theme-colors, dark);
             font-family: 'SourceSansPro-Bold';
-            font-size  : 12px;
+            font-size: 12px;
             padding-top: 15px;
           }
         }
 
         .card-body {
-          color      : map-get($theme-colors, dark);
+          color: map-get($theme-colors, dark);
           font-family: "SourceSansPro-Regular";
-          padding    : 0;
+          padding: 0;
 
           .image-wrapper {
             position: relative;
-            height  : 206px;
+            height: 206px;
             overflow: hidden;
 
             img {
@@ -342,16 +342,16 @@
             padding: 30px;
 
             h3 {
-              color      : map-get($theme-colors, dark);
+              color: map-get($theme-colors, dark);
               padding-top: 15px;
               font-family: "SourceSansPro-Bold";
-              font-size  : 21px;
+              font-size: 21px;
             }
 
             h3~.field {
-              color      : map-get($theme-colors, details-gray);
+              color: map-get($theme-colors, details-gray);
               font-family: "SourceSansPro-Bold";
-              font-size  : 14px;
+              font-size: 14px;
             }
           }
         }
@@ -359,24 +359,24 @@
       }
 
       .card-body {
-        color      : map-get($theme-colors, dark);
+        color: map-get($theme-colors, dark);
         font-family: "SourceSansPro-Regular";
-        padding    : 30px;
+        padding: 30px;
 
         .info-top {
-          color         : map-get($theme-colors, active-gray);
-          font-size     : 10px;
-          font-family   : "SourceSansPro-Bold";
+          color: map-get($theme-colors, active-gray);
+          font-size: 10px;
+          font-family: "SourceSansPro-Bold";
           text-transform: uppercase;
-          position      : relative;
+          position: relative;
           padding-bottom: 20px;
           letter-spacing: 1px;
 
           i.tag-icon {
-            position  : absolute;
-            top       : 1px;
-            height    : 13px;
-            width     : 10px;
+            position: absolute;
+            top: 1px;
+            height: 13px;
+            width: 10px;
             background: url('../images/tag.png') no-repeat center center;
           }
 
@@ -386,48 +386,49 @@
         }
 
         .date {
-          font-size     : 12px;
-          font-family   : "SourceSansPro-Bold";
+          font-size: 12px;
+          font-family: "SourceSansPro-Bold";
           padding-bottom: 15px;
         }
 
         .card-title {
-          font-size     : 21px;
-          font-weight   : 900;
+          font-size: 21px;
+          font-weight: 900;
           padding-bottom: 8px;
-          margin        : 0;
-          font-family   : "SourceSansPro-Bold";
+          margin: 0;
+          font-family: "SourceSansPro-Bold";
           text-transform: none;
         }
 
-        .card-text, .title {
+        .card-text,
+        .title {
           transition: color 0.5s ease;
         }
 
         .card-description {
-          color         : map-get($theme-colors, details-gray);
-          font-size     : 14px;
-          font-family   : "SourceSansPro-Bold";
+          color: map-get($theme-colors, details-gray);
+          font-size: 14px;
+          font-family: "SourceSansPro-Bold";
           padding-bottom: 23px;
         }
 
         .library,
         .date-time {
-          font-size     : 12px;
-          font-family   : "SourceSansPro-Bold";
+          font-size: 12px;
+          font-family: "SourceSansPro-Bold";
           padding-bottom: 10px;
         }
 
         .price {
-          color         : map-get($theme-colors, green);
-          font-family   : "Rubik-Medium";
-          font-size     : 12px;
+          color: map-get($theme-colors, green);
+          font-family: "Rubik-Medium";
+          font-size: 12px;
           text-transform: uppercase;
         }
       }
 
       .card-img-top {
-        border-radius   : 2px 2px 0 0;
+        border-radius: 2px 2px 0 0;
         background-color: map-get($theme-colors, light2-gray);
       }
     }

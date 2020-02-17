@@ -5,14 +5,14 @@
   li.pager-item,
   li.pager-current,
   li.pager-ellipsis {
-    opacity       : 0.6;
-    color         : map-get($theme-colors, active-gray);
-    font-family   : 'Rubik-Light';
-    font-size     : map-get($text-size, medium);
+    opacity: 0.6;
+    color: map-get($theme-colors, active-gray);
+    font-family: 'Rubik-Light';
+    font-size: map-get($text-size, medium);
     letter-spacing: 0.42px;
-    margin-left   : 15px;
-    position      : relative;
-    padding       : 0;
+    margin-left: 15px;
+    position: relative;
+    padding: 0;
 
     a:hover {
       text-decoration: none;
@@ -20,32 +20,32 @@
   }
 
   li.pager-current {
-    color      : map-get($theme-colors, blue-button);
+    color: map-get($theme-colors, blue-button);
     font-weight: normal;
 
     &:after {
-      content         : '';
-      position        : absolute;
-      height          : 1px;
-      width           : 100%;
+      content: '';
+      position: absolute;
+      height: 1px;
+      width: 100%;
       background-color: map-get($theme-colors, blue-button);
-      left            : 0;
-      bottom          : 0;
+      left: 0;
+      bottom: 0;
     }
   }
 
   li.pager-next a,
   li.pager-previous a {
-    color  : transparent;
+    color: transparent;
     padding: 0;
-    width  : 25px;
-    height : 8px;
+    width: 25px;
+    height: 8px;
   }
 
   li.pager-next {
-    float  : right;
+    float: right;
     padding: 0;
-    margin : 0;
+    margin: 0;
 
     a {
       background: url('../images/nav-arrow-right.png') no-repeat right center;
@@ -53,9 +53,9 @@
   }
 
   li.pager-previous {
-    float  : left;
+    float: left;
     padding: 0;
-    margin : 0;
+    margin: 0;
 
     a {
       background: url('../images/nav-arrow-left.png') no-repeat left center;
