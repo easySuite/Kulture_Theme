@@ -2,7 +2,7 @@
 
 /**
  * @file
- * DDBasic's theme implementation to display event nodes.
+ * DDBasic theme's implementation to display a node.
  *
  * Available variables:
  * - $title: the (sanitized) title of the node.
@@ -16,8 +16,8 @@
  * - $name: Themed username of node author output from theme_username().
  * - $node_url: Direct url of the current node.
  * - $display_submitted: Whether submission information should be displayed.
- * - $submitted: Submission information created from $date (NOTE: modified for
- *   ddbasic during ddbasic_preprocess_node in templates.php)
+ * - $submitted: Submission information created from $name and $date during
+ *   template_preprocess_node().
  * - $classes: String of classes that can be used to style contextually through
  *   CSS. It can be manipulated through the variable $classes_array from
  *   preprocess functions. The default values can be one or more of the
@@ -73,83 +73,19 @@
  * language, e.g. $node->body['en'], thus overriding any language negotiation
  * rule that was previously applied.
  *
- * ddbasic specific variables:
- * - $ddbasic_updated: Information about latest update on the node created from
- *   $date during
- *   ddbasic_preprocess_node().
- * - $ddbasic_event_location: String containing adress info for either
- *   field_address or group_audience,
- *   as relevant for the event node
- * - $event_date: Event date or period
- * - $event_time: Event time or time-span
- * - $event_price: Event price with 'kr.' suffix - if no price is set $event_price equals 'Free'
- * - $book_button: Link to event-signup or event-tickets
- * - $share_button: Share links for Facebook, Twitter and email
- *
  * @see template_preprocess()
  * @see template_preprocess_node()
  * @see template_process()
  */
-unset($content['field_ding_event_ticket_link']);
- ?>
-<article class="event-details-wrapper <?php print $classes; ?>"<?php print $attributes; ?>>
-  <div class="container inner">
-    <div class="row">
-      <div class="left col-lg-5">
-        <?php print render($content['group_left']['field_ding_event_title_image']); ?>
-      </div>
-      <div class="right col-lg-7">
-        <div class="info-top">
-          <i class="tag-icon"></i>
-          <?php print render($content['field_ding_event_category']); ?>
-        </div>
-        <h1><?php print $title; ?></h1>
-        <div class="event-date"><?php print render($content['group_right']['field_ding_event_date']);?></div>
-        <?php print render($share_button); ?>
-        <div class="event-description"><?php print render($content['group_right']);?></div>
-        <h2><?php print t('Information about the event'); ?></h2>
-        <div class="event-info">
-          <div class="info-item">
-            <?php
-              if ($alt_location_is_set):
-                print render($content['group_left']['field_ding_event_location']);
-              else:
-                print render($content['group_left']['og_group_ref']);
-              endif;
-            ?>
-          </div>
-
-          <!-- insert time-field markup -->
-          <?php if ($event_time): ?>
-            <div class="field-item even info-item"><?php print $event_time; ?></div>
-          <?php endif; ?> 
-          <div class="info-item">
-            <?php if (!empty($campaigns)): ?>
-              <?php print drupal_render($campaigns); ?>
-            <?php endif; ?>
-          </div>
-
-          <!-- insert price-field markup -->
-          <div class="field-item even info-item price"><?php print $event_price; ?></div>
-          <div class="info-item-group">
-            <?php print render($content['group_left']['field_ding_event_target']); ?>
-          </div>
-        </div> 
-        <div class="info-item">
-            <?php
-              if (!empty($book_button)):
-                print render($book_button);
-              endif;
-            ?>
-          </div>
-      </div>
-      <?php // Render MKWS results set. ?>
-      <?php if (!empty($content['field_mkws_node_widget'])) : ?>
-        <?php print render($content['field_mkws_node_widget']); ?>
-      <?php endif; ?>
-    </div>
-    <div>
-     <?php print render($content['field_culture_lists_control']); ?>
-    </div>
+?>
+<?php
+  // Hide elements so we can render them later.
+  hide($content['comments']);
+  hide($content['links']);
+?>
+<div class="<?php print $classes; ?>">
+  <h1 class="page-title"><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h1>
+  <div class="content msd"<?php print $content_attributes; ?>>
+    <?php print render($content); ?>
   </div>
-</article>
+</div>
