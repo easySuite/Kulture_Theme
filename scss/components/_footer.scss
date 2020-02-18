@@ -1,0 +1,108 @@
+.footer {
+  display: block;
+  background-color: map-get($theme-colors, dark);
+  padding: 100px 10px;
+  text-align: center;
+  color: #fff;
+  margin-top: 100px;
+
+  @include media-breakpoint-up(md) {
+    padding: 100px 60px;
+  }
+
+  .contextual-links-wrapper .pane-title,
+  .bottom.btn .pane-title {
+    display: none;
+  }
+
+  .bottom.btn {
+    padding: 0 0 100px 0;
+  }
+
+  .company-info {
+    color: #fff;
+
+    .name-cp {
+      font-family: 'Rubik-Regular';
+      font-size: map-get($text-size, mini);
+      font-weight: 500;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding-bottom: 18px;
+    }
+
+    .email-cp,
+    .phone-cp {
+      font-family: 'Rubik-Light';
+      font-size: map-get($text-size, large);
+      font-weight: 300;
+      letter-spacing: 0.6px;
+
+      a,
+      a:hover {
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+
+    .phone-cp {
+      padding: 20px 0 30px;
+    }
+
+    .address-cp,
+    .location-cp {
+      font-family: 'Rubik-Light';
+      font-size: map-get($text-size, medium);
+      font-weight: 300;
+      letter-spacing: 0.42px;
+    }
+
+    .address-cp {
+      padding-bottom: 10px;
+    }
+  }
+
+  .footer-inner {
+    display: block;
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
+    padding: 50px 27px 0;
+    height: max-content;
+
+    @include media-breakpoint-up(md) {
+      display: flex;
+      justify-content: space-around;
+      padding: 50px 0 0;
+    }
+
+    .panel-pane .panel-pane-inner {
+      .pane-title {
+        font-family: 'Rubik-Medium';
+        font-size: map-get($text-size, mini);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-align: left;
+      }
+
+      ul.menu {
+        margin-top: 40px;
+        list-style: none;
+        padding: 0;
+
+        li {
+          margin: 0;
+          list-style-type: none;
+          font-family: 'Rubik-Light';
+          font-size: map-get($text-size, small);
+          letter-spacing: 0.32px;
+          padding: 0 0 10px 0;
+          line-height: 28px;
+          text-align: left;
+
+          a {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,587 @@
+.page-bibliotek .layout-wrapper {
+  margin-top: 70px;
+
+  .secondary-content {
+    .panel-pane.pane-menu-title {
+      display: none;
+    }
+
+    .pane-og-menu-og-single-menu-block h2 {
+      a {
+        color: map-get($theme-colors, blue);
+        font-family: 'Rubik-Regular';
+        font-size: map-get($text-size, regular);
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+      }
+    }
+  }
+
+  .panel-pane.sub-menu-wrapper {
+
+    .sub-menu-title {
+      color: map-get($theme-colors, blue);
+      font-family: 'Rubik-Regular';
+      font-size: map-get($text-size, regular);
+      letter-spacing: 0.6px;
+    }
+
+    ul.menu {
+      margin: 30px 0 0;
+      list-style: none;
+      padding: 0;
+
+      li {
+        list-style-type: none;
+        margin: 0 0 20px;
+        padding: 0;
+        line-height: 17px;
+
+        a {
+          color: map-get($theme-colors, filter-text);
+          font-family: 'Rubik-Regular';
+          font-size: map-get($text-size, small);
+
+          &,
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        &.active-trail {
+          border-left: 2px solid map-get($theme-colors, blue);
+          padding-left: 10px;
+
+          a {
+            color: map-get($theme-colors, blue);
+          }
+        }
+      }
+    }
+  }
+
+  .panel-pane.sub-menu-wrapper~.panel-separator {
+    margin: 40px 0;
+    height: 1px;
+    background-color: map-get($theme-colors, light2-gray);
+  }
+
+  .pane-taxonomy-menu {
+
+    .pane-title {
+      color: map-get($theme-colors, filter-text);
+      font-family: 'Rubik-Regular';
+      font-size: map-get($text-size, regular);
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+    }
+
+    .item-list ul.sub-menu {
+      margin: 32px 0 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        margin: 0 0 10px;
+
+        a {
+          position: relative;
+          color: map-get($theme-colors, filter-text);
+          font-family: 'Rubik-Regular';
+          font-size: map-get($text-size, small);
+          letter-spacing: 0.3px;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &:before {
+            content: '';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: 1px solid map-get($theme-colors, blue);
+            border-radius: 2px;
+            box-shadow: map-get($shadows, level-2);
+            width: 40px;
+            height: 40px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 20px;
+          }
+
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: calc(50% - 9px);
+            left: 11px;
+            width: 18px;
+            height: 11px;
+            border: solid white;
+            border-width: 1px 1px 0 0;
+            transform: rotate(133deg);
+            box-shadow: none;
+          }
+
+          &.active:before {
+            background-color: map-get($theme-colors, blue);
+          }
+        }
+      }
+    }
+
+    .accordion-wrapper {
+      margin-bottom: 20px;
+
+      .accordion-control {
+        display: inline-block;
+        position: relative;
+        cursor: pointer;
+        padding: 10px 30px 10px 0;
+        color: map-get($theme-colors, filter-text);
+        font-family: "Rubik-Regular";
+        font-size: map-get($text-size, small);
+        @include clearfix();
+
+        span.arrow {
+          position: absolute;
+          right: 0;
+          top: 13px;
+          margin-top: 5px;
+          @include arrow(bottom, 5px, 6px, map-get($theme-colors, filter-text));
+        }
+      }
+
+      .accordion-filter-body {
+        padding-top: 15px;
+
+        ul.sub-menu {
+          padding: 0;
+
+          li {
+            @include checkbox();
+          }
+        }
+      }
+    }
+  }
+}
+
+.primary-content {
+  .view-ding-event {
+    h3.colums {
+      padding: 0;
+      margin-bottom: 30px;
+
+      .date-display-single {
+        text-transform: uppercase;
+        color: map-get($theme-colors, filter-text);
+        font-family: 'Rubik-Regular';
+        font-size: map-get($text-size, regular);
+        letter-spacing: 0.6px;
+      }
+    }
+  }
+
+  @include grid-view-mode();
+
+  .card .node-ding-event,
+  .card .node-ding-news {
+    &:hover .inner .image-wrapper img {
+      transform: translateX(-50%) translateY(-50%) scale(1.5);
+    }
+
+    &:hover .card-body .card-text .card-title {
+      color: map-get($theme-colors, blue);
+    }
+
+    .card-body {
+      padding: 24px 30px;
+    }
+  }
+
+  .card .card-body {
+    padding: 0px;
+    width: 100%;
+
+    .card-img-top {
+      margin-right: 30px;
+
+      img {
+        width: 100%;
+
+        @include media-breakpoint-up(md) {
+          width: auto;
+        }
+      }
+    }
+
+    .category-label,
+    .field-name-field-ding-news-category {
+      display: inline-block;
+    }
+
+    .info-dash {
+      display: none;
+    }
+
+    .card-text.news-text {
+      padding: 29px 30px;
+
+      .news-category {
+        @include clearfix();
+        color: map-get($theme-colors, active-gray);
+        font-size: map-get($text-size, micro);
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 0 20px 20px;
+        letter-spacing: 1px;
+
+        .field,
+        .fields-item,
+        .fild-item {
+          color: map-get($theme-colors, active-gray);
+          font-size: map-get($text-size, micro);
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 0;
+          letter-spacing: 1px;
+        }
+
+        &:after {
+          position: absolute;
+          top: 1px;
+          left: 0;
+          height: 13px;
+          width: 10px;
+          background: url('../images/tag.png') no-repeat center center;
+
+          @include media-breakpoint-up(md) {
+            left: 30%;
+          }
+        }
+
+        &>div {
+          float: left;
+          margin-left: 10px;
+        }
+      }
+
+      .submitted {
+        color: map-get($theme-colors, dark);
+        font-family: 'SourceSansPro-Bold';
+        font-size: map-get($text-size, mini);
+        padding-top: 15px;
+      }
+
+
+      h3 {
+        color: map-get($theme-colors, dark);
+        padding-top: 15px;
+        font-family: "SourceSansPro-Bold";
+        font-size: map-get($text-size, medium-large);
+      }
+
+      h3~.field {
+        color: map-get($theme-colors, details-gray);
+        font-family: "SourceSansPro-Bold";
+        font-size: map-get($text-size, small);
+      }
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    .card.views-row {
+      border: none;
+    }
+
+    .card {
+      border-radius: 2px;
+      margin-bottom: 57px;
+      border: none;
+
+      &.col-lg-12 {
+        padding-right: 0;
+      }
+
+      .node-ding-event,
+      &.node-ding-news {
+        height: 100%;
+        box-shadow: map-get($shadows, level-2);
+      }
+
+      a,
+      a:active,
+      a:visited,
+      a:hover,
+      a:focus {
+        color: map-get($theme-colors, dark);
+        text-decoration: none;
+      }
+
+      .inner {
+        position: relative;
+        @include clearfix();
+      }
+
+      .price-tag {
+        position: absolute;
+        top: 10px;
+        right: -5px;
+        background-color: map-get($theme-colors, green);
+        box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
+        color: white;
+        width: 90px;
+        font-family: 'Rubik-Medium';
+        font-size: map-get($text-size, mini);
+        letter-spacing: 0.4px;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 9px 20px;
+
+        &:after {
+          content: '';
+          position: absolute;
+          right: 0;
+          bottom: -5px;
+          height: 0;
+          width: 0;
+          display: block;
+          border-top: 5px solid map-get($theme-colors, dark-green);
+          border-right: 5px solid transparent;
+          -moz-transform: scale(.9999);
+        }
+      }
+
+      .image-wrapper {
+        position: relative;
+        float: left;
+        overflow: hidden;
+        width: 206px;
+        height: 206px;
+
+        img {
+          top: 50%;
+          left: 50%;
+          transform: translateX(-50%) translateY(-50%);
+          position: absolute;
+          width: auto;
+          height: auto;
+          transition: transform .5s ease;
+        }
+      }
+
+      .card-body {
+        color: map-get($theme-colors, dark);
+        font-family: "SourceSansPro-Regular";
+        padding: 24px 30px;
+        float: left;
+        width: calc(100% - 206px);
+
+        .info-top {
+          color: map-get($theme-colors, active-gray);
+          font-size: map-get($text-size, micro);
+          font-weight: bold;
+          text-transform: uppercase;
+          position: relative;
+          padding-bottom: 19px;
+          letter-spacing: 1px;
+          line-height: 13px;
+
+          i.tag-icon {
+            position: absolute;
+            top: 1px;
+            height: 13px;
+            width: 10px;
+            background: url('../images/tag.png') no-repeat center center;
+          }
+
+          .field {
+            padding-left: 20px;
+          }
+        }
+
+        .date {
+          font-size: map-get($text-size, mini);
+          font-weight: 600;
+          padding-bottom: 15px;
+          line-height: 15px;
+        }
+
+        .card-title {
+          font-size: map-get($text-size, medium-large);
+          font-weight: 900;
+          padding-bottom: 8px;
+          margin: 0;
+          font-family: "SourceSansPro-Bold";
+          text-transform: none;
+          transition: color 0.5s ease;
+        }
+
+        .card-description {
+          color: map-get($theme-colors, details-gray);
+          font-size: map-get($text-size, small);
+          font-weight: 600;
+          padding-bottom: 14px;
+
+          .field-item {
+            @include ellipsis();
+          }
+        }
+
+        .library,
+        .date-time {
+          font-size: map-get($text-size, mini);
+          font-weight: 600;
+        }
+
+        .price {
+          color: map-get($theme-colors, green);
+          font-family: "Rubik-Medium";
+          font-size: map-get($text-size, mini);
+          text-transform: uppercase;
+        }
+      }
+
+      .info-bottom {
+        @include clearfix();
+
+        &>div {
+          padding: 0 10px 0 0;
+          border-right: 1px solid map-get($theme-colors, dark);
+          float: left;
+          height: 18px;
+
+          &:last-child {
+            padding: 0;
+            border: none;
+          }
+
+          &:not(:first-child) {
+            padding-left: 10px;
+          }
+        }
+      }
+
+      .card-img-top {
+        border-radius: 2px 2px 0 0;
+        background-color: map-get($theme-colors, light2-gray);
+      }
+    }
+  }
+}
+
+.primary-content .pane-ding-news-ding-news-list-library {
+  .card .card-body {
+    padding: 0px;
+    width: 100%;
+
+    .card-img-top {
+      margin-right: 30px;
+    }
+
+    .category-label,
+    .field-name-field-ding-news-category {
+      display: inline-block;
+    }
+
+    .info-dash {
+      display: none;
+    }
+
+    .card-text {
+      padding: 24px 30px;
+
+      .news-category {
+        @include clearfix();
+        color: map-get($theme-colors, active-gray);
+        font-size: map-get($text-size, micro);
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 0 20px 20px;
+        letter-spacing: 1px;
+
+        .field,
+        .fields-item,
+        .fild-item {
+          color: map-get($theme-colors, active-gray);
+          font-size: map-get($text-size, micro);
+          font-weight: bold;
+          text-transform: uppercase;
+          padding: 0;
+          letter-spacing: 1px;
+        }
+
+        &:after {
+          position: absolute;
+          top: 1px;
+          height: 13px;
+          width: 10px;
+          background: url('../images/tag.png') no-repeat center center;
+        }
+
+        &>div {
+          float: left;
+          margin-left: 10px;
+        }
+      }
+
+      .submitted {
+        color: map-get($theme-colors, dark);
+        font-family: 'SourceSansPro-Bold';
+        font-size: map-get($text-size, mini);
+        padding-top: 15px;
+      }
+
+
+      h3 {
+        color: map-get($theme-colors, dark);
+        padding-top: 15px;
+        font-family: "SourceSansPro-Bold";
+        font-size: map-get($text-size, medium-large);
+      }
+
+      h3~.field {
+        color: map-get($theme-colors, details-gray);
+        font-family: "SourceSansPro-Bold";
+        font-size: map-get($text-size, small);
+      }
+    }
+  }
+}
+
+}
+
+.page-bibliotek {
+  .secondary-content {
+    padding-left: 10px;
+    padding-right: 10px;
+
+    @include media-breakpoint-up(lg) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    #page .view-display-id-ding_news_list_library.container {
+      padding: 0;
+    }
+
+    .primary-content.col-lg-8.float-right {
+      padding-right: 0;
+    }
+
+    .primary-content .pane-content .view.container {
+      padding-right: 0;
+    }
+  }
+}
+
+.page-bibliotek #page .content-inner .primary-content .view.container {
+  padding-right: 0;
+}

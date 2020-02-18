@@ -1,0 +1,159 @@
+@mixin grid-view-mode() {
+  .card {
+    border: none;
+    border-radius: 2px;
+    margin-bottom: 57px;
+
+    &.news-item {
+      border: none;
+      margin-bottom: 0;
+    }
+
+    &.views-row {
+      @include media-breakpoint-up(md) {
+        border: none;
+      }
+    }
+
+    .node-ding-event,
+    .node-ding-news {
+      height: 100%;
+      box-shadow: map-get($shadows, level-2);
+
+      &:hover {
+        & .inner .image-wrapper img {
+          transform: scale(1.5);
+        }
+
+        & .card-body .card-text .card-title {
+          color: map-get($theme-colors, blue);
+        }
+      }
+    }
+
+    a,
+    a:active,
+    a:visited,
+    a:hover,
+    a:focus {
+      color: map-get($theme-colors, dark);
+      text-decoration: none;
+    }
+
+    .inner {
+      position: relative;
+    }
+
+    .price-tag {
+      position: absolute;
+      top: 10px;
+      right: -5px;
+      background-color: map-get($theme-colors, green);
+      box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
+      color: white;
+      width: 90px;
+      font-family: 'Rubik-Medium';
+      font-size: map-get($text-size, mini);
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      text-align: center;
+      padding: 9px 20px;
+
+      &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        bottom: -5px;
+        height: 0;
+        width: 0;
+        display: block;
+        border-top: 5px solid map-get($theme-colors, dark-green);
+        border-right: 5px solid transparent;
+        -moz-transform: scale(.9999);
+      }
+    }
+
+    .image-wrapper {
+      position: relative;
+      overflow: hidden;
+      height: 206px;
+
+      img {
+        position: absolute;
+        transition: transform .5s ease;
+      }
+    }
+
+    .card-body,
+    .card-body.event-text {
+      color: map-get($theme-colors, dark);
+      font-family: "SourceSansPro-Regular";
+      padding: 30px;
+
+      .info-top {
+        color: map-get($theme-colors, active-gray);
+        font-size: map-get($text-size, micro);
+        font-family: "SourceSansPro-Bold";
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 20px;
+        letter-spacing: 1px;
+
+        i.tag-icon {
+          position: absolute;
+          top: 1px;
+          height: 13px;
+          width: 10px;
+          background: url('../images/tag.png') no-repeat center center;
+        }
+
+        .field {
+          padding-left: 20px;
+        }
+      }
+
+      .date {
+        font-size: map-get($text-size, mini);
+        font-family: "SourceSansPro-Bold";
+        padding-bottom: 15px;
+      }
+
+      .card-title {
+        font-size: map-get($text-size, medium-large);
+        font-weight: 900;
+        padding-bottom: 8px;
+        margin: 0;
+        font-family: "SourceSansPro-Bold";
+        text-transform: none;
+        transition: color 0.5s ease;
+      }
+
+      .card-description {
+        color: map-get($theme-colors, details-gray);
+        font-size: map-get($text-size, small);
+        font-family: "SourceSansPro-Bold";
+        padding-bottom: 23px;
+      }
+
+      .library,
+      .date-time {
+        font-size: map-get($text-size, mini);
+        font-family: "SourceSansPro-Bold";
+        padding-bottom: 10px;
+      }
+
+      .price {
+        color: map-get($theme-colors, green);
+        font-family: "Rubik-Medium";
+        font-size: map-get($text-size, mini);
+        text-transform: uppercase;
+      }
+    }
+
+
+    .card-img-top {
+      border-radius: 2px 2px 0 0;
+      background-color: map-get($theme-colors, light2-gray);
+    }
+  }
+}

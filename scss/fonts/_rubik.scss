@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'Rubik-Regular';
+  //src      : url('../../fonts/Rubik-Regular.eot');
+  src:
+    url('../fonts/Rubik-Regular.ttf') format('truetype');
+  //   url('../fonts/Rubik-Regular.eot?#iefix') format('embedded-opentype'),
+  // url('../fonts/Rubik-Regular.woff') format('woff'),
+  // url('../fonts/Rubik-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik-Bold';
+  // src     : url('../fonts/Rubik-Medium.eot');
+  src:
+    //  url('../fonts/Rubik-Medium.eot?#iefix') format('embedded-opentype'),
+    //   url('../fonts/Rubik-Medium.woff') format('woff'),
+    url('../fonts/Rubik-Bold.ttf') format('truetype');
+  //   url('../fonts/Rubik-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik-Medium';
+  // src     : url('../fonts/Rubik-Medium.eot');
+  src:
+    //  url('../fonts/Rubik-Medium.eot?#iefix') format('embedded-opentype'),
+    //   url('../fonts/Rubik-Medium.woff') format('woff'),
+    url('../fonts/Rubik-Medium.ttf') format('truetype');
+  //   url('../fonts/Rubik-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rubik-Light';
+  // src     : url('../fonts/Rubik-Light.eot');
+  src:
+    //  url('../fonts/Rubik-Light.eot?#iefix') format('embedded-opentype'),
+    //  url('../fonts/Rubik-Light.woff') format('woff'),
+    url('../fonts/Rubik-Light.ttf') format('truetype');
+  //  url('../fonts/Rubik-Light.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

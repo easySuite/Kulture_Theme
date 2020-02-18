@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Fortuna Regular';
+  // src     : url('../fonts/Fortuna Regular.eot');
+  src:
+    //  url('../fonts/Fortuna Regular.eot?#iefix') format('embedded-opentype'),
+    //   url('../fonts/Fortuna Regular.woff') format('woff'),
+    url('../fonts/Fortuna Regular.ttf') format('truetype');
+  //   url('../fonts/Fortuna Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}

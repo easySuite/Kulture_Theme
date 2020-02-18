@@ -1,4 +1,12 @@
 <?php
+
+/**
+ * @file
+ * Preprocessors.
+ */
+
+require_once __DIR__ . '/template.node.php';
+
 /**
  * Implements hook_preprocess_panels_pane().
  */
@@ -35,4 +43,69 @@ function kulture_theme_preprocess_panels_pane(&$vars) {
       $vars['content']['#theme_wrappers'] = array('menu_tree__sub_menu');
     }
   }
+}
+
+/**
+ * Implements theme_menu_tree().
+ */
+function kulture_theme_menu_tree__menu_block__1($vars) {
+  return '<ul class="main-menu navbar-nav mr-auto">' . $vars['tree'] . '</ul>';
+}
+
+/**
+ * Implements hook_process_html().
+ *
+ * Process variables for html.tpl.php.
+ */
+function kulture_theme_process_html(&$vars) {
+
+  // Hook into color.module.
+  if (module_exists('color')) {
+    _color_html_alter($vars);
+  }
+}
+
+/**
+ * Implements hook_preprocess_html().
+ */
+function kulture_theme_preprocess_html(&$vars) {
+  // Include the libraries.
+  libraries_load('slick');
+}
+
+/**
+ * Implements hook_process_page().
+ */
+function kulture_theme_process_page(&$vars) {
+  // Hook into color.module.
+  if (module_exists('color')) {
+    _color_page_alter($vars);
+  }
+}
+
+/**
+ * Returns HTML for a date element formatted as a range.
+ */
+function kulture_theme_date_display_range($variables) {
+  $date1 = $variables['date1'];
+  $date2 = $variables['date2'];
+  $timezone = $variables['timezone'];
+  $attributes_start = $variables['attributes_start'];
+  $attributes_end = $variables['attributes_end'];
+
+  $start_date = '<span class="date-display-start"' . drupal_attributes($attributes_start) . '>' . $date1 . '</span>';
+  $end_date = '<span class="date-display-end"' . drupal_attributes($attributes_end) . '>' . $date2 . $timezone . '</span>';
+
+  // If microdata attributes for the start date property have been passed in,
+  // add the microdata in meta tags.
+  if (!empty($variables['add_microdata'])) {
+    $start_date .= '<meta' . drupal_attributes($variables['microdata']['value']['#attributes']) . '/>';
+    $end_date .= '<meta' . drupal_attributes($variables['microdata']['value2']['#attributes']) . '/>';
+  }
+
+  // Wrap the result with the attributes.
+  return t('!start-date - !end-date', array(
+    '!start-date' => $start_date,
+    '!end-date' => $end_date,
+  ));
 }

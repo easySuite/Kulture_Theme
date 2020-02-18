@@ -1,0 +1,135 @@
+ul li.leaf {
+  list-style-image: none;
+}
+
+.form-checkboxes ul {
+  list-style-image: none;
+  list-style: none;
+  padding: 0;
+
+  li {
+    list-style: none;
+  }
+}
+
+.layout-wrapper {
+  width: 100%;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  width: 100%;
+}
+
+.content-wrapper {
+
+  .col-lg-12,
+  .col-md-12,
+  .col-sm-12,
+  .col-md-8,
+  .col-lg-8,
+  .col-lg-7,
+  .col-md-6,
+  .col-lg-6,
+  .col-md-5,
+  .col-lg-5,
+  .col-md-5,
+  .col-lg-4,
+  .col-md-4 {
+    margin: 0;
+    padding: 0;
+
+    @include media-breakpoint-up(lg) {
+      padding-right: 28.5px;
+      padding-left: 28.5px;
+    }
+  }
+
+  .col-sm-12 {
+    @include media-breakpoint-up(m) {
+      width: auto;
+      flex: auto;
+    }
+  }
+}
+
+#page .content-inner .container {
+  padding: 0;
+
+  @include media-breakpoint-up(lg) {
+    padding-right: 28.5px;
+    padding-left: 28.5px;
+  }
+}
+
+.not-front {
+  .layout-wrapper {
+    padding: 0 10px;
+
+    @include media-breakpoint-up(lg) {
+      padding: 0;
+    }
+  }
+}
+
+.container {
+  padding: 0 10px;
+
+  @include media-breakpoint-up(lg) {
+    padding-right: 28.5px;
+    padding-left: 28.5px;
+    margin: 0 auto;
+  }
+}
+
+.page-taxonomy-term {
+  #page .node-ding-library.library-item-wrapper {
+    max-width: map-get($container-max-widths, lg);
+    @extend.container;
+  }
+}
+
+.page-user-login .content-inner,
+.page-user .content-inner {
+  max-width: map-get($container-max-widths, lg);
+  @extend.container;
+}
+
+.search-overlay--wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  opacity: 1;
+
+  .search-overlay--inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: white;
+    padding: 40px;
+    width: 350px;
+    height: auto;
+    opacity: 1;
+    transform: translateX(-50%) translateY(-50%);
+    border-radius: 2px;
+
+    .icon-spinner {
+      display: none;
+    }
+
+    .search-overlay--text {
+      color: black;
+    }
+
+    .cancel a {
+      color: blue;
+    }
+  }
+}

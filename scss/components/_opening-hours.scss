@@ -1,0 +1,103 @@
+.primary-content .library-item-wrapper,
+.primary-content .pane-weekly-opening-hours,
+.content-wrapper .library-item-wrapper {
+
+  .accordion-wrapper {
+    box-shadow: map-get($shadows, level-2);
+    margin-bottom: 100px;
+  }
+
+  .accordion-control {
+    display: block;
+    position: relative;
+    background-color: white;
+    padding: 26px 30px;
+    color: map-get($theme-colors, filter-text);
+    font-family: 'Rubik-Regular';
+    font-size: map-get($text-size, small);
+    cursor: pointer;
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: 30px;
+      top: calc(50% - 3px);
+      @include arrow(bottom, 5px, 6px, map-get($theme-colors, filter-text));
+    }
+
+    &:not(.collapsed) {
+      background-color: map-get($theme-colors, blue);
+      color: white;
+
+      &:after {
+        @include arrow(top, 5px, 6px, white);
+      }
+    }
+  }
+
+  .opening-hours-week {
+    position: relative;
+    padding: 0 30px;
+  }
+
+  .opening-hours-title {
+    display: none;
+  }
+
+  .opening-hours-table {
+    width: 100%;
+  }
+
+  .button-next,
+  .button-previous {
+    color: transparent;
+    position: absolute;
+    bottom: -60px;
+  }
+
+  .button-next {
+    right: 0;
+    background: url('../images/nav-arrow-right.png') no-repeat right center;
+  }
+
+  .button-previous {
+    left: 0;
+    background: url('../images/nav-arrow-left.png') no-repeat left center;
+  }
+
+  .opening-hours-table {
+    color: map-get($theme-colors, filter-text);
+    font-family: 'Rubik-Regular';
+    font-size: map-get($text-size, small);
+
+    thead {
+      tr th {
+        padding: 28px 0;
+        text-transform: uppercase;
+        border: none;
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        border: none;
+        background: none;
+        padding: 0;
+
+        td {
+          padding: 20px 0;
+          border-top: 1px solid #e0e0e0;
+
+          .opening-hours-table-notice {
+            padding-left: 20px;
+            opacity: 0.6;
+          }
+        }
+      }
+    }
+  }
+}

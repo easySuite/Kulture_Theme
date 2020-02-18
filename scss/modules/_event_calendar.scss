@@ -1,0 +1,407 @@
+.front.page-culture-frontpage .content-wrapper .container {
+  #eventsCalendar {
+    max-width: 340px;
+    width: calc(100% - 20px);
+    margin: 30px auto 0;
+
+    @include media-breakpoint-up(md) {
+      width: calc(100% - 40px);
+      max-width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+      margin: 0;
+    }
+
+    .navi-heading {
+      position: relative;
+
+      h2 {
+        color: map-get($theme-colors, filter-text);
+        font-family: 'Rubik-Regular';
+        font-size: map-get($text-size, regular);
+        letter-spacing: 0.6px;
+        line-height: 19px;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      a {
+        position: absolute;
+        width: 25px;
+        height: 8px;
+        text-decoration: none;
+        color: transparent;
+
+        &:hover {
+          text-decoration: none;
+        }
+
+
+        &.slick-next {
+          right: 1px;
+          top: calc(50% - 10px);
+          background: url(../images/nav-arrow-right.png) no-repeat right center;
+        }
+
+        &.slick-prev {
+          left: 1px;
+          top: calc(50% - 10px);
+          background: url(../images/nav-arrow-left.png) no-repeat right center;
+        }
+      }
+    }
+
+    table#calendar {
+      min-width: 100%;
+      width: auto;
+      border-collapse: separate;
+      border-spacing: 0 10px;
+
+      tbody {
+        width: auto;
+        border: none;
+
+        tr.calendar-row {
+          background-color: transparent;
+          border: none;
+
+          .calendar-day-head {
+            width: 38px;
+            height: 38px;
+            background: transparent;
+            color: map-get($theme-colors, filter-text);
+            font-family: 'Rubik-Regular';
+            font-size: map-get($text-size, mini);
+            letter-spacing: 0.3px;
+            line-height: 14px;
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: normal;
+
+            @include media-breakpoint-up(md) {
+              width: 52px;
+              height: 52px;
+            }
+          }
+
+          td {
+            border: none;
+            background: none;
+            padding: 0;
+
+            &.calendar-day .day-number,
+            &.event-start,
+            &.event-progress,
+            &.event-end {
+              width: 38px;
+              height: 38px;
+              font-size: map-get($text-size, mini);
+              color: map-get($theme-colors, filter-text);
+              font-family: 'Rubik-Medium';
+              line-height: 14px;
+              text-decoration: none;
+
+              a {
+                font-size: map-get($text-size, mini);
+                color: map-get($theme-colors, filter-text);
+                font-family: 'Rubik-Medium';
+                line-height: 14px;
+                text-decoration: none;
+              }
+
+              @include media-breakpoint-up(md) {
+                width: 52px;
+                height: 52px;
+              }
+
+              @include media-breakpoint-up(lg) {
+                width: 40px;
+                height: 40px;
+
+                a {
+                  color: white;
+
+                  &:hover {
+                    text-decoration: none;
+                  }
+                }
+              }
+
+              @include media-breakpoint-up(xl) {
+                width: 48px;
+                height: 48px;
+              }
+            }
+
+            .day-number {
+              padding: 0;
+              display: flex;
+              align-items: center;
+              align-self: center;
+              margin: 0;
+              justify-content: center;
+              justify-self: center;
+
+              a {
+                display: inline-block;
+                flex: 1;
+                height: auto;
+                width: auto;
+                padding: 13px;
+              }
+
+              @include media-breakpoint-up(md) {
+                a {
+                  padding: 17px;
+                }
+              }
+            }
+
+            &.current-day .day-number {
+              background-color: map-get($theme-colors, blue);
+              color: white;
+              border-radius: 50%;
+              margin-right: 6px;
+            }
+
+            &.has-events .day-number {
+              background-color: white;
+              box-shadow: 0 10px 35px 0 rgba(30, 1, 149, 0.2);
+              border-radius: 50%;
+              margin-right: 6px;
+
+              @include media-breakpoint-up(lg) {
+                background-color: map-get($theme-colors, gray);
+              }
+            }
+
+            &.event-start .day-number,
+            &.event-progress .day-number {
+              box-shadow: none;
+            }
+
+            @include media-breakpoint-up(lg) {
+
+              &.event-start .day-number,
+              &.event-progress .day-number {
+                box-shadow: none;
+              }
+            }
+
+            &.has-events.current-day .day-number {
+              background-color: map-get($theme-colors, blue);
+              color: white;
+
+              a {
+                color: white;
+              }
+            }
+
+            &.event-start,
+            &.event-progress,
+            &.event-end {
+              background-color: white;
+              z-index: 1;
+              padding: 0;
+              margin: 0;
+
+              @include media-breakpoint-up(lg) {
+                background-color: map-get($theme-colors, gray);
+                padding: 0;
+                margin: 0;
+              }
+            }
+
+            &.event-end {
+              border-radius: 0 50% 50% 0;
+              box-shadow: none !important;
+
+              .day-number {
+                box-shadow: 6px 1px 8px rgba(30, 1, 149, 0.2), 4px -1px 4px rgba(30, 1, 149, 0.2) !important;
+              }
+
+              @include media-breakpoint-up(md) {
+                border-radius: 0 50px 50px 0;
+              }
+
+              @include media-breakpoint-up(lg) {
+                box-shadow: none;
+                border-radius: 0 50% 50% 0;
+                background-color: white;
+
+                .day-number {
+                  box-shadow: none !important;
+                  background-color: map-get($theme-colors, gray);
+                }
+              }
+            }
+
+            &.event-progress {
+              box-shadow: 13px 3px 8px rgba(30, 1, 149, 0.2), 4px -1px 4px rgba(30, 1, 149, 0.2);
+
+              @include media-breakpoint-up(lg) {
+                box-shadow: none;
+              }
+            }
+
+            &.event-start {
+              border-radius: 50% 0 0 50%;
+              box-shadow: -1px -1px 6px 0px rgba(30, 1, 149, 0.2);
+            }
+
+            &.has-events.event-start .day-number {
+              border-radius: 50% 0 0 50%;
+              margin-right: 0;
+            }
+
+            &.has-events.event-progress .day-number {
+              margin-bottom: 0px;
+              border-radius: 50%;
+            }
+
+            &.has-events.event-end .day-number {
+              border-radius: 0 50% 50% 0;
+              box-shadow: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #eventList {
+    border: none;
+    margin: 30px auto 0;
+    width: calc(100% - 20px);
+    max-width: 352px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 100%;
+      width: calc(100% - 40px);
+    }
+
+    @include media-breakpoint-up(lg) {
+      width: 100%;
+      margin: 30px 0 0;
+    }
+
+    .more-link {
+      float: none;
+      text-align: center;
+      margin-top: 30px;
+
+      a {
+        display: inline-block;
+        color: white;
+        font-family: 'Rubik-Regular';
+        font-size: map-get($text-size, small);
+        font-weight: 500;
+        letter-spacing: 0.8px;
+        line-height: 17px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 29px 20px;
+        width: 100%;
+        max-width: 410px;
+        background-color: map-get($theme-colors, blue);
+        transition: box-shadow 0.2s linear;
+
+        &,
+        &:hover {
+          text-decoration: none;
+        }
+
+        &:hover {
+          box-shadow: 0 10px 35px 0 rgba(30, 1, 149, 0.2);
+        }
+      }
+    }
+
+    .event-day-header {
+      color: map-get($theme-colors, dark);
+      font-family: 'Rubik-Light';
+      font-size: map-get($text-size, small);
+      letter-spacing: 0.3px;
+      line-height: 17px;
+      text-transform: uppercase;
+      font-weight: normal;
+      text-align: left;
+      margin: 0 0 30px 0;
+    }
+
+    .event-items {
+      max-height: 100%;
+      padding: 0 20px;
+      background-color: white;
+      box-shadow: map-get($shadows, level-2);
+
+      .event-item {
+        background: transparent url(../images/nav-arrow-right.png) no-repeat right center;
+        padding: 24px 25px 23px 0;
+        border-bottom: 1px solid map-get($theme-colors, light-gray);
+
+        &:last-child {
+          border-bottom: 0;
+        }
+
+        .event-title {
+          line-height: 19px;
+
+          a {
+            color: map-get($theme-colors, dark);
+            font-family: 'SourceSansPro-Bold';
+            font-size: map-get($text-size, small);
+            line-height: 19px;
+            text-decoration: none;
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .info-event {
+        @include clearfix();
+        margin-top: 7px;
+
+        .event-location {
+          float: left;
+          line-height: 14px;
+
+          a {
+            text-decoration: none;
+            color: map-get($theme-colors, dark);
+            font-family: "SourceSansPro-Semibold";
+            font-size: map-get($text-size, mini);
+            line-height: 15px;
+
+            &:after {
+              margin-left: 24px;
+              content: '|';
+            }
+
+            &:hover {
+              text-decoration: none;
+            }
+          }
+        }
+      }
+
+      .event-time {
+        float: left;
+        margin: 0 0 0 10px;
+        color: map-get($theme-colors, dark);
+        font-family: "SourceSansPro-Semibold";
+        font-size: map-get($text-size, mini);
+        line-height: 15px;
+      }
+
+      .event-category {
+        display: none;
+      }
+    }
+  }
+}

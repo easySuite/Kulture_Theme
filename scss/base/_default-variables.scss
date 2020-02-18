@@ -1,0 +1,49 @@
+$container-max-widths: (sm: 767px,
+  md: 992px,
+  lg: 1024px,
+  xl: 1252px) !default;
+
+$grid-gutter-width: 57px !default;
+
+/**
+ * Default Variables.
+ */
+
+$theme-colors: (dark: #000119,
+  filter-text: #01032E,
+  blue: #1E0195,
+  blue-button: #1820B0,
+  green: #00A878,
+  dark-green:#007352,
+  details-gray: #414256,
+  active-gray: #4D4E6C,
+  gray: #8B8CA4,
+  disabled: #8F8F8F,
+  light-gray: #F0F0F2,
+  light2-gray: #DBD9D9,
+  wihte: #ffffff,
+  black: #8f8d8dc9);
+
+
+$text-size: (micro: 10px,
+  mini: 12px,
+  small: 14px,
+  small-medium: 15px,
+  regular: 16px,
+  medium: 18px,
+  medium-large: 21px,
+  large: 26px,
+  extra-large: 42px,
+  massive: 57px);
+
+$line-height: (small: 1,
+  small-medium: 10,
+  regular: 17,
+  medium: 25,
+  large: 30);
+
+$shadows: (level-1: 0 10px 30px 0 rgba(0, 0, 0, 0.1),
+  level-2: 0 10px 35px 0 rgba(9, 0, 38, 0.1),
+  level-3: 0 10px 35px 0 rgba(30, 1, 149, 0.2));
+
+$max-width: 1124px;
