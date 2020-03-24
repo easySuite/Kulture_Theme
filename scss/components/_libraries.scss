@@ -17,6 +17,10 @@
   margin-top: 70px;
 
   .contextual-links-region.sub-menu-wrapper {
+    .pane-content {
+      margin: 0;
+    }
+
     h2.sub-menu-title {
       a {
         color: map-get($theme-colors, blue);

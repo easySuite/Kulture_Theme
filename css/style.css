@@ -9743,6 +9743,10 @@ header.site-header nav.main-menu-wrapper.navbar {
 .node-type-ding-page .content-wrapper .pane-content,
 .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content {
   margin-top: 70px; }
+  .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper .pane-content,
+  .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper .pane-content,
+  .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper .pane-content {
+    margin: 0; }
   .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper h2.sub-menu-title a,
   .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper h2.sub-menu-title a,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper h2.sub-menu-title a {
