@@ -8746,7 +8746,8 @@ header.site-header nav.main-menu-wrapper.navbar {
     margin-top: 32px; }
     header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav ul.main-menu.navbar-nav {
       display: none; }
-    header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav .last.collapsed {
+    header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav .last.collapsed,
+    header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li.collapsed {
       list-style-image: none; }
     @media (min-width: 992px) {
       header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav {
@@ -9744,45 +9745,69 @@ header.site-header nav.main-menu-wrapper.navbar {
 .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content {
   margin-top: 70px; }
   .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper .pane-content,
+  .page-libraries #ding-library-page .panel-pane.sub-menu-wrapper .pane-content,
   .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper .pane-content,
-  .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper .pane-content {
+  .node-type-ding-page .content-wrapper .pane-content .panel-pane.sub-menu-wrapper .pane-content,
+  .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper .pane-content,
+  .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .panel-pane.sub-menu-wrapper .pane-content {
     margin: 0; }
   .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper h2.sub-menu-title a,
+  .page-libraries #ding-library-page .panel-pane.sub-menu-wrapper h2.sub-menu-title a,
   .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper h2.sub-menu-title a,
-  .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper h2.sub-menu-title a {
+  .node-type-ding-page .content-wrapper .pane-content .panel-pane.sub-menu-wrapper h2.sub-menu-title a,
+  .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper h2.sub-menu-title a,
+  .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .panel-pane.sub-menu-wrapper h2.sub-menu-title a {
     color: #1E0195;
     font-family: 'Rubik-Regular';
     font-size: 16px;
     letter-spacing: 0.6px;
     text-transform: uppercase; }
   .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper ul.menu,
+  .page-libraries #ding-library-page .panel-pane.sub-menu-wrapper ul.menu,
   .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu,
-  .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu {
+  .node-type-ding-page .content-wrapper .pane-content .panel-pane.sub-menu-wrapper ul.menu,
+  .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu,
+  .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .panel-pane.sub-menu-wrapper ul.menu {
     margin: 30px 0 0; }
     .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper ul.menu li,
+    .page-libraries #ding-library-page .panel-pane.sub-menu-wrapper ul.menu li,
     .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li,
-    .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li {
+    .node-type-ding-page .content-wrapper .pane-content .panel-pane.sub-menu-wrapper ul.menu li,
+    .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li,
+    .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .panel-pane.sub-menu-wrapper ul.menu li {
       margin-bottom: 10px; }
       .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper ul.menu li a,
+      .page-libraries #ding-library-page .panel-pane.sub-menu-wrapper ul.menu li a,
       .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a,
-      .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a {
+      .node-type-ding-page .content-wrapper .pane-content .panel-pane.sub-menu-wrapper ul.menu li a,
+      .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a,
+      .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .panel-pane.sub-menu-wrapper ul.menu li a {
         position: relative;
         color: #01032E;
         font-family: 'Rubik-Regular';
         font-size: 14px;
         letter-spacing: 0.3px; }
         .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper ul.menu li a:hover,
+        .page-libraries #ding-library-page .panel-pane.sub-menu-wrapper ul.menu li a:hover,
         .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a:hover,
-        .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a:hover {
+        .node-type-ding-page .content-wrapper .pane-content .panel-pane.sub-menu-wrapper ul.menu li a:hover,
+        .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a:hover,
+        .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .panel-pane.sub-menu-wrapper ul.menu li a:hover {
           text-decoration: none; }
         .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail,
+        .page-libraries #ding-library-page .panel-pane.sub-menu-wrapper ul.menu li a.active-trail,
         .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail,
-        .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail {
+        .node-type-ding-page .content-wrapper .pane-content .panel-pane.sub-menu-wrapper ul.menu li a.active-trail,
+        .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail,
+        .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .panel-pane.sub-menu-wrapper ul.menu li a.active-trail {
           border-left: 2px solid #1E0195;
           padding-left: 10px; }
           .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail a,
+          .page-libraries #ding-library-page .panel-pane.sub-menu-wrapper ul.menu li a.active-trail a,
           .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail a,
-          .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail a {
+          .node-type-ding-page .content-wrapper .pane-content .panel-pane.sub-menu-wrapper ul.menu li a.active-trail a,
+          .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail a,
+          .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .panel-pane.sub-menu-wrapper ul.menu li a.active-trail a {
             color: #1E0195; }
   .page-libraries #ding-library-page .primary-content h2.pane-title,
   .page-libraries #ding-library-page .secondary-content h2.pane-title,

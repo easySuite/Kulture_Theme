@@ -16,7 +16,8 @@
 .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content {
   margin-top: 70px;
 
-  .contextual-links-region.sub-menu-wrapper {
+  .contextual-links-region.sub-menu-wrapper,
+   .panel-pane.sub-menu-wrapper {
     .pane-content {
       margin: 0;
     }
