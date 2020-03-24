@@ -12,8 +12,50 @@
 }
 
 .page-libraries #ding-library-page,
+.node-type-ding-page .content-wrapper .pane-content,
 .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content {
   margin-top: 70px;
+
+  .contextual-links-region.sub-menu-wrapper {
+    h2.sub-menu-title {
+      a {
+        color: map-get($theme-colors, blue);
+        font-family: 'Rubik-Regular';
+        font-size: map-get($text-size, regular);
+        letter-spacing: 0.6px;
+        text-transform: uppercase;
+      }
+    }
+
+    ul.menu {
+      margin: 30px 0 0;
+
+      li {
+        margin-bottom: 10px;
+
+        a {
+          position: relative;
+          color: map-get($theme-colors, filter-text);
+          font-family: 'Rubik-Regular';
+          font-size: map-get($text-size, small);
+          letter-spacing: 0.3px;
+
+          &:hover {
+            text-decoration: none;
+          }
+
+          &.active-trail {
+            border-left: 2px solid map-get($theme-colors, blue);
+            padding-left: 10px;
+
+            a {
+              color: map-get($theme-colors, blue);
+            }
+          }
+        }
+      }
+    }
+  }
 
   .primary-content,
   .secondary-content {

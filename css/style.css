@@ -8746,6 +8746,8 @@ header.site-header nav.main-menu-wrapper.navbar {
     margin-top: 32px; }
     header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav ul.main-menu.navbar-nav {
       display: none; }
+    header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav .last.collapsed {
+      list-style-image: none; }
     @media (min-width: 992px) {
       header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav {
         margin-top: 0;
@@ -9738,10 +9740,50 @@ header.site-header nav.main-menu-wrapper.navbar {
       padding-right: 0; } }
 
 .page-libraries #ding-library-page,
+.node-type-ding-page .content-wrapper .pane-content,
 .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content {
   margin-top: 70px; }
+  .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper h2.sub-menu-title a,
+  .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper h2.sub-menu-title a,
+  .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper h2.sub-menu-title a {
+    color: #1E0195;
+    font-family: 'Rubik-Regular';
+    font-size: 16px;
+    letter-spacing: 0.6px;
+    text-transform: uppercase; }
+  .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper ul.menu,
+  .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu,
+  .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu {
+    margin: 30px 0 0; }
+    .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper ul.menu li,
+    .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li,
+    .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li {
+      margin-bottom: 10px; }
+      .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper ul.menu li a,
+      .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a,
+      .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a {
+        position: relative;
+        color: #01032E;
+        font-family: 'Rubik-Regular';
+        font-size: 14px;
+        letter-spacing: 0.3px; }
+        .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper ul.menu li a:hover,
+        .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a:hover,
+        .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a:hover {
+          text-decoration: none; }
+        .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail,
+        .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail,
+        .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail {
+          border-left: 2px solid #1E0195;
+          padding-left: 10px; }
+          .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail a,
+          .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail a,
+          .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper ul.menu li a.active-trail a {
+            color: #1E0195; }
   .page-libraries #ding-library-page .primary-content h2.pane-title,
   .page-libraries #ding-library-page .secondary-content h2.pane-title,
+  .node-type-ding-page .content-wrapper .pane-content .primary-content h2.pane-title,
+  .node-type-ding-page .content-wrapper .pane-content .secondary-content h2.pane-title,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .primary-content h2.pane-title,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .secondary-content h2.pane-title {
     color: #01032E;
@@ -9753,6 +9795,10 @@ header.site-header nav.main-menu-wrapper.navbar {
   .page-libraries #ding-library-page .primary-content ul li,
   .page-libraries #ding-library-page .secondary-content ul,
   .page-libraries #ding-library-page .secondary-content ul li,
+  .node-type-ding-page .content-wrapper .pane-content .primary-content ul,
+  .node-type-ding-page .content-wrapper .pane-content .primary-content ul li,
+  .node-type-ding-page .content-wrapper .pane-content .secondary-content ul,
+  .node-type-ding-page .content-wrapper .pane-content .secondary-content ul li,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .primary-content ul,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .primary-content ul li,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .secondary-content ul,
@@ -9761,15 +9807,19 @@ header.site-header nav.main-menu-wrapper.navbar {
     margin: 0;
     padding: 0; }
   .page-libraries #ding-library-page .secondary-content .views-exposed-form,
+  .node-type-ding-page .content-wrapper .pane-content .secondary-content .views-exposed-form,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .secondary-content .views-exposed-form {
     display: none; }
   .page-libraries #ding-library-page .secondary-content ul.sub-menu,
+  .node-type-ding-page .content-wrapper .pane-content .secondary-content ul.sub-menu,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .secondary-content ul.sub-menu {
     margin-top: 32px; }
     .page-libraries #ding-library-page .secondary-content ul.sub-menu li,
+    .node-type-ding-page .content-wrapper .pane-content .secondary-content ul.sub-menu li,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .secondary-content ul.sub-menu li {
       margin-bottom: 10px; }
       .page-libraries #ding-library-page .secondary-content ul.sub-menu li a,
+      .node-type-ding-page .content-wrapper .pane-content .secondary-content ul.sub-menu li a,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .secondary-content ul.sub-menu li a {
         position: relative;
         color: #01032E;
@@ -9777,9 +9827,11 @@ header.site-header nav.main-menu-wrapper.navbar {
         font-size: 14px;
         letter-spacing: 0.3px; }
         .page-libraries #ding-library-page .secondary-content ul.sub-menu li a:hover,
+        .node-type-ding-page .content-wrapper .pane-content .secondary-content ul.sub-menu li a:hover,
         .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .secondary-content ul.sub-menu li a:hover {
           text-decoration: none; }
         .page-libraries #ding-library-page .secondary-content ul.sub-menu li a:before,
+        .node-type-ding-page .content-wrapper .pane-content .secondary-content ul.sub-menu li a:before,
         .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .secondary-content ul.sub-menu li a:before {
           content: '';
           -webkit-appearance: none;
@@ -9795,6 +9847,7 @@ header.site-header nav.main-menu-wrapper.navbar {
           cursor: pointer;
           margin-right: 20px; }
         .page-libraries #ding-library-page .secondary-content ul.sub-menu li a:after,
+        .node-type-ding-page .content-wrapper .pane-content .secondary-content ul.sub-menu li a:after,
         .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .secondary-content ul.sub-menu li a:after {
           content: '';
           display: block;
@@ -9808,18 +9861,23 @@ header.site-header nav.main-menu-wrapper.navbar {
           transform: rotate(133deg);
           box-shadow: none; }
         .page-libraries #ding-library-page .secondary-content ul.sub-menu li a.active:before,
+        .node-type-ding-page .content-wrapper .pane-content .secondary-content ul.sub-menu li a.active:before,
         .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .secondary-content ul.sub-menu li a.active:before {
           background-color: #1E0195; }
   .page-libraries #ding-library-page ul.library-list,
+  .node-type-ding-page .content-wrapper .pane-content ul.library-list,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content ul.library-list {
     margin-top: 32px; }
   .page-libraries #ding-library-page .library-item-wrapper,
+  .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper,
   .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper {
     margin-bottom: 50px; }
     .page-libraries #ding-library-page .library-item-wrapper h2.page-title,
+    .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper h2.page-title,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper h2.page-title {
       margin-bottom: 12px; }
     .page-libraries #ding-library-page .library-item-wrapper h2.page-title > a,
+    .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper h2.page-title > a,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper h2.page-title > a {
       color: #000119;
       font-family: 'SourceSansPro-Bold';
@@ -9827,22 +9885,29 @@ header.site-header nav.main-menu-wrapper.navbar {
       text-decoration: none; }
       @media (min-width: 768px) {
         .page-libraries #ding-library-page .library-item-wrapper h2.page-title > a,
+        .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper h2.page-title > a,
         .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper h2.page-title > a {
           font-size: 57px; } }
       .page-libraries #ding-library-page .library-item-wrapper h2.page-title > a:hover,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper h2.page-title > a:hover,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper h2.page-title > a:hover {
         text-decoration: none; }
     .page-libraries #ding-library-page .library-item-wrapper .field .field-label,
     .page-libraries #ding-library-page .library-item-wrapper .field.field-name-field-ding-library-title-image,
     .page-libraries #ding-library-page .library-item-wrapper .field.field-name-field-ding-library-links,
+    .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field .field-label,
+    .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field.field-name-field-ding-library-title-image,
+    .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field.field-name-field-ding-library-links,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field .field-label,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field.field-name-field-ding-library-title-image,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field.field-name-field-ding-library-links {
       display: none; }
     .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse,
+    .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse {
       padding-right: 80px; }
       .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse::after,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse::after,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse::after {
         display: block;
         clear: both;
@@ -9850,6 +9915,9 @@ header.site-header nav.main-menu-wrapper.navbar {
       .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .field-items::after,
       .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .field-item::after,
       .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .street-block::after,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .field-items::after,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .field-item::after,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .street-block::after,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .field-items::after,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .field-item::after,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .street-block::after {
@@ -9860,6 +9928,10 @@ header.site-header nav.main-menu-wrapper.navbar {
       .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .street-block > div,
       .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .locality-block,
       .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .country,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .street-block,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .street-block > div,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .locality-block,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .country,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .street-block,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .street-block > div,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .locality-block,
@@ -9871,18 +9943,24 @@ header.site-header nav.main-menu-wrapper.navbar {
         font-size: 16px;
         font-weight: 600; }
       .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse .street-block,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .street-block,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse .street-block {
         margin: 0; }
     .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-phone-number,
+    .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-phone-number,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-phone-number {
       margin-bottom: 15px; }
     .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-addresse,
     .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-mail,
+    .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse,
+    .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-mail,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-addresse,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-mail {
       margin-bottom: 40px; }
     .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-phone-number,
     .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-mail a,
+    .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-phone-number,
+    .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-mail a,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-phone-number,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-mail a {
       color: #1E0195;
@@ -9893,14 +9971,18 @@ header.site-header nav.main-menu-wrapper.navbar {
       line-height: 22px; }
       .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-phone-number:hover,
       .page-libraries #ding-library-page .library-item-wrapper .field-name-field-ding-library-mail a:hover,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-phone-number:hover,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-mail a:hover,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-phone-number:hover,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .field-name-field-ding-library-mail a:hover {
         text-decoration: none; }
     .page-libraries #ding-library-page .library-item-wrapper .order-redirect,
+    .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .order-redirect,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .order-redirect {
       display: block;
       margin-bottom: 40px; }
       .page-libraries #ding-library-page .library-item-wrapper .order-redirect a,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .order-redirect a,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .order-redirect a {
         position: relative;
         color: #01032E;
@@ -9909,9 +9991,11 @@ header.site-header nav.main-menu-wrapper.navbar {
         letter-spacing: 0.46px;
         padding-right: 50px; }
         .page-libraries #ding-library-page .library-item-wrapper .order-redirect a:hover,
+        .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .order-redirect a:hover,
         .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .order-redirect a:hover {
           text-decoration: none; }
         .page-libraries #ding-library-page .library-item-wrapper .order-redirect a:after,
+        .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .order-redirect a:after,
         .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .order-redirect a:after {
           content: '';
           width: 25px;
@@ -9921,9 +10005,11 @@ header.site-header nav.main-menu-wrapper.navbar {
           top: calc(50% - 3px);
           background: url("../images/nav-arrow-right.png") no-repeat right center; }
     .page-libraries #ding-library-page .library-item-wrapper .libraries,
+    .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .libraries,
     .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .libraries {
       position: relative; }
       .page-libraries #ding-library-page .library-item-wrapper .libraries .maps-link,
+      .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .libraries .maps-link,
       .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .libraries .maps-link {
         position: absolute;
         right: 0;
@@ -9932,6 +10018,7 @@ header.site-header nav.main-menu-wrapper.navbar {
         font-size: 16px;
         font-weight: 600; }
         .page-libraries #ding-library-page .library-item-wrapper .libraries .maps-link:hover,
+        .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .libraries .maps-link:hover,
         .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .libraries .maps-link:hover {
           text-decoration: none; }
 
@@ -10227,7 +10314,8 @@ header.site-header nav.main-menu-wrapper.navbar {
         margin: 0;
         font-family: "SourceSansPro-Bold";
         text-transform: none; }
-      #ding-library-front .attachments-wrapper .card .card-body .card-text, #ding-library-front .attachments-wrapper .card .card-body .title {
+      #ding-library-front .attachments-wrapper .card .card-body .card-text,
+      #ding-library-front .attachments-wrapper .card .card-body .title {
         transition: color 0.5s ease; }
       #ding-library-front .attachments-wrapper .card .card-body .card-description {
         color: #414256;
@@ -10264,56 +10352,56 @@ header.site-header nav.main-menu-wrapper.navbar {
     font-size: 16px;
     letter-spacing: 0.6px;
     text-transform: uppercase; }
-  .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper .sub-menu-title {
+  .page-bibliotek .layout-wrapper .panel-pane.sub-menu-wrapper .sub-menu-title {
     color: #1E0195;
     font-family: 'Rubik-Regular';
     font-size: 16px;
     letter-spacing: 0.6px; }
-  .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper ul.menu {
+  .page-bibliotek .layout-wrapper .panel-pane.sub-menu-wrapper ul.menu {
     margin: 30px 0 0;
     list-style: none;
     padding: 0; }
-    .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper ul.menu li {
+    .page-bibliotek .layout-wrapper .panel-pane.sub-menu-wrapper ul.menu li {
       list-style-type: none;
       margin: 0 0 20px;
       padding: 0;
       line-height: 17px; }
-      .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper ul.menu li a {
+      .page-bibliotek .layout-wrapper .panel-pane.sub-menu-wrapper ul.menu li a {
         color: #01032E;
         font-family: 'Rubik-Regular';
         font-size: 14px; }
-        .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper ul.menu li a, .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper ul.menu li a:hover {
+        .page-bibliotek .layout-wrapper .panel-pane.sub-menu-wrapper ul.menu li a, .page-bibliotek .layout-wrapper .panel-pane.sub-menu-wrapper ul.menu li a:hover {
           text-decoration: none; }
-      .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper ul.menu li.active-trail {
+      .page-bibliotek .layout-wrapper .panel-pane.sub-menu-wrapper ul.menu li.active-trail {
         border-left: 2px solid #1E0195;
         padding-left: 10px; }
-        .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper ul.menu li.active-trail a {
+        .page-bibliotek .layout-wrapper .panel-pane.sub-menu-wrapper ul.menu li.active-trail a {
           color: #1E0195; }
-  .page-bibliotek .layout-wrapper .secondary-content .panel-pane.sub-menu-wrapper ~ .panel-separator {
+  .page-bibliotek .layout-wrapper .panel-pane.sub-menu-wrapper ~ .panel-separator {
     margin: 40px 0;
     height: 1px;
     background-color: #DBD9D9; }
-  .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .pane-title {
+  .page-bibliotek .layout-wrapper .pane-taxonomy-menu .pane-title {
     color: #01032E;
     font-family: 'Rubik-Regular';
     font-size: 16px;
     letter-spacing: 0.6px;
     text-transform: uppercase; }
-  .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .item-list ul.sub-menu {
+  .page-bibliotek .layout-wrapper .pane-taxonomy-menu .item-list ul.sub-menu {
     margin: 32px 0 0;
     padding: 0;
     list-style: none; }
-    .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .item-list ul.sub-menu li {
+    .page-bibliotek .layout-wrapper .pane-taxonomy-menu .item-list ul.sub-menu li {
       margin: 0 0 10px; }
-      .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .item-list ul.sub-menu li a {
+      .page-bibliotek .layout-wrapper .pane-taxonomy-menu .item-list ul.sub-menu li a {
         position: relative;
         color: #01032E;
         font-family: 'Rubik-Regular';
         font-size: 14px;
         letter-spacing: 0.3px; }
-        .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .item-list ul.sub-menu li a:hover {
+        .page-bibliotek .layout-wrapper .pane-taxonomy-menu .item-list ul.sub-menu li a:hover {
           text-decoration: none; }
-        .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .item-list ul.sub-menu li a:before {
+        .page-bibliotek .layout-wrapper .pane-taxonomy-menu .item-list ul.sub-menu li a:before {
           content: '';
           -webkit-appearance: none;
           background-color: transparent;
@@ -10327,7 +10415,7 @@ header.site-header nav.main-menu-wrapper.navbar {
           vertical-align: middle;
           cursor: pointer;
           margin-right: 20px; }
-        .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .item-list ul.sub-menu li a:after {
+        .page-bibliotek .layout-wrapper .pane-taxonomy-menu .item-list ul.sub-menu li a:after {
           content: '';
           display: block;
           position: absolute;
@@ -10339,11 +10427,11 @@ header.site-header nav.main-menu-wrapper.navbar {
           border-width: 1px 1px 0 0;
           transform: rotate(133deg);
           box-shadow: none; }
-        .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .item-list ul.sub-menu li a.active:before {
+        .page-bibliotek .layout-wrapper .pane-taxonomy-menu .item-list ul.sub-menu li a.active:before {
           background-color: #1E0195; }
-  .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper {
+  .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper {
     margin-bottom: 20px; }
-    .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-control {
+    .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-control {
       display: inline-block;
       position: relative;
       cursor: pointer;
@@ -10351,11 +10439,11 @@ header.site-header nav.main-menu-wrapper.navbar {
       color: #01032E;
       font-family: "Rubik-Regular";
       font-size: 14px; }
-      .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-control::after {
+      .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-control::after {
         display: block;
         clear: both;
         content: ""; }
-      .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-control span.arrow {
+      .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-control span.arrow {
         position: absolute;
         right: 0;
         top: 13px;
@@ -10368,25 +10456,25 @@ header.site-header nav.main-menu-wrapper.navbar {
         -moz-transform: scale(0.9999);
         border-width: 6px 5px 0 6px;
         border-color: #01032E transparent transparent transparent; }
-    .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body {
+    .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body {
       padding-top: 15px; }
-      .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu {
+      .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu {
         padding: 0; }
-        .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li {
+        .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li {
           display: block;
           margin-bottom: 10px; }
-          .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"] {
+          .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"] {
             padding: 0;
             height: initial;
             width: initial;
             margin-bottom: 0;
             display: none;
             cursor: pointer; }
-            .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + label:before,
-            .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + .element-label:before {
+            .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + label:before,
+            .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + .element-label:before {
               background-color: #1E0195; }
-            .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + label:after,
-            .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + .element-label:after {
+            .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + label:after,
+            .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > input[type="checkbox"]:checked + .element-label:after {
               content: '';
               display: block;
               position: absolute;
@@ -10398,12 +10486,12 @@ header.site-header nav.main-menu-wrapper.navbar {
               border-width: 1px 1px 0 0;
               transform: rotate(133deg);
               box-shadow: none; }
-          .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > label,
-          .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label {
+          .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > label,
+          .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label {
             position: relative;
             cursor: pointer; }
-            .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > label:before,
-            .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label:before {
+            .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > label:before,
+            .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label:before {
               content: '';
               -webkit-appearance: none;
               background-color: transparent;
@@ -10418,12 +10506,12 @@ header.site-header nav.main-menu-wrapper.navbar {
               margin-right: 20px;
               transition: box-shadow 0.2s linear; }
               @media (min-width: 768px) {
-                .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > label:before,
-                .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label:before {
+                .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > label:before,
+                .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label:before {
                   width: 40px;
                   height: 40px; } }
-              .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > label:before:hover,
-              .page-bibliotek .layout-wrapper .secondary-content .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label:before:hover {
+              .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > label:before:hover,
+              .page-bibliotek .layout-wrapper .pane-taxonomy-menu .accordion-wrapper .accordion-filter-body ul.sub-menu li > .element-label:before:hover {
                 box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
   .page-bibliotek .layout-wrapper .primary-content .view-ding-event h3.colums {
     padding: 0;
@@ -11674,7 +11762,8 @@ header.site-header nav.main-menu-wrapper.navbar {
   .pane-node-field-ding-event-materials .field-type-ting-title,
   .pane-node-field-ding-news-materials .field-type-ting-title {
     width: 100% !important; }
-    .pane-node-field-ding-event-materials .field-type-ting-title .slick-slide, .pane-node-field-ding-event-materials .field-type-ting-title .slick-track,
+    .pane-node-field-ding-event-materials .field-type-ting-title .slick-slide,
+    .pane-node-field-ding-event-materials .field-type-ting-title .slick-track,
     .pane-node-field-ding-news-materials .field-type-ting-title .slick-slide,
     .pane-node-field-ding-news-materials .field-type-ting-title .slick-track {
       width: 100% !important; }
@@ -11685,7 +11774,8 @@ header.site-header nav.main-menu-wrapper.navbar {
       font-weight: 900;
       color: #000119;
       font-size: 14px; }
-  .pane-node-field-ding-event-materials .field-type-ting-type .slick-slide, .pane-node-field-ding-event-materials .field-type-ting-type .slick-track,
+  .pane-node-field-ding-event-materials .field-type-ting-type .slick-slide,
+  .pane-node-field-ding-event-materials .field-type-ting-type .slick-track,
   .pane-node-field-ding-news-materials .field-type-ting-type .slick-slide,
   .pane-node-field-ding-news-materials .field-type-ting-type .slick-track {
     width: 100% !important; }
@@ -11706,11 +11796,13 @@ header.site-header nav.main-menu-wrapper.navbar {
     height: 13px;
     left: 0;
     background: url(../images/tag.png) no-repeat center center; }
-  .pane-node-field-ding-event-materials .field-name-ting-author .slick-slide, .pane-node-field-ding-event-materials .field-name-ting-author .slick-track,
+  .pane-node-field-ding-event-materials .field-name-ting-author .slick-slide,
+  .pane-node-field-ding-event-materials .field-name-ting-author .slick-track,
   .pane-node-field-ding-news-materials .field-name-ting-author .slick-slide,
   .pane-node-field-ding-news-materials .field-name-ting-author .slick-track {
     width: 100% !important; }
-  .pane-node-field-ding-event-materials .field-name-ting-author .field-item, .pane-node-field-ding-event-materials .field-name-ting-author a,
+  .pane-node-field-ding-event-materials .field-name-ting-author .field-item,
+  .pane-node-field-ding-event-materials .field-name-ting-author a,
   .pane-node-field-ding-news-materials .field-name-ting-author .field-item,
   .pane-node-field-ding-news-materials .field-name-ting-author a {
     font-family: "SourceSansPro-Bold";
@@ -12069,6 +12161,9 @@ header.site-header nav.main-menu-wrapper.navbar {
   position: relative;
   margin-bottom: 70px;
   height: auto; }
+  .ding_nodelist-carousel .fa-next:after,
+  .ding_nodelist-carousel .fa-prev:after {
+    content: none; }
   .ding_nodelist-carousel .event-image {
     height: 465px; }
     .ding_nodelist-carousel .event-image:after {
@@ -12502,7 +12597,8 @@ header.site-header nav.main-menu-wrapper.navbar {
     text-decoration: none;
     color: #1E0195; }
 
-.ding_nodelist span, .ding_nodelist p {
+.ding_nodelist span,
+.ding_nodelist p {
   font-family: "SourceSansPro-Bold"; }
 
 .ding_nodelist-taxonomy .item .item-list-image {
