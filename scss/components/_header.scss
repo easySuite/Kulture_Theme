@@ -48,6 +48,11 @@ header.site-header {
         display: none;
       }
 
+      .last.collapsed,
+      li.collapsed {
+        list-style-image: none;
+      }
+      
       @include media-breakpoint-up(lg) {
         margin-top: 0;
         margin-left: 10px;
