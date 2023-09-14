@@ -109,3 +109,19 @@ function kulture_theme_date_display_range($variables) {
     '!end-date' => $end_date,
   ));
 }
+
+function kulture_theme_preprocess(&$vars, $hook) {
+  if (!empty($vars['content']) && is_array($vars['content'])) {
+    if (module_exists('lang_dropdown')) {
+      $lang_block = module_invoke('lang_dropdown', 'block_view', 'language');
+      if (!empty($lang_block)) {
+        $vars['content']['lang_block'] = '<div class="item lang-block">' . render($lang_block['content']) . '</div>';
+      }
+    }
+
+    $secondary_menu = menu_navigation_links('menu-secondary-menu');
+    if (!empty($secondary_menu)) {
+      $vars['content']['secondary_menu'] = '<div class="item secondary-menu">' . theme('links__menu_secondary_menu', array('links' => $secondary_menu)) . '</div>';
+    }
+  }
+}

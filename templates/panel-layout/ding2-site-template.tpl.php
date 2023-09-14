@@ -8,6 +8,14 @@
 <div id="page<?php print $css_id ? " $css_id" : ''; ?>" class="<?php print $classes; ?> kultur-wrapper">
   <?php if (!empty($content['branding']) || !empty($content['header']) || !empty($content['navigation'])): ?>
     <header class="site-header">
+      <div calss="top-header">
+        <?php if (!empty($content['secondary_menu'])): ?>
+          <?php print render($content['secondary_menu']); ?>
+        <?php endif; ?>
+        <?php if (!empty($content['lang_block'])): ?>
+          <?php print render($content['lang_block']); ?>
+        <?php endif; ?>
+      </div>
       <nav class="main-menu-wrapper navbar navbar-expand-lg navbar-light container <?php print $classes; ?>" <?php print $id; ?>>
         <?php if (!empty($content['branding'])): ?>
           <?php print render($content['branding']); ?>
@@ -25,8 +33,8 @@
           <?php if (!empty($content['navigation'])): ?>
             <?php print render($content['navigation']); ?>
           <?php endif; ?>
-        </div>  
-      </nav>  
+        </div>
+      </nav>
     </header>
   <?php endif; ?>
 
@@ -43,7 +51,7 @@
         <div class="bottom btn">
           <?php print render($content['bottom']); ?>
         </div>
-        <?php endif; ?> 
+        <?php endif; ?>
 
         <div class="footer-inner">
           <?php print render($content['footer']); ?>

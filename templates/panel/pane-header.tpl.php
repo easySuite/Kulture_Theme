@@ -4,7 +4,7 @@
  * @file
  * Theme implementation to display the header block on a Drupal page.
  *
- * This utilizes the following variables thata re normally found in
+ * This utilizes the following variables that are normally found in
  * page.tpl.php:
  * - $logo
  * - $front_page
