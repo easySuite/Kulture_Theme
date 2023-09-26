@@ -8939,7 +8939,7 @@ header.site-header nav.main-menu-wrapper.navbar {
     @media (min-width: 1200px) {
       header.site-header nav.main-menu-wrapper.navbar .pane-search-form form {
         width: 400px;
-        margin-left: 0; } }
+        margin-left: 13px; } }
     header.site-header nav.main-menu-wrapper.navbar .pane-search-form form .form-item {
       margin: 0; }
       header.site-header nav.main-menu-wrapper.navbar .pane-search-form form .form-item input[type="text"] {
@@ -8993,7 +8993,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       position: relative; }
       @media (min-width: 992px) {
         header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li {
-          margin-left: 40px;
+          margin-left: 20px;
           text-align: center;
           padding-bottom: 0; } }
       header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li a {
@@ -11701,6 +11701,45 @@ header.site-header nav.main-menu-wrapper.navbar {
         color: #414256;
         font-family: "SourceSansPro-Bold";
         font-size: 14px; }
+
+.secondary-menu-wrapper.pane-menu-block-2,
+.pane-block.pane-lang-dropdown-language {
+  position: absolute;
+  top: 0;
+  padding-top: 10px; }
+
+.secondary-menu-wrapper.pane-menu-block-2 {
+  right: 140px;
+  margin-top: -2px; }
+  .secondary-menu-wrapper.pane-menu-block-2 .menu li {
+    list-style: none; }
+  .secondary-menu-wrapper.pane-menu-block-2 .menu .active {
+    text-transform: uppercase; }
+
+.pane-block.pane-lang-dropdown-language {
+  right: 0px; }
+  .pane-block.pane-lang-dropdown-language .lang-dropdown-select-element {
+    border: 0px;
+    outline: 0px;
+    background: none;
+    scroll-behavior: smooth;
+    -webkit-appearance: none;
+    /* removes expand icon in older Chrome versions */
+    -moz-appearance: none;
+    /* removes expand icon in older Firefox versions */
+    appearance: none;
+    /* removes expand icon */
+    text-align: center;
+    margin-right: 20px; }
+  .pane-block.pane-lang-dropdown-language img.language-icon {
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px; }
+
+div.logo {
+  width: 200px; }
 
 @media (min-width: 992px) {
   .front.page-culture-frontpage .content-wrapper .container .content-container, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .content-container, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .content-container, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .content-container, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .content-container, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .content-container, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .content-container, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .content-container, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container, .front.page-culture-frontpage .content-wrapper .pane-node-field-ding-event-materials .content-container, .front.page-culture-frontpage .content-wrapper .pane-node-field-ding-news-materials .content-container {

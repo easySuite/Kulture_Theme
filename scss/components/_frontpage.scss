@@ -1,3 +1,54 @@
+
+.secondary-menu-wrapper.pane-menu-block-2, 
+.pane-block.pane-lang-dropdown-language {
+  position: absolute;
+  top: 0;
+  padding-top: 10px;
+}
+
+.secondary-menu-wrapper.pane-menu-block-2 {
+  right: 140px;
+  margin-top: -2px;
+
+  .menu {
+    li {
+      list-style: none;
+    }
+
+    .active {
+      text-transform: uppercase;
+    }
+  }
+}
+
+.pane-block.pane-lang-dropdown-language {
+  right: 0px;
+
+  .lang-dropdown-select-element {
+    border: 0px;
+    outline: 0px;
+    background: none;
+    scroll-behavior: smooth;
+    -webkit-appearance: none; /* removes expand icon in older Chrome versions */
+    -moz-appearance: none; /* removes expand icon in older Firefox versions */
+    appearance: none;  /* removes expand icon */
+    text-align: center;
+    margin-right: 20px;
+  }
+
+  img.language-icon {
+    top: 5px;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    right: 15px;
+  }
+}
+
+div.logo {
+  width: 200px
+}
+
 .front.page-culture-frontpage .content-wrapper .container {
   .content-container {
     @extend .no-gutters;
