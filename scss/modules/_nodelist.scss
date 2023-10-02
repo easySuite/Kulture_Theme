@@ -4,8 +4,8 @@
   margin-bottom: 70px;
   height: auto;
 
-  .fa-next:after,
-  .fa-prev:after {
+  .icon-next:after,
+  .icon-prev:after {
     content: none;
   }
 
@@ -227,7 +227,7 @@
   }
 
   .next-prev {
-    //display: none;
+    display: none;
   }
 
   .slick-dotted {
@@ -236,7 +236,7 @@
       width: 60px;
       height: 60px;
       transition: box-shadow 0.2s linear;
-      top: calc(50% - 35px);
+      top: calc(50% - 70px);
       z-index: 10;
 
       &:hover {
@@ -249,7 +249,7 @@
       }
     }
 
-    .fa-prev.slick-arrow {
+    .icon-prev.slick-arrow {
       display: none !important;
       left: -26px;
       background: map-get($theme-colors, blue) url(../images/white-arrow-left.png) no-repeat center center;
@@ -263,7 +263,7 @@
       }
     }
 
-    .fa-next.slick-arrow {
+    .icon-next.slick-arrow {
       display: none !important;
       right: -26px;
       background: map-get($theme-colors, blue) url(../images/white-arrow-right.png) no-repeat center center;
@@ -289,7 +289,7 @@
     letter-spacing: 0.6px;
     line-height: 19px;
     text-transform: uppercase;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     max-width: 352px;
     margin-left: auto;
     margin-right: auto;

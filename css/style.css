@@ -8920,7 +8920,7 @@ img {
 
 header.site-header nav.main-menu-wrapper.navbar {
   width: 100%;
-  min-height: 140px;
+  min-height: 170px;
   margin: 0 auto;
   padding-left: 10px;
   padding-right: 10px; }
@@ -11740,14 +11740,14 @@ header.site-header nav.main-menu-wrapper.navbar {
 
 nav > div:nth-of-type(4) {
   width: 100%;
-  height: 29px;
+  height: 40px;
   display: flex;
   position: absolute;
-  top: 10px;
+  top: 0px;
   z-index: -1;
   box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
   margin: 0 auto 10px;
-  background-color: white; }
+  background-color: rgba(255, 255, 255, 0.767); }
 
 div.logo {
   width: 200px; }
@@ -12471,8 +12471,8 @@ div.logo {
   position: relative;
   margin-bottom: 70px;
   height: auto; }
-  .ding_nodelist-carousel .fa-next:after,
-  .ding_nodelist-carousel .fa-prev:after {
+  .ding_nodelist-carousel .icon-next:after,
+  .ding_nodelist-carousel .icon-prev:after {
     content: none; }
   .ding_nodelist-carousel .event-image {
     height: 465px; }
@@ -12637,12 +12637,14 @@ div.logo {
         display: none; }
       .ding_nodelist-carousel .slick-dots li.slick-active {
         background-color: white; }
+  .ding_nodelist-carousel .next-prev {
+    display: none; }
   .ding_nodelist-carousel .slick-dotted .slick-arrow {
     position: absolute;
     width: 60px;
     height: 60px;
     transition: box-shadow 0.2s linear;
-    top: calc(50% - 35px);
+    top: calc(50% - 70px);
     z-index: 10; }
     .ding_nodelist-carousel .slick-dotted .slick-arrow:hover {
       box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.2); }
@@ -12650,25 +12652,25 @@ div.logo {
       .ding_nodelist-carousel .slick-dotted .slick-arrow {
         width: 70px;
         height: 70px; } }
-  .ding_nodelist-carousel .slick-dotted .fa-prev.slick-arrow {
+  .ding_nodelist-carousel .slick-dotted .icon-prev.slick-arrow {
     display: none !important;
     left: -26px;
     background: #1E0195 url(../images/white-arrow-left.png) no-repeat center center; }
     @media (min-width: 992px) {
-      .ding_nodelist-carousel .slick-dotted .fa-prev.slick-arrow {
+      .ding_nodelist-carousel .slick-dotted .icon-prev.slick-arrow {
         display: block !important; } }
     @media (min-width: 1200px) {
-      .ding_nodelist-carousel .slick-dotted .fa-prev.slick-arrow {
+      .ding_nodelist-carousel .slick-dotted .icon-prev.slick-arrow {
         left: -28px; } }
-  .ding_nodelist-carousel .slick-dotted .fa-next.slick-arrow {
+  .ding_nodelist-carousel .slick-dotted .icon-next.slick-arrow {
     display: none !important;
     right: -26px;
     background: #1E0195 url(../images/white-arrow-right.png) no-repeat center center; }
     @media (min-width: 992px) {
-      .ding_nodelist-carousel .slick-dotted .fa-next.slick-arrow {
+      .ding_nodelist-carousel .slick-dotted .icon-next.slick-arrow {
         display: block !important; } }
     @media (min-width: 1200px) {
-      .ding_nodelist-carousel .slick-dotted .fa-next.slick-arrow {
+      .ding_nodelist-carousel .slick-dotted .icon-next.slick-arrow {
         right: -28px; } }
 
 .pane-ding-nodelist .pane-title {
@@ -12678,7 +12680,7 @@ div.logo {
   letter-spacing: 0.6px;
   line-height: 19px;
   text-transform: uppercase;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   max-width: 352px;
   margin-left: auto;
   margin-right: auto; }
