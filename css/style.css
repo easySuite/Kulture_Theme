@@ -11738,6 +11738,17 @@ header.site-header nav.main-menu-wrapper.navbar {
     position: absolute;
     right: 15px; }
 
+nav > div:nth-of-type(4) {
+  width: 100%;
+  height: 29px;
+  display: flex;
+  position: absolute;
+  top: 10px;
+  z-index: -1;
+  box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+  margin: 0 auto 10px;
+  background-color: white; }
+
 div.logo {
   width: 200px; }
 
@@ -12480,7 +12491,7 @@ div.logo {
     border-right: 1px solid white;
     padding-right: 10px; }
   .ding_nodelist-carousel .event-image:after {
-    background: rgba(0, 0, 0, 0.3); }
+    background: rgba(0, 0, 0, 0.7); }
   .ding_nodelist-carousel .slick-list {
     position: relative;
     z-index: 0; }
@@ -12518,12 +12529,13 @@ div.logo {
     .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info {
       color: white;
       position: absolute;
-      top: 68px;
-      left: 35px; }
+      bottom: 25px;
+      left: 15px; }
       @media (min-width: 768px) {
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info {
-          top: 104px;
-          left: 122px; } }
+          bottom: 15px;
+          left: 15px;
+          min-width: 500px; } }
       .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info > * {
         max-width: calc(100% - 35px); }
         @media (min-width: 768px) {
@@ -12625,8 +12637,6 @@ div.logo {
         display: none; }
       .ding_nodelist-carousel .slick-dots li.slick-active {
         background-color: white; }
-  .ding_nodelist-carousel .next-prev {
-    display: none; }
   .ding_nodelist-carousel .slick-dotted .slick-arrow {
     position: absolute;
     width: 60px;
@@ -12855,13 +12865,13 @@ div.logo {
     background-color: #00A878;
     box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
     color: white;
-    width: 90px;
+    width: 110px;
     font-family: 'Rubik-Medium';
     font-size: 12px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
     text-align: center;
-    padding: 9px 20px; }
+    padding: 10px; }
     .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .price:after {
       content: '';
       position: absolute;
