@@ -8860,30 +8860,12 @@ img {
 #page .content-inner .page-user .content-inner, .page-user #page .content-inner .content-inner, #page .content-inner #ding-library-front .attachments-wrapper .pane-title, #ding-library-front .attachments-wrapper #page .content-inner .pane-title, #page .content-inner .node-type-ding-news .panel-pane.pane-ding-related-content-news-events, .node-type-ding-news #page .content-inner .panel-pane.pane-ding-related-content-news-events, #page .content-inner .pane-node-field-ding-event-materials,
 #page .content-inner .pane-node-field-ding-news-materials {
   padding: 0; }
-  @media (min-width: 992px) {
-    #page .content-inner .container, .page-taxonomy-term #page .content-inner .node-ding-library.library-item-wrapper, #page .content-inner .page-user-login .content-inner, .page-user-login #page .content-inner .content-inner,
-    #page .content-inner .page-user .content-inner, .page-user #page .content-inner .content-inner, #page .content-inner #ding-library-front .attachments-wrapper .pane-title, #ding-library-front .attachments-wrapper #page .content-inner .pane-title, #page .content-inner .node-type-ding-news .panel-pane.pane-ding-related-content-news-events, .node-type-ding-news #page .content-inner .panel-pane.pane-ding-related-content-news-events, #page .content-inner .pane-node-field-ding-event-materials,
-    #page .content-inner .pane-node-field-ding-news-materials {
-      padding-right: 28.5px;
-      padding-left: 28.5px; } }
 
 .not-front .layout-wrapper {
   padding: 0 10px; }
   @media (min-width: 992px) {
     .not-front .layout-wrapper {
       padding: 0; } }
-
-.container, .page-taxonomy-term #page .node-ding-library.library-item-wrapper, .page-user-login .content-inner,
-.page-user .content-inner, #ding-library-front .attachments-wrapper .pane-title, .node-type-ding-news .panel-pane.pane-ding-related-content-news-events, .pane-node-field-ding-event-materials,
-.pane-node-field-ding-news-materials {
-  padding: 0 10px; }
-  @media (min-width: 992px) {
-    .container, .page-taxonomy-term #page .node-ding-library.library-item-wrapper, .page-user-login .content-inner,
-    .page-user .content-inner, #ding-library-front .attachments-wrapper .pane-title, .node-type-ding-news .panel-pane.pane-ding-related-content-news-events, .pane-node-field-ding-event-materials,
-    .pane-node-field-ding-news-materials {
-      padding-right: 28.5px;
-      padding-left: 28.5px;
-      margin: 0 auto; } }
 
 .page-taxonomy-term #page .node-ding-library.library-item-wrapper {
   max-width: 1024px; }
@@ -8922,12 +8904,7 @@ header.site-header nav.main-menu-wrapper.navbar {
   width: 100%;
   min-height: 170px;
   margin: 0 auto;
-  padding-left: 10px;
-  padding-right: 10px; }
-  @media (min-width: 768px) {
-    header.site-header nav.main-menu-wrapper.navbar {
-      padding-left: 20px;
-      padding-right: 20px; } }
+  padding: 0px; }
   header.site-header nav.main-menu-wrapper.navbar .pane-search-form form {
     width: 100%;
     padding: 20px;
@@ -11702,23 +11679,23 @@ header.site-header nav.main-menu-wrapper.navbar {
         font-family: "SourceSansPro-Bold";
         font-size: 14px; }
 
-.secondary-menu-wrapper.pane-menu-block-2,
-.pane-block.pane-lang-dropdown-language {
+.secondary-menu-wrapper,
+.pane-lang-dropdown-language {
   position: absolute;
   top: 0;
   padding-top: 10px; }
 
-.secondary-menu-wrapper.pane-menu-block-2 {
-  right: 140px;
+.secondary-menu-wrapper {
+  right: 170px;
   margin-top: -2px; }
-  .secondary-menu-wrapper.pane-menu-block-2 .menu li {
+  .secondary-menu-wrapper .menu li {
     list-style: none; }
-  .secondary-menu-wrapper.pane-menu-block-2 .menu .active {
+  .secondary-menu-wrapper .menu .active {
     text-transform: uppercase; }
 
-.pane-block.pane-lang-dropdown-language {
+.pane-lang-dropdown-language {
   right: 0px; }
-  .pane-block.pane-lang-dropdown-language .lang-dropdown-select-element {
+  .pane-lang-dropdown-language .lang-dropdown-select-element {
     border: 0px;
     outline: 0px;
     background: none;
@@ -11730,8 +11707,9 @@ header.site-header nav.main-menu-wrapper.navbar {
     appearance: none;
     /* removes expand icon */
     text-align: center;
-    margin-right: 20px; }
-  .pane-block.pane-lang-dropdown-language img.language-icon {
+    margin-right: 30px;
+    text-transform: uppercase; }
+  .pane-lang-dropdown-language img.language-icon {
     top: 5px;
     width: 30px;
     height: 30px;

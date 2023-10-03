@@ -3,13 +3,7 @@ header.site-header {
     width: 100%;
     min-height: 170px;
     margin: 0 auto;
-    padding-left: 10px;
-    padding-right: 10px;
-
-    @include media-breakpoint-up(md) {
-      padding-left: 20px;
-      padding-right: 20px;
-    }
+    padding: 0px;
 
     .pane-search-form form {
       @include search();
