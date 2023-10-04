@@ -59,11 +59,6 @@ img {
 
 #page .content-inner .container {
   padding: 0;
-
-  @include media-breakpoint-up(lg) {
-    padding-right: 28.5px;
-    padding-left: 28.5px;
-  }
 }
 
 .not-front {
@@ -73,16 +68,6 @@ img {
     @include media-breakpoint-up(lg) {
       padding: 0;
     }
-  }
-}
-
-.container {
-  padding: 0 10px;
-
-  @include media-breakpoint-up(lg) {
-    padding-right: 28.5px;
-    padding-left: 28.5px;
-    margin: 0 auto;
   }
 }
 
