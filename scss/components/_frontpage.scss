@@ -13,10 +13,11 @@
   .menu {
     li {
       list-style: none;
-    }
 
-    .active {
-      text-transform: uppercase;
+      a {
+        text-transform: uppercase;
+        color: map-get($theme-colors, dark);
+      }
     }
   }
 }

@@ -9577,13 +9577,13 @@ header.site-header nav.main-menu-wrapper.navbar {
     background-color: #00A878;
     box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
     color: white;
-    width: 90px;
+    width: 130px;
     font-family: 'Rubik-Medium';
     font-size: 12px;
     letter-spacing: 0.4px;
     text-transform: uppercase;
     text-align: center;
-    padding: 9px 20px; }
+    padding: 9px 10px; }
     .page-arrangementer .card .price-tag:after,
     .node-type-ding-event .card .price-tag:after {
       content: '';
@@ -10428,13 +10428,13 @@ header.site-header nav.main-menu-wrapper.navbar {
       background-color: #00A878;
       box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
       color: white;
-      width: 90px;
+      width: 130px;
       font-family: 'Rubik-Medium';
       font-size: 12px;
       letter-spacing: 0.4px;
       text-transform: uppercase;
       text-align: center;
-      padding: 9px 20px; }
+      padding: 7px 10px; }
       #ding-library-front .attachments-wrapper .card .price-tag:after {
         content: '';
         position: absolute;
@@ -10795,13 +10795,13 @@ header.site-header nav.main-menu-wrapper.navbar {
       background-color: #00A878;
       box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
       color: white;
-      width: 90px;
+      width: 130px;
       font-family: 'Rubik-Medium';
       font-size: 12px;
       letter-spacing: 0.4px;
       text-transform: uppercase;
       text-align: center;
-      padding: 9px 20px; }
+      padding: 9px 10px; }
       .page-bibliotek .layout-wrapper .primary-content .card .price-tag:after {
         content: '';
         position: absolute;
@@ -10986,13 +10986,13 @@ header.site-header nav.main-menu-wrapper.navbar {
         background-color: #00A878;
         box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
         color: white;
-        width: 90px;
+        width: 130px;
         font-family: 'Rubik-Medium';
         font-size: 12px;
         letter-spacing: 0.4px;
         text-transform: uppercase;
         text-align: center;
-        padding: 9px 20px; }
+        padding: 7px 10px; }
         .page-bibliotek .layout-wrapper .primary-content .card .price-tag:after {
           content: '';
           position: absolute;
@@ -11690,8 +11690,9 @@ header.site-header nav.main-menu-wrapper.navbar {
   margin-top: -2px; }
   .secondary-menu-wrapper .menu li {
     list-style: none; }
-  .secondary-menu-wrapper .menu .active {
-    text-transform: uppercase; }
+    .secondary-menu-wrapper .menu li a {
+      text-transform: uppercase;
+      color: #000119; }
 
 .pane-lang-dropdown-language {
   right: 0px; }
@@ -11877,6 +11878,7 @@ div.logo {
 
 .pane-node-field-ding-event-materials,
 .pane-node-field-ding-news-materials {
+  display: none;
   margin-top: 70px;
   padding: 0 20px; }
   @media (min-width: 768px) {
@@ -12511,8 +12513,8 @@ div.logo {
       left: 15px; }
       @media (min-width: 768px) {
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info {
-          bottom: 15px;
-          left: 15px;
+          bottom: 50px;
+          left: 50px;
           min-width: 500px; } }
       .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info > * {
         max-width: calc(100% - 35px); }
