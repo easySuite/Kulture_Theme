@@ -8,6 +8,26 @@
 require_once __DIR__ . '/template.node.php';
 
 /**
+ * Implements hook_theme().
+ */
+function kulture_theme_theme($existing, $type, $theme, $path): array {
+  return [
+    'views_exposed_form_widgets_title' => array(
+      'variables' => array(
+        'element' => NULL,
+      ),
+      'template' => 'templates/views/views-exposed-form-widgets-title',
+    ),
+    'views_exposed_form_widgets_date_inputs' => array(
+      'variables' => array(
+        'element' => NULL,
+      ),
+      'template' => 'templates/views/views-exposed-form-widgets-date-inputs',
+    ),
+  ];
+}
+
+/**
  * Implements hook_preprocess_panels_pane().
  */
 function kulture_theme_preprocess_panels_pane(&$vars) {
@@ -108,4 +128,81 @@ function kulture_theme_date_display_range($variables) {
     '!start-date' => $start_date,
     '!end-date' => $end_date,
   ));
+}
+
+/**
+ * Implements hook_preprocess_views_exposed_form().
+ */
+function kulture_theme_preprocess_views_exposed_form(&$variables) {
+  if (arg(0) == 'arrangementer') {
+    $form = $variables['form'];
+
+    if ($form['#info']['filter-combine']) {
+      $widget = $form['#info']['filter-combine']['value'];
+      $item = $form[$widget];
+      $render = theme('views_exposed_form_widgets_title', [
+          'element' => [
+            'label' => $variables['widgets']['filter-combine']->label,
+            'field' => $item,
+          ],
+        ]
+      );
+      unset($variables['widgets']['filter-combine']->label);
+      $variables['widgets']['filter-combine']->widget = $render;
+    }
+
+    if ($form['#info']['filter-field_ding_event_date_value'] && $form['#info']['filter-field_ding_event_date_value2']) {
+      $widget_from = $form['#info']['filter-field_ding_event_date_value']['value'];
+      $widget_to = $form['#info']['filter-field_ding_event_date_value2']['value'];
+
+      $item_from = $form[$widget_from];
+      $item_to = $form[$widget_to];
+
+      $return = [
+        'from' => [
+          'label' => $variables['widgets']['filter-field_ding_event_date_value']->label,
+          'field' => $item_from,
+        ],
+        'to' => [
+          'label' => $variables['widgets']['filter-field_ding_event_date_value2']->label,
+          'field' => $item_to,
+        ],
+      ];
+
+      $render = theme('views_exposed_form_widgets_date_inputs', [
+          'element' => $return,
+        ]
+      );
+
+      unset($variables['widgets']['filter-field_ding_event_date_value']->label);
+      $variables['widgets']['filter-field_ding_event_date_value']->widget = $render;
+      unset($variables['widgets']['filter-field_ding_event_date_value2']);
+    }
+  }
+}
+
+/**
+ * Implements hook_form_views_exposed_form_alter().
+ */
+function kulture_theme_form_views_exposed_form_alter(&$form, &$form_state): void
+{
+  if ($form_state['view']->name == 'ding_event' && $form_state['view']->current_display == 'ding_event_list') {
+    if (!empty($form['#info']['filter-term_node_tid_depth'])) {
+      $label = $form['#info']['filter-term_node_tid_depth']['label'];
+      unset($form['#info']['filter-term_node_tid_depth']['label']);
+      $form['event_category_term_node_tid_depth']['#title'] = '<h2 class="list-title sub-menu-title">' . $label . '</h2>';
+    }
+
+    if (!empty($form['#info']['filter-og_group_ref_target_id_entityreference_filter'])) {
+      $label = $form['#info']['filter-og_group_ref_target_id_entityreference_filter']['label'];
+      unset($form['#info']['filter-og_group_ref_target_id_entityreference_filter']['label']);
+      $form['og_group_ref_target_id_entityreference_filter']['#title'] = '<h2 class="list-title sub-menu-title">' . $label . '</h2>';
+    }
+
+    if (!empty($form['#info']['filter-field_ding_event_target_tid'])) {
+      $label = $form['#info']['filter-field_ding_event_target_tid']['label'];
+      unset($form['#info']['filter-field_ding_event_target_tid']['label']);
+      $form['field_ding_event_target_tid']['#title'] = '<h2 class="list-title sub-menu-title">' . $label . '</h2>';
+    }
+  }
 }
