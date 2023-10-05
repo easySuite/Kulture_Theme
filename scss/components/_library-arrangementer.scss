@@ -333,13 +333,13 @@
           background-color: map-get($theme-colors, green);
           box-shadow: -4px 4px 10px 0 rgba(0, 0, 0, 0.1);
           color: white;
-          width: 90px;
+          width: 130px;
           font-family: 'Rubik-Medium';
           font-size: map-get($text-size, mini);
           letter-spacing: 0.4px;
           text-transform: uppercase;
           text-align: center;
-          padding: 9px 20px;
+          padding: 7px 10px;
 
           &:after {
             content: '';
