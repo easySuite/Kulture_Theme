@@ -8,31 +8,6 @@
 require_once __DIR__ . '/template.node.php';
 
 /**
- * Implements hook_theme().
- */
-function kulture_theme_theme($existing, $type, $theme, $path): array {
-  return [
-    'a11y' => [
-      'variables' => [],
-      'path' => $path . '/templates',
-      'template' => 'a11y',
-    ],
-    'views_exposed_form_widgets_title' => array(
-      'variables' => array(
-        'element' => NULL,
-      ),
-      'template' => 'templates/views/views-exposed-form-widgets-title',
-    ),
-    'views_exposed_form_widgets_date_inputs' => array(
-      'variables' => array(
-        'element' => NULL,
-      ),
-      'template' => 'templates/views/views-exposed-form-widgets-date-inputs',
-    ),
-  ];
-}
-
-/**
  * Implements hook_preprocess_panels_pane().
  */
 function kulture_theme_preprocess_panels_pane(&$vars) {
@@ -95,11 +70,68 @@ function kulture_theme_process_html(&$vars) {
  */
 function kulture_theme_preprocess_html(&$vars) {
   if (!path_is_admin(current_path())) {
-    $variables['a11y'] = theme('a11y');
+    $vars['a11y'] = theme('a11y');
   }
 
   // Include the libraries.
   libraries_load('slick');
+}
+
+/**
+ * Implements hook_theme().
+ */
+function kulture_theme_theme($existing, $type, $theme, $path) {
+  return array(
+    'a11y' => array(
+    'variables' => array(
+      'element' => NULL,
+    ),
+    'template' => 'templates/a11y',
+    ),
+    'views_exposed_form_widgets_title' => array(
+      'variables' => array(
+        'element' => NULL,
+      ),
+      'template' => 'templates/views/views-exposed-form-widgets-title',
+    ),
+    'views_exposed_form_widgets_date_inputs' => array(
+      'variables' => array(
+        'element' => NULL,
+      ),
+      'template' => 'templates/views/views-exposed-form-widgets-date-inputs',
+    ),
+  );
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ * Create a11y controls.
+ */
+function kulture_theme_preprocess_a11y(&$variables) {
+  $variables['size'] = l('<i class="fa fa-font"></i>', '#', [
+    'attributes' => [
+      'class' => [
+        'a11y-trigger',
+        'font-size-trigger',
+      ],
+      'title' => t('Toggle font size'),
+    ],
+    'html' => TRUE,
+  ]);
+
+  $variables['contrast'] = l('<i class="fa fa-adjust"></i>', '#', [
+    'attributes' => [
+      'class' => [
+        'a11y-trigger',
+        'contrast-trigger',
+      ],
+      'title' => t('Toggle high contrast'),
+    ],
+    'html' => TRUE,
+  ]);
+
+  drupal_add_js(drupal_get_path('theme', 'kulture_theme') . '/scripts/a11y.js');
 }
 
 /**
@@ -214,35 +246,4 @@ function kulture_theme_form_views_exposed_form_alter(&$form, &$form_state): void
       $form['field_ding_event_target_tid']['#title'] = '<h2 class="list-title sub-menu-title">' . $label . '</h2>';
     }
   }
-}
-
-/**
- * Implements hook_preprocess_HOOK().
- *
- * Create a11y controls.
- */
-function kulture_theme_preprocess_a11y(&$variables) {
-  $variables['size'] = l('<i class="fa fa-font"></i>', '#', [
-    'attributes' => [
-      'class' => [
-        'a11y-trigger',
-        'font-size-trigger',
-      ],
-      'title' => t('Toggle font size'),
-    ],
-    'html' => TRUE,
-  ]);
-
-  $variables['contrast'] = l('<i class="fa fa-adjust"></i>', '#', [
-    'attributes' => [
-      'class' => [
-        'a11y-trigger',
-        'contrast-trigger',
-      ],
-      'title' => t('Toggle high contrast'),
-    ],
-    'html' => TRUE,
-  ]);
-
-  drupal_add_js(drupal_get_path('theme', 'kulture_theme') . '/scripts/a11y.js');
 }
