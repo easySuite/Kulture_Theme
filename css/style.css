@@ -9260,12 +9260,13 @@ header.site-header nav.main-menu-wrapper.navbar {
         display: block;
         clear: both;
         content: ""; }
-      #page .secondary-content .accordion-wrapper .accordion-filter-header .accordion-control h2 {
+      #page .secondary-content .accordion-wrapper .accordion-filter-header .accordion-control h2, #page .secondary-content .accordion-wrapper .accordion-filter-header .accordion-control a {
         float: left;
         color: #01032E;
         font-family: "Rubik-Regular";
         font-size: 14px;
-        margin: 0 30px 0 0; }
+        margin: 0 30px 0 0;
+        text-decoration: none; }
       #page .secondary-content .accordion-wrapper .accordion-filter-header .accordion-control span.arrow {
         float: left;
         margin-top: 5px;
