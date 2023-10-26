@@ -245,5 +245,10 @@ function kulture_theme_form_views_exposed_form_alter(&$form, &$form_state): void
       unset($form['#info']['filter-field_ding_event_target_tid']['label']);
       $form['field_ding_event_target_tid']['#title'] = '<h2 class="list-title sub-menu-title">' . $label . '</h2>';
     }
+    if (!empty($form['#info']['filter-field_event_gl_municipality_tid'])) {
+      $label = $form['#info']['filter-field_event_gl_municipality_tid']['label'];
+      unset($form['#info']['filter-field_event_gl_municipality_tid']['label']);
+      $form['field_event_gl_municipality_tid']['#title'] = '<h2 class="list-title sub-menu-title">' . $label . '</h2>';
+    }
   }
 }
