@@ -1,0 +1,223 @@
+html {
+  &.a11y,
+  &.a11y body {
+    font-size: 22px !important;
+    line-height: 26px;
+
+    .search-form-extended.admin-menu .site-header .pane-search-form {
+      top: 276px;
+    }
+
+    select,
+    input[type="submit"],
+    input[type="text"],
+    input[type="text"]::placeholder,
+    .carousel-tabs .carousel-list-tabs .carousel-item a,
+    .panel-pane.pane-current-user-name h2,
+    .field-group-format.collapsible > h2 {
+      font-size: 1rem;
+      line-height: 1.12rem;
+    }
+
+    .card .card-body {
+    .info-top,
+    .date,
+    .card-title,
+    .card-description,
+    .library,
+    .date-time,
+    .price,
+    .card-text.title-and-lead  {
+      font-size: 22px !important;
+      }
+    }
+
+    .ddb-btn {
+      font-size: 0.875rem;
+      line-height: 1rem;
+    }
+
+    .field-label-above,
+    .category-tag,
+    .field-item.even,
+    .category-info,
+    .accordion-wrapper a,
+    .pane-entity-field,
+    .ding-library-address .library-address .library-address-street,
+    .ding-library-contact span,
+    .ding-library-contact a,
+    .panel-pane-inner h2.pane-title a,
+    .menu a,
+    .view-ding-event .more-link,
+    .pane-weekly-opening-hours th,
+    .pane-weekly-opening-hours td,
+    .primary-content .pane-weekly-opening-hours .accordion-control,
+    .pane-title,
+    .view-ding-event .more-link a,
+    #page ul.main-menu li a,
+    .card .price-tag,
+    .view-content.row h3,
+    .accordion-control h2,
+    .info-top a,
+    .event-date span,
+    .event-description div,
+    .event-description p,
+    .right h2,
+    .info-item div,
+    .info-item a,
+    .info-item span,
+    .info-item.price,
+    .controlled-category-list h2 {
+      font-size: 22px !important;
+    }
+
+    .ding_nodelist-carousel .date-time,
+    .pane-ding-nodelist .pane-title {
+      font-size: 22px;
+    }
+
+    .pane-ding-nodelist {
+      .ding_nodelist.ding_nodelist-taxonomy {
+        .ding_nodelist-items .item {
+          .item-details .item-price,
+          .date-time,
+          .item-details .item-library,
+          > .event-list-fulldate,
+          .label .field-items .field-item,
+          .item-details .item-title a,
+          .item-details .item-body span,
+          .item-details .price {
+            font-size: 22px;
+          }
+        }
+      }
+    }
+
+    .ding_nodelist-carousel {
+      .slick-list .slick-track .slick-slide .article-info {
+        .label .field-items .field-item,
+        .item-date,
+        .item-details,
+        .event-info a,
+        .event-info .item-price {
+          font-size: 22px;
+        }
+      }
+    }
+
+    .footer {
+      .panel-pane-inner {
+        a, h2, .pane-title {
+          font-size: 22px !important;
+        }
+      }
+    }
+  }
+
+  &.a11y-contrast {
+    & *,
+    input[type="text"]::placeholder {
+      color: map-get($theme-colors, white) !important;
+      background-color: map-get($theme-colors, black-dark) !important;
+    }
+
+    .node-ding-eresource.node-full > .inner > .buttons a::after {
+      color: map-get($theme-colors, black-dark) !important;
+    }
+
+    select {
+      background-color: transparent !important;
+      color: map-get($theme-colors, black-dark) !important;
+    }
+
+    ul.pager .pager-current {
+      background-color: map-get($theme-colors, black-dark) !important;
+      color: map-get($theme-colors, white) !important;
+    }
+
+    .ding_nodelist-node_blocks {
+      .text {
+        background: transparent !important;
+        & * {
+          background: transparent !important;
+        }
+      }
+    }
+
+    article.node .event-text,
+    article.node .event-text * {
+      background: map-get($theme-colors, black-dark) !important;
+    }
+
+    .view-ding-eresource .pager-previous a::after,
+    .view-ding-eresource .pager-next a::after,
+    .node-ding-eresource .buttons a,
+    .node-ding-event.node-teaser .background .button,
+    .more-link a,
+    .ding-carousel .slick-slider .slick-arrow.slick-next::after,
+    .ding-carousel .slick-slider .slick-arrow.slick-prev::after,
+    ul.pager li.pager-next a::after,
+    ul.pager li.pager-previous a::after,
+    #ui-datepicker-div .ui-datepicker-calendar td a.ui-state-highlight,
+    .opening-hours-week .button-previous::after,
+    .opening-hours-week .button-next::after,
+    a.opening-hours-toggle.collapsed::after,
+    a.opening-hours-toggle::after,
+    .no-touch .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.is-hovered .background,
+    .no-touch .ding_nodelist-node_blocks .ding_nodelist-items .nb-item:hover .background,
+    article.node-ding-event.node-teaser a:hover .inner,
+    article.node-ding-event.node-teaser a:hover .event-text,
+    article.node-ding-event.node-teaser a:hover .background {
+      background-color: map-get($theme-colors, black-dark) !important;
+    }
+
+    #ui-datepicker-div .ui-datepicker-calendar td a:hover,
+    .more-link a:hover,
+    .more-link a:hover::after,
+    .nb-item .button,
+    article.node a:hover .background .button,
+    input[type="submit"],
+    .no-touch a.opening-hours-toggle:hover::after,
+    .no-touch .opening-hours-week .button-previous:hover::after,
+    .no-touch .opening-hours-week .button-next:hover::after {
+      background-color: map-get($theme-colors, black-dark) !important;
+    }
+
+    .nb-item .button,
+    .node-ding-event.node-teaser .background .button {
+      z-index: 5;
+    }
+  }
+}
+
+#a11y {
+  // width: 30px;
+  // height: 100px !important;
+  background-color: map-get($theme-colors, blue);
+  position: fixed;
+  left: 1%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 10px;
+
+  a {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center;
+
+    &.font-size-trigger {
+      &::before {
+        content: 'a';
+      }
+    }
+
+    &.contrast-trigger {
+      &::before {
+        content: '\263c';
+      }
+    }
+  }
+}

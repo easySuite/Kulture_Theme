@@ -42,6 +42,7 @@
   --light2-gray: #DBD9D9;
   --wihte: #ffffff;
   --black: #8f8d8dc9;
+  --black-dark: #000000;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1562,6 +1563,23 @@ pre {
   .table-hover .table-black:hover > th {
     background-color: rgba(219, 219, 219, 0.940706); }
 
+.table-black-dark,
+.table-black-dark > th,
+.table-black-dark > td {
+  background-color: #b8b8b8; }
+
+.table-black-dark th,
+.table-black-dark td,
+.table-black-dark thead th,
+.table-black-dark tbody + tbody {
+  border-color: #7a7a7a; }
+
+.table-hover .table-black-dark:hover {
+  background-color: #ababab; }
+  .table-hover .table-black-dark:hover > td,
+  .table-hover .table-black-dark:hover > th {
+    background-color: #ababab; }
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -2591,6 +2609,32 @@ fieldset:disabled a.btn {
     .show > .btn-black.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(167, 165, 165, 0.5); }
 
+.btn-black-dark {
+  color: #fff;
+  background-color: #000000;
+  border-color: #000000; }
+  .btn-black-dark:hover {
+    color: #fff;
+    background-color: black;
+    border-color: black; }
+  .btn-black-dark:focus, .btn-black-dark.focus {
+    color: #fff;
+    background-color: black;
+    border-color: black;
+    box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5); }
+  .btn-black-dark.disabled, .btn-black-dark:disabled {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000; }
+  .btn-black-dark:not(:disabled):not(.disabled):active, .btn-black-dark:not(:disabled):not(.disabled).active,
+  .show > .btn-black-dark.dropdown-toggle {
+    color: #fff;
+    background-color: black;
+    border-color: black; }
+    .btn-black-dark:not(:disabled):not(.disabled):active:focus, .btn-black-dark:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-black-dark.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(38, 38, 38, 0.5); }
+
 .btn-outline-primary {
   color: #007bff;
   border-color: #007bff; }
@@ -3031,6 +3075,27 @@ fieldset:disabled a.btn {
     .btn-outline-black:not(:disabled):not(.disabled):active:focus, .btn-outline-black:not(:disabled):not(.disabled).active:focus,
     .show > .btn-outline-black.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(143, 141, 141, 0.5); }
+
+.btn-outline-black-dark {
+  color: #000000;
+  border-color: #000000; }
+  .btn-outline-black-dark:hover {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000; }
+  .btn-outline-black-dark:focus, .btn-outline-black-dark.focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
+  .btn-outline-black-dark.disabled, .btn-outline-black-dark:disabled {
+    color: #000000;
+    background-color: transparent; }
+  .btn-outline-black-dark:not(:disabled):not(.disabled):active, .btn-outline-black-dark:not(:disabled):not(.disabled).active,
+  .show > .btn-outline-black-dark.dropdown-toggle {
+    color: #fff;
+    background-color: #000000;
+    border-color: #000000; }
+    .btn-outline-black-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-black-dark:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-outline-black-dark.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -4746,6 +4811,16 @@ input[type="button"].btn-block {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(143, 141, 141, 0.5); }
 
+.badge-black-dark {
+  color: #fff;
+  background-color: #000000; }
+  a.badge-black-dark:hover, a.badge-black-dark:focus {
+    color: #fff;
+    background-color: black; }
+  a.badge-black-dark:focus, a.badge-black-dark.focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.5); }
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -4971,6 +5046,15 @@ input[type="button"].btn-block {
     border-top-color: rgba(219, 219, 219, 0.940706); }
   .alert-black .alert-link {
     color: rgba(33, 33, 33, 0.889882); }
+
+.alert-black-dark {
+  color: black;
+  background-color: #cccccc;
+  border-color: #b8b8b8; }
+  .alert-black-dark hr {
+    border-top-color: #ababab; }
+  .alert-black-dark .alert-link {
+    color: black; }
 
 @keyframes progress-bar-stripes {
   from {
@@ -5391,6 +5475,17 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: rgba(59, 58, 58, 0.889882);
     border-color: rgba(59, 58, 58, 0.889882); }
+
+.list-group-item-black-dark {
+  color: black;
+  background-color: #b8b8b8; }
+  .list-group-item-black-dark.list-group-item-action:hover, .list-group-item-black-dark.list-group-item-action:focus {
+    color: black;
+    background-color: #ababab; }
+  .list-group-item-black-dark.list-group-item-action.active {
+    color: #fff;
+    background-color: black;
+    border-color: black; }
 
 .close {
   float: right;
@@ -6190,6 +6285,14 @@ button.bg-black:hover,
 button.bg-black:focus {
   background-color: rgba(118, 115, 115, 0.788235) !important; }
 
+.bg-black-dark {
+  background-color: #000000 !important; }
+
+a.bg-black-dark:hover, a.bg-black-dark:focus,
+button.bg-black-dark:hover,
+button.bg-black-dark:focus {
+  background-color: black !important; }
+
 .bg-white {
   background-color: #fff !important; }
 
@@ -6288,6 +6391,9 @@ button.bg-black:focus {
 
 .border-black {
   border-color: #8f8d8dc9 !important; }
+
+.border-black-dark {
+  border-color: #000000 !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -8627,6 +8733,12 @@ a.text-wihte:hover, a.text-wihte:focus {
 a.text-black:hover, a.text-black:focus {
   color: rgba(105, 103, 103, 0.788235) !important; }
 
+.text-black-dark {
+  color: #000000 !important; }
+
+a.text-black-dark:hover, a.text-black-dark:focus {
+  color: black !important; }
+
 .text-body {
   color: #212529 !important; }
 
@@ -8899,6 +9011,236 @@ img {
       color: black; }
     .search-overlay--wrapper .search-overlay--inner .cancel a {
       color: blue; }
+
+html.a11y,
+html.a11y body {
+  font-size: 22px !important;
+  line-height: 26px; }
+  html.a11y .search-form-extended.admin-menu .site-header .pane-search-form,
+  html.a11y body .search-form-extended.admin-menu .site-header .pane-search-form {
+    top: 276px; }
+  html.a11y select,
+  html.a11y input[type="submit"],
+  html.a11y input[type="text"],
+  html.a11y input[type="text"]::placeholder,
+  html.a11y .carousel-tabs .carousel-list-tabs .carousel-item a,
+  html.a11y .panel-pane.pane-current-user-name h2,
+  html.a11y .field-group-format.collapsible > h2,
+  html.a11y body select,
+  html.a11y body input[type="submit"],
+  html.a11y body input[type="text"],
+  html.a11y body input[type="text"]::placeholder,
+  html.a11y body .carousel-tabs .carousel-list-tabs .carousel-item a,
+  html.a11y body .panel-pane.pane-current-user-name h2,
+  html.a11y body .field-group-format.collapsible > h2 {
+    font-size: 1rem;
+    line-height: 1.12rem; }
+  html.a11y .card .card-body .info-top,
+  html.a11y .card .card-body .date,
+  html.a11y .card .card-body .card-title,
+  html.a11y .card .card-body .card-description,
+  html.a11y .card .card-body .library,
+  html.a11y .card .card-body .date-time,
+  html.a11y .card .card-body .price,
+  html.a11y .card .card-body .card-text.title-and-lead,
+  html.a11y body .card .card-body .info-top,
+  html.a11y body .card .card-body .date,
+  html.a11y body .card .card-body .card-title,
+  html.a11y body .card .card-body .card-description,
+  html.a11y body .card .card-body .library,
+  html.a11y body .card .card-body .date-time,
+  html.a11y body .card .card-body .price,
+  html.a11y body .card .card-body .card-text.title-and-lead {
+    font-size: 22px !important; }
+  html.a11y .ddb-btn,
+  html.a11y body .ddb-btn {
+    font-size: 0.875rem;
+    line-height: 1rem; }
+  html.a11y .field-label-above,
+  html.a11y .category-tag,
+  html.a11y .field-item.even,
+  html.a11y .category-info,
+  html.a11y .accordion-wrapper a,
+  html.a11y .pane-entity-field,
+  html.a11y .ding-library-address .library-address .library-address-street,
+  html.a11y .ding-library-contact span,
+  html.a11y .ding-library-contact a,
+  html.a11y .panel-pane-inner h2.pane-title a,
+  html.a11y .menu a,
+  html.a11y .view-ding-event .more-link,
+  html.a11y .pane-weekly-opening-hours th,
+  html.a11y .pane-weekly-opening-hours td,
+  html.a11y .primary-content .pane-weekly-opening-hours .accordion-control,
+  html.a11y .pane-title,
+  html.a11y .view-ding-event .more-link a,
+  html.a11y #page ul.main-menu li a,
+  html.a11y .card .price-tag,
+  html.a11y .view-content.row h3,
+  html.a11y .node-type-ding-news .view.view-ding-related-content .view-content h3,
+  .node-type-ding-news .view.view-ding-related-content html.a11y .view-content h3,
+  html.a11y .accordion-control h2,
+  html.a11y .info-top a,
+  html.a11y .event-date span,
+  html.a11y .event-description div,
+  html.a11y .event-description p,
+  html.a11y .right h2,
+  html.a11y .info-item div,
+  html.a11y .info-item a,
+  html.a11y .info-item span,
+  html.a11y .info-item.price,
+  html.a11y .controlled-category-list h2,
+  html.a11y body .field-label-above,
+  html.a11y body .category-tag,
+  html.a11y body .field-item.even,
+  html.a11y body .category-info,
+  html.a11y body .accordion-wrapper a,
+  html.a11y body .pane-entity-field,
+  html.a11y body .ding-library-address .library-address .library-address-street,
+  html.a11y body .ding-library-contact span,
+  html.a11y body .ding-library-contact a,
+  html.a11y body .panel-pane-inner h2.pane-title a,
+  html.a11y body .menu a,
+  html.a11y body .view-ding-event .more-link,
+  html.a11y body .pane-weekly-opening-hours th,
+  html.a11y body .pane-weekly-opening-hours td,
+  html.a11y body .primary-content .pane-weekly-opening-hours .accordion-control,
+  html.a11y body .pane-title,
+  html.a11y body .view-ding-event .more-link a,
+  html.a11y body #page ul.main-menu li a,
+  html.a11y body .card .price-tag,
+  html.a11y body .view-content.row h3,
+  html.a11y body .node-type-ding-news .view.view-ding-related-content .view-content h3,
+  .node-type-ding-news .view.view-ding-related-content html.a11y body .view-content h3,
+  html.a11y body .accordion-control h2,
+  html.a11y body .info-top a,
+  html.a11y body .event-date span,
+  html.a11y body .event-description div,
+  html.a11y body .event-description p,
+  html.a11y body .right h2,
+  html.a11y body .info-item div,
+  html.a11y body .info-item a,
+  html.a11y body .info-item span,
+  html.a11y body .info-item.price,
+  html.a11y body .controlled-category-list h2 {
+    font-size: 22px !important; }
+  html.a11y .ding_nodelist-carousel .date-time,
+  html.a11y .pane-ding-nodelist .pane-title,
+  html.a11y body .ding_nodelist-carousel .date-time,
+  html.a11y body .pane-ding-nodelist .pane-title {
+    font-size: 22px; }
+  html.a11y .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-price,
+  html.a11y .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .date-time,
+  html.a11y .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-library,
+  html.a11y .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item > .event-list-fulldate,
+  html.a11y .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .label .field-items .field-item,
+  html.a11y .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-title a,
+  html.a11y .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-body span,
+  html.a11y .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .price,
+  html.a11y body .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-price,
+  html.a11y body .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .date-time,
+  html.a11y body .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-library,
+  html.a11y body .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item > .event-list-fulldate,
+  html.a11y body .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .label .field-items .field-item,
+  html.a11y body .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-title a,
+  html.a11y body .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .item-body span,
+  html.a11y body .pane-ding-nodelist .ding_nodelist.ding_nodelist-taxonomy .ding_nodelist-items .item .item-details .price {
+    font-size: 22px; }
+  html.a11y .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item,
+  html.a11y .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .item-date,
+  html.a11y .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .item-details,
+  html.a11y .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info a,
+  html.a11y .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info .item-price,
+  html.a11y body .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .label .field-items .field-item,
+  html.a11y body .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .item-date,
+  html.a11y body .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .item-details,
+  html.a11y body .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info a,
+  html.a11y body .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info .item-price {
+    font-size: 22px; }
+  html.a11y .footer .panel-pane-inner a, html.a11y .footer .panel-pane-inner h2, html.a11y .footer .panel-pane-inner .pane-title,
+  html.a11y body .footer .panel-pane-inner a,
+  html.a11y body .footer .panel-pane-inner h2,
+  html.a11y body .footer .panel-pane-inner .pane-title {
+    font-size: 22px !important; }
+
+html.a11y-contrast *,
+html.a11y-contrast input[type="text"]::placeholder {
+  color: !important;
+  background-color: #000000 !important; }
+
+html.a11y-contrast .node-ding-eresource.node-full > .inner > .buttons a::after {
+  color: #000000 !important; }
+
+html.a11y-contrast select {
+  background-color: transparent !important;
+  color: #000000 !important; }
+
+html.a11y-contrast ul.pager .pager-current {
+  background-color: #000000 !important;
+  color: !important; }
+
+html.a11y-contrast .ding_nodelist-node_blocks .text {
+  background: transparent !important; }
+  html.a11y-contrast .ding_nodelist-node_blocks .text * {
+    background: transparent !important; }
+
+html.a11y-contrast article.node .event-text,
+html.a11y-contrast article.node .event-text * {
+  background: #000000 !important; }
+
+html.a11y-contrast .view-ding-eresource .pager-previous a::after,
+html.a11y-contrast .view-ding-eresource .pager-next a::after,
+html.a11y-contrast .node-ding-eresource .buttons a,
+html.a11y-contrast .node-ding-event.node-teaser .background .button,
+html.a11y-contrast .more-link a,
+html.a11y-contrast .ding-carousel .slick-slider .slick-arrow.slick-next::after,
+html.a11y-contrast .ding-carousel .slick-slider .slick-arrow.slick-prev::after,
+html.a11y-contrast ul.pager li.pager-next a::after,
+html.a11y-contrast ul.pager li.pager-previous a::after,
+html.a11y-contrast #ui-datepicker-div .ui-datepicker-calendar td a.ui-state-highlight,
+html.a11y-contrast .opening-hours-week .button-previous::after,
+html.a11y-contrast .opening-hours-week .button-next::after,
+html.a11y-contrast a.opening-hours-toggle.collapsed::after,
+html.a11y-contrast a.opening-hours-toggle::after,
+html.a11y-contrast .no-touch .ding_nodelist-node_blocks .ding_nodelist-items .nb-item.is-hovered .background,
+html.a11y-contrast .no-touch .ding_nodelist-node_blocks .ding_nodelist-items .nb-item:hover .background,
+html.a11y-contrast article.node-ding-event.node-teaser a:hover .inner,
+html.a11y-contrast article.node-ding-event.node-teaser a:hover .event-text,
+html.a11y-contrast article.node-ding-event.node-teaser a:hover .background {
+  background-color: #000000 !important; }
+
+html.a11y-contrast #ui-datepicker-div .ui-datepicker-calendar td a:hover,
+html.a11y-contrast .more-link a:hover,
+html.a11y-contrast .more-link a:hover::after,
+html.a11y-contrast .nb-item .button,
+html.a11y-contrast article.node a:hover .background .button,
+html.a11y-contrast input[type="submit"],
+html.a11y-contrast .no-touch a.opening-hours-toggle:hover::after,
+html.a11y-contrast .no-touch .opening-hours-week .button-previous:hover::after,
+html.a11y-contrast .no-touch .opening-hours-week .button-next:hover::after {
+  background-color: #000000 !important; }
+
+html.a11y-contrast .nb-item .button,
+html.a11y-contrast .node-ding-event.node-teaser .background .button {
+  z-index: 5; }
+
+#a11y {
+  background-color: #1E0195;
+  position: fixed;
+  left: 1%;
+  top: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 5px;
+  border-radius: 10px; }
+  #a11y a {
+    font-size: 1.5rem;
+    color: white;
+    text-align: center; }
+    #a11y a.font-size-trigger::before {
+      content: 'a'; }
+    #a11y a.contrast-trigger::before {
+      content: '\263c'; }
 
 header.site-header nav.main-menu-wrapper.navbar {
   width: 100%;
