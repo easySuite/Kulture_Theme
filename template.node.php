@@ -136,9 +136,11 @@ function kulture_theme_preprocess__node__ding_event(&$variables) {
       if (!empty($variables['field_ding_event_list_image'])) {
         $variables['classes_array'][] = 'has-image';
       }
-      // Create image url.
-      $uri = empty($variables['field_ding_event_list_image'][0]['uri']) ?
-        "" : $variables['field_ding_event_list_image'][0]['uri'];
+
+      $event_category = $variables['field_ding_event_category'][0]['taxonomy_term'];
+
+      $uri = $variables['field_ding_event_list_image'][0]['uri'] ??
+        $event_category->field_event_category_image[LANGUAGE_NONE][0]['uri'] ?? '';
 
       if (!empty($uri)) {
         $variables['event_background_image'] = image_style_url('ding_panorama_list_large', $uri);
@@ -183,6 +185,10 @@ function kulture_theme_preprocess__node__ding_event(&$variables) {
         if ($date_start->format('YmdHi') !== $date_end->format('YmdHi')) {
           $event_time_view_settings['settings']['fromto'] = 'both';
         }
+
+        $variables['short_description'] = $variables['field_ding_event_lead'][0]['safe_value'] ??
+          $variables['field_ding_event_body'][0]['safe_value'] ?? '';
+        $variables['short_description'] = text_summary($variables['short_description'], 'filter_htmlcorrector', 100);
 
         // Search for same event.
         foreach ($results as $nid) {
