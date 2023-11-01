@@ -4,12 +4,12 @@
   "description": "Custom theme for Culture distribution based on Bootstrap v4 framework (https://getbootstrap.com)",
   "scripts": {
     "scss": "node-sass scss -o css",
-    "js":"terser node_modules/bootstrap/dist/js/*.js --output scripts/bootstrap/bootstrap.min.js"
+    "js": "uglifyjs node_modules/bootstrap/dist/js/*.js > scripts/bootstrap/bootstrap.min.js -m"
   },
   "dependencies": {
     "bootstrap": "^4.6.2",
     "globule": "^1.3.4",
     "node-sass": "^9.0.0",
-    "terser" : "^5.23.0"
+    "uglify-js" : "^3.17.4"
   }
 }
