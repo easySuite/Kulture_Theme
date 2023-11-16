@@ -2,7 +2,7 @@
 
 /**
  * @file
- * kulture_theme's theme implementation to display event nodes.
+ * Kulture_theme's theme implementation to display event nodes.
  *
  * Available variables:
  * - $title: the (sanitized) title of the node.
@@ -76,7 +76,8 @@
  * kulture_theme specific variables:
  * - $event_date: Event date or period
  * - $event_time: Event time or time-span
- * - $event_price: Event price with 'kr.' suffix - if no price is set $event_price equals 'Free'
+ * - $event_price: Event price with 'kr.' suffix - if no price
+ *     is set $event_price equals 'Free'
  * - $event_background_image: Image url for event image
  *
  * @see template_preprocess()
@@ -101,7 +102,7 @@
         <div class="card-text title-and-lead">
           <h3 class="card-title title"><?php print $title; ?></h3>
           <div class="card-description">
-            <?php print render($content['field_ding_event_lead']); ?>
+            <?php print $short_description; ?>
           </div>
         </div>
         <div class="info-bottom">
