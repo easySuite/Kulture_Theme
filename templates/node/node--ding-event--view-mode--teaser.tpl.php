@@ -91,7 +91,7 @@
     <?php if (!empty($event_background_image)): ?>
       <div class="image-wrapper">
         <img class="card-img-top event-list-image" src="<?php print $event_background_image ?>" <?php print $image_title;?>>
-      </div>'
+      </div>
     <?php endif; ?>
       <div class="card-body event-text">
         <div class="info-top">
