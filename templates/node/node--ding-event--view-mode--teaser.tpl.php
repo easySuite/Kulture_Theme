@@ -88,11 +88,11 @@
 <article class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <a href="<?php print $node_url; ?>">
     <div class="inner">
-    <?php
-      if (!empty($event_background_image)):
-        print '<div class="image-wrapper"><img class="card-img-top event-list-image" src="' . $event_background_image . '"' . $image_title . '/></div>';
-      endif;
-    ?>
+    <?php if (!empty($event_background_image)): ?>
+      <div class="image-wrapper">
+        <img class="card-img-top event-list-image" src="<?php print $event_background_image ?>" <?php print $image_title;?>>
+      </div>'
+    <?php endif; ?>
       <div class="card-body event-text">
         <div class="info-top">
           <i class="tag-icon"></i>
@@ -106,11 +106,7 @@
           </div>
         </div>
         <div class="info-bottom">
-          <?php if ($alt_location_is_set): ?>
-            <div class="library"><?php print $content['field_ding_event_location'][0]['#address']['name_line']; ?></div>
-          <?php else: ?>
-            <div class="library"><?php print render($content['og_group_ref']); ?></div>
-          <?php endif; ?>
+          <div class="library"><?php print $teaser_location; ?></div>
           <div class="date-time"><?php print $event_time; ?></div>
           <div class="price"><?php print $event_price; ?></div>
         </div>

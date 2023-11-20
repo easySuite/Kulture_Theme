@@ -4,6 +4,7 @@
  * @file
  * Node related preprocessors.
  */
+
 /**
  * Implements hook_preprocess_node().
  *
@@ -76,18 +77,16 @@ function kulture_theme_preprocess__node__ding_campaign(&$variables) {
       case 'image':
         if (!empty($variables['elements']['#widget_type']) && $variables['elements']['#widget_type'] == 'single') {
           $variables['image'] = theme('image', [
-              'path' => $image_uri,
-              'attributes' => ['class' => 'ding-campaign-image'],
-            ]
-          );
+            'path' => $image_uri,
+            'attributes' => ['class' => 'ding-campaign-image'],
+          ]);
         }
         else {
           $variables['image'] = theme('image_style', [
-              'style_name' => $image_style,
-              'path' => $image_uri,
-              'attributes' => ['class' => 'ding-campaign-image'],
-            ]
-          );
+            'style_name' => $image_style,
+            'path' => $image_uri,
+            'attributes' => ['class' => 'ding-campaign-image'],
+          ]);
         }
         break;
     }
@@ -111,24 +110,26 @@ function kulture_theme_preprocess__node__ding_event(&$variables) {
   $query->where(
     "DATE_FORMAT(fed.field_ding_event_date_value, '%Y-%m-%d') = :date",
     array(
-      ':date' => $date_object->format('Y-m-d')
+      ':date' => $date_object->format('Y-m-d'),
     )
   );
   $query->condition('n.title', $title);
   $results = $query->execute()->fetchCol();
 
   $price = field_get_items('node', $variables['node'], 'field_ding_event_price');
-  $variables['free']  = FALSE;
+  $variables['free'] = FALSE;
   if (!empty($price)) {
     $variables['event_price'] = $price[0]['value'] . ' ' . variable_get('ding_event_currency_type', 'Kr');
   }
   else {
-    $variables['free']  = TRUE;
+    $variables['free'] = TRUE;
     $variables['event_price'] = t('Free');
   }
 
   $location = field_get_items('node', $variables['node'], 'field_ding_event_location');
-  $variables['alt_location_is_set'] = !empty($location[0]['name_line']) || !empty($location[0]['thoroughfare']);
+  $alt_location = !empty($location[0]['name_line']) || !empty($location[0]['thoroughfare']);
+
+  $event_category = $variables['field_ding_event_category'][0]['taxonomy_term'];
 
   switch ($variables['view_mode']) {
     case 'teaser':
@@ -136,8 +137,6 @@ function kulture_theme_preprocess__node__ding_event(&$variables) {
       if (!empty($variables['field_ding_event_list_image'])) {
         $variables['classes_array'][] = 'has-image';
       }
-
-      $event_category = $variables['field_ding_event_category'][0]['taxonomy_term'];
 
       $uri = $variables['field_ding_event_list_image'][0]['uri'] ??
         $event_category->field_event_category_image[LANGUAGE_NONE][0]['uri'] ?? '';
@@ -149,22 +148,24 @@ function kulture_theme_preprocess__node__ding_event(&$variables) {
       $variables['image_title'] = empty($variables['field_ding_event_list_image'][0]['title']) ?
         "" : 'title="' . $variables['field_ding_event_list_image'][0]['title'] . '"';
 
+      $variables['teaser_location'] = !empty($location[0]['name_line']) ?
+        $location[0]['name_line'] : render($variables['content']['og_group_ref']);
+
       // Date.
       if (!empty($date)) {
-        // When the user saves the event time (e.g. danish time 2018-01-10 00:00),
+        // When the user saves the event time (e.g. dk time 2018-01-10 00:00),
         // the value is saved in the database in UTC time
         // (e.g. UTC time 2018-01-09 23:00). To print out the date/time properly
-        // We first need to create the dateObject with the UTC database time, and
-        // afterwards we can convert the dateObject db-time to localtime.
-
-        // Create a dateObject from startdate, set base timezone to UTC
+        // We first need to create the dateObject with the UTC database time,
+        // and afterwards we can convert the dateObject db-time to localtime.
+        // Create a dateObject from startdate, set base timezone to UTC.
         $date_start = new DateObject($date[0]['value'], new DateTimeZone($date[0]['timezone_db']));
-        // Set timezone to local timezone
+        // Set timezone to local timezone.
         $date_start->setTimezone(new DateTimeZone($date[0]['timezone']));
 
-        // Create a dateObject from enddate, set base timezone to UTC
+        // Create a dateObject from enddate, set base timezone to UTC.
         $date_end = new DateObject($date[0]['value2'], new DateTimeZone($date[0]['timezone_db']));
-        // Set timezone to local timezone
+        // Set timezone to local timezone.
         $date_end->setTimezone(new DateTimeZone($date[0]['timezone']));
 
         $variables['event_date'] = date_format_date($date_start, 'ding_date_only_version2');
@@ -247,16 +248,46 @@ function kulture_theme_preprocess__node__ding_event(&$variables) {
           ));
         }
 
-        if (!empty($location)) {
-          $variables['content']['group_left']['og_group_ref']['#access'] = FALSE;
+        $loc_addr = $alt_location ? $variables['content']['field_ding_event_location'] : $variables['content']['og_group_ref'];
+        $variables['location_address'] = render($loc_addr);
+      }
+
+      $variables['event_title_image'] = render($variables['content']['field_ding_event_title_image']);
+
+      if (!$variables['event_title_image'] && isset($event_category->field_event_category_image[LANGUAGE_NONE][0]['uri'])) {
+        $uri = $event_category->field_event_category_image[LANGUAGE_NONE][0]['uri'];
+        $variables['event_title_image'] = '<img src="' . image_style_url('ding_secondary_large', $uri) . '">';
+      }
+
+      $ding_library = $variables['og_group_ref'][0]['entity'];
+      if (isset($variables['elements']['#groups']['group_contact'])) {
+        $variables['group_contact']['rcp'] = $ding_library->field_ding_library_rcp[LANGUAGE_NONE][0]['safe_value'] ?? '';
+        $variables['group_contact']['email'] = $ding_library->field_ding_library_mail[LANGUAGE_NONE][0]['email'] ?? '';
+        $variables['group_contact']['phone'] = $ding_library->field_ding_library_phone_number[LANGUAGE_NONE][0]['safe_value'] ?? '';
+      }
+
+      if (isset($variables['elements']['#groups']['group_geolocation'])) {
+        $variables['location_address'] = !$alt_location ?
+          render(field_view_field('node', $ding_library, 'field_ding_library_addresse')) :
+          $variables['location_address'];
+
+        $geolocation = $alt_location ?
+          field_get_items('node', $variables['node'], 'field_event_address_geo') :
+          field_get_items('node', $ding_library, 'field_ding_library_geocode');
+
+        if ($geolocation) {
+          $lat = $geolocation[0]['lat'];
+          $lon = $geolocation[0]['lon'];
+          $gmap_link = "https://www.google.com/maps/search/?api=1&query=" . $lat . "," . $lon;
+          $variables['location_address'] = '<a href="' . $gmap_link . '" target="_blank">' . $variables['location_address'] . '</a>';
         }
       }
+
       break;
   }
 
   $variables['event_time'] = implode('<span class="separator"></span>', $event_time);
 }
-
 
 /**
  * Ding news.
@@ -334,7 +365,9 @@ function kulture_theme_preprocess__node__ding_library(&$variables) {
   $city = $address['locality'];
   $country = $address['country'];
   $url = "http://www.google.com/maps/place/" . $street . "+" . $postal . "+" . $city . "+" . $country;
-  $link = l(t("Show on map"), $url, array('attributes' => array('class' => 'maps-link', 'target' => '_blank')));
+  $link = l(t("Show on map"), $url, array(
+    'attributes' => array('class' => 'maps-link', 'target' => '_blank'),
+  ));
 
   $variables['content']['maps_link']['#markup'] = $link;
   $variables['content']['maps_link']['#weight'] = 10;
