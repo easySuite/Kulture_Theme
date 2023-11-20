@@ -82,7 +82,8 @@
  *   as relevant for the event node
  * - $event_date: Event date or period
  * - $event_time: Event time or time-span
- * - $event_price: Event price with 'kr.' suffix - if no price is set $event_price equals 'Free'
+ * - $event_price: Event price with 'kr.' suffix -
+ *    if no price is set $event_price equals 'Free'
  * - $book_button: Link to event-signup or event-tickets
  * - $share_button: Share links for Facebook, Twitter and email
  *
@@ -96,7 +97,7 @@ unset($content['field_ding_event_ticket_link']);
   <div class="container inner">
     <div class="row">
       <div class="left col-lg-5">
-        <?php print render($content['group_left']['field_ding_event_title_image']); ?>
+        <?php print $event_title_image; ?>
       </div>
       <div class="right col-lg-7">
         <div class="info-top">
@@ -107,22 +108,26 @@ unset($content['field_ding_event_ticket_link']);
         <div class="event-date"><?php print render($content['group_right']['field_ding_event_date']);?></div>
         <?php print render($share_button); ?>
         <div class="event-description"><?php print render($content['group_right']);?></div>
-        <h2><?php print t('Information about the event'); ?></h2>
-        <div class="event-info">
-          <div class="info-item">
-            <?php
-              if ($alt_location_is_set):
-                print render($content['group_left']['field_ding_event_location']);
-              else:
-                print render($content['group_left']['og_group_ref']);
-              endif;
-            ?>
+        <?php if (isset($group_contact)) : ?>
+          <h2><?php print t('Contact person'); ?></h2>
+          <div><?php print $group_contact['rcp']; ?></div>
+          <div>
+            <?php print t('Email'); ?>:
+              <a href="mailto:<?php print $group_contact['email']; ?>"><?php print $group_contact['email']; ?></a>
           </div>
+          <div><?php print t('Phone'); ?>:
+            <a href="tel:<?php print $group_contact['phone']; ?>"><?php print $group_contact['phone']; ?></a>
+          </div>
+        <?php endif; ?>
+        <h2><?php print t('Information about the event'); ?></h2>
+        <div><?php print render($content['group_organization']);?></div>
+        <div class="event-info">
+          <div class="info-item"><?php print $location_address; ?></div>
 
           <!-- insert time-field markup -->
           <?php if ($event_time): ?>
             <div class="field-item even info-item"><?php print $event_time; ?></div>
-          <?php endif; ?> 
+          <?php endif; ?>
           <div class="info-item">
             <?php if (!empty($campaigns)): ?>
               <?php print drupal_render($campaigns); ?>
@@ -134,7 +139,7 @@ unset($content['field_ding_event_ticket_link']);
           <div class="info-item-group">
             <?php print render($content['group_left']['field_ding_event_target']); ?>
           </div>
-        </div> 
+        </div>
         <div class="info-item">
             <?php
               if (!empty($book_button)):
@@ -143,7 +148,7 @@ unset($content['field_ding_event_ticket_link']);
             ?>
           </div>
       </div>
-      <?php // Render MKWS results set. ?>
+      <!-- Render MKWS results set. -->
       <?php if (!empty($content['field_mkws_node_widget'])) : ?>
         <?php print render($content['field_mkws_node_widget']); ?>
       <?php endif; ?>
