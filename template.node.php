@@ -256,7 +256,7 @@ function kulture_theme_preprocess__node__ding_event(&$variables) {
 
       if (!$variables['event_title_image'] && isset($event_category->field_event_category_image[LANGUAGE_NONE][0]['uri'])) {
         $uri = $event_category->field_event_category_image[LANGUAGE_NONE][0]['uri'];
-        $variables['event_title_image'] = '<img src="' . image_style_url('ding_secondary_large', $uri) . '">';
+        $variables['event_title_image'] = '<div class="category-img"><img src="' . image_style_url('ding_secondary_large', $uri) . '"></div>';
       }
 
       $ding_library = $variables['og_group_ref'][0]['entity'];
