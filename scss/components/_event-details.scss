@@ -90,7 +90,6 @@
       padding-left: 20px;
 
       a {
-        color: map-get($theme-colors, active-gray);
         text-decoration: none;
       }
     }
@@ -210,10 +209,14 @@
     .info-item-group,
     .info-item a,
     .info-item-group a {
-      color: map-get($theme-colors, dark);
       font-size: map-get($text-size, small);
       font-weight: 600;
       text-decoration: none;
+    }
+
+
+  .info-item .field-label {
+      color: map-get($theme-colors, black-dark);
     }
 
     .price {

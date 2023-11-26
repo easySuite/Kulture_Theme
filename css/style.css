@@ -10163,7 +10163,6 @@ header.site-header nav.main-menu-wrapper.navbar {
     .event-details-wrapper .info-top .field {
       padding-left: 20px; }
       .event-details-wrapper .info-top .field a {
-        color: #4D4E6C;
         text-decoration: none; }
   .event-details-wrapper .field-name-field-ding-event-tags .field-label,
   .event-details-wrapper .field-name-field-ding-event-tags .field-items,
@@ -10246,10 +10245,11 @@ header.site-header nav.main-menu-wrapper.navbar {
   .event-details-wrapper .event-info .info-item-group,
   .event-details-wrapper .event-info .info-item a,
   .event-details-wrapper .event-info .info-item-group a {
-    color: #000119;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none; }
+  .event-details-wrapper .event-info .info-item .field-label {
+    color: #000000; }
   .event-details-wrapper .event-info .price {
     color: #00A878;
     font-family: "Rubik-Regular";
