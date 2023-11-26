@@ -6,9 +6,14 @@
     color: map-get($theme-colors, blue);
   }
 
-  .street-block,.field-name-field-ding-event-location {
-    display: inline-flex;
-    margin-right: 10px;
+  .event-info {
+    .street-block,.field-name-field-ding-event-location,
+    .field-name-field-ding-library-addresse,
+    .field-item.even,
+    .addressfield-container-inline {
+      display: inline-flex;
+      margin-right: 10px;
+    }
   }
   .locality-block {
     display: inline-flex;

@@ -10110,7 +10110,10 @@ header.site-header nav.main-menu-wrapper.navbar {
   font-family: "SourceSansPro-Regular"; }
   .event-details-wrapper a {
     color: #1E0195; }
-  .event-details-wrapper .street-block, .event-details-wrapper .field-name-field-ding-event-location {
+  .event-details-wrapper .event-info .street-block, .event-details-wrapper .event-info .field-name-field-ding-event-location,
+  .event-details-wrapper .event-info .field-name-field-ding-library-addresse,
+  .event-details-wrapper .event-info .field-item.even,
+  .event-details-wrapper .event-info .addressfield-container-inline {
     display: inline-flex;
     margin-right: 10px; }
   .event-details-wrapper .locality-block {
