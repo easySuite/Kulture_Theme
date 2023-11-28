@@ -12,7 +12,14 @@
     .field-item.even,
     .addressfield-container-inline {
       display: inline-flex;
-      margin-right: 10px;
+    }
+
+    span.date-display-start {
+      margin-left: 10px;
+    }
+
+    .thoroughfare {
+      margin-right: 5px;
     }
   }
   .locality-block {
@@ -20,7 +27,7 @@
 
     .postal-code, .locality, .country {
       display: inline;
-      margin-right: 5px;
+      margin-right: 2px;
     }
   }
 
@@ -184,7 +191,7 @@
     .info-item-group .group-left > div {
       float: left;
       position: relative;
-      margin-right: 20px;
+      margin-right: 10px;
       height: 24px;
 
       &:not(:last-child):not(.info-item-group) {
@@ -225,6 +232,7 @@
       font-size: map-get($text-size, small);
       letter-spacing: 0.47px;
       text-transform: uppercase;
+      margin-left: 10px;
 
       &:after {
         display: none;

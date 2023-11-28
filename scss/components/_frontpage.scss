@@ -11,6 +11,10 @@
   margin-top: -2px;
 
   .menu {
+    @include media-breakpoint-up(sm) {
+      padding-left: 0;
+    }
+
     li {
       list-style: none;
 
@@ -20,6 +24,10 @@
       }
     }
   }
+}
+
+.ding2-site-template .secondary-menu-wrapper ul.menu {
+  padding-left: 0;
 }
 
 .pane-lang-dropdown-language {
@@ -61,7 +69,14 @@ nav > div:nth-of-type(4) {
 
 
 div.logo {
-  width: 200px
+  width: 200px;
+  position: relative;
+  top: 50px;
+
+  img{
+    width: 170px;
+  }
+
 }
 
 .front.page-culture-frontpage .content-wrapper .container {
