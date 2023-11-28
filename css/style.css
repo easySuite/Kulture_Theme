@@ -9246,14 +9246,20 @@ header.site-header nav.main-menu-wrapper.navbar {
   width: 100%;
   min-height: 170px;
   margin: 0 auto;
-  padding: 0px; }
+  padding: 0px;
+  flex-wrap: unset;
+  align-items: unset;
+  justify-content: unset;
+  display: block; }
   header.site-header nav.main-menu-wrapper.navbar .pane-search-form form {
     width: 100%;
     padding: 20px;
-    box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
+    box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+    position: relative;
+    top: -9px; }
     @media (min-width: 992px) {
       header.site-header nav.main-menu-wrapper.navbar .pane-search-form form {
-        width: 350px;
+        width: 200px;
         margin-left: 10px; } }
     @media (min-width: 1200px) {
       header.site-header nav.main-menu-wrapper.navbar .pane-search-form form {
@@ -9271,18 +9277,25 @@ header.site-header nav.main-menu-wrapper.navbar {
         background-repeat: no-repeat; }
     header.site-header nav.main-menu-wrapper.navbar .pane-search-form form .form-actions {
       display: none; }
+    header.site-header nav.main-menu-wrapper.navbar .pane-search-form form #search-block-form {
+      padding: 15px; }
   header.site-header nav.main-menu-wrapper.navbar .logo .navbar-brand {
     margin: 0; }
+  header.site-header nav.main-menu-wrapper.navbar .navbar-toggler {
+    float: right; }
   header.site-header nav.main-menu-wrapper.navbar .navbar-collapse {
     padding-bottom: 20px;
     padding-left: 20px;
     width: 100%;
     position: absolute;
-    top: 112px;
+    top: 100px;
     z-index: 999;
     background: #fff;
     left: 0px;
     box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1); }
+    @media (min-width: 768px) {
+      header.site-header nav.main-menu-wrapper.navbar .navbar-collapse {
+        top: 110px; } }
     @media (min-width: 992px) {
       header.site-header nav.main-menu-wrapper.navbar .navbar-collapse {
         padding: 0;
@@ -9290,7 +9303,7 @@ header.site-header nav.main-menu-wrapper.navbar {
         z-index: 1;
         box-shadow: none;
         background: none;
-        top: 0; } }
+        top: 35px; } }
   header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav {
     margin-left: 0;
     margin-top: 32px; }
@@ -9302,7 +9315,7 @@ header.site-header nav.main-menu-wrapper.navbar {
     @media (min-width: 992px) {
       header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav {
         margin-top: 0;
-        margin-left: 10px; } }
+        margin-left: 70px; } }
     header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li {
       margin-left: 0;
       text-align: left;
@@ -9338,7 +9351,7 @@ header.site-header nav.main-menu-wrapper.navbar {
       width: 40px;
       height: 5px;
       left: calc(50% - 20px);
-      bottom: -58px;
+      bottom: -32px;
       background-color: #1E0195; }
       @media (min-width: 992px) {
         .not-front header.site-header nav.main-menu-wrapper.navbar ul.main-menu.navbar-nav li.active:after {
@@ -10114,13 +10127,16 @@ header.site-header nav.main-menu-wrapper.navbar {
   .event-details-wrapper .event-info .field-name-field-ding-library-addresse,
   .event-details-wrapper .event-info .field-item.even,
   .event-details-wrapper .event-info .addressfield-container-inline {
-    display: inline-flex;
-    margin-right: 10px; }
+    display: inline-flex; }
+  .event-details-wrapper .event-info span.date-display-start {
+    margin-left: 10px; }
+  .event-details-wrapper .event-info .thoroughfare {
+    margin-right: 5px; }
   .event-details-wrapper .locality-block {
     display: inline-flex; }
     .event-details-wrapper .locality-block .postal-code, .event-details-wrapper .locality-block .locality, .event-details-wrapper .locality-block .country {
       display: inline;
-      margin-right: 5px; }
+      margin-right: 2px; }
   .event-details-wrapper .left {
     width: 100%;
     height: 100%;
@@ -10226,7 +10242,7 @@ header.site-header nav.main-menu-wrapper.navbar {
   .event-details-wrapper .event-info .info-item-group .group-left > div {
     float: left;
     position: relative;
-    margin-right: 20px;
+    margin-right: 10px;
     height: 24px; }
     .event-details-wrapper .event-info .info-item:not(:last-child):not(.info-item-group):after,
     .event-details-wrapper .event-info .info-item-group:not(:last-child):not(.info-item-group):after,
@@ -10255,7 +10271,8 @@ header.site-header nav.main-menu-wrapper.navbar {
     font-family: "Rubik-Regular";
     font-size: 14px;
     letter-spacing: 0.47px;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    margin-left: 10px; }
     .event-details-wrapper .event-info .price:after {
       display: none; }
   .event-details-wrapper .controlled-category-list h2 {
@@ -10602,6 +10619,7 @@ header.site-header nav.main-menu-wrapper.navbar {
           height: 8px;
           position: absolute;
           right: 0;
+          float: right;
           top: calc(50% - 3px);
           background: url("../images/nav-arrow-right.png") no-repeat right center; }
     .page-libraries #ding-library-page .library-item-wrapper .libraries,
@@ -10616,7 +10634,13 @@ header.site-header nav.main-menu-wrapper.navbar {
         color: #000119;
         font-family: "SourceSansPro-Regular";
         font-size: 16px;
-        font-weight: 600; }
+        font-weight: 600;
+        top: -1px; }
+        @media (min-width: 1200px) {
+          .page-libraries #ding-library-page .library-item-wrapper .libraries .maps-link,
+          .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .libraries .maps-link,
+          .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .libraries .maps-link {
+            top: unset; } }
         .page-libraries #ding-library-page .library-item-wrapper .libraries .maps-link:hover,
         .node-type-ding-page .content-wrapper .pane-content .library-item-wrapper .libraries .maps-link:hover,
         .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content .library-item-wrapper .libraries .maps-link:hover {
@@ -12051,11 +12075,17 @@ header.site-header nav.main-menu-wrapper.navbar {
 .secondary-menu-wrapper {
   right: 170px;
   margin-top: -2px; }
+  @media (min-width: 576px) {
+    .secondary-menu-wrapper .menu {
+      padding-left: 0; } }
   .secondary-menu-wrapper .menu li {
     list-style: none; }
     .secondary-menu-wrapper .menu li a {
       text-transform: uppercase;
       color: #000119; }
+
+.ding2-site-template .secondary-menu-wrapper ul.menu {
+  padding-left: 0; }
 
 .pane-lang-dropdown-language {
   right: 0px; }
@@ -12092,7 +12122,11 @@ nav > div:nth-of-type(4) {
   background-color: rgba(255, 255, 255, 0.767); }
 
 div.logo {
-  width: 200px; }
+  width: 200px;
+  position: relative;
+  top: 50px; }
+  div.logo img {
+    width: 170px; }
 
 @media (min-width: 992px) {
   .front.page-culture-frontpage .content-wrapper .container .content-container, .front.page-culture-frontpage .content-wrapper .page-taxonomy-term #page .node-ding-library.library-item-wrapper .content-container, .page-taxonomy-term #page .front.page-culture-frontpage .content-wrapper .node-ding-library.library-item-wrapper .content-container, .front.page-culture-frontpage .content-wrapper .page-user-login .content-inner .content-container, .page-user-login .front.page-culture-frontpage .content-wrapper .content-inner .content-container, .front.page-culture-frontpage .content-wrapper .page-user .content-inner .content-container, .page-user .front.page-culture-frontpage .content-wrapper .content-inner .content-container, .front.page-culture-frontpage .content-wrapper #ding-library-front .attachments-wrapper .pane-title .content-container, #ding-library-front .attachments-wrapper .front.page-culture-frontpage .content-wrapper .pane-title .content-container, .front.page-culture-frontpage .content-wrapper .node-type-ding-news .panel-pane.pane-ding-related-content-news-events .content-container, .node-type-ding-news .front.page-culture-frontpage .content-wrapper .panel-pane.pane-ding-related-content-news-events .content-container, .front.page-culture-frontpage .content-wrapper .pane-node-field-ding-event-materials .content-container, .front.page-culture-frontpage .content-wrapper .pane-node-field-ding-news-materials .content-container {

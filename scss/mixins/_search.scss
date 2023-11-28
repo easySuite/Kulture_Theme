@@ -4,7 +4,7 @@
   box-shadow: map-get($shadows, level-2);
 
   @include media-breakpoint-up(lg) {
-    width: 350px;
+    width: 200px;
     margin-left: 10px;
   }
 

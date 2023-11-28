@@ -4,13 +4,29 @@ header.site-header {
     min-height: 170px;
     margin: 0 auto;
     padding: 0px;
+    flex-wrap: unset;
+    align-items: unset;
+    justify-content: unset;
+    display: block;
 
     .pane-search-form form {
       @include search();
+      position: relative;
+      top: -9px;
+
+
+      #search-block-form {
+        padding: 15px;
+      }
     }
 
     .logo .navbar-brand {
       margin: 0;
+    }
+
+
+    .navbar-toggler {
+      float: right;
     }
 
     .navbar-collapse {
@@ -18,11 +34,14 @@ header.site-header {
       padding-left: 20px;
       width: 100%;
       position: absolute;
-      top: 112px;
+      top: 100px;
       z-index: 999;
       background: #fff;
       left: 0px;
       box-shadow: 0 10px 35px 0 rgba(9, 0, 38, 0.1);
+      @include media-breakpoint-up(md) {
+        top: 110px;
+      }
 
       @include media-breakpoint-up(lg) {
         padding: 0;
@@ -30,7 +49,7 @@ header.site-header {
         z-index: 1;
         box-shadow: none;
         background: none;
-        top: 0;
+        top: 35px;
       }
     }
 
@@ -49,7 +68,7 @@ header.site-header {
       
       @include media-breakpoint-up(lg) {
         margin-top: 0;
-        margin-left: 10px;
+        margin-left: 70px;
       }
 
       li {
@@ -99,7 +118,7 @@ header.site-header {
       width: 40px;
       height: 5px;
       left: calc(50% - 20px);
-      bottom: -58px;
+      bottom: -32px;
       background-color: map-get($theme-colors, blue);
 
       @include media-breakpoint-up(lg) {
