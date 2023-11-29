@@ -14,7 +14,11 @@
 .page-libraries #ding-library-page,
 .node-type-ding-page .content-wrapper .pane-content,
 .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content {
-  margin-top: 70px;
+  margin-top: 40px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 70px;
+  }
 
   .contextual-links-region.sub-menu-wrapper,
    .panel-pane.sub-menu-wrapper {

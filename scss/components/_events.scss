@@ -1,7 +1,11 @@
 .page-arrangementer,
 .node-type-ding-event {
   .layout-wrapper {
-    padding-top: 60px;
+    padding-top: 40px;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: 60px;
+    }
   }
 
   .view-content.row h3 {
@@ -12,7 +16,7 @@
     margin-bottom: 30px;
     padding-right: 0;
 
-    @include media-breakpoint-up(lg) {}
+    
   }
 
   @include grid-view-mode();

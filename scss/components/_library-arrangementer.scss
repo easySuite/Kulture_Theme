@@ -1,5 +1,9 @@
 .page-bibliotek .layout-wrapper {
-  margin-top: 70px;
+  margin-top: 40px;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 70px;
+  }
 
   .secondary-content {
     .panel-pane.pane-menu-title {
