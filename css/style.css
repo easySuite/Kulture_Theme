@@ -9244,13 +9244,16 @@ html.a11y-contrast .node-ding-event.node-teaser .background .button {
 
 header.site-header nav.main-menu-wrapper.navbar {
   width: 100%;
-  min-height: 170px;
+  min-height: 120px;
   margin: 0 auto;
   padding: 0px;
   flex-wrap: unset;
   align-items: unset;
   justify-content: unset;
   display: block; }
+  @media (min-width: 768px) {
+    header.site-header nav.main-menu-wrapper.navbar {
+      min-height: 170px; } }
   header.site-header nav.main-menu-wrapper.navbar .pane-search-form form {
     width: 100%;
     padding: 20px;
@@ -9868,7 +9871,11 @@ header.site-header nav.main-menu-wrapper.navbar {
 
 .page-arrangementer .layout-wrapper,
 .node-type-ding-event .layout-wrapper {
-  padding-top: 60px; }
+  padding-top: 40px; }
+  @media (min-width: 992px) {
+    .page-arrangementer .layout-wrapper,
+    .node-type-ding-event .layout-wrapper {
+      padding-top: 60px; } }
 
 .page-arrangementer .view-content.row h3, .page-arrangementer .node-type-ding-news .view.view-ding-related-content .view-content h3, .node-type-ding-news .view.view-ding-related-content .page-arrangementer .view-content h3,
 .node-type-ding-event .view-content.row h3,
@@ -10119,8 +10126,11 @@ header.site-header nav.main-menu-wrapper.navbar {
     padding: 0; } }
 
 .event-details-wrapper {
-  margin-top: 70px;
+  margin-top: 40px;
   font-family: "SourceSansPro-Regular"; }
+  @media (min-width: 992px) {
+    .event-details-wrapper {
+      margin-top: 70px; } }
   .event-details-wrapper a {
     color: #1E0195; }
   .event-details-wrapper .event-info .street-block, .event-details-wrapper .event-info .field-name-field-ding-event-location,
@@ -10331,7 +10341,12 @@ header.site-header nav.main-menu-wrapper.navbar {
 .page-libraries #ding-library-page,
 .node-type-ding-page .content-wrapper .pane-content,
 .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content {
-  margin-top: 70px; }
+  margin-top: 40px; }
+  @media (min-width: 992px) {
+    .page-libraries #ding-library-page,
+    .node-type-ding-page .content-wrapper .pane-content,
+    .page-taxonomy.page-taxonomy-term .content-wrapper .pane-content {
+      margin-top: 70px; } }
   .page-libraries #ding-library-page .contextual-links-region.sub-menu-wrapper .pane-content,
   .page-libraries #ding-library-page .panel-pane.sub-menu-wrapper .pane-content,
   .node-type-ding-page .content-wrapper .pane-content .contextual-links-region.sub-menu-wrapper .pane-content,
@@ -10650,8 +10665,11 @@ header.site-header nav.main-menu-wrapper.navbar {
   padding: 0; }
 
 #ding-library-front {
-  margin-top: 70px;
+  margin-top: 40px;
   padding: 0; }
+  @media (min-width: 992px) {
+    #ding-library-front {
+      margin-top: 70px; } }
   #ding-library-front .secondary-content .sub-menu-title a,
   #ding-library-front .secondary-content .sub-menu-wrapper .pane-title a,
   #ding-library-front .secondary-content .panel-pane-inner h2.pane-title a {
@@ -10691,7 +10709,10 @@ header.site-header nav.main-menu-wrapper.navbar {
     font-family: 'SourceSansPro-Regular';
     font-size: 14px; }
   #ding-library-front .primary-content .pane-node-title {
-    margin-top: 70px; }
+    margin-top: 40px; }
+    @media (min-width: 992px) {
+      #ding-library-front .primary-content .pane-node-title {
+        margin-top: 70px; } }
     #ding-library-front .primary-content .pane-node-title h2 {
       color: #000119;
       font-family: 'SourceSansPro-Bold';
@@ -10967,7 +10988,10 @@ header.site-header nav.main-menu-wrapper.navbar {
   padding: 0; }
 
 .page-bibliotek .layout-wrapper {
-  margin-top: 70px; }
+  margin-top: 40px; }
+  @media (min-width: 992px) {
+    .page-bibliotek .layout-wrapper {
+      margin-top: 70px; } }
   .page-bibliotek .layout-wrapper .secondary-content .panel-pane.pane-menu-title {
     display: none; }
   .page-bibliotek .layout-wrapper .secondary-content .pane-og-menu-og-single-menu-block h2 a {
@@ -11571,7 +11595,11 @@ header.site-header nav.main-menu-wrapper.navbar {
 
 .page-nyheder .layout-wrapper,
 .page-taxonomy-term .layout-wrapper {
-  margin-top: 70px; }
+  margin-top: 40px; }
+  @media (min-width: 992px) {
+    .page-nyheder .layout-wrapper,
+    .page-taxonomy-term .layout-wrapper {
+      margin-top: 70px; } }
 
 .page-nyheder .secondary-content .pane-menu-title,
 .page-nyheder .secondary-content .pane-block form,

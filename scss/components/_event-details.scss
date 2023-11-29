@@ -1,6 +1,10 @@
 .event-details-wrapper {
-  margin-top: 70px;
+  margin-top: 40px;
   font-family: "SourceSansPro-Regular";
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 70px;
+  }
 
   a {
     color: map-get($theme-colors, blue);

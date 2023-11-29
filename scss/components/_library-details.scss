@@ -1,6 +1,10 @@
 #ding-library-front {
-  margin-top: 70px;
+  margin-top: 40px;
   padding: 0;
+
+  @include media-breakpoint-up(lg) {
+    margin-top: 70px;
+  }
 
   .secondary-content {
     .sub-menu-title a,
@@ -62,7 +66,11 @@
     }
 
     .pane-node-title {
-      margin-top: 70px;
+      margin-top: 40px;
+
+      @include media-breakpoint-up(lg) {
+        margin-top: 70px;
+      }
 
       h2 {
         color: map-get($theme-colors, dark);
