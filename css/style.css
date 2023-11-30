@@ -9236,11 +9236,13 @@ html.a11y-contrast .node-ding-event.node-teaser .background .button {
   #a11y a {
     font-size: 1.5rem;
     color: white;
-    text-align: center; }
+    text-align: center;
+    text-decoration: none; }
     #a11y a.font-size-trigger::before {
       content: 'a'; }
     #a11y a.contrast-trigger::before {
-      content: '\263c'; }
+      content: '\263c';
+      font-family: initial; }
 
 header.site-header nav.main-menu-wrapper.navbar {
   width: 100%;
@@ -10252,7 +10254,7 @@ header.site-header nav.main-menu-wrapper.navbar {
   .event-details-wrapper .event-info .info-item-group .group-left > div {
     float: left;
     position: relative;
-    margin-right: 10px;
+    margin-right: 1px;
     height: 24px; }
     .event-details-wrapper .event-info .info-item:not(:last-child):not(.info-item-group):after,
     .event-details-wrapper .event-info .info-item-group:not(:last-child):not(.info-item-group):after,
