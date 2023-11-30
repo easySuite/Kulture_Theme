@@ -1,13 +1,17 @@
 header.site-header {
   nav.main-menu-wrapper.navbar {
     width: 100%;
-    min-height: 170px;
+    min-height: 120px;
     margin: 0 auto;
     padding: 0px;
     flex-wrap: unset;
     align-items: unset;
     justify-content: unset;
     display: block;
+
+    @include media-breakpoint-up(md) {
+      min-height: 170px;
+    }
 
     .pane-search-form form {
       @include search();
