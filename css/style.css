@@ -10144,6 +10144,8 @@ header.site-header nav.main-menu-wrapper.navbar {
     margin-left: 10px; }
   .event-details-wrapper .event-info .thoroughfare {
     margin-right: 5px; }
+  .event-details-wrapper .event-info span.date-display-single {
+    margin-left: 12px; }
   .event-details-wrapper .locality-block {
     display: inline-flex; }
     .event-details-wrapper .locality-block .postal-code, .event-details-wrapper .locality-block .locality, .event-details-wrapper .locality-block .country {
@@ -12121,6 +12123,7 @@ header.site-header nav.main-menu-wrapper.navbar {
   right: 0px; }
   .pane-lang-dropdown-language .lang-dropdown-select-element {
     border: 0px;
+    border-color: transparent;
     outline: 0px;
     background: none;
     scroll-behavior: smooth;
@@ -12133,6 +12136,8 @@ header.site-header nav.main-menu-wrapper.navbar {
     text-align: center;
     margin-right: 30px;
     text-transform: uppercase; }
+  .pane-lang-dropdown-language select::-ms-expand {
+    display: none; }
   .pane-lang-dropdown-language img.language-icon {
     top: 5px;
     width: 30px;
