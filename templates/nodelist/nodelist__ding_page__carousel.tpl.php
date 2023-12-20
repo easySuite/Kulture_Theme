@@ -19,7 +19,7 @@
       <h3 class="node-title"><?php print l($item->title, 'node/' . $item->nid); ?></h3>
       <p class="item-details">
         <?php print l($item->teaser_lead, 'node/' . $item->nid); ?>
-      </p> 
+      </p>
     </div>
   </div>
 </div>
