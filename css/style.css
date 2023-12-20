@@ -13019,17 +13019,15 @@ div.logo {
         font-family: 'Rubik-Regular';
         font-size: 12px;
         letter-spacing: 0.4px;
-        line-height: 14px; }
-        .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info > span:after {
-          content: '|';
-          margin: 0 10px; }
-        .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info > span:last-child:after {
-          content: '';
-          margin: 0; }
+        line-height: 14px;
+        background-image: none;
+        margin-right: 10px; }
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info a,
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info a:hover {
           color: white;
-          text-decoration: none; }
+          text-decoration: none;
+          margin-right: 10px;
+          border-right: 1px solid white; }
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info .event-info .item-price {
           font-family: 'Rubik-Medium';
           text-transform: uppercase;

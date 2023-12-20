@@ -176,21 +176,15 @@
         font-size: map-get($text-size, mini);
         letter-spacing: 0.4px;
         line-height: 14px;
-
-        &>span:after {
-          content: '|';
-          margin: 0 10px;
-        }
-
-        &>span:last-child:after {
-          content: '';
-          margin: 0;
-        }
+        background-image: none;
+        margin-right: 10px;
 
         a,
         a:hover {
           color: white;
           text-decoration: none;
+          margin-right: 10px;
+          border-right: 1px solid white;
         }
 
         .item-price {
