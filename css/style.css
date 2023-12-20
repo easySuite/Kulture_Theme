@@ -10203,9 +10203,13 @@ header.site-header nav.main-menu-wrapper.navbar {
   .event-details-wrapper h1 {
     font-family: 'SourceSansPro-Bold';
     color: #000119;
+    font-size: 42px;
     font-weight: 900;
     line-height: 42px;
     margin-bottom: 20px; }
+    @media (min-width: 992px) {
+      .event-details-wrapper h1 {
+        font-size: 57px; } }
   .event-details-wrapper h2 {
     margin-top: 50px;
     color: #01032E;
@@ -12886,8 +12890,15 @@ div.logo {
   .ding_nodelist-carousel .icon-next:after,
   .ding_nodelist-carousel .icon-prev:after {
     content: none; }
+  .ding_nodelist-carousel a {
+    color: white;
+    text-decoration: none;
+    height: 100%;
+    width: 100%;
+    display: block; }
   .ding_nodelist-carousel .event-image {
-    height: 465px; }
+    height: 465px;
+    background-repeat: no-repeat; }
     .ding_nodelist-carousel .event-image:after {
       content: "";
       width: 100%;
@@ -12942,7 +12953,8 @@ div.logo {
       color: white;
       position: absolute;
       bottom: 25px;
-      left: 15px; }
+      left: 15px;
+      background-image: none; }
       @media (min-width: 768px) {
         .ding_nodelist-carousel .slick-list .slick-track .slick-slide .article-info {
           bottom: 50px;
