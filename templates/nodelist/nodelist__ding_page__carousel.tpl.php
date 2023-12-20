@@ -13,10 +13,12 @@
   <?php endif; ?>
   <div class="article-info">
     <div class="node">
-    <div class="item-created"><?php print format_date($item->created, 'custom', 'l j. F Y', $item->timezone); ?></div>
+    <a href="<?php print ('node/' . $item->nid); ?>">
+      <div class="item-created"><?php print format_date($item->created, 'custom', 'l j. F Y', $item->timezone); ?></div>
+    </a>
       <h3 class="node-title"><?php print l($item->title, 'node/' . $item->nid); ?></h3>
       <p class="item-details">
-        <?php print $item->teaser_lead; ?>
+        <?php print l($item->teaser_lead, 'node/' . $item->nid); ?>
       </p>
     </div>
   </div>
