@@ -97,6 +97,9 @@ function kulture_theme_preprocess__node__ding_campaign(&$variables) {
  * Ding event.
  */
 function kulture_theme_preprocess__node__ding_event(&$variables) {
+  global $language;
+  $langcode = $language->language;
+
   $date = field_get_items('node', $variables['node'], 'field_ding_event_date');
 
   // Search same event times.
@@ -114,6 +117,8 @@ function kulture_theme_preprocess__node__ding_event(&$variables) {
     )
   );
   $query->condition('n.title', $title);
+  $query->condition('n.language', $langcode);
+  $query->condition('n.status', NODE_PUBLISHED);
   $results = $query->execute()->fetchCol();
 
   $price = field_get_items('node', $variables['node'], 'field_ding_event_price');
