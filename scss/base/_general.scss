@@ -44,8 +44,8 @@ img {
     padding: 0;
 
     @include media-breakpoint-up(lg) {
-      padding-right: 28.5px;
-      padding-left: 28.5px;
+      padding-right: 20.5px;
+      padding-left: 20.5px;
     }
   }
 
@@ -115,6 +115,18 @@ img {
 
     .cancel a {
       color: blue;
+    }
+  }
+}
+
+.page-galleri .kultur-wrapper {
+  .pane-easyddb-instagram-block-easyddb-instagram-block-hashtag {
+    margin-top: 60px;
+
+    a.web-container {
+      img {
+        margin: 0 15px 15px 0;
+      }
     }
   }
 }
