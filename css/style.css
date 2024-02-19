@@ -9012,7 +9012,7 @@ img {
     .search-overlay--wrapper .search-overlay--inner .cancel a {
       color: blue; }
 
-.page-galleri .kultur-wrapper .panels-ipe-sort-container {
+.page-galleri .kultur-wrapper .row.front-slider-container, .page-galleri .kultur-wrapper .node-type-ding-news .view.view-ding-related-content .front-slider-container.view-content, .node-type-ding-news .view.view-ding-related-content .page-galleri .kultur-wrapper .front-slider-container.view-content {
   margin-top: 60px; }
 
 .page-galleri .kultur-wrapper .pane-easyddb-instagram-block-easyddb-instagram-block-hashtag a.web-container img {
