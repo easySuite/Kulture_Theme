@@ -9012,10 +9012,11 @@ img {
     .search-overlay--wrapper .search-overlay--inner .cancel a {
       color: blue; }
 
-.page-galleri .kultur-wrapper .pane-easyddb-instagram-block-easyddb-instagram-block-hashtag {
+.page-galleri .kultur-wrapper .panels-ipe-sort-container {
   margin-top: 60px; }
-  .page-galleri .kultur-wrapper .pane-easyddb-instagram-block-easyddb-instagram-block-hashtag a.web-container img {
-    margin: 0 15px 15px 0; }
+
+.page-galleri .kultur-wrapper .pane-easyddb-instagram-block-easyddb-instagram-block-hashtag a.web-container img {
+  margin: 0 15px 15px 0; }
 
 html.a11y,
 html.a11y body {
